@@ -1,0 +1,374 @@
+{
+  "meta": {
+    "title": "Logitaka — Tapşırıq və kontekst idarəetməsi üçün Sİ sistemi",
+    "description": "Sadəcə nə baş verdiyini de. Logitaka özü hər şeyi anlayacaq, nizama salacaq, xatırladacaq və növbəti addımı deyəcək."
+  },
+  "ui": {
+    "brandTagline": "AI‑Powered OS",
+    "nav": [
+      {
+        "href": "#problem",
+        "label": "Problem"
+      },
+      {
+        "href": "#how-it-works",
+        "label": "Sistem"
+      },
+      {
+        "href": "#context",
+        "label": "Kontekst"
+      },
+      {
+        "href": "#audience",
+        "label": "Auditoriya"
+      },
+      {
+        "href": "#dev-team",
+        "label": "Developerlər"
+      },
+      {
+        "href": "#pricing",
+        "label": "Qiymətlər"
+      },
+      {
+        "href": "#faq",
+        "label": "FAQ"
+      }
+    ],
+    "theme": {
+      "light": "İşıqlı mövzu",
+      "dark": "Qaranlıq mövzu"
+    },
+    "imagePlaceholders": {
+      "hero": "Opsional: insan, sistem və idarə olunan xaos haqqında hero-təsvir. Hələlik bu blok abstrakt vizuallaşdırma kimi işləyir.",
+      "context": "assets/003.png",
+      "dev": "assets/004.png"
+    }
+  },
+  "hero": {
+    "kicker": "Logitaka",
+    "headline": "Logitaka. İşlərini idarə edən sistem.",
+    "subheadline": "Nə baş verdiyini de — səslə və ya mətnlə. Logitaka özü strukturu toplayacaq, prioritetləri müəyyən edəcek, xatırladacaq və növbəti addımı deyəcək.",
+    "ctaPrimary": "Qeydiyyatdan keç",
+    "ctaSecondary": "Necə işlədiyinə bax",
+    "stats": [
+      {
+        "value": "Freyvmorklar",
+        "label": "layihə idarəçiliyi və keyfiyyətə nəzarət"
+      },
+      {
+        "value": "3",
+        "label": "interfeys dili"
+      },
+      {
+        "value": "24/7",
+        "label": "sistem sənin üçün çalışır"
+      }
+    ],
+    "supporting": [
+      "Artıq vizual səs-küyü olmayan, kəskin, canlı və minimalist qabıq.",
+      "Gündəlik axın, layihələr, qərarlar və növbəti addımlar üçün vahid sistem.",
+      "İki mövzu, üç dil, bərabərhüquqlu desktop və mobil rejimləri."
+    ],
+    "visualCards": [
+      {
+        "title": "Raw Input",
+        "body": "Səs, mətn, qeydlər, yazışma fraqmentləri, tamamlanmamış fikirlər."
+      },
+      {
+        "title": "Structured System",
+        "body": "Layihələr, tapşırıqlar, qərarlar, plan, təqvim, mövcud real kontekst."
+      },
+      {
+        "title": "Movement",
+        "body": "Sistem sadəcə saxlamır. O, irəli aparır və qaydanı canlı saxlayır."
+      }
+    ]
+  },
+  "problem": {
+    "title": "Özünü ən azı birində tanı.",
+    "items": [
+      {
+        "title": "İş çoxdur — baş isə birdir",
+        "body": "İş, şəxsi həyat, planlar, vədlər. Hər şey vacibdir, hər şey təcilidir. Sadəcə sığmır."
+      },
+      {
+        "title": "Məsuliyyətsiz olduğun üçün unutmursan",
+        "body": "Sadəcə lazım olan anda xatırladacaq və nəzarət edəcək kimsə yox idi."
+      },
+      {
+        "title": "Nə edəcəyini bilirsən — amma nədən başlayacağını yox",
+        "body": "Tapşırıq çoxdur. Amma iş başına keçəndə hazırda nədən yapışacağın aydın olmur."
+      },
+      {
+        "title": "Planlayırsan — amma planlar yaşamır",
+        "body": "Siyahı yazdın, plan qurdun. Üç gün sonra artıq reallığı əks etdirmir."
+      },
+      {
+        "title": "Ləngidiyini hiss edirsən — amma harada olduğunu anlamırsan",
+        "body": "Nəsə səhv gedir, amma bunu ifadə etmək çətindir. Və soruşmağa kimsə yoxdur."
+      }
+    ],
+    "closing": "Bu, iradə çatışmazlığı deyil. Bu, hər şeyi həqiqətən bir yerdə tutan sistemin olmaması problemidir."
+  },
+  "transformation": {
+    "title": "Necə işləyir.",
+    "body": [
+      "İlk girişdə Logitaka suallar verir və dinləyir. Danışdıqlarına əsasən — avtomatik olaraq strukturu formalaşdırır: layihələr, tapşırıqlar, qərarlar, plan, təqvim.",
+      "Nə qədər çox danışırsansa — sistem vəziyyətini bir o qədər dəqiq anlayır.",
+      "Əsasında — sadəcə süni intellekt deyil. Metodologiya layihə idarəçiliyi və keyfiyyətə nəzarət alqoritmləri üzərində qurulub. Sistem sübut edilmiş prinsiplərlə işləyir — xaosa uyğunlaşmır, ondan çıxmağa kömək edir."
+    ],
+    "coreLabel": "Core Statement",
+    "coreBody": "Daxildə — sadəcə süni intellekt deyil, rəqəmsallaşdırılmış idarəetmə alqoritmləridir. Sistem xaosa uyğunlaşmır, onu sərt struktura salır. Sənin üçün 24/7 çalışır.",
+    "listLabel": "Nələr yaranmağa başlayır",
+    "list": [
+      "Nə qədər çox danışsan — sistem reallığını bir o qədər aydın anlayır.",
+      "Vacib fraqmentlər ayrı-ayrı yaşamır və vahid mənzərəyə çevrilir.",
+      "Qərarlar, planlar və növbəti addımlar söhbət xaosunda itmir.",
+      "Struktur donub qalmır. O, səninlə bərabər yaşamağa və yenilənməyə davam edir."
+    ]
+  },
+  "capabilities": {
+    "title": "Sistem nə edir.",
+    "items": [
+      {
+        "title": "Danışdıqlarından struktur formalaşdırır",
+        "body": "Layihələr, tapşırıqlar, müddətlər, qərarlar — sözlərin əsasında avtomatik formalaşır. Heç nəyi əllə daxil etməyə ehtiyac yoxdur."
+      },
+      {
+        "title": "Gündəlik sessiyalar keçirir",
+        "body": "Günün necə keçdiyini danış. Sistem aktiv layihələrin üzərindən keçəcək, statusları dəqiqləşdirəcək, müddətləri dəyişəcək, xatırlatmalar əlavə edəcək."
+      },
+      {
+        "title": "Təqvimi idarə edir",
+        "body": "Təqviminə qoşulur. Xatırlatmalar və tapşırıqlar avtomatik əlavə olunur — sənə və əməkdaşlarına."
+      },
+      {
+        "title": "Qərarları və razılaşmaları saxlayır",
+        "body": "Müzakirə olunan və qərara alınan hər şey ayrıca qeyd olunur. Yazışmalarda itmir."
+      },
+      {
+        "title": "Sənin əhvalına görə yox, metodologiyaya əsasən işləyir",
+        "body": "Sistemin dəqiq strukturu var. O istiqamətləndirir — sən təqib edirsən. Məhz bu nəticə verir."
+      }
+    ],
+    "closing": "Sistemi sən idarə etmirsən. Sən yaşayırsan. Sistem gerisini idarə edir."
+  },
+  "context": {
+    "label": "Canlı Kontekst",
+    "title": "İtməyən kontekst.",
+    "body": [
+      "Adi Sİ-çat sessiyalar arasında səni xatırlamır. Logitaka isə fərqli işləyir.",
+      "Hər söhbət xülasə edilir və layihənin kontekstinə daxil edilir. Qərarlar ayrıca qeyd olunur. Planlar avtomatik olaraq çıxarılır. Bir həftə sonra qayıda bilərsən — sistem harada qaldığını bilir.",
+      "Aparıcı modellərlə işləyir — OpenAI, Google, Anthropic və digərləri. Modellər arasında keçid edə bilərsən — kontekst ümumi və aktualdır."
+    ],
+    "closing": "Sən səsli düşünürsən. Logitaka bunu struktura çevirir.",
+    "modelsLabel": "İstifadə edir:",
+    "models": [
+      "OpenAI",
+      "Google",
+      "Anthropic",
+      "Zhipu",
+      "Kimi"
+    ]
+  },
+  "modelTeaser": {
+    "title": "10+ Top Süni İntellekt Modeli. Yalnız real mürəkkəbliyə görə ödə.",
+    "subtitle": "Niyə sərçəyə topdan atəş açasan? Logitaka gündəlik rutin üçün ucuz və sürətli modellərdən istifadə etməyə, ağır modelləri isə yalnız çətin tapşırıqlar üçün qoşmağa imkan verir.",
+    "card1": {
+      "title": "Rutin tapşırıqlar",
+      "desc": "Hesabatlar, planlaşdırma, gündəlik işlər",
+      "badge": "$ (Minimum xərc)"
+    },
+    "card2": {
+      "title": "Mürəkkəb çağırışlar",
+      "desc": "Layihələndirmə, dərin analiz",
+      "badge": "$$$$$ (Ekstremal xərc)"
+    },
+    "bullets": [
+      "Ağıllı standart: tapşırıqların 90%-i üçün qənaətcil model",
+      "Kəsintisiz keçid: Sİ modelini bir kliklə dəyiş",
+      "Şəffaf xərc: nəyə ödədiyini həmişə bil"
+    ],
+    "cta": "Peşəmə uyğun modelləri tap"
+  },
+  "audience": {
+    "title": "Çox işi olan hər kəs üçün.",
+    "items": [
+      {
+        "title": "Frilanser / dizayner / bloqer",
+        "body": "Müştərilər, deadline-lar, ideyalar, yazışmalar — sistem hər şeyi bir yerdə saxlayır."
+      },
+      {
+        "title": "Rəhbər / sahibkar",
+        "body": "Komanda, layihələr, qərarlar, nəzarət — hər şeyi başda saxlamağa ehtiyac olmadan."
+      },
+      {
+        "title": "Developer",
+        "body": "Layihə konteksti, qərarlar tarixçəsi, tapşırıqlar — üstəgəl kod redaktoru ilə birbaşa inteqrasiya."
+      },
+      {
+        "title": "Böyük həcmdə işi olan hər kəs",
+        "body": "Nə ilə məşğul olduğunun fərqi yoxdur. Giriş baryeri sıfırdır — sadəcə danış."
+      }
+    ],
+    "closing": "Giriş baryeri sıfırdır. Hər kəs bacarar — sadəcə danış."
+  },
+  "devTeam": {
+    "label": "Dev Team",
+    "title": "İnkişafın ətrafında əməliyyat qatı.",
+    "body": [
+      "Kontekst yalnız kodda itmir. Qərarlar çatlarda yox olur. Bir həftə sonra komanda məhz nəyə görə belə etdiyini bərpa edə bilmir.",
+      "Logitaka qərarlar tarixini, layihənin cari vəziyyətini və növbəti addımları tək bir yerdə saxlayır — həmişə aktualdır.",
+      "Koddakı Sİ köməkçiləri ilə işləyənlər üçün: tapşırığı Logitaka-da müzakirə et — bir hərəkətlə hazır təlimatları redaktora göndər. Kod lazımsız təkrarlanmalar olmadan, təsdiqlənmiş təlimatlarla sənin nəzarətin altında icra olunur."
+    ],
+    "visualLabel": "Bu rejimi nə gücləndirir",
+    "points": [
+      "Çat, kod və layihə yaddaşı arasında daha az keçid.",
+      "Qərarların səbəbləri müzakirədən bir gün sonra yox olmur.",
+      "Növbəti addımlar real texniki kontekstlə yanaşı qalır.",
+      "Sİ-kodlaşdırma nəzarət altında qalır, xaotik kopyalamaya çevrilmir."
+    ],
+    "closing": "Daha az keçid. Daha çox görülən iş."
+  },
+  "valueStack": {
+    "label": "Müqayisə",
+    "title": "Ayrı-ayrı alsaydın nə qədər olardı.",
+    "subtitle": "Eyni modellərə birbaşa giriş sənə bir neçə dəfə baha başa gələrdi. Logitaka hamısını sənə verir — bir interfeysdə, bir abunəliklə.",
+    "perMonth": "/ ay",
+    "services": [
+      { "name": "ChatGPT Plus", "provider": "OpenAI", "priceUSD": "$20", "priceAZN": "~40 AZN" },
+      { "name": "Claude Pro", "provider": "Anthropic", "priceUSD": "$20", "priceAZN": "~40 AZN" },
+      { "name": "Gemini AI Pro", "provider": "Google", "priceUSD": "$19.99", "priceAZN": "~40 AZN" },
+      { "name": "SuperGrok", "provider": "xAI", "priceUSD": "$30", "priceAZN": "~60 AZN" },
+      { "name": "Kimi Pro", "provider": "Moonshot AI", "priceUSD": "$19", "priceAZN": "~38 AZN" },
+      { "name": "Le Chat Pro", "provider": "Mistral", "priceUSD": "$14.99", "priceAZN": "~30 AZN" },
+      { "name": "z.ai Pro", "provider": "Zhipu AI", "priceUSD": "~$16", "priceAZN": "~32 AZN" }
+    ],
+    "totalLabel": "Ayrı-ayrı cəmi",
+    "totalAZN": "~280 AZN",
+    "totalUSD": "~$140",
+    "vsLabel": "qarşı",
+    "logitakaLabel": "Logitaka — tam giriş",
+    "logitakaPrice": "20 AZN-dən",
+    "disclaimer": "* Kurs: 1 USD ≈ 2 AZN (elektron xidmətlərə 18% ƏDV daxil olmaqla). Qiymətlər nəşr tarixinə görə aktualdır."
+  },
+  "pricing": {
+    "title": "Tariflər.",
+    "popularBadge": "Populyar",
+    "cards": [
+      {
+        "label": "Starter",
+        "name": "Starter",
+        "price": "20 azn / ay",
+        "body": "Sistemə tam giriş. Şəxsi istifadə və az həcmli tapşırıqlar üçün uyğundur.",
+        "cta": "Qeydiyyatdan keç",
+        "href": "https://app.logitaka.com/app/login"
+      },
+      {
+        "label": "Pro",
+        "name": "Pro",
+        "price": "50 azn / ay",
+        "body": "Logitaka-nı gündəlik əsas iş aləti kimi istifadə edənlər üçün.",
+        "cta": "Qeydiyyatdan keç",
+        "href": "https://app.logitaka.com/app/login"
+      },
+      {
+        "label": "Custom",
+        "name": "Custom",
+        "price": "Şirkətlər üçün",
+        "body": "Məlumat məxfiliyi tələbləri olan təşkilatlar üçün. Yerli dil modeli ilə yerli infrastrukturda quraşdırma. Bizimlə əlaqə saxlayın.",
+        "cta": "Əlaqə",
+        "href": "mailto:admin@logitaka.com"
+      }
+    ],
+    "waitlist": "Hazırda beta-test gedir. Müraciət et — giriş əldə edən ilk şəxslərdən olacaqsan.",
+    "cta": "Qeydiyyatdan keç",
+    "betaNote": "Hazırda beta-test gedir. Müraciət et — giriş əldə edən ilk şəxslərdən biri olacaqsan."
+  },
+  "faq": {
+    "title": "FAQ",
+    "items": [
+      {
+        "question": "Logitaka nədir?",
+        "answer": "Sİ əsaslı iş idarəetmə sistemi. Sən nə baş verdiyini danışırsan — o isə strukturu yığır, layihələri idarə edir, xatırladır və istiqamətləndirir."
+      },
+      {
+        "question": "Bu sadəcə bir Sİ-çatdır?",
+        "answer": "Xeyr. Adi çat suallara cavab verir və səni unudur. Logitaka isə daimi konteksti qoruyur və işlərinin ətrafında əməliyyat sistemi kimi fəaliyyət göstərir."
+      },
+      {
+        "question": "Texnologiyaları anlamaq lazımdırmı?",
+        "answer": "Xeyr. Sadəcə danışmaq və ya yazmaq kifayətdir — sistem qalan hər şeyi özü edir."
+      },
+      {
+        "question": "Bu kimin üçündür?",
+        "answer": "Çoxlu işi olan və onları qaydada saxlayan sistemi olmayan hər kəs üçün."
+      },
+      {
+        "question": "Artıq mütəşəkkil olmaq lazımdırmı?",
+        "answer": "Xeyr. Sistem xaosu alır və onu özü strukturlaşdırır."
+      },
+      {
+        "question": "Bu, komandalar üçün işləyir?",
+        "answer": "Bəli. Sistem vasitəsilə əməkdaşlar üçün tapşırıq və xatırlatmaları idarə edə bilərsiniz."
+      },
+      {
+        "question": "Məlumatların məxfiliyi ilə bağlı vəziyyət necədir?",
+        "answer": "Yüksək tələbləri olan şirkətlər üçün — xarici agentlər olmadan yerli quraşdırılan Custom planı."
+      }
+    ]
+  },
+  "finalCta": {
+    "label": "Final CTA",
+    "title": "Logitaka. İşlərini idarə edən sistem.",
+    "body": "Beta-test açıqdır. Müraciət et — giriş əldə et və bunun sənin real tapşırıqlarında necə işlədiyini gör.",
+    "primary": "Qeydiyyatdan keç",
+    "secondary": "Necə işlədiyinə bax",
+    "notice": "Gözləmə siyahısına qoşulmaqla siz <a href=\"terms.html\">İstifadə Şərtləri</a> ilə razılaşırsınız və <a href=\"privacy.html\">Məxfilik Siyasəti</a> ilə tanış olduğunuzu təsdiqləyirsiniz."
+  },
+  "footer": {
+    "tagline": "Qaydanı sistem qoruyur — sən isə sadəcə yaşayırsan.",
+    "copyright": "© 2026 Logitaka. Bütün hüquqlar qorunur.",
+    "nav": [
+      {
+        "href": "#problem",
+        "label": "Problem"
+      },
+      {
+        "href": "#how-it-works",
+        "label": "Sistem"
+      },
+      {
+        "href": "#context",
+        "label": "Kontekst"
+      },
+      {
+        "href": "#audience",
+        "label": "Auditoriya"
+      },
+      {
+        "href": "#pricing",
+        "label": "Qiymətlər"
+      },
+      {
+        "href": "#faq",
+        "label": "FAQ"
+      }
+    ],
+    "legal": [
+      {
+        "href": "terms.html",
+        "label": "İstifadəçi müqaviləsi"
+      },
+      {
+        "href": "privacy.html",
+        "label": "Məxfilik siyasəti"
+      },
+      {
+        "href": "mailto:support@logitaka.com",
+        "label": "Əlaqə"
+      }
+    ]
+  }
+}

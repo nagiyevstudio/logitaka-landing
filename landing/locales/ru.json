@@ -7,24 +7,16 @@
     "brandTagline": "AI‑Powered OS",
     "nav": [
       {
-        "href": "#problem",
-        "label": "Боль"
-      },
-      {
         "href": "#how-it-works",
-        "label": "Система"
+        "label": "Как работает"
       },
       {
-        "href": "#context",
-        "label": "Контекст"
+        "href": "#capabilities",
+        "label": "Возможности"
       },
       {
         "href": "#audience",
-        "label": "Аудитория"
-      },
-      {
-        "href": "#dev-team",
-        "label": "Разработчикам"
+        "label": "Для кого"
       },
       {
         "href": "#pricing",
@@ -332,20 +324,16 @@
     "copyright": "© 2026 Logitaka. Все права защищены.",
     "nav": [
       {
-        "href": "#problem",
-        "label": "Боль"
-      },
-      {
         "href": "#how-it-works",
-        "label": "Система"
+        "label": "Как работает"
       },
       {
-        "href": "#context",
-        "label": "Контекст"
+        "href": "#capabilities",
+        "label": "Возможности"
       },
       {
         "href": "#audience",
-        "label": "Аудитория"
+        "label": "Для кого"
       },
       {
         "href": "#pricing",

@@ -1,0 +1,19 @@
+# macOS artifacts
+._*
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+*.code-workspace
+
+# FTP deploy state
+.ftp-deploy-sync-state.json

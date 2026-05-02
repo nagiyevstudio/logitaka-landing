@@ -52,6 +52,7 @@
   font-size: 0.95rem; line-height: 1.72;
   max-width: 64ch; margin-top: 20px;
 }
+.section-text .section-title { margin-bottom: 16px; }
 .section-text p { margin: 0; }
 .section-text p + p { margin-top: 16px; }
 

@@ -127,10 +127,20 @@
   grid-template-columns: 170px 1fr;
   gap: 16px; align-items: center;
 }
+.price-label {
+  display: grid; gap: 2px;
+  text-align: right;
+}
 .price-name {
   font-size: 0.88rem; font-weight: 600;
-  text-align: right; white-space: nowrap;
+  white-space: nowrap;
   overflow: hidden; text-overflow: ellipsis;
+}
+.price-multiplier {
+  font-size: 0.7rem; font-weight: 600;
+  color: var(--faint);
+  font-family: 'Space Grotesk', monospace;
+  letter-spacing: 0.02em;
 }
 .bar-track {
   height: 38px;

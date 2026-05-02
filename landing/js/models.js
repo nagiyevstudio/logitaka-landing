@@ -114,9 +114,13 @@
 
   function renderPriceChart(models, legend) {
     const rows = document.getElementById('priceRows');
-    rows.innerHTML = models.map(m => `
+    const sorted = [...models].sort((a, b) => a.cost - b.cost);
+    rows.innerHTML = sorted.map(m => `
       <div class="price-row">
-        <div class="price-name">${m.name}</div>
+        <div class="price-label">
+          <div class="price-name">${m.name}</div>
+          <div class="price-multiplier">${m.multiplier}</div>
+        </div>
         <div class="bar-track">
           <div class="bar-fill" style="background:${getTierColor(m.tier)}" data-w="${(m.cost/14.6)*100}"></div>
         </div>

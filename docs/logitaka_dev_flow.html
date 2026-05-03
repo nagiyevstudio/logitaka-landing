@@ -1,0 +1,131 @@
+
+<style>
+  .df-root { font-family: -apple-system, sans-serif; padding: 8px; }
+  .df-flow { display: flex; flex-direction: column; gap: 0; }
+  .df-row { display: flex; align-items: stretch; gap: 0; }
+  .df-step { flex: 1; display: flex; flex-direction: column; align-items: center; }
+  .df-box { border: 0.5px solid var(--color-border-secondary); border-radius: 8px; padding: 12px 10px; text-align: center; width: 100%; box-sizing: border-box; position: relative; transition: border-color 0.3s; }
+  .df-box.logitaka { border-color: #E05A2B; background: rgba(224,90,43,0.06); }
+  .df-box.logitaka .df-icon { color: #E05A2B; }
+  .df-box.active { border-color: #E05A2B; box-shadow: 0 0 0 2px rgba(224,90,43,0.15); }
+  .df-icon { font-size: 20px; margin-bottom: 6px; }
+  .df-label { font-size: 12px; font-weight: 500; color: var(--color-text-primary); line-height: 1.3; margin-bottom: 3px; }
+  .df-sub { font-size: 10px; color: var(--color-text-tertiary); line-height: 1.4; }
+  .df-arrow-h { display: flex; align-items: center; justify-content: center; width: 28px; flex-shrink: 0; }
+  .df-arrow-h svg { color: var(--color-text-tertiary); }
+  .df-arrow-v { display: flex; justify-content: center; padding: 4px 0; }
+  .df-arrow-v svg { color: var(--color-text-tertiary); }
+  .df-connector { display: flex; align-items: center; width: 100%; padding: 4px 0; position: relative; }
+  .df-connector-line { flex: 1; height: 1px; background: var(--color-border-tertiary); }
+  .df-connector-label { font-size: 10px; color: var(--color-text-tertiary); background: var(--color-background-primary); padding: 2px 6px; border-radius: 3px; border: 0.5px solid var(--color-border-tertiary); white-space: nowrap; letter-spacing: 0.03em; }
+  .df-git-center { display: flex; align-items: center; justify-content: center; padding: 0 4px; }
+  .df-git-box { border: 1px dashed var(--color-border-secondary); border-radius: 8px; padding: 10px 16px; text-align: center; background: var(--color-background-secondary); }
+  .df-git-icon { font-size: 22px; margin-bottom: 4px; }
+  .df-git-label { font-size: 12px; font-weight: 600; color: var(--color-text-primary); }
+  .df-git-sub { font-size: 10px; color: var(--color-text-tertiary); }
+  .df-two-col { display: grid; grid-template-columns: 1fr 40px 80px 40px 1fr; align-items: center; gap: 0; margin-bottom: 4px; }
+  .df-three { display: grid; grid-template-columns: 1fr 24px 1fr 24px 1fr; gap: 0; align-items: stretch; }
+  .df-step-num { position: absolute; top: 6px; left: 8px; font-size: 9px; color: var(--color-text-tertiary); letter-spacing: 0.06em; }
+  .df-pulse { animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.5} }
+</style>
+
+<div class="df-root">
+  <div class="df-flow">
+
+    <!-- Row 1: Logitaka → Git → IDE -->
+    <div class="df-two-col">
+      <div class="df-box logitaka">
+        <div class="df-step-num">01</div>
+        <div class="df-icon">💬</div>
+        <div class="df-label">Logitaka Dev Chat</div>
+        <div class="df-sub">Обсуждаем задачу, формируем инструкцию</div>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px">
+        <svg width="24" height="16" viewBox="0 0 24 16" fill="none"><path d="M4 8h16M14 3l6 5-6 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span style="font-size:9px;color:var(--color-text-tertiary);white-space:nowrap">push</span>
+      </div>
+      <div class="df-git-box">
+        <div class="df-git-icon">⎇</div>
+        <div class="df-git-label">Git Repo</div>
+        <div class="df-git-sub">instruction file</div>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px">
+        <svg width="24" height="16" viewBox="0 0 24 16" fill="none"><path d="M4 8h16M14 3l6 5-6 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span style="font-size:9px;color:var(--color-text-tertiary);white-space:nowrap">pull</span>
+      </div>
+      <div class="df-box">
+        <div class="df-step-num">02</div>
+        <div class="df-icon">🖥️</div>
+        <div class="df-label">IDE / Code Editor</div>
+        <div class="df-sub">Агент получает готовую инструкцию</div>
+      </div>
+    </div>
+
+    <!-- Vertical arrows: down on left (Logitaka side), down on right (IDE side) -->
+    <div style="display:grid;grid-template-columns:1fr 160px 1fr;gap:0;padding:0 0;">
+      <div></div>
+      <div></div>
+      <div class="df-arrow-v" style="justify-content:center">
+        <div style="display:flex;flex-direction:column;align-items:center;gap:1px">
+          <svg width="16" height="24" viewBox="0 0 16 24" fill="none"><path d="M8 4v16M3 14l5 6 5-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span style="font-size:9px;color:var(--color-text-tertiary)">выполняет</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Row 2: Report ← Git ← Agent execution -->
+    <div class="df-two-col" style="direction:rtl">
+      <div class="df-box logitaka" style="direction:ltr">
+        <div class="df-step-num">05</div>
+        <div class="df-icon">📋</div>
+        <div class="df-label">Ревизия и отчёт</div>
+        <div class="df-sub">Logitaka читает дифф, составляет отчёт</div>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;direction:ltr">
+        <svg width="24" height="16" viewBox="0 0 24 16" fill="none"><path d="M20 8H4M10 3L4 8l6 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span style="font-size:9px;color:var(--color-text-tertiary);white-space:nowrap">читает diff</span>
+      </div>
+      <div class="df-git-box" style="direction:ltr">
+        <div class="df-git-icon">⎇</div>
+        <div class="df-git-label">Git Repo</div>
+        <div class="df-git-sub">code changes</div>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;direction:ltr">
+        <svg width="24" height="16" viewBox="0 0 24 16" fill="none"><path d="M20 8H4M10 3L4 8l6 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span style="font-size:9px;color:var(--color-text-tertiary);white-space:nowrap">push</span>
+      </div>
+      <div class="df-box" style="direction:ltr">
+        <div class="df-step-num">03–04</div>
+        <div class="df-icon">🤖</div>
+        <div class="df-label">Агент в IDE</div>
+        <div class="df-sub">Пишет код и пушит изменения</div>
+      </div>
+    </div>
+
+    <!-- Down arrow on Logitaka side -->
+    <div style="display:grid;grid-template-columns:1fr 160px 1fr;gap:0;">
+      <div class="df-arrow-v" style="justify-content:center">
+        <div style="display:flex;flex-direction:column;align-items:center;gap:1px">
+          <svg width="16" height="24" viewBox="0 0 16 24" fill="none"><path d="M8 4v16M3 14l5 6 5-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span style="font-size:9px;color:var(--color-text-tertiary)">отчёт готов</span>
+        </div>
+      </div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <!-- Row 3: Discussion -->
+    <div style="display:grid;grid-template-columns:1fr 160px 1fr;gap:0;">
+      <div class="df-box logitaka">
+        <div class="df-step-num">06</div>
+        <div class="df-icon">🔁</div>
+        <div class="df-label">Dev Chat</div>
+        <div class="df-sub">Обсуждаем отчёт, планируем следующий шаг</div>
+      </div>
+      <div></div>
+      <div></div>
+    </div>
+
+  </div>
+</div>

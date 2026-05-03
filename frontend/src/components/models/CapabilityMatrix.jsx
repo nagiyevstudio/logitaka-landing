@@ -1,9 +1,16 @@
 import { useTranslation } from 'react-i18next';
 
 const SCORES = {
-  qwen:[4,2,5,4,3,1], glm:[4,2,5,4,3,2], mistral:[4,3,5,4,4,1], kimi:[3,2,3,4,5,2],
-  deepseek:[4,2,4,5,5,2], grok:[4,3,4,4,4,3], gemini:[4,5,3,4,5,4], sonnet:[5,4,4,5,5,4],
-  opus:[5,5,3,5,5,5], gpt:[5,4,4,5,5,5]
+  qwen: [4, 4, 5, 4, 3, 1],
+  glm: [4, 3, 5, 4, 3, 2],
+  mistral: [4, 3, 5, 4, 4, 1],
+  kimi: [3, 2, 3, 4, 5, 2],
+  deepseek: [4, 3, 4, 5, 5, 2],
+  grok: [4, 3, 4, 4, 4, 3],
+  gemini: [4, 5, 3, 5, 5, 4],
+  sonnet: [5, 5, 4, 4, 5, 4],
+  opus: [5, 4, 2, 5, 5, 5],
+  gpt: [5, 2, 4, 5, 5, 5]
 };
 
 const CapabilityMatrix = () => {
@@ -21,7 +28,7 @@ const CapabilityMatrix = () => {
         </div>
         <h2 className="section-h">{t('models_page.matrix.title')}</h2>
         <p className="section-p">{t('models_page.matrix.description')}</p>
-        
+
         <div className="matrix-wrap reveal">
           <div className="matrix-scroll">
             <table>

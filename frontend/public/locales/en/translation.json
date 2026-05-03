@@ -559,6 +559,41 @@
           "text": " Project launched. Approved 5-page structure, handed over brief."
         }
       ]
+    },
+    "devFlow": {
+      "s1": {
+        "label": "Logitaka Dev Chat",
+        "sub": "Discuss task, formulate instruction"
+      },
+      "actionPush": "push",
+      "gitInst": {
+        "label": "Git Repo",
+        "sub": "instruction file"
+      },
+      "actionPull": "pull",
+      "s2": {
+        "label": "IDE / Code Editor",
+        "sub": "Agent receives ready instruction"
+      },
+      "actionExec": "executes",
+      "s34": {
+        "label": "Agent in IDE",
+        "sub": "Writes code and pushes changes"
+      },
+      "gitCode": {
+        "label": "Git Repo",
+        "sub": "code changes"
+      },
+      "actionRead": "reads diff",
+      "s5": {
+        "label": "Review & Report",
+        "sub": "Logitaka reads diff, creates report"
+      },
+      "actionReady": "report ready",
+      "s6": {
+        "label": "Dev Chat",
+        "sub": "Discuss report, plan next step"
+      }
     }
   },
   "models_page": {

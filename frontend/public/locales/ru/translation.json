@@ -559,6 +559,41 @@
           "text": " Запустили проект. Согласовали структуру из 5 страниц, передали бриф дизайнеру."
         }
       ]
+    },
+    "devFlow": {
+      "s1": {
+        "label": "Logitaka Dev Chat",
+        "sub": "Обсуждаем задачу, формируем инструкцию"
+      },
+      "actionPush": "push",
+      "gitInst": {
+        "label": "Git Repo",
+        "sub": "instruction file"
+      },
+      "actionPull": "pull",
+      "s2": {
+        "label": "IDE / Code Editor",
+        "sub": "Агент получает готовую инструкцию"
+      },
+      "actionExec": "выполняет",
+      "s34": {
+        "label": "Агент в IDE",
+        "sub": "Пишет код и пушит изменения"
+      },
+      "gitCode": {
+        "label": "Git Repo",
+        "sub": "code changes"
+      },
+      "actionRead": "читает diff",
+      "s5": {
+        "label": "Ревизия и отчёт",
+        "sub": "Logitaka читает дифф, составляет отчёт"
+      },
+      "actionReady": "отчёт готов",
+      "s6": {
+        "label": "Dev Chat",
+        "sub": "Обсуждаем отчёт, планируем следующий шаг"
+      }
     }
   },
   "models_page": {

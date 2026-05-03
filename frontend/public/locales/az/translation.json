@@ -559,6 +559,41 @@
           "text": " Layihəyə başlanıldı. 5 səhifəlik struktur təsdiqləndi, brif təhvil verildi."
         }
       ]
+    },
+    "devFlow": {
+      "s1": {
+        "label": "Logitaka Dev Chat",
+        "sub": "Tapşırığı müzakirə edir, təlimat yaradırıq"
+      },
+      "actionPush": "push",
+      "gitInst": {
+        "label": "Git Repo",
+        "sub": "instruction file"
+      },
+      "actionPull": "pull",
+      "s2": {
+        "label": "IDE / Code Editor",
+        "sub": "Agent hazır təlimatı qəbul edir"
+      },
+      "actionExec": "icra edir",
+      "s34": {
+        "label": "IDE-də Agent",
+        "sub": "Kodu yazır və dəyişiklikləri push edir"
+      },
+      "gitCode": {
+        "label": "Git Repo",
+        "sub": "code changes"
+      },
+      "actionRead": "diff oxuyur",
+      "s5": {
+        "label": "Yoxlama və Hesabat",
+        "sub": "Logitaka diff oxuyur, hesabat hazırlayır"
+      },
+      "actionReady": "hesabat hazırdır",
+      "s6": {
+        "label": "Dev Chat",
+        "sub": "Hesabatı müzakirə edirik, növbəti addımı planlaşdırırıq"
+      }
     }
   },
   "models_page": {

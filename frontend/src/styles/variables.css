@@ -1,0 +1,42 @@
+/* ─── CSS VARIABLES (shared) ───────────────────────────────── */
+:root {
+  --bg: #f0ede9;
+  --surface: rgba(249, 248, 246, 0.72);
+  --surface-strong: rgba(249, 248, 246, 0.96);
+  --surface-dim: rgba(235, 232, 228, 0.55);
+  --text: #1e2a30;
+  --muted: #6e808d;
+  --faint: #9aabb5;
+  --line: rgba(54, 69, 79, 0.08);
+  --line-strong: rgba(54, 69, 79, 0.16);
+  --accent: #ff4500;
+  --accent-strong: #ff5a1f;
+  --accent-dim: rgba(255, 69, 0, 0.12);
+  --accent-text: #fff;
+  --shadow-card: 0 1px 4px rgba(17, 19, 24, 0.04), 0 4px 20px -4px rgba(17, 19, 24, 0.08);
+  --shadow-soft: 0 2px 16px rgba(17, 19, 24, 0.06), 0 8px 40px -12px rgba(17, 19, 24, 0.1);
+  --shadow-accent: 0 0 32px rgba(255, 69, 0, 0.22), 0 4px 24px -4px rgba(255, 69, 0, 0.35);
+  --radius: 20px;
+  --glass: rgba(249, 248, 246, 0.68);
+  --glass-border: rgba(255, 255, 255, 0.55);
+  --max-width: 1240px;
+  --header-height: 68px;
+}
+
+[data-theme="dark"],
+body[data-theme="dark"] {
+  --bg: #0d1117;
+  --surface: rgba(22, 27, 34, 0.72);
+  --surface-strong: rgba(30, 37, 47, 0.96);
+  --surface-dim: rgba(14, 18, 24, 0.55);
+  --text: #e8edf2;
+  --muted: #8897a4;
+  --faint: #5a6a76;
+  --line: rgba(176, 188, 199, 0.1);
+  --line-strong: rgba(176, 188, 199, 0.18);
+  --shadow-card: 0 1px 4px rgba(0, 0, 0, 0.25), 0 4px 20px -4px rgba(0, 0, 0, 0.4);
+  --shadow-soft: 0 2px 16px rgba(0, 0, 0, 0.3), 0 8px 40px -12px rgba(0, 0, 0, 0.5);
+  --shadow-accent: 0 0 48px rgba(255, 69, 0, 0.3), 0 4px 28px -4px rgba(255, 69, 0, 0.45);
+  --glass: rgba(22, 27, 34, 0.68);
+  --glass-border: rgba(255, 255, 255, 0.07);
+}

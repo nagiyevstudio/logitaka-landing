@@ -1,0 +1,1502 @@
+{
+  "landing": {
+    "meta": {
+      "title": "Logitaka — AI System for Task and Context Management",
+      "description": "Just say what's happening. Logitaka will figure it out, organize, remind, and tell you what to do next."
+    },
+    "ui": {
+      "brandTagline": "AI‑Powered OS",
+      "nav": [
+        {
+          "href": "#how-it-works",
+          "label": "How it works"
+        },
+        {
+          "href": "#capabilities",
+          "label": "Capabilities"
+        },
+        {
+          "href": "#audience",
+          "label": "For whom"
+        },
+        {
+          "href": "#pricing",
+          "label": "Pricing"
+        },
+        {
+          "href": "#faq",
+          "label": "FAQ"
+        },
+        {
+          "href": "/models",
+          "label": "Models"
+        }
+      ],
+      "theme": {
+        "light": "Light theme",
+        "dark": "Dark theme"
+      },
+      "imagePlaceholders": {
+        "hero": "Optional: hero image about a person, system, and controlled chaos. Currently, the block acts as abstract visualization.",
+        "context": "assets/003.png",
+        "dev": "assets/004.png"
+      }
+    },
+    "hero": {
+      "kicker": "Logitaka",
+      "headline": "Logitaka. The system that manages your tasks.",
+      "subheadline": "Tell what's happening — by voice or text. Logitaka will build the structure, set priorities, remind you, and tell you what to do next.",
+      "ctaPrimary": "Register",
+      "ctaSecondary": "See how it works",
+      "stats": [
+        {
+          "value": "Frameworks",
+          "label": "of project management and quality control"
+        },
+        {
+          "value": "3",
+          "label": "interface languages"
+        },
+        {
+          "value": "24/7",
+          "label": "system works for you"
+        }
+      ],
+      "supporting": [
+        "A sharp, living, minimalist shell without unnecessary visual noise.",
+        "One system for daily flow, projects, decisions, and next steps.",
+        "Two themes, three languages, desktop and mobile as equal modes."
+      ],
+      "visualCards": [
+        {
+          "title": "Raw Input",
+          "body": "Voice, text, notes, chat fragments, incomplete thoughts."
+        },
+        {
+          "title": "Structured System",
+          "body": "Projects, tasks, decisions, plan, calendar, current real context."
+        },
+        {
+          "title": "Movement",
+          "body": "The system doesn't just store. It leads further and keeps order alive."
+        }
+      ]
+    },
+    "problem": {
+      "title": "Recognize yourself in at least one.",
+      "items": [
+        {
+          "title": "Too many tasks — only one head",
+          "body": "Work, personal, plans, promises. Everything is important, everything is urgent. It just doesn't fit."
+        },
+        {
+          "title": "You forget not because you are irresponsible",
+          "body": "There was just no one to remind you at the right moment. And no one to keep track."
+        },
+        {
+          "title": "You know what to do — but don't know where to start",
+          "body": "Plenty of tasks. But when you sit down — it's unclear what to grab right now."
+        },
+        {
+          "title": "You plan — but plans don't live",
+          "body": "You wrote a list, made a plan. Three days later it no longer reflects reality."
+        },
+        {
+          "title": "You feel you are stalling — but don't understand where",
+          "body": "Something goes wrong, but it's hard to articulate. And there's no one to ask."
+        }
+      ],
+      "closing": "This isn't a willpower problem. This is a problem of lacking a system that actually holds everything together."
+    },
+    "transformation": {
+      "title": "How it works.",
+      "body": [
+        "On first entry, Logitaka asks questions and listens. Based on what you tell — it automatically forms a structure: projects, tasks, decisions, plan, calendar.",
+        "The more you tell — the more accurately the system understands your situation.",
+        "At the core is not just AI. The methodology is built on algorithms for project management and quality control. The system works on proven principles — it doesn't adapt to chaos, but helps to get out of it."
+      ],
+      "coreLabel": "Core Statement",
+      "coreBody": "Under the hood is not just AI, but digitized management algorithms. The system doesn't adapt to chaos, but formats it into a rigid structure. Works for you 24/7.",
+      "listLabel": "What begins to appear",
+      "list": [
+        "The more you tell — the clearer the system understands your reality.",
+        "Important fragments stop living separately and fold into a solid picture.",
+        "Decisions, plans, and next steps stop getting lost in the chaos of conversation.",
+        "The structure doesn't freeze. It continues to live and update with you."
+      ]
+    },
+    "capabilities": {
+      "title": "What the system does.",
+      "items": [
+        {
+          "title": "Builds structure from what you say",
+          "body": "Projects, tasks, deadlines, decisions — are formed automatically based on your words. Nothing needs to be typed manually."
+        },
+        {
+          "title": "Conducts daily sessions",
+          "body": "Tell how the day went. The system will go through active projects, clarify statuses, shift deadlines, add reminders."
+        },
+        {
+          "title": "Manages the calendar",
+          "body": "Connects to your calendar. Reminders and tasks are added automatically — to you and your employees."
+        },
+        {
+          "title": "Holds decisions and agreements",
+          "body": "Everything discussed and decided is fixed separately. Doesn't get lost in messages."
+        },
+        {
+          "title": "Works by methodology, not by your mood",
+          "body": "The system has a clear structure. It guides — you follow. This is exactly what brings results."
+        }
+      ],
+      "closing": "You don't lead the system. You live. The system leads everything else."
+    },
+    "context": {
+      "label": "Live Context",
+      "title": "Context that doesn't disappear.",
+      "body": [
+        "A regular AI chat doesn't remember you between sessions. Logitaka works differently.",
+        "Every conversation is summarized and entered into the project context. Decisions are fixed separately. Plans are extracted automatically. You can return in a week — the system knows where you stopped.",
+        "Works with leading models — OpenAI, Google, Anthropic, and others. You can switch between models — the context is shared and up-to-date."
+      ],
+      "closing": "You think out loud. Logitaka turns it into a structure.",
+      "modelsLabel": "Uses:",
+      "models": [
+        "OpenAI",
+        "Google",
+        "Anthropic",
+        "Zhipu",
+        "Kimi"
+      ]
+    },
+    "modelTeaser": {
+      "title": "10+ Top AI Models. Pay Only for Real Complexity.",
+      "subtitle": "Why use a sledgehammer to crack a nut? Logitaka lets you use fast, cost-effective models for daily routines, saving heavyweights for truly complex challenges.",
+      "card1": {
+        "title": "Routine Tasks",
+        "desc": "Reports, planning, dailies",
+        "badge": "$ (Minimal cost)"
+      },
+      "card2": {
+        "title": "Complex Challenges",
+        "desc": "Architecture, deep analysis",
+        "badge": "$$$$$ (Extreme cost)"
+      },
+      "bullets": [
+        "Smart defaults: cost-effective AI for 90% of tasks",
+        "Seamless switching: change models in one click",
+        "Transparent spending: always know what you pay for"
+      ],
+      "cta": "Find the perfect AI setup for my role"
+    },
+    "audience": {
+      "title": "For anyone who has a lot of tasks.",
+      "items": [
+        {
+          "title": "Freelancer / designer / blogger",
+          "body": "Clients, deadlines, ideas, messages — the system keeps everything in one place."
+        },
+        {
+          "title": "Manager / entrepreneur",
+          "body": "Team, projects, decisions, control — without having to keep everything in your head."
+        },
+        {
+          "title": "Developer",
+          "body": "Project context, decision history, tasks — plus direct integration with code editor."
+        },
+        {
+          "title": "Anyone with a large volume of tasks",
+          "body": "It doesn't matter what you do. Zero entry barrier — just speak."
+        }
+      ],
+      "closing": "The entry barrier is zero. Anyone can handle it — just speak."
+    },
+    "devTeam": {
+      "label": "Dev Team",
+      "title": "Operational layer around development.",
+      "body": [
+        "Code is not the only place where context gets lost. Decisions disappear in chats. A week later, the team cannot restore why they did it exactly this way.",
+        "Logitaka fixes the history of decisions, the current state of the project, and next steps — in one place, always up-to-date.",
+        "For those working with AI assistants in code: discuss the task in Logitaka — with one action send ready instructions to the editor. Code is executed under your control, with verified instructions, without extra iterations."
+      ],
+      "visualLabel": "What enhances this mode",
+      "points": [
+        "Fewer switches between chat, code, and project memory.",
+        "Reasons for decisions don't disappear a day after discussion.",
+        "Next steps stay next to the real technical context.",
+        "AI coding remains under control, rather than turning into chaotic copying."
+      ],
+      "closing": "Fewer switches. More done."
+    },
+    "valueStack": {
+      "label": "Comparison",
+      "title": "What it would cost separately.",
+      "subtitle": "Accessing the same models directly would cost you several times more. Logitaka gives you everything — in one interface, for one subscription.",
+      "perMonth": "/ mo",
+      "services": [
+        {
+          "name": "ChatGPT Plus",
+          "provider": "OpenAI",
+          "priceUSD": "$20",
+          "priceAZN": "~40 AZN"
+        },
+        {
+          "name": "Claude Pro",
+          "provider": "Anthropic",
+          "priceUSD": "$20",
+          "priceAZN": "~40 AZN"
+        },
+        {
+          "name": "Gemini AI Pro",
+          "provider": "Google",
+          "priceUSD": "$19.99",
+          "priceAZN": "~40 AZN"
+        },
+        {
+          "name": "SuperGrok",
+          "provider": "xAI",
+          "priceUSD": "$30",
+          "priceAZN": "~60 AZN"
+        },
+        {
+          "name": "Kimi Pro",
+          "provider": "Moonshot AI",
+          "priceUSD": "$19",
+          "priceAZN": "~38 AZN"
+        },
+        {
+          "name": "Le Chat Pro",
+          "provider": "Mistral",
+          "priceUSD": "$14.99",
+          "priceAZN": "~30 AZN"
+        },
+        {
+          "name": "z.ai Pro",
+          "provider": "Zhipu AI",
+          "priceUSD": "~$16",
+          "priceAZN": "~32 AZN"
+        }
+      ],
+      "totalLabel": "Total separately",
+      "totalAZN": "~280 AZN",
+      "totalUSD": "~$140",
+      "vsLabel": "vs",
+      "logitakaLabel": "Logitaka — full access",
+      "logitakaPrice": "from 20 AZN",
+      "disclaimer": "* Rate: 1 USD ≈ 2 AZN including 18% VAT on electronic services. Prices current at time of publication."
+    },
+    "pricing": {
+      "title": "Pricing.",
+      "popularBadge": "Popular",
+      "cards": [
+        {
+          "label": "Starter",
+          "name": "Starter",
+          "price": "20 azn / month",
+          "body": "Full access to the system. Suitable for personal use and a small volume of tasks.",
+          "cta": "Register",
+          "href": "https://app.logitaka.com/app/login"
+        },
+        {
+          "label": "Pro",
+          "name": "Pro",
+          "price": "50 azn / month",
+          "body": "For those who use Logitaka daily as their main working tool.",
+          "cta": "Register",
+          "href": "https://app.logitaka.com/app/login"
+        },
+        {
+          "label": "Custom",
+          "name": "Custom",
+          "price": "For companies",
+          "body": "For organizations with data privacy requirements. Deployment on local infrastructure with a local language model. Contact us.",
+          "cta": "Contact",
+          "href": "mailto:admin@logitaka.com"
+        }
+      ],
+      "waitlist": "Beta testing is currently underway. Leave a request — you will be among the first to get access.",
+      "cta": "Register",
+      "betaNote": "Beta testing is currently underway. Leave a request — we'll give access as one of the first."
+    },
+    "faq": {
+      "title": "FAQ",
+      "items": [
+        {
+          "question": "What is Logitaka?",
+          "answer": "An AI-based task management system. You tell what's happening — it builds the structure, manages projects, reminds, and guides."
+        },
+        {
+          "question": "Is it just an AI chat?",
+          "answer": "No. A regular chat answers questions and forgets you. Logitaka maintains constant context and works as an operating system around your tasks."
+        },
+        {
+          "question": "Do I need to understand technology?",
+          "answer": "No. Just speak or write — the system does the rest."
+        },
+        {
+          "question": "Who is it for?",
+          "answer": "For anyone with many tasks and no system to keep them in order."
+        },
+        {
+          "question": "Do I need to be already organized?",
+          "answer": "No. The system accepts chaos and structures it itself."
+        },
+        {
+          "question": "Does it work for teams?",
+          "answer": "Yes. You can manage tasks and reminders for employees through the system."
+        },
+        {
+          "question": "What about data privacy?",
+          "answer": "For companies with high requirements — Custom plan with local deployment without external agents."
+        }
+      ]
+    },
+    "finalCta": {
+      "label": "Final CTA",
+      "title": "Logitaka. The system that manages your tasks.",
+      "body": "Beta testing is open. Leave a request — you'll get access and see how it works on your real tasks.",
+      "primary": "Join the waitlist",
+      "secondary": "See how it works",
+      "notice": "By joining the waitlist, you agree to the <a href=\"terms.html\">Terms of Use</a> and acknowledge the <a href=\"privacy.html\">Privacy Policy</a>."
+    },
+    "footer": {
+      "tagline": "The system keeps order — you just live.",
+      "copyright": "© 2026 Logitaka. All rights reserved.",
+      "nav": [
+        {
+          "href": "#how-it-works",
+          "label": "How it works"
+        },
+        {
+          "href": "#capabilities",
+          "label": "Capabilities"
+        },
+        {
+          "href": "#audience",
+          "label": "For whom"
+        },
+        {
+          "href": "#pricing",
+          "label": "Pricing"
+        },
+        {
+          "href": "#faq",
+          "label": "FAQ"
+        }
+      ],
+      "legal": [
+        {
+          "href": "/terms",
+          "label": "Terms of Use"
+        },
+        {
+          "href": "/privacy",
+          "label": "Privacy Policy"
+        },
+        {
+          "href": "mailto:support@logitaka.com",
+          "label": "Contact"
+        }
+      ]
+    }
+  },
+  "models_page": {
+    "meta": {
+      "title": "Models — Logitaka"
+    },
+    "labels": {
+      "strengths": "Strengths",
+      "insideLogitaka": "Inside Logitaka",
+      "excessiveWhen": "When is it excessive?",
+      "model": "Model",
+      "byTaskType": "By task type"
+    },
+    "ui": {
+      "brandTagline": "AI-Powered OS",
+      "themeToggle": "Toggle Theme"
+    },
+    "hero": {
+      "pill": "Logitaka Models",
+      "title": "Not all models are<br>equally <em>necessary.</em>",
+      "description1": "An expensive model doesn't mean it's the best for your tasks. It means it is optimized for specialized challenges that fall outside your daily workflow.",
+      "description2": "Logitaka is architected so that even budget-friendly models confidently handle complex tasks—because the system provides them with the precise context and clear instructions. Below are all the models operating within the system."
+    },
+    "intro": {
+      "eyebrow": "Introduction",
+      "title": "10 Models. Each in its place.",
+      "description": "You might not have encountered most of them. That does not mean they are inferior to the ones you know."
+    },
+    "price": {
+      "eyebrow": "Cost",
+      "title": "The price gap is massive.",
+      "description": "No raw numbers—only the ratio. This illustrates the impact on your balance every time a model is selected without strategic intent.",
+      "legend": {
+        "base": "Minimal Usage",
+        "eco": "Eco-friendly Usage",
+        "mid": "Moderate Usage",
+        "pro": "High Usage",
+        "heavy": "Extreme Usage"
+      }
+    },
+    "matrix": {
+      "eyebrow": "Capabilities",
+      "title": "Capabilities do not reflect price.",
+      "description": "An evaluation of how each model performs on tasks that actually arise within Logitaka. These are not abstract benchmarks, but specific functional scenarios.",
+      "cols": [
+        "Daily Tasks",
+        "EQ (Empathy)",
+        "Speed",
+        "Structure",
+        "Analytics",
+        "Balance Consumption"
+      ]
+    },
+    "scenarios": {
+      "eyebrow": "For your tasks",
+      "title": "Identifying the right model for you.",
+      "description": "Disregard marketing hype—choose based on functional requirements.",
+      "recommendLabel": "Recommended"
+    },
+    "advisor": {
+      "title": "Model Selection Advisor",
+      "subtitle": "Select your typical workflow, and we will demonstrate which models will cover 100% of your requirements without cost overruns.",
+      "footerNote": "All models are available immediately. Switch at any moment.",
+      "cta": "Get Access →",
+      "taskLabels": {
+        "daily": "Daily",
+        "important": "Important",
+        "hard": "Complex"
+      },
+      "contourLabels": {
+        "meeting": "Meeting",
+        "discussion": "Discussion",
+        "devchat": "DevChat"
+      }
+    },
+    "footer": {
+      "copyright": "© 2025 Logitaka. The system that manages your affairs."
+    },
+    "models": [
+      {
+        "id": "qwen",
+        "name": "Qwen 3.6 Plus",
+        "provider": "Alibaba",
+        "tier": "base",
+        "tierLabel": "Minimal Usage",
+        "cost": 1,
+        "multiplier": "x1",
+        "about": "Qwen is the flagship series from Alibaba, a global technology titan. While less recognized outside of China, independent benchmarks consistently place it alongside models that command significantly higher premiums.",
+        "strengths": [
+          "Daily Tasks",
+          "High Speed",
+          "Multilingualism",
+          "Structured Output"
+        ],
+        "logitaka": "An exceptional default for most users. It manages personal and professional projects without unnecessary expenditure. Offers one of the most compelling price-to-performance ratios in the catalog.",
+        "excessive": "The real question is: why not use this one?"
+      },
+      {
+        "id": "glm",
+        "name": "GLM-5.1",
+        "provider": "Zhipu AI (Tsinghua)",
+        "tier": "eco",
+        "tierLabel": "Eco-friendly Usage",
+        "cost": 2.1,
+        "multiplier": "x2.1",
+        "about": "GLM is developed by Zhipu AI, a laboratory emerging from Tsinghua University—one of China's top three academic institutions. It has long been a leading linguistic model and remains a dominant force in its price class.",
+        "strengths": [
+          "Speed",
+          "Business Correspondence",
+          "Strategic Planning",
+          "Daily Updates"
+        ],
+        "logitaka": "A dependable engine for daily operations. It excels at project management, decision logging, and executive summarization.",
+        "excessive": "Rarely. For the majority of Logitaka tasks, it represents an optimal technical choice."
+      },
+      {
+        "id": "mistral",
+        "name": "Mistral Large 3",
+        "provider": "Mistral AI",
+        "tier": "base",
+        "tierLabel": "Minimal Usage",
+        "cost": 1,
+        "multiplier": "x1",
+        "about": "Mistral AI is a premier European AI laboratory founded by Google DeepMind and Meta alumni. Their flagship model is engineered for precision, multilingual fluency, and enterprise-grade applications.",
+        "strengths": [
+          "Analytics",
+          "Business Writing",
+          "Precise Phrasing",
+          "Multilingualism"
+        ],
+        "logitaka": "A robust selection for projects involving deep analysis, formal correspondence, or multi-language documentation. Operates with high predictability.",
+        "excessive": "For elementary tasks like 'remind me' or 'update status'—its processing power is overkill."
+      },
+      {
+        "id": "kimi",
+        "name": "Kimi K2.6",
+        "provider": "Moonshot AI",
+        "tier": "eco",
+        "tierLabel": "Eco-friendly Usage",
+        "cost": 2.3,
+        "multiplier": "x2.3",
+        "about": "Kimi is the standout product of Moonshot AI, a high-growth startup. It is renowned for its industry-leading long context window, capable of ingesting volumes of text that other models simply cannot process.",
+        "strengths": [
+          "Long Context Window",
+          "Large Documents",
+          "Summarization",
+          "Massive Data Analysis"
+        ],
+        "logitaka": "Optimized for projects with extensive historical context—essential when decision trails are long and you need immediate orientation.",
+        "excessive": "For brief interactions or isolated queries, its primary architectural advantage remains untapped."
+      },
+      {
+        "id": "deepseek",
+        "name": "DeepSeek v4 Pro",
+        "provider": "DeepSeek",
+        "tier": "eco",
+        "tierLabel": "Eco-friendly Usage",
+        "cost": 2.2,
+        "multiplier": "x2.2",
+        "about": "DeepSeek is the Chinese laboratory that disrupted the AI market in 2024–2025 by delivering performance parity with Western leaders at a fraction of the cost. A definitive challenge to the 'premium price equals premium quality' narrative.",
+        "strengths": [
+          "Structured Output",
+          "Analytics",
+          "Logical Reasoning",
+          "Accuracy"
+        ],
+        "logitaka": "The preferred choice when clarity and rigid structure are paramount. Highly effective where precision of language is non-negotiable.",
+        "excessive": "For domestic checklists and rapid updates—equivalent to hiring an architect to reorganize your chairs."
+      },
+      {
+        "id": "grok",
+        "name": "Grok 4.3",
+        "provider": "xAI",
+        "tier": "mid",
+        "tierLabel": "Moderate Usage",
+        "cost": 4,
+        "multiplier": "x4",
+        "about": "Grok was developed by xAI, Elon Musk's venture. It is recognized for its direct, unfiltered communication style. Grok 4.3 is a sophisticated iteration with significantly enhanced reasoning capabilities.",
+        "strengths": [
+          "Versatility",
+          "Analytics",
+          "Direct Answers",
+          "Work Tasks"
+        ],
+        "logitaka": "A versatile high-performer. Maintains stability across the spectrum of project management requirements.",
+        "excessive": "Less frequently than top-tier models—the pricing is justifiable for the broad utility it provides."
+      },
+      {
+        "id": "gemini",
+        "name": "Gemini 3.1 Pro",
+        "provider": "Google DeepMind",
+        "tier": "mid",
+        "tierLabel": "Moderate Usage",
+        "cost": 6.2,
+        "multiplier": "x6.2",
+        "about": "Gemini is the pinnacle series from Google DeepMind. The Pro version strikes an equilibrium between high-level reasoning and accessibility, with a specific focus on cross-referencing massive datasets.",
+        "strengths": [
+          "Long Context Window",
+          "Documents and Spreadsheets",
+          "Information Synthesis",
+          "Research"
+        ],
+        "logitaka": "The strategic choice for document-heavy projects where extracting the essence or synthesizing structured summaries is the primary goal.",
+        "excessive": "For routine short-form tasks, the cost-to-utility ratio is not optimized."
+      },
+      {
+        "id": "sonnet",
+        "name": "Claude Sonnet 4.6",
+        "provider": "Anthropic",
+        "tier": "pro",
+        "tierLabel": "High Usage",
+        "cost": 8.3,
+        "multiplier": "x8.3",
+        "about": "Anthropic was established by former OpenAI leadership with a mandate for safety and reasoning integrity. Claude Sonnet is the workforce of the lineup: consistently superior across diverse tasks at a competitive price point.",
+        "strengths": [
+          "Text Quality",
+          "Instruction Following",
+          "Communication",
+          "Structured Output"
+        ],
+        "logitaka": "A premier selection for advanced system tasks. It demonstrates an nuanced understanding of complex Logitaka directives. Ideal when tone and text quality are critical.",
+        "excessive": "For simple status updates, more economical alternatives exist. However, when reliability is required, Sonnet is unfailing."
+      },
+      {
+        "id": "opus",
+        "name": "Claude Opus 4.7",
+        "provider": "Anthropic",
+        "tier": "heavy",
+        "tierLabel": "Extreme Usage",
+        "cost": 13.8,
+        "multiplier": "x13.8",
+        "about": "Opus is Anthropic’s most powerful model, consistently ranking in the global top 3 for analytical complexity. Engineered for environments where the cost of error is prohibitive and depth of analysis is mandatory.",
+        "strengths": [
+          "Deep Analysis",
+          "Complex Instructions",
+          "Strategic Decisions",
+          "Multi-level Reasoning"
+        ],
+        "logitaka": "Justified exclusively for high-stakes maneuvers: strategic overhauls or convoluted scenarios without obvious solutions. Such tasks typically occur only a few times annually.",
+        "excessive": "For daily project tracking—equivalent to requesting a surgeon to apply a bandage. 10–15 times more expensive for an identical result."
+      },
+      {
+        "id": "gpt",
+        "name": "GPT-5.5",
+        "provider": "OpenAI",
+        "tier": "heavy",
+        "tierLabel": "Extreme Usage",
+        "cost": 14.6,
+        "multiplier": "x14.6",
+        "about": "OpenAI catalyzed the mass AI era in 2022. GPT-5.5 represents one of the most potent computational tools available, excelling specifically in multi-step agentic tasks and technical orchestration.",
+        "strengths": [
+          "Agentic Tasks",
+          "Complex Scenarios",
+          "Technical Context",
+          "Multi-step Instructions"
+        ],
+        "logitaka": "Excessive for 95% of daily tasks. Its utility is realized when processing raw, unstructured data arrays (e.g., massive logs or technical transcriptions) that require flawless parsing.",
+        "excessive": "For the majority of standard Logitaka workflows. Unless you are orchestrating complex logic or parsing massive datasets, this is an unnecessary expense."
+      }
+    ],
+    "scenarioItems": [
+      {
+        "icon": "🏠",
+        "title": "Personal Projects and Life",
+        "desc": "Home renovations, financial planning, travel, health, and education. These are all high-value projects.",
+        "models": [
+          "Qwen 3.6 Plus",
+          "GLM-5.1"
+        ]
+      },
+      {
+        "icon": "💼",
+        "title": "Freelance and Private Practice",
+        "desc": "Client management, deadlines, formal correspondence, and agreements. Structured tasks with moderate context.",
+        "models": [
+          "Mistral Large 3",
+          "Claude Sonnet 4.6"
+        ]
+      },
+      {
+        "icon": "🏢",
+        "title": "Small Business and Teams",
+        "desc": "Collaborative projects, oversight, task delegation, and the formalization of team decisions.",
+        "models": [
+          "Claude Sonnet 4.6",
+          "DeepSeek v4 Pro",
+          "Grok 4.3"
+        ]
+      },
+      {
+        "icon": "🔬",
+        "title": "Research and Analytics",
+        "desc": "Deep analysis, comparative studies, managing massive datasets, and information synthesis.",
+        "models": [
+          "Kimi K2.6",
+          "DeepSeek v4 Pro",
+          "Gemini 3.1 Pro"
+        ]
+      },
+      {
+        "icon": "⚙️",
+        "title": "Technical Projects",
+        "desc": "Architectural planning, technical decision trails, and maintaining team alignment on specifications.",
+        "models": [
+          "Claude Sonnet 4.6",
+          "DeepSeek v4 Pro"
+        ]
+      },
+      {
+        "icon": "🎯",
+        "title": "Strategic Decisions",
+        "desc": "High-stakes tasks occurring quarterly—where the margin for error is zero.",
+        "models": [
+          "Claude Opus 4.7",
+          "GPT-5.5"
+        ]
+      }
+    ],
+    "advisorData": [
+      {
+        "categoryId": "management",
+        "categoryLabel": "Management and Business",
+        "roles": [
+          {
+            "roleId": "ceo",
+            "roleLabel": "CEO / Top Manager",
+            "rationale": "An executive requires absolute precision in strategy and velocity in routine operations. We eliminate expensive models for routine while reserving the most powerful for critical decision-making.",
+            "tasks": {
+              "daily": {
+                "model": "Mistral Large 3",
+                "cost": "$"
+              },
+              "important": {
+                "model": "Claude Sonnet 4.6",
+                "cost": "$$$$"
+              },
+              "hard": {
+                "model": "Claude Opus 4.7",
+                "cost": "$$$$$"
+              }
+            },
+            "contours": {
+              "meeting": {
+                "model": "GLM-5.1",
+                "cost": "$$",
+                "desc": "Rapid cross-departmental status synchronization."
+              },
+              "discussion": {
+                "model": "Claude Sonnet 4.6",
+                "cost": "$$$$",
+                "desc": "High-level strategic discourse with nuanced business context."
+              },
+              "devchat": null
+            }
+          },
+          {
+            "roleId": "pm",
+            "roleLabel": "Project / Product Manager",
+            "rationale": "For product leadership, structural integrity, task management, and communication empathy (Gemini) are paramount.",
+            "tasks": {
+              "daily": {
+                "model": "Qwen 3.6 Plus",
+                "cost": "$"
+              },
+              "important": {
+                "model": "DeepSeek v4 Pro",
+                "cost": "$$"
+              },
+              "hard": {
+                "model": "Gemini 3.1 Pro",
+                "cost": "$$$"
+              }
+            },
+            "contours": {
+              "meeting": {
+                "model": "Qwen 3.6 Plus",
+                "cost": "$",
+                "desc": "Optimized for quick stand-ups and task tracking."
+              },
+              "discussion": {
+                "model": "Grok 4.3",
+                "cost": "$$$",
+                "desc": "Data synthesis and unconventional problem solving."
+              },
+              "devchat": {
+                "model": "GPT-5.5",
+                "cost": "$$$$$",
+                "desc": "Precision delivery of requirements to engineering teams."
+              }
+            }
+          },
+          {
+            "roleId": "hr",
+            "roleLabel": "HR / Recruiter",
+            "rationale": "Human-centric work necessitates high empathy (Gemini), while processing hundreds of candidates requires a long context window (Kimi).",
+            "tasks": {
+              "daily": {
+                "model": "Qwen 3.6 Plus",
+                "cost": "$"
+              },
+              "important": {
+                "model": "Gemini 3.1 Pro",
+                "cost": "$$$"
+              },
+              "hard": {
+                "model": "Kimi K2.6",
+                "cost": "$$"
+              }
+            },
+            "contours": {
+              "meeting": {
+                "model": "GLM-5.1",
+                "cost": "$$",
+                "desc": "Hiring funnel synchronization."
+              },
+              "discussion": {
+                "model": "Kimi K2.6",
+                "cost": "$$",
+                "desc": "Analysis of massive resume databases and compliance documents."
+              },
+              "devchat": null
+            }
+          }
+        ]
+      },
+      {
+        "categoryId": "it_dev",
+        "categoryLabel": "IT and Development",
+        "roles": [
+          {
+            "roleId": "teamlead",
+            "roleLabel": "Team Lead / Architect",
+            "rationale": "Architects require high-tier models for database design, while routine can be delegated to base models. DevChat mandates technical precision.",
+            "tasks": {
+              "daily": {
+                "model": "DeepSeek v4 Pro",
+                "cost": "$$"
+              },
+              "important": {
+                "model": "Kimi K2.6",
+                "cost": "$$"
+              },
+              "hard": {
+                "model": "GPT-5.5",
+                "cost": "$$$$$"
+              }
+            },
+            "contours": {
+              "meeting": {
+                "model": "Mistral Large 3",
+                "cost": "$",
+                "desc": "Rapid assessment of commits and bug reports."
+              },
+              "discussion": {
+                "model": "Gemini 3.1 Pro",
+                "cost": "$$$",
+                "desc": "Collaborative architectural brainstorming sessions."
+              },
+              "devchat": {
+                "model": "Kimi K2.6",
+                "cost": "$$",
+                "desc": "Log parsing and Git diff analysis."
+              }
+            }
+          },
+          {
+            "roleId": "developer",
+            "roleLabel": "Developer (Front/Back)",
+            "rationale": "Primary coding occurs in the IDE; Logitaka focuses on structural models and task logging.",
+            "tasks": {
+              "daily": {
+                "model": "Qwen 3.6 Plus",
+                "cost": "$"
+              },
+              "important": {
+                "model": "DeepSeek v4 Pro",
+                "cost": "$$"
+              },
+              "hard": {
+                "model": "Claude Sonnet 4.6",
+                "cost": "$$$$"
+              }
+            },
+            "contours": {
+              "meeting": {
+                "model": "Qwen 3.6 Plus",
+                "cost": "$",
+                "desc": "Sprint reporting."
+              },
+              "discussion": {
+                "model": "DeepSeek v4 Pro",
+                "cost": "$$",
+                "desc": "API logic and structural validation."
+              },
+              "devchat": {
+                "model": "Kimi K2.6",
+                "cost": "$$",
+                "desc": "Reviewing technical documentation."
+              }
+            }
+          },
+          {
+            "roleId": "qa",
+            "roleLabel": "QA / Tester",
+            "rationale": "Systematic pedantry, test case management, and long-form log analysis (Kimi) are critical for quality assurance.",
+            "tasks": {
+              "daily": {
+                "model": "GLM-5.1",
+                "cost": "$$"
+              },
+              "important": {
+                "model": "DeepSeek v4 Pro",
+                "cost": "$$"
+              },
+              "hard": {
+                "model": "Kimi K2.6",
+                "cost": "$$"
+              }
+            },
+            "contours": {
+              "meeting": {
+                "model": "Qwen 3.6 Plus",
+                "cost": "$",
+                "desc": "Defect reporting and status."
+              },
+              "discussion": {
+                "model": "Kimi K2.6",
+                "cost": "$$",
+                "desc": "Ingesting and parsing massive log files."
+              },
+              "devchat": null
+            }
+          }
+        ]
+      },
+      {
+        "categoryId": "creative",
+        "categoryLabel": "Creative and Design",
+        "roles": [
+          {
+            "roleId": "designer",
+            "roleLabel": "UX/UI / Designer",
+            "rationale": "Qwen provides high interface awareness for routine work, while Gemini serves as an empathetic creative partner.",
+            "tasks": {
+              "daily": {
+                "model": "Qwen 3.6 Plus",
+                "cost": "$"
+              },
+              "important": {
+                "model": "Gemini 3.1 Pro",
+                "cost": "$$$"
+              },
+              "hard": {
+                "model": "Claude Sonnet 4.6",
+                "cost": "$$$$"
+              }
+            },
+            "contours": {
+              "meeting": {
+                "model": "Mistral Large 3",
+                "cost": "$",
+                "desc": "Mockup status updates."
+              },
+              "discussion": {
+                "model": "Gemini 3.1 Pro",
+                "cost": "$$$",
+                "desc": "Ideation, moodboard synthesis, and brainstorming."
+              },
+              "devchat": null
+            }
+          },
+          {
+            "roleId": "photographer",
+            "roleLabel": "Photographer / Videographer",
+            "rationale": "Schedule orchestration, reference sourcing, and management of lengthy rights-transfer agreements.",
+            "tasks": {
+              "daily": {
+                "model": "Qwen 3.6 Plus",
+                "cost": "$"
+              },
+              "important": {
+                "model": "Gemini 3.1 Pro",
+                "cost": "$$$"
+              },
+              "hard": {
+                "model": "Kimi K2.6",
+                "cost": "$$"
+              }
+            },
+            "contours": {
+              "meeting": {
+                "model": "Qwen 3.6 Plus",
+                "cost": "$",
+                "desc": "Schedule and client tracking."
+              },
+              "discussion": {
+                "model": "Kimi K2.6",
+                "cost": "$$",
+                "desc": "Analyzing complex client contracts."
+              },
+              "devchat": null
+            }
+          }
+        ]
+      },
+      {
+        "categoryId": "content",
+        "categoryLabel": "Media, Marketing, and Texts",
+        "roles": [
+          {
+            "roleId": "copywriter",
+            "roleLabel": "Copywriter / Journalist",
+            "rationale": "Gemini 3.1 Pro generates vibrant, human-centric prose and manages documentation with superior context.",
+            "tasks": {
+              "daily": {
+                "model": "Qwen 3.6 Plus",
+                "cost": "$"
+              },
+              "important": {
+                "model": "Gemini 3.1 Pro",
+                "cost": "$$$"
+              },
+              "hard": {
+                "model": "Gemini 3.1 Pro",
+                "cost": "$$$"
+              }
+            },
+            "contours": {
+              "meeting": {
+                "model": "Qwen 3.6 Plus",
+                "cost": "$",
+                "desc": "Content planning and deadline coordination."
+              },
+              "discussion": {
+                "model": "Gemini 3.1 Pro",
+                "cost": "$$$",
+                "desc": "Drafting vivid long-form copy and interviews."
+              },
+              "devchat": null
+            }
+          },
+          {
+            "roleId": "marketer",
+            "roleLabel": "Marketer / PR",
+            "rationale": "Demands high-level data analytics (structure) combined with audience sentiment awareness.",
+            "tasks": {
+              "daily": {
+                "model": "GLM-5.1",
+                "cost": "$$"
+              },
+              "important": {
+                "model": "DeepSeek v4 Pro",
+                "cost": "$$"
+              },
+              "hard": {
+                "model": "Claude Sonnet 4.6",
+                "cost": "$$$$"
+              }
+            },
+            "contours": {
+              "meeting": {
+                "model": "GLM-5.1",
+                "cost": "$$",
+                "desc": "Campaign metrics and performance summaries."
+              },
+              "discussion": {
+                "model": "Claude Sonnet 4.6",
+                "cost": "$$$$",
+                "desc": "Development of brand positioning and strategy."
+              },
+              "devchat": null
+            }
+          }
+        ]
+      },
+      {
+        "categoryId": "education",
+        "categoryLabel": "Education and Science",
+        "roles": [
+          {
+            "roleId": "student_hum",
+            "roleLabel": "Student (Humanities)",
+            "rationale": "Reviewing extensive PDF libraries and drafting essays. The primary requirement is long-form document processing.",
+            "tasks": {
+              "daily": {
+                "model": "Qwen 3.6 Plus",
+                "cost": "$"
+              },
+              "important": {
+                "model": "Gemini 3.1 Pro",
+                "cost": "$$$"
+              },
+              "hard": {
+                "model": "Kimi K2.6",
+                "cost": "$$"
+              }
+            },
+            "contours": {
+              "meeting": {
+                "model": "Qwen 3.6 Plus",
+                "cost": "$",
+                "desc": "Tracking schedules and assignments."
+              },
+              "discussion": {
+                "model": "Kimi K2.6",
+                "cost": "$$",
+                "desc": "Rapid citation retrieval from academic sources."
+              },
+              "devchat": null
+            }
+          },
+          {
+            "roleId": "student_tech",
+            "roleLabel": "Student (Tech)",
+            "rationale": "Focused on algorithmic optimization, mathematics, and code structural integrity.",
+            "tasks": {
+              "daily": {
+                "model": "Mistral Large 3",
+                "cost": "$"
+              },
+              "important": {
+                "model": "DeepSeek v4 Pro",
+                "cost": "$$"
+              },
+              "hard": {
+                "model": "Grok 4.3",
+                "cost": "$$$"
+              }
+            },
+            "contours": {
+              "meeting": {
+                "model": "Mistral Large 3",
+                "cost": "$",
+                "desc": "Lab work monitoring."
+              },
+              "discussion": {
+                "model": "DeepSeek v4 Pro",
+                "cost": "$$",
+                "desc": "Deconstruction of complex mathematical formulas."
+              },
+              "devchat": {
+                "model": "Grok 4.3",
+                "cost": "$$$",
+                "desc": "Support for engineering and study projects."
+              }
+            }
+          },
+          {
+            "roleId": "professor",
+            "roleLabel": "Professor / Scientist",
+            "rationale": "Analyzing thousands of pages of research, grant writing, and peer review.",
+            "tasks": {
+              "daily": {
+                "model": "GLM-5.1",
+                "cost": "$$"
+              },
+              "important": {
+                "model": "Kimi K2.6",
+                "cost": "$$"
+              },
+              "hard": {
+                "model": "Claude Sonnet 4.6",
+                "cost": "$$$$"
+              }
+            },
+            "contours": {
+              "meeting": {
+                "model": "GLM-5.1",
+                "cost": "$$",
+                "desc": "Lecture scheduling."
+              },
+              "discussion": {
+                "model": "Kimi K2.6",
+                "cost": "$$",
+                "desc": "Synthesizing data across dozens of PDF sources."
+              },
+              "devchat": null
+            }
+          }
+        ]
+      },
+      {
+        "categoryId": "finance_law",
+        "categoryLabel": "Finance and Law",
+        "roles": [
+          {
+            "roleId": "lawyer",
+            "roleLabel": "Lawyer",
+            "rationale": "In the legal field, errors are fatal. For complex challenges, GPT-5.5 is utilized for absolute technical precision.",
+            "tasks": {
+              "daily": {
+                "model": "GLM-5.1",
+                "cost": "$$"
+              },
+              "important": {
+                "model": "Kimi K2.6",
+                "cost": "$$"
+              },
+              "hard": {
+                "model": "GPT-5.5",
+                "cost": "$$$$$"
+              }
+            },
+            "contours": {
+              "meeting": {
+                "model": "GLM-5.1",
+                "cost": "$$",
+                "desc": "Court case status tracking."
+              },
+              "discussion": {
+                "model": "Kimi K2.6",
+                "cost": "$$",
+                "desc": "Reviewing contracts for potential vulnerabilities."
+              },
+              "devchat": null
+            }
+          },
+          {
+            "roleId": "accountant",
+            "roleLabel": "Accountant / Financier",
+            "rationale": "Rigid structural requirements, mathematical rigor, and absolute precision for complex fiscal tasks.",
+            "tasks": {
+              "daily": {
+                "model": "Mistral Large 3",
+                "cost": "$"
+              },
+              "important": {
+                "model": "DeepSeek v4 Pro",
+                "cost": "$$"
+              },
+              "hard": {
+                "model": "GPT-5.5",
+                "cost": "$$$$$"
+              }
+            },
+            "contours": {
+              "meeting": {
+                "model": "Mistral Large 3",
+                "cost": "$",
+                "desc": "Tax summaries and compliance dates."
+              },
+              "discussion": {
+                "model": "DeepSeek v4 Pro",
+                "cost": "$$",
+                "desc": "Detailed analysis of financial tables and budgets."
+              },
+              "devchat": null
+            }
+          }
+        ]
+      },
+      {
+        "categoryId": "production",
+        "categoryLabel": "Production and Architecture",
+        "roles": [
+          {
+            "roleId": "architect",
+            "roleLabel": "Architect / Engineer",
+            "rationale": "Complex calculations, industry standards and regulatory codes, and multi-level project planning.",
+            "tasks": {
+              "daily": {
+                "model": "Qwen 3.6 Plus",
+                "cost": "$"
+              },
+              "important": {
+                "model": "DeepSeek v4 Pro",
+                "cost": "$$"
+              },
+              "hard": {
+                "model": "Gemini 3.1 Pro",
+                "cost": "$$$"
+              }
+            },
+            "contours": {
+              "meeting": {
+                "model": "Qwen 3.6 Plus",
+                "cost": "$",
+                "desc": "Contractor synchronization."
+              },
+              "discussion": {
+                "model": "Kimi K2.6",
+                "cost": "$$",
+                "desc": "Cross-referencing technical documentation and regulatory norms."
+              },
+              "devchat": null
+            }
+          },
+          {
+            "roleId": "logistics",
+            "roleLabel": "Logistics / Procurement",
+            "rationale": "Supply chain orchestration, deadline oversight, and large-scale spreadsheet management.",
+            "tasks": {
+              "daily": {
+                "model": "Mistral Large 3",
+                "cost": "$"
+              },
+              "important": {
+                "model": "DeepSeek v4 Pro",
+                "cost": "$$"
+              },
+              "hard": {
+                "model": "Grok 4.3",
+                "cost": "$$$"
+              }
+            },
+            "contours": {
+              "meeting": {
+                "model": "Mistral Large 3",
+                "cost": "$",
+                "desc": "Cargo and transit tracking."
+              },
+              "discussion": {
+                "model": "DeepSeek v4 Pro",
+                "cost": "$$",
+                "desc": "Route optimization and price list analysis."
+              },
+              "devchat": null
+            }
+          }
+        ]
+      },
+      {
+        "categoryId": "health",
+        "categoryLabel": "Medicine and Health",
+        "roles": [
+          {
+            "roleId": "doctor",
+            "roleLabel": "Doctor / Clinic Admin",
+            "rationale": "Patient interactions are managed by the empathetic Sonnet, while treatment protocols necessitate the uncompromising precision of GPT-5.5.",
+            "tasks": {
+              "daily": {
+                "model": "Qwen 3.6 Plus",
+                "cost": "$"
+              },
+              "important": {
+                "model": "Gemini 3.1 Pro",
+                "cost": "$$$"
+              },
+              "hard": {
+                "model": "GPT-5.5",
+                "cost": "$$$$$"
+              }
+            },
+            "contours": {
+              "meeting": {
+                "model": "Claude Sonnet 4.6",
+                "cost": "$$$$",
+                "desc": "Monitoring patient records with high emotional intelligence."
+              },
+              "discussion": {
+                "model": "Kimi K2.6",
+                "cost": "$$",
+                "desc": "Consulting extensive medical directories and research."
+              },
+              "devchat": null
+            }
+          },
+          {
+            "roleId": "psychologist",
+            "roleLabel": "Psychologist / Coach",
+            "rationale": "Exclusive focus on high empathy and the detection of subtle nuances in human communication (Sonnet/Opus).",
+            "tasks": {
+              "daily": {
+                "model": "GLM-5.1",
+                "cost": "$$"
+              },
+              "important": {
+                "model": "Claude Sonnet 4.6",
+                "cost": "$$$$"
+              },
+              "hard": {
+                "model": "Claude Opus 4.7",
+                "cost": "$$$$$"
+              }
+            },
+            "contours": {
+              "meeting": {
+                "model": "GLM-5.1",
+                "cost": "$$",
+                "desc": "Session scheduling."
+              },
+              "discussion": {
+                "model": "Claude Sonnet 4.6",
+                "cost": "$$$$",
+                "desc": "Analyzing session transcriptions with maximum EQ."
+              },
+              "devchat": null
+            }
+          }
+        ]
+      },
+      {
+        "categoryId": "ngo",
+        "categoryLabel": "NGO and Communities",
+        "roles": [
+          {
+            "roleId": "ngo_head",
+            "roleLabel": "NGO Head / Lead",
+            "rationale": "Coordinating volunteers, managing grants, and overseeing charters. A balance of administrative structure and empathy.",
+            "tasks": {
+              "daily": {
+                "model": "Qwen 3.6 Plus",
+                "cost": "$"
+              },
+              "important": {
+                "model": "Mistral Large 3",
+                "cost": "$"
+              },
+              "hard": {
+                "model": "Kimi K2.6",
+                "cost": "$$"
+              }
+            },
+            "contours": {
+              "meeting": {
+                "model": "Qwen 3.6 Plus",
+                "cost": "$",
+                "desc": "Volunteer coordination and updates."
+              },
+              "discussion": {
+                "model": "Kimi K2.6",
+                "cost": "$$",
+                "desc": "Drafting extensive, multi-page grant applications."
+              },
+              "devchat": null
+            }
+          }
+        ]
+      },
+      {
+        "categoryId": "personal",
+        "categoryLabel": "Personal Affairs and Life",
+        "roles": [
+          {
+            "roleId": "freelancer",
+            "roleLabel": "Freelancer (Solo)",
+            "rationale": "Independent management. Focused on reducing cognitive load, lifestyle planning, and cost efficiency.",
+            "tasks": {
+              "daily": {
+                "model": "Qwen 3.6 Plus",
+                "cost": "$"
+              },
+              "important": {
+                "model": "DeepSeek v4 Pro",
+                "cost": "$$"
+              },
+              "hard": {
+                "model": "Gemini 3.1 Pro",
+                "cost": "$$$"
+              }
+            },
+            "contours": {
+              "meeting": {
+                "model": "Qwen 3.6 Plus",
+                "cost": "$",
+                "desc": "Daily self-sync: prioritizing the day's objectives."
+              },
+              "discussion": {
+                "model": "Gemini 3.1 Pro",
+                "cost": "$$$",
+                "desc": "Brainstorming and ideation with an empathetic agent."
+              },
+              "devchat": null
+            }
+          },
+          {
+            "roleId": "family",
+            "roleLabel": "Family / Hobbies / Home",
+            "rationale": "Optimized for value. Premium models are strictly excessive; base models efficiently handle all home-centric tasks.",
+            "tasks": {
+              "daily": {
+                "model": "Qwen 3.6 Plus",
+                "cost": "$"
+              },
+              "important": {
+                "model": "Mistral Large 3",
+                "cost": "$"
+              },
+              "hard": {
+                "model": "GLM-5.1",
+                "cost": "$$"
+              }
+            },
+            "contours": {
+              "meeting": {
+                "model": "Qwen 3.6 Plus",
+                "cost": "$",
+                "desc": "Household chores and procurement lists."
+              },
+              "discussion": {
+                "model": "GLM-5.1",
+                "cost": "$$",
+                "desc": "Planning travel itineraries or home improvement stages."
+              },
+              "devchat": null
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

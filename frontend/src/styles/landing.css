@@ -57,6 +57,8 @@ section+section .section-inner::before {
   display: grid;
   gap: 28px;
   padding-bottom: 64px;
+  text-align: left;
+  justify-items: start;
 }
 
 .hero-eyebrow {
@@ -135,6 +137,8 @@ section+section .section-inner::before {
   padding: 20px 24px;
   display: grid;
   gap: 4px;
+  text-align: left;
+  justify-items: start;
 }
 
 .stat-item+.stat-item {
@@ -190,6 +194,8 @@ section+section .section-inner::before {
   display: grid;
   gap: 12px;
   transition: background 200ms ease;
+  text-align: left;
+  justify-items: start;
 }
 
 [data-theme='dark'] .visual-flow-card {

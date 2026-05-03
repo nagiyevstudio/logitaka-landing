@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://logitaka.com/sitemap.xml

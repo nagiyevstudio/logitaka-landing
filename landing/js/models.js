@@ -8,9 +8,7 @@
 
   async function loadLocale(lang) {
     try {
-      const isLocalized = ['ru', 'en', 'az'].some(l => window.location.pathname.includes(`/${l}/`));
-      const prefix = isLocalized ? '../' : './';
-      const response = await fetch(`${prefix}locales/models_${lang}.json`);
+      const response = await fetch(`./locales/models_${lang}.json`);
       if (!response.ok) throw new Error(`Locale ${lang} not found`);
       state.messages = await response.json();
       state.locale = lang;
@@ -22,7 +20,7 @@
     }
   }
 
-  function setLanguage(lang) { switchLanguage(lang); }
+  function setLanguage(lang) { loadLocale(lang); }
   window.setLanguage = setLanguage;
 
   function renderAll() {

@@ -1,60 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <!-- AZ -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://logitaka.com/az/</loc>
-    <xhtml:link rel="alternate" hreflang="az" href="https://logitaka.com/az/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://logitaka.com/en/" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://logitaka.com/ru/" />
+    <loc>https://logitaka.com/</loc>
     <lastmod>2026-05-03</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://logitaka.com/az/models.html</loc>
-    <xhtml:link rel="alternate" hreflang="az" href="https://logitaka.com/az/models.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://logitaka.com/en/models.html" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://logitaka.com/ru/models.html" />
+    <loc>https://logitaka.com/models.html</loc>
     <lastmod>2026-05-03</lastmod>
     <priority>0.8</priority>
   </url>
-
-  <!-- EN -->
   <url>
-    <loc>https://logitaka.com/en/</loc>
-    <xhtml:link rel="alternate" hreflang="az" href="https://logitaka.com/az/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://logitaka.com/en/" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://logitaka.com/ru/" />
+    <loc>https://logitaka.com/privacy.html</loc>
     <lastmod>2026-05-03</lastmod>
-    <priority>1.0</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://logitaka.com/en/models.html</loc>
-    <xhtml:link rel="alternate" hreflang="az" href="https://logitaka.com/az/models.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://logitaka.com/en/models.html" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://logitaka.com/ru/models.html" />
+    <loc>https://logitaka.com/terms.html</loc>
     <lastmod>2026-05-03</lastmod>
-    <priority>0.8</priority>
+    <priority>0.5</priority>
   </url>
-
-  <!-- RU -->
-  <url>
-    <loc>https://logitaka.com/ru/</loc>
-    <xhtml:link rel="alternate" hreflang="az" href="https://logitaka.com/az/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://logitaka.com/en/" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://logitaka.com/ru/" />
-    <lastmod>2026-05-03</lastmod>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://logitaka.com/ru/models.html</loc>
-    <xhtml:link rel="alternate" hreflang="az" href="https://logitaka.com/az/models.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://logitaka.com/en/models.html" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://logitaka.com/ru/models.html" />
-    <lastmod>2026-05-03</lastmod>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Legal pages -->
-  <url><loc>https://logitaka.com/privacy.html</loc><priority>0.3</priority></url>
-  <url><loc>https://logitaka.com/terms.html</loc><priority>0.3</priority></url>
 </urlset>

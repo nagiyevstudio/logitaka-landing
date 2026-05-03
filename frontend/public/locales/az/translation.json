@@ -927,8 +927,8 @@
                 "cost": "$"
               },
               "important": {
-                "model": "Claude Sonnet 4.6",
-                "cost": "$$$$"
+                "model": "Grok 4.3",
+                "cost": "$$$"
               },
               "hard": {
                 "model": "Claude Opus 4.7",
@@ -942,8 +942,8 @@
                 "desc": "Şöbələr üzrə statusların sürətli toplanması."
               },
               "discussion": {
-                "model": "Claude Sonnet 4.6",
-                "cost": "$$$$",
+                "model": "Grok 4.3",
+                "cost": "$$$",
                 "desc": "Biznes kontekstini dərindən anlayaraq şirkət strategiyası üzrə geniş müzakirə."
               },
               "devchat": null
@@ -963,7 +963,7 @@
                 "cost": "$$"
               },
               "hard": {
-                "model": "Gemini 3.1 Pro",
+                "model": "Grok 4.3",
                 "cost": "$$$"
               }
             },
@@ -1033,8 +1033,8 @@
                 "cost": "$$"
               },
               "important": {
-                "model": "Kimi K2.6",
-                "cost": "$$"
+                "model": "Grok 4.3",
+                "cost": "$$$"
               },
               "hard": {
                 "model": "GPT-5.5",
@@ -1053,7 +1053,7 @@
                 "desc": "Komanda ilə arxitektura breynştormları."
               },
               "devchat": {
-                "model": "Kimi K2.6",
+                "model": "DeepSeek v4 Pro",
                 "cost": "$$",
                 "desc": "Loqların analizi və Git-diff sənədlərinin araşdırılması."
               }
@@ -1073,8 +1073,8 @@
                 "cost": "$$"
               },
               "hard": {
-                "model": "Claude Sonnet 4.6",
-                "cost": "$$$$"
+                "model": "Grok 4.3",
+                "cost": "$$$"
               }
             },
             "contours": {
@@ -1179,8 +1179,8 @@
                 "cost": "$$$"
               },
               "hard": {
-                "model": "Kimi K2.6",
-                "cost": "$$"
+                "model": "Grok 4.3",
+                "cost": "$$$"
               }
             },
             "contours": {
@@ -1217,7 +1217,7 @@
                 "cost": "$$$"
               },
               "hard": {
-                "model": "Gemini 3.1 Pro",
+                "model": "Grok 4.3",
                 "cost": "$$$"
               }
             },
@@ -1249,8 +1249,8 @@
                 "cost": "$$"
               },
               "hard": {
-                "model": "Claude Sonnet 4.6",
-                "cost": "$$$$"
+                "model": "Grok 4.3",
+                "cost": "$$$"
               }
             },
             "contours": {
@@ -1260,8 +1260,8 @@
                 "desc": "Metrikalar və kampaniyalar üzrə xülasə."
               },
               "discussion": {
-                "model": "Claude Sonnet 4.6",
-                "cost": "$$$$",
+                "model": "Grok 4.3",
+                "cost": "$$$",
                 "desc": "Brendin mövqeləndirilməsinin hazırlanması."
               },
               "devchat": null
@@ -1355,8 +1355,8 @@
                 "cost": "$$"
               },
               "hard": {
-                "model": "Claude Sonnet 4.6",
-                "cost": "$$$$"
+                "model": "Gemini 3.1 Pro",
+                "cost": "$$$"
               }
             },
             "contours": {
@@ -1463,8 +1463,8 @@
                 "cost": "$$"
               },
               "hard": {
-                "model": "Gemini 3.1 Pro",
-                "cost": "$$$"
+                "model": "Kimi K2.6",
+                "cost": "$$"
               }
             },
             "contours": {
@@ -1539,8 +1539,8 @@
             },
             "contours": {
               "meeting": {
-                "model": "Claude Sonnet 4.6",
-                "cost": "$$$$",
+                "model": "Gemini 3.1 Pro",
+                "cost": "$$$",
                 "desc": "Pasiyentlərə empatiya ilə qeydiyyatın idarə olunması."
               },
               "discussion": {
@@ -1561,12 +1561,12 @@
                 "cost": "$$"
               },
               "important": {
-                "model": "Claude Sonnet 4.6",
-                "cost": "$$$$"
+                "model": "Gemini 3.1 Pro",
+                "cost": "$$$"
               },
               "hard": {
-                "model": "Claude Opus 4.7",
-                "cost": "$$$$$"
+                "model": "Grok 4.3",
+                "cost": "$$$"
               }
             },
             "contours": {
@@ -1576,8 +1576,8 @@
                 "desc": "Seansların cədvəli."
               },
               "discussion": {
-                "model": "Claude Sonnet 4.6",
-                "cost": "$$$$",
+                "model": "Gemini 3.1 Pro",
+                "cost": "$$$",
                 "desc": "Seans transkripsiyalarının maksimum EQ ilə analizi."
               },
               "devchat": null
@@ -1641,7 +1641,7 @@
                 "cost": "$$"
               },
               "hard": {
-                "model": "Gemini 3.1 Pro",
+                "model": "Grok 4.3",
                 "cost": "$$$"
               }
             },
@@ -1652,7 +1652,7 @@
                 "desc": "Özü ilə gündəlik: bu gün nə etməli."
               },
               "discussion": {
-                "model": "Gemini 3.1 Pro",
+                "model": "Grok 4.3",
                 "cost": "$$$",
                 "desc": "Empatik agentlə yeni ideyaların beyin həmləsi."
               },

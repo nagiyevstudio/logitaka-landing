@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="../assets/logo-logitaka-bb.svg" />
+  <title id="meta-title">Модели — Logitaka</title>
+  <meta name="description" content="Узнайте о моделях ИИ, которые работают внутри Logitaka. Мы выбираем лучшие решения для ваших задач." />
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://logitaka.com/models.html" />
+  <meta property="og:title" content="Модели — Logitaka" />
+  <meta property="og:description" content="Узнайте о моделях ИИ, которые работают внутри Logitaka. Мы выбираем лучшие решения для ваших задач." />
+  <meta property="og:image" content="https://logitaka.com/assets/logo-logitaka-bb.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/models.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="alternate" hreflang="az" href="https://logitaka.com/az/models.html" />
+  <link rel="alternate" hreflang="en" href="https://logitaka.com/en/models.html" />
+  <link rel="alternate" hreflang="ru" href="https://logitaka.com/ru/models.html" />
+  <link rel="alternate" hreflang="x-default" href="https://logitaka.com/models.html" />
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="https://logitaka.com" class="brand" aria-label="Logitaka">
+        <img class="brand-logo brand-logo-dark" src="../assets/logo-logitaka-bb.svg" alt="Logitaka">
+        <img class="brand-logo brand-logo-light" src="../assets/logo-logitaka-wb.svg" alt="Logitaka">
+        <div class="brand-name-group">
+          <span class="brand-name">Logitaka</span>
+          <span class="brand-tagline" id="ui-brandTagline">AI-Powered OS</span>
+        </div>
+      </a>
+      <div class="header-controls">
+        <button class="ctrl-btn" id="themeToggle" title="Сменить тему">
+          <svg id="themeIcon" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="5"/>
+            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap">
+        <div class="hero-pill"><span class="pill-dot"></span><span id="hero-pill">Модели Logitaka</span></div>
+        <h1 class="hero-h" id="hero-title">Не все модели<br>одинаково <em>нужны.</em></h1>
+        <p class="hero-p" id="hero-description1">Дорогая модель — не значит лучшая для твоих задач. Означает лучшая для задач, с которыми ты скорее всего не сталкиваешься каждый день.</p>
+        <p class="hero-p" id="hero-description2">Logitaka устроена так, что даже недорогие модели уверенно справляются со сложными задачами — потому что система даёт им правильный контекст и чёткие инструкции. Ниже — все модели, которые работают внутри системы.</p>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- MODEL CARDS -->
+    <section id="models">
+      <div class="wrap">
+        <div class="eyebrow"><span class="kicker" id="intro-eyebrow">Знакомство</span><span class="kicker-rule"></span></div>
+        <h2 class="section-h" id="intro-title">10 моделей. Каждая — на своём месте.</h2>
+        <p class="section-p" id="intro-description">Большинство из них ты мог не слышать. Это не значит, что они хуже тех, о которых слышал.</p>
+        <div class="models-grid" id="modelsGrid"></div>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- PRICE CHART -->
+    <section id="price">
+      <div class="wrap">
+        <div class="eyebrow"><span class="kicker" id="price-eyebrow">Стоимость</span><span class="kicker-rule"></span></div>
+        <h2 class="section-h" id="price-title">Разрыв в цене — огромный.</h2>
+        <p class="section-p" id="price-description">Без цифр — только соотношение. Это то, что происходит с балансом каждый раз, когда ты выбираешь модель не думая.</p>
+        <div class="chart-wrap reveal">
+          <div class="price-rows" id="priceRows"></div>
+          <div class="chart-legend" id="chartLegend"></div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- CAPABILITY MATRIX -->
+    <section id="capabilities">
+      <div class="wrap">
+        <div class="eyebrow"><span class="kicker" id="matrix-eyebrow">Возможности</span><span class="kicker-rule"></span></div>
+        <h2 class="section-h" id="matrix-title">Возможности не отражают цену.</h2>
+        <p class="section-p" id="matrix-description">Как каждая модель справляется с задачами, которые реально возникают внутри Logitaka. Не абстрактный рейтинг — конкретные сценарии работы.</p>
+        <div class="matrix-wrap reveal">
+          <div class="matrix-scroll">
+            <table id="capTable"></table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- SCENARIOS -->
+    <section id="scenarios">
+      <div class="wrap">
+        <div class="eyebrow"><span class="kicker" id="scenarios-eyebrow">Для ваших задач</span><span class="kicker-rule"></span></div>
+        <h2 class="section-h" id="scenarios-title">Какая модель подходит именно тебе.</h2>
+        <p class="section-p" id="scenarios-description">Выбирай не по рекламе — выбирай по задачам.</p>
+        <div class="scenarios-grid" id="scenariosGrid"></div>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- ADVISOR WIDGET -->
+    <section id="advisor">
+      <div class="wrap">
+        <div class="advisor-container reveal">
+          <div class="advisor-header">
+            <h2 class="advisor-title" id="advisor-title">Подбор моделей под ваши задачи</h2>
+            <p class="advisor-subtitle" id="advisor-subtitle">Выбери, чем ты обычно занимаешься, и мы покажем, какие модели закроют 100% твоих задач без переплат.</p>
+          </div>
+          
+          <div class="advisor-tabs" id="advisorTabs"></div>
+          <div class="advisor-roles" id="advisorRoles"></div>
+          
+          <div id="advisorResult" class="advisor-results"></div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="page-footer">
+    <div class="wrap">
+      <div class="footer-inner">
+        <div class="footer-left">
+          <a href="https://logitaka.com" class="brand">
+            <img class="brand-logo brand-logo-dark" src="../assets/logo-logitaka-bb.svg" alt="Logitaka">
+            <img class="brand-logo brand-logo-light" src="../assets/logo-logitaka-wb.svg" alt="Logitaka">
+            <div class="brand-name-group">
+              <span class="brand-name">Logitaka</span>
+              <span class="brand-tagline" id="ui-brandTagline2">AI-Powered OS</span>
+            </div>
+          </a>
+          <p class="footer-copyright" id="footer-copyright">© 2025 Logitaka. Система которая ведёт твои дела.</p>
+        </div>
+        <div class="footer-right">
+          <div id="language-switcher">
+            <button class="tab-btn" onclick="setLanguage('ru')">RU</button>
+            <button class="tab-btn" onclick="setLanguage('en')">EN</button>
+            <button class="tab-btn" onclick="setLanguage('az')">AZ</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+  <script src="../js/i18n.js"></script>
+  <script src="../js/theme.js"></script>
+  <script src="../js/models.js"></script>
+
+</body>
+</html>

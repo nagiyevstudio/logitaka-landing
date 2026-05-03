@@ -155,7 +155,7 @@
 
   function renderLanguageSwitcher(active) {
     dom.languageSwitcher.innerHTML = SUPPORTED_LOCALES.map(l => `<button class="control-button ${l===active?'is-active':''}" type="button" data-locale="${l}">${l.toUpperCase()}</button>`).join('');
-    dom.languageSwitcher.querySelectorAll('[data-locale]').forEach(b => b.addEventListener('click', () => loadLocale(b.getAttribute('data-locale'))));
+    dom.languageSwitcher.querySelectorAll('[data-locale]').forEach(b => b.addEventListener('click', () => switchLanguage(b.getAttribute('data-locale'))));
   }
 
   function render(messages) {
@@ -224,7 +224,9 @@
 
   async function loadLocale(locale) {
     const target = SUPPORTED_LOCALES.includes(locale) ? locale : 'az';
-    const res = await fetch(`./locales/${target}.json`, { cache: 'no-store' });
+    const isLocalized = SUPPORTED_LOCALES.some(l => window.location.pathname.includes(`/${l}/`));
+    const prefix = isLocalized ? '../' : './';
+    const res = await fetch(`${prefix}locales/${target}.json`, { cache: 'no-store' });
     if (!res.ok) throw new Error(`Failed to load locale: ${target}`);
     const messages = await res.json();
     state.locale = target;

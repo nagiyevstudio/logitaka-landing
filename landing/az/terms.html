@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Use — Logitaka</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/logo-logitaka-bb.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #f0ede9;
+      --surface: rgba(249, 248, 246, 0.72);
+      --surface-strong: rgba(249, 248, 246, 0.96);
+      --surface-dim: rgba(235, 232, 228, 0.55);
+      --text: #1e2a30;
+      --muted: #6e808d;
+      --faint: #9aabb5;
+      --line: rgba(54, 69, 79, 0.08);
+      --line-strong: rgba(54, 69, 79, 0.16);
+      --accent: #ff4500;
+      --accent-strong: #ff5a1f;
+      --accent-dim: rgba(255, 69, 0, 0.12);
+      --accent-text: #fff;
+      --shadow-soft: 0 2px 16px rgba(17, 19, 24, 0.06), 0 8px 40px -12px rgba(17, 19, 24, 0.1);
+      --shadow-card: 0 1px 4px rgba(17, 19, 24, 0.04), 0 4px 20px -4px rgba(17, 19, 24, 0.08);
+      --max-width: 1240px;
+      --header-height: 68px;
+    }
+    body[data-theme='dark'] {
+      --bg: #0d1117;
+      --surface: rgba(22, 27, 34, 0.72);
+      --surface-strong: rgba(30, 37, 47, 0.96);
+      --surface-dim: rgba(14, 18, 24, 0.55);
+      --text: #e8edf2;
+      --muted: #8897a4;
+      --faint: #5a6a76;
+      --line: rgba(176, 188, 199, 0.1);
+      --line-strong: rgba(176, 188, 199, 0.18);
+    }
+    body {
+      margin: 0;
+      font-family: 'Space Grotesk', sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+      transition: background 200ms ease, color 200ms ease;
+    }
+    body::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      background: linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px);
+      background-size: 40px 40px;
+      mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, transparent 40%);
+    }
+    .site-shell { position: relative; z-index: 1; }
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      height: var(--header-height);
+      backdrop-filter: blur(24px) saturate(160%);
+      background: color-mix(in srgb, var(--bg) 75%, transparent);
+      border-bottom: 1px solid var(--line);
+    }
+    .header-inner, .footer-inner, .content-inner {
+      width: min(calc(100% - 48px), var(--max-width));
+      margin: 0 auto;
+    }
+    .header-inner {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: inherit; }
+    .brand-logo { height: 28px; }
+    .brand-name { font-weight: 700; font-size: 0.88rem; letter-spacing: 0.06em; text-transform: uppercase; }
+    .controls { display: flex; align-items: center; gap: 12px; }
+    .control-button {
+      background: none;
+      border: 1px solid var(--line-strong);
+      color: var(--muted);
+      font-size: 0.72rem;
+      padding: 6px 12px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 150ms ease;
+    }
+    .control-button:hover { border-color: var(--accent); color: var(--accent); }
+    .control-button.is-active { background: var(--accent); color: white; border-color: var(--accent); }
+    
+    .content-inner { padding: 80px 0; max-width: 800px; }
+    h1 { font-size: 3rem; margin-bottom: 40px; letter-spacing: -0.04em; }
+    h2 { font-size: 1.5rem; margin-top: 40px; margin-bottom: 20px; }
+    h3 { font-size: 1.2rem; margin-top: 30px; }
+    p { margin-bottom: 16px; color: var(--muted); }
+    ul { margin-bottom: 24px; padding-left: 20px; color: var(--muted); }
+    li { margin-bottom: 8px; }
+    .effective-date { font-weight: 600; color: var(--text); margin-bottom: 32px; }
+    
+    .site-footer { border-top: 1px solid var(--line); padding: 64px 0; background: var(--surface-dim); }
+    .footer-inner { display: flex; justify-content: space-between; align-items: center; }
+    .copyright { font-size: 0.88rem; color: var(--faint); }
+    
+    body[data-theme='dark'] .brand-logo-light { display: none; }
+    body:not([data-theme='dark']) .brand-logo-dark { display: none; }
+
+    [data-lang] { display: none; }
+    [data-lang].active { display: block; }
+  </style>
+  <link rel="alternate" hreflang="az" href="https://logitaka.com/az/terms.html" />
+  <link rel="alternate" hreflang="en" href="https://logitaka.com/en/terms.html" />
+  <link rel="alternate" hreflang="ru" href="https://logitaka.com/ru/terms.html" />
+  <link rel="alternate" hreflang="x-default" href="https://logitaka.com/terms.html" />
+</head>
+<body data-theme="light">
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="index.html" class="brand">
+          <img src="../assets/logo-logitaka-bb.svg" class="brand-logo brand-logo-light" alt="Logitaka" />
+          <img src="../assets/logo-logitaka-wb.svg" class="brand-logo brand-logo-dark" alt="Logitaka" />
+          <span class="brand-name">Logitaka</span>
+        </a>
+        <div class="controls">
+          <div id="language-switcher" style="display: flex; gap: 4px;"></div>
+          <button id="theme-toggle" class="control-button" type="button">THEME</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="content-inner">
+      <!-- English Content -->
+      <div data-lang="en">
+        <h1>Terms of Use</h1>
+        <p class="effective-date">Effective date: 01.05.2026</p>
+
+        <h2>1. About the Service</h2>
+        <p>Logitaka is a digital productivity and project-management service operated by <strong>Faig Nagiyev</strong> ("we", "us", or "our"). The Service helps users organize projects, tasks, documents, and workflows, including through AI-assisted features.</p>
+
+        <h2>2. Eligibility</h2>
+        <p>You must be at least 18 years old, or otherwise legally capable of entering into a binding agreement under applicable law, to use the Service. By using Logitaka, you represent that you meet these requirements.</p>
+
+        <h2>3. Account Registration and Security</h2>
+        <p>To access the Service, you must create an account. You agree to provide accurate information and keep it updated. You are responsible for:</p>
+        <ul>
+          <li>Maintaining the confidentiality of your credentials;</li>
+          <li>All activity occurring under your account;</li>
+          <li>Notifying us immediately of any unauthorized access.</li>
+        </ul>
+
+        <h2>4. Subscriptions, Payments, and Billing</h2>
+        <p>Logitaka is a paid service. We do not offer a free trial or free access plan at this time. Billing is handled as follows:</p>
+        <ul>
+          <li><strong>Manual Payment:</strong> Payments are not automatic. For each billing cycle, you will receive a manual payment link.</li>
+          <li><strong>No Auto-Renewal:</strong> There is no automatic recurring charge. You must actively complete each payment to maintain access to paid features.</li>
+          <li><strong>Processing:</strong> Payments are processed via a third-party provider, <strong>Kapital Bank</strong>.</li>
+        </ul>
+
+        <h2>5. Refunds</h2>
+        <p>If you decide to stop using the Service, you may request a refund for any <strong>unused remaining balance</strong> on your account. We do not provide refunds for already consumed usage or completed billing periods.</p>
+
+        <h2>6. Acceptable Use</h2>
+        <p>You agree not to use the Service for any unlawful, abusive, or harmful activities, including but not limited to infringing on intellectual property, interfering with service security, or uploading malicious content.</p>
+
+        <h2>7. User Content</h2>
+        <p>You retain ownership of the content you upload or create ("User Content"). You grant us a limited license to host, store, and process your content only as necessary to provide the Service and operate requested features (such as AI summaries).</p>
+
+        <h2>8. AI Features</h2>
+        <p>The Service includes AI-assisted functionality. By using these features, you acknowledge that:</p>
+        <ul>
+          <li>Outputs may be inaccurate, incomplete, or unsuitable for your specific needs;</li>
+          <li>You are responsible for reviewing all AI-generated content before relying on it;</li>
+          <li>Logitaka is not a substitute for professional advice (legal, financial, etc.).</li>
+        </ul>
+
+        <h2>9. Service Availability and Changes</h2>
+        <p>We may change features, pricing, limits, and usage-based charges at any time. We do not guarantee that the Service will be uninterrupted or error-free. Maintenance and updates may temporarily affect availability.</p>
+
+        <h2>10. Intellectual Property</h2>
+        <p>The Logitaka platform, including its software, design, and branding, is owned by us or our licensors and is protected by intellectual property laws. You may not copy or reverse-engineer the Service.</p>
+
+        <h2>11. Suspension and Termination</h2>
+        <p>We may manually suspend or restrict access to your account for violations of these Terms, abuse, unlawful activity, or risks to service security.</p>
+
+        <h2>12. Disclaimer of Warranties</h2>
+        <p>The Service is provided "as is" and "as available". We disclaim all warranties, express or implied, to the maximum extent permitted by law.</p>
+
+        <h2>13. Limitation of Liability</h2>
+        <p>To the maximum extent permitted by law, our total liability for any claim related to the Service shall not exceed the amount you paid us during the <strong>1 month</strong> preceding the event, or <strong>0</strong> if no payment was made.</p>
+
+        <h2>14. Privacy</h2>
+        <p>Your use of the Service is also governed by our <strong>Privacy Policy</strong>, which explains how we handle your personal data.</p>
+
+        <h2>15. Governing Law and Disputes</h2>
+        <p>These Terms are governed by the laws of the <strong>Republic of Azerbaijan</strong>. Any disputes shall be subject to the exclusive jurisdiction of the courts of <strong>Baku, Republic of Azerbaijan</strong>.</p>
+
+        <h2>16. Changes to These Terms</h2>
+        <p>We may update these Terms from time to time. The updated version becomes effective when posted. Continued use of the Service constitutes acceptance of the new Terms.</p>
+
+        <h2>17. Contact</h2>
+        <p>If you have questions, please contact us at <strong>support@logitaka.com</strong>.</p>
+      </div>
+
+      <!-- Russian Content -->
+      <div data-lang="ru">
+        <h1>Условия использования</h1>
+        <p class="effective-date">Дата вступления в силу: 01.05.2026</p>
+
+        <h2>1. О Сервисе</h2>
+        <p>Logitaka — это цифровой сервис для повышения продуктивности и управления проектами, управляемый <strong>Faig Nagiyev</strong> («мы», «нас» или «наш»). Сервис помогает пользователям организовывать проекты, задачи, документы и рабочие процессы, в том числе с помощью функций на базе ИИ.</p>
+
+        <h2>2. Право на использование</h2>
+        <p>Для использования Сервиса вам должно быть не менее 18 лет, либо вы должны обладать законным правом заключать юридически обязывающие соглашения в соответствии с применимым законодательством. Используя Logitaka, вы подтверждаете, что соответствуете этим требованиям.</p>
+
+        <h2>3. Регистрация аккаунта и безопасность</h2>
+        <p>Для доступа к Сервису необходимо создать аккаунт. Вы обязуетесь предоставлять точную информацию и своевременно ее обновлять. Вы несете ответственность за:</p>
+        <ul>
+          <li>Сохранение конфиденциальности ваших учетных данных;</li>
+          <li>Все действия, происходящие под вашим аккаунтом;</li>
+          <li>Незамедлительное уведомление нас о любом несанкционированном доступе.</li>
+        </ul>
+
+        <h2>4. Подписки, платежи и выставление счетов</h2>
+        <p>Logitaka является платным сервисом. В настоящее время мы не предлагаем бесплатную пробную версию или бесплатный план доступа. Оплата осуществляется следующим образом:</p>
+        <ul>
+          <li><strong>Ручная оплата:</strong> Платежи не являются автоматическими. Для каждого платежного цикла вы будете получать ссылку на оплату вручную.</li>
+          <li><strong>Отсутствие автопродления:</strong> Автоматическое регулярное списание средств отсутствует. Вы должны самостоятельно завершать каждый платеж, чтобы сохранять доступ к платным функциям.</li>
+          <li><strong>Обработка платежей:</strong> Платежи обрабатываются через стороннего провайдера — <strong>Kapital Bank</strong>.</li>
+        </ul>
+
+        <h2>5. Возврат средств</h2>
+        <p>Если вы решите прекратить использование Сервиса, вы можете запросить возврат <strong>неиспользованного остатка средств</strong> на вашем счету. Мы не возвращаем средства за уже использованный объем услуг или завершенные периоды оплаты.</p>
+
+        <h2>6. Допустимое использование</h2>
+        <p>Вы соглашаетесь не использовать Сервис для любых незаконных, оскорбительных или вредных действий, включая, помимо прочего, нарушение прав интеллектуальной собственности, вмешательство в безопасность сервиса или загрузку вредоносного контента.</p>
+
+        <h2>7. Контент пользователя</h2>
+        <p>Вы сохраняете право собственности на контент, который вы загружаете или создаете («Контент пользователя»). Вы предоставляете нам ограниченную лицензию на размещение, хранение и обработку вашего контента только в той мере, в какой это необходимо для предоставления Сервиса и работы запрошенных функций (например, создание сводок ИИ).</p>
+
+        <h2>8. Функции на базе ИИ</h2>
+        <p>Сервис включает в себя функции на базе ИИ. Используя эти функции, вы признаете, что:</p>
+        <ul>
+          <li>Результаты могут быть неточными, неполными или неподходящими для ваших конкретных нужд;</li>
+          <li>Вы несете ответственность за проверку всего контента, созданного ИИ, прежде чем полагаться на него;</li>
+          <li>Logitaka не является заменой профессиональных консультаций (юридических, финансовых и т. д.).</li>
+        </ul>
+
+        <h2>9. Доступность Сервиса и изменения</h2>
+        <p>Мы можем изменить функции, цены, лимиты и сборы за использование в любое время. Мы не гарантируем, что работа Сервиса будет бесперебойной или безошибочной. Техническое обслуживание и обновления могут временно влиять на доступность.</p>
+
+        <h2>10. Интеллектуальная собственность</h2>
+        <p>Платформа Logitaka, включая ее программное обеспечение, дизайн и брендинг, принадлежит нам или нашим лицензиарам и защищена законами об интеллектуальной собственности. Вы не имеете права копировать или проводить обратную разработку (реверс-инжиниринг) Сервиса.</p>
+
+        <h2>11. Приостановка и прекращение действия</h2>
+        <p>Мы можем вручную приостановить или ограничить доступ к вашему аккаунту за нарушение настоящих Условий, злоупотребления, незаконную деятельность или риски для безопасности сервиса.</p>
+
+        <h2>12. Отказ от гарантий</h2>
+        <p>Сервис предоставляется на условиях «как есть» и «как доступно». Мы отказываемся от всех гарантий, явных или подразумеваемых, в максимальной степени, разрешенной законом.</p>
+
+        <h2>13. Ограничение ответственности</h2>
+        <p>В максимальной степени, разрешенной законом, наша общая ответственность по любому иску, связанному с Сервисом, не будет превышать сумму, которую вы заплатили нам в течение <strong>1 месяца</strong>, предшествующего событию, или <strong>0</strong>, если оплата не производилась.</p>
+
+        <h2>14. Конфиденциальность</h2>
+        <p>Использование вами Сервиса также регулируется нашей <strong>Политикой конфиденциальности</strong>, которая объясняет, как мы обрабатываем ваши персональные данные.</p>
+
+        <h2>15. Применимое право и разрешение споров</h2>
+        <p>Настоящие Условия регулируются законодательством <strong>Азербайджанской Республики</strong>. Любые споры подлежат исключительной юрисдикции судов <strong>Баку, Азербайджанская Республика</strong>.</p>
+
+        <h2>16. Изменения в настоящих Условиях</h2>
+        <p>Мы можем время от времени обновлять настоящие Условия. Обновленная версия вступает в силу с момента публикации. Продолжение использования Сервиса означает принятие новых Условий.</p>
+
+        <h2>17. Контакты</h2>
+        <p>Если у вас есть вопросы, пожалуйста, свяжитесь с нами по адресу <strong>support@logitaka.com</strong>.</p>
+      </div>
+
+      <!-- Azerbaijani Content -->
+      <div data-lang="az">
+        <h1>İstifadə Şərtləri</h1>
+        <p class="effective-date">Qüvvəyə minmə tarixi: 01.05.2026</p>
+
+        <h2>1. Xidmət haqqında</h2>
+        <p>Logitaka, <strong>Faig Nagiyev</strong> ("biz", "bizi" və ya "bizim") tərəfindən idarə olunan rəqəmsal məhsuldarlıq və layihə idarəetmə xidmətidir. Xidmət istifadəçilərə layihələri, tapşırıqları, sənədləri və iş proseslərini, o cümlədən Sİ funksiyaları vasitəsilə təşkil etməyə kömək edir.</p>
+
+        <h2>2. Uyğunluq</h2>
+        <p>Xidmətdən istifadə etmək üçün ən azı 18 yaşınız olmalı və ya tətbiq olunan qanunvericiliyə əsasən hüquqi müqavilə bağlamaq qabiliyyətinə malik olmalısınız. Logitaka-dan istifadə etməklə siz bu tələblərə cavab verdiyinizi bəyan edirsiniz.</p>
+
+        <h2>3. Hesab qeydiyyatı və təhlükəsizlik</h2>
+        <p>Xidmətə daxil olmaq üçün hesab yaratmalısınız. Dəqiq məlumat təqdim etməyə və onu yeniləməyə razılaşırsınız. Siz aşağıdakılara görə məsuliyyət daşıyırsınız:</p>
+        <ul>
+          <li>Parollarınızın məxfiliyini qorumaq;</li>
+          <li>Hesabınız altında baş verən bütün fəaliyyətlər;</li>
+          <li>Hər hansı icazəsiz giriş barədə bizə dərhal xəbər vermək.</li>
+        </ul>
+
+        <h2>4. Abunəliklər, Ödənişlər və Hesablaşma</h2>
+        <p>Logitaka ödənişli xidmətdir. Hazırda pulsuz sınaq müddəti və ya pulsuz giriş planı təklif edilmir. Ödəniş qaydaları aşağıdakı kimidir:</p>
+        <ul>
+          <li><strong>Manual Ödəniş:</strong> Ödənişlər avtomatik deyil. Hər hesablaşma dövrü üçün sizə əllə ödəniş linki göndəriləcək.</li>
+          <li><strong>Avtomatik Yenilənmə Yoxdur:</strong> Avtomatik təkrarlanan ödəniş sistemi yoxdur. Ödənişli funksiyalardan istifadəni davam etdirmək üçün hər ödənişi özünüz tamamlamalısınız.</li>
+          <li><strong>Emal:</strong> Ödənişlər üçüncü tərəf provayderi <strong>Kapital Bank</strong> vasitəsilə həyata keçirilir.</li>
+        </ul>
+
+        <h2>5. Geri qaytarılma</h2>
+        <p>Xidmətdən istifadəni dayandırmaq qərarına gəlsəniz, hesabınızdakı hər hansı <strong>istifadə olunmamış qalıq balansı</strong> üçün geri qaytarılma tələb edə bilərsiniz. Artıq istifadə olunmuş həcm və ya tamamlanmış ödəniş dövrləri üçün geri qaytarılma nəzərdə tutulmur.</p>
+
+        <h2>6. Qəbul edilən istifadə</h2>
+        <p>Siz Xidmətdən hər hansı qanunsuz, sui-istifadə və ya zərərli məqsədlər üçün, o cümlədən əqli mülkiyyətin pozulması, xidmətin təhlükəsizliyinə müdaxilə və ya zərərli məzmunun yüklənməsi üçün istifadə etməməyə razılaşırsınız.</p>
+
+        <h2>7. İstifadəçi məzmunu</h2>
+        <p>Yüklədiyiniz və ya yaratdığınız məzmunun ("İstifadəçi Məzmunu") mülkiyyət hüququ sizdə qalır. Siz bizə məzmununuzu yalnız Xidməti təmin etmək və tələb olunan funksiyaları (məsələn, Sİ xülasələri) yerinə yetirmək üçün zəruri olan həddə host etmək, saxlamaq və emal etmək üçün məhdud lisenziya verirsiniz.</p>
+
+        <h2>8. Sİ funksiyaları</h2>
+        <p>Xidmət Sİ tərəfindən dəstəklənən funksiyaları ehtiva edir. Bu funksiyalardan istifadə etməklə siz aşağıdakıları qəbul edirsiniz:</p>
+        <ul>
+          <li>Nəticələr qeyri-dəqiq, natamam və ya xüsusi ehtiyaclarınız üçün uyğunsuz ola bilər;</li>
+          <li>Sİ tərəfindən yaradılan hər hansı məzmuna etibar etməzdən əvvəl onu yoxlamağa görə siz məsuliyyət daşıyırsınız;</li>
+          <li>Logitaka peşəkar məsləhətləri (hüquqi, maliyyə və s.) əvəz etmir.</li>
+        </ul>
+
+        <h2>9. Xidmətin əlçatanlığı və dəyişikliklər</h2>
+        <p>İstənilən vaxt funksiyaları, qiymətləri, limitləri və istifadəyə əsaslanan rüsumları dəyişdirə bilərik. Xidmətin kəsintisiz və ya xətasız olacağına zəmanət vermirik. Texniki qulluq və yeniləmələr əlçatanlığa müvəqqəti təsir göstərə bilər.</p>
+
+        <h2>10. Əqli mülkiyyət</h2>
+        <p>Logitaka platforması, o cümlədən onun proqram təminatı, dizaynı və brendinqi bizə və ya lisenziya verənlərimizə məxsusdur və əqli mülkiyyət qanunları ilə qorunur. Siz Xidməti kopyalaya və ya tərs mühəndislik (reverse engineer) edə bilməzsiniz.</p>
+
+        <h2>11. Dayandırma və xitam</h2>
+        <p>Bu Şərtlərin pozulması, sui-istifadə, qanunsuz fəaliyyət və ya xidmət təhlükəsizliyi üçün risk yarandığı hallarda hesabınıza girişi əllə dayandıra və ya məhdudlaşdıra bilərik.</p>
+
+        <h2>12. Zəmanətlərdən imtina</h2>
+        <p>Xidmət "olduğu kimi" və "əlçatan olduğu kimi" təqdim edilir. Qanunla icazə verilən maksimum həddə hər hansı açıq və ya gizli zəmanətlərdən imtina edirik.</p>
+
+        <h2>13. Məsuliyyətin məhdudlaşdırılması</h2>
+        <p>Qanunla icazə verilən maksimum həddə, Xidmətlə bağlı hər hansı iddia üzrə ümumi məsuliyyətimiz hadisədən əvvəlki <strong>1 ay</strong> ərzində bizə ödədiyiniz məbləğdən və ya heç bir ödəniş edilməyibsə, <strong>0</strong> məbləğindən çox olmayacaqdır.</p>
+
+        <h2>14. Məxfilik</h2>
+        <p>Xidmətdən istifadəniz həmçinin fərdi məlumatlarınızı necə emal etdiyimizi izah edən <strong>Məxfilik Siyasətimiz</strong> ilə tənzimlənir.</p>
+
+        <h2>15. Tətbiq edilən hüquq və mübahisələrin həlli</h2>
+        <p>Bu Şərtlər <strong>Azərbaycan Respublikasının</strong> qanunları ilə tənzimlənir. Hər hansı mübahisələr <strong>Bakı şəhəri, Azərbaycan Respublikası</strong> məhkəmələrinin müstəsna yurisdiksiyasına tabedir.</p>
+
+        <h2>16. Bu Şərtlərdə dəyişikliklər</h2>
+        <p>Biz bu Şərtləri zaman-zaman yeniləyə bilərik. Yenilənmiş versiya dərc edildiyi andan qüvvəyə minir. Xidmətdən istifadəyə davam etmək yeni Şərtlərin qəbulu deməkdir.</p>
+
+        <h2>17. Əlaqə</h2>
+        <p>Sualınız olarsa, lütfən <strong>support@logitaka.com</strong> ünvanı ilə əlaqə saxlayın.</p>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="copyright" id="footer-copyright">© 2026 Logitaka. All rights reserved.</div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    const SUPPORTED_LOCALES = ['ru', 'en', 'az'];
+    const STORAGE_KEYS = { locale: 'logitaka-landing-locale', theme: 'logitaka-landing-theme' };
+    
+    function getInitialTheme() {
+      const stored = localStorage.getItem(STORAGE_KEYS.theme);
+      if (stored === 'light' || stored === 'dark') return stored;
+      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+
+    function getInitialLocale() {
+      const stored = localStorage.getItem(STORAGE_KEYS.locale);
+      if (SUPPORTED_LOCALES.includes(stored)) return stored;
+      return 'az';
+    }
+
+    function applyTheme(theme) {
+      document.body.setAttribute('data-theme', theme);
+      localStorage.setItem(STORAGE_KEYS.theme, theme);
+    }
+
+    function setLanguage(locale) {
+      document.querySelectorAll('[data-lang]').forEach(el => {
+        el.classList.toggle('active', el.getAttribute('data-lang') === locale);
+      });
+      document.querySelectorAll('[data-locale]').forEach(btn => {
+        btn.classList.toggle('is-active', btn.getAttribute('data-locale') === locale);
+      });
+      localStorage.setItem(STORAGE_KEYS.locale, locale);
+      document.documentElement.lang = locale;
+      
+      const copyright = document.getElementById('footer-copyright');
+      if (locale === 'ru') copyright.textContent = '© 2026 Logitaka. Все права защищены.';
+      else if (locale === 'az') copyright.textContent = '© 2026 Logitaka. Bütün hüquqlar qorunur.';
+      else copyright.textContent = '© 2026 Logitaka. All rights reserved.';
+    }
+
+    document.getElementById('theme-toggle').addEventListener('click', () => {
+      const current = document.body.getAttribute('data-theme');
+      applyTheme(current === 'dark' ? 'light' : 'dark');
+    });
+
+    const switcher = document.getElementById('language-switcher');
+    SUPPORTED_LOCALES.forEach(locale => {
+      const btn = document.createElement('button');
+      btn.className = 'control-button';
+      btn.textContent = locale.toUpperCase();
+      btn.setAttribute('data-locale', locale);
+      btn.onclick = () => setLanguage(locale);
+      switcher.appendChild(btn);
+    });
+
+    applyTheme(getInitialTheme());
+    setLanguage(getInitialLocale());
+  </script>
+</body>
+</html>

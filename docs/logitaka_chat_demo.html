@@ -1,0 +1,185 @@
+
+<style>
+  :root {
+    --lgt-bg: #F5F0E8;
+    --lgt-chat: #1A1A1A;
+    --lgt-user: #2C2C2A;
+    --lgt-sys-bg: rgba(224, 90, 43, 0.12);
+    --lgt-sys-border: rgba(224, 90, 43, 0.35);
+    --lgt-sys-text: #993C1D;
+    --lgt-agent-bg: #242424;
+    --lgt-agent-text: #E8E4DC;
+    --lgt-accent: #E05A2B;
+    --lgt-label: #888780;
+    --lgt-divider: rgba(0,0,0,0.08);
+    --lgt-dot-inactive: rgba(0,0,0,0.15);
+    --lgt-dot-active: #E05A2B;
+    --lgt-tag: rgba(255,255,255,0.06);
+    --lgt-user-label: #5F5E5A;
+    --lgt-header-text: #2C2C2A;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --lgt-bg: #1C1C1A;
+      --lgt-chat: #111110;
+      --lgt-user: #E8E4DC;
+      --lgt-sys-bg: rgba(224, 90, 43, 0.15);
+      --lgt-sys-border: rgba(224, 90, 43, 0.3);
+      --lgt-sys-text: #F0997B;
+      --lgt-agent-bg: #1F1F1D;
+      --lgt-agent-text: #C8C4BC;
+      --lgt-accent: #E05A2B;
+      --lgt-label: #888780;
+      --lgt-divider: rgba(255,255,255,0.06);
+      --lgt-dot-inactive: rgba(255,255,255,0.15);
+      --lgt-dot-active: #E05A2B;
+      --lgt-tag: rgba(255,255,255,0.05);
+      --lgt-user-label: #888780;
+      --lgt-header-text: #E8E4DC;
+    }
+  }
+  .demo-wrap { font-family: Georgia, 'Times New Roman', serif; border-radius: 12px; overflow: hidden; border: 0.5px solid var(--color-border-tertiary); display: flex; flex-direction: column; }
+  .demo-header { background: var(--lgt-bg); padding: 20px 24px 16px; border-bottom: 0.5px solid var(--lgt-divider); }
+  .demo-scenarios { display: flex; gap: 8px; margin-bottom: 6px; }
+  .scenario-btn { font-family: -apple-system, sans-serif; font-size: 12px; padding: 5px 12px; border-radius: 20px; border: 0.5px solid var(--lgt-divider); background: var(--lgt-tag); color: var(--lgt-label); cursor: pointer; transition: all 0.2s; }
+  .scenario-btn.active { background: var(--lgt-accent); color: #fff; border-color: transparent; }
+  .demo-body { background: var(--lgt-chat); padding: 20px 20px 16px; min-height: 280px; display: flex; flex-direction: column; gap: 10px; position: relative; }
+  .msg { opacity: 0; transform: translateY(6px); transition: opacity 0.35s ease, transform 0.35s ease; }
+  .msg.visible { opacity: 1; transform: translateY(0); }
+  .msg-user { display: flex; justify-content: flex-end; }
+  .msg-user-bubble { background: var(--lgt-user-label); max-width: 75%; padding: 10px 14px; border-radius: 12px 12px 3px 12px; font-size: 14px; color: #E8E4DC; font-family: -apple-system, sans-serif; line-height: 1.5; }
+  .msg-label { font-family: -apple-system, sans-serif; font-size: 11px; color: var(--lgt-label); margin-bottom: 3px; letter-spacing: 0.04em; }
+  .msg-sys { display: flex; align-items: flex-start; gap: 8px; }
+  .msg-sys-bubble { background: var(--lgt-sys-bg); border: 0.5px solid var(--lgt-sys-border); border-left: 2px solid var(--lgt-accent); padding: 8px 12px; border-radius: 0 8px 8px 0; font-family: -apple-system, sans-serif; font-size: 13px; color: var(--lgt-sys-text); max-width: 85%; line-height: 1.4; }
+  .msg-sys-icon { font-size: 14px; margin-top: 8px; flex-shrink: 0; }
+  .msg-agent { }
+  .msg-agent-bubble { background: var(--lgt-agent-bg); border: 0.5px solid rgba(255,255,255,0.06); padding: 12px 16px; border-radius: 3px 12px 12px 12px; font-family: -apple-system, sans-serif; font-size: 14px; color: var(--lgt-agent-text); line-height: 1.6; max-width: 90%; }
+  .demo-footer { background: var(--lgt-bg); padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; border-top: 0.5px solid var(--lgt-divider); }
+  .dots { display: flex; gap: 6px; align-items: center; }
+  .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--lgt-dot-inactive); transition: background 0.3s; cursor: pointer; }
+  .dot.active { background: var(--lgt-dot-active); }
+  .progress-bar { height: 2px; background: var(--lgt-divider); flex: 1; margin: 0 16px; border-radius: 1px; overflow: hidden; }
+  .progress-fill { height: 100%; background: var(--lgt-accent); width: 0%; transition: width 0.1s linear; }
+  .model-tag { font-family: -apple-system, sans-serif; font-size: 11px; color: var(--lgt-label); letter-spacing: 0.03em; }
+</style>
+
+<div class="demo-wrap">
+  <div class="demo-header">
+    <div class="demo-scenarios">
+      <button class="scenario-btn active" onclick="setScenario(0)">Руководитель</button>
+      <button class="scenario-btn" onclick="setScenario(1)">Фрилансер</button>
+      <button class="scenario-btn" onclick="setScenario(2)">Разработчик</button>
+    </div>
+  </div>
+
+  <div class="demo-body" id="chatBody">
+  </div>
+
+  <div class="demo-footer">
+    <div class="dots" id="dots">
+      <div class="dot active" onclick="setScenario(0)"></div>
+      <div class="dot" onclick="setScenario(1)"></div>
+      <div class="dot" onclick="setScenario(2)"></div>
+    </div>
+    <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+    <div class="model-tag" id="modelTag">GEMINI 2.5 PRO</div>
+  </div>
+</div>
+
+<script>
+const scenarios = [
+  {
+    model: "GEMINI 2.5 PRO",
+    messages: [
+      { type: "user", text: "Завтра встреча с командой по Q2. Нужно подготовить повестку и напомнить всем к вечеру." },
+      { type: "sys", icon: "✓", text: "Создана задача: Подготовить повестку — до завтра" },
+      { type: "sys", icon: "✓", text: "Создано событие: Встреча команды Q2" },
+      { type: "agent", text: "Зафиксировал встречу и добавил задачи. Напоминание команде отправлю сегодня в 18:00 — или выбрать другое время?" }
+    ]
+  },
+  {
+    model: "CLAUDE SONNET 4",
+    messages: [
+      { type: "user", text: "Клиент Арт-студия должен был прислать правки по логотипу ещё вчера. Пока тишина." },
+      { type: "sys", icon: "⚑", text: "Зафиксировано: Ожидаем правки от Арт-студии" },
+      { type: "sys", icon: "?", text: "Открытый вопрос: Нет ответа от клиента" },
+      { type: "agent", text: "Понял, статус проекта обновил. Напомнить тебе написать им если к вечеру не откликнутся?" }
+    ]
+  },
+  {
+    model: "GPT-4.1",
+    messages: [
+      { type: "user", text: "Переезжаем на новый сервер в пятницу. Надо не забыть про переменные окружения и SSL." },
+      { type: "sys", icon: "✓", text: "Создана задача: Настроить SSL — пятница" },
+      { type: "sys", icon: "✓", text: "Создана задача: Перенести переменные окружения" },
+      { type: "agent", text: "Добавил задачи по деплою. Сделать чек-лист по миграции — чтобы ничего не упустить в пятницу?" }
+    ]
+  }
+];
+
+let currentScenario = 0;
+let animTimeout = null;
+let progressInterval = null;
+let progressValue = 0;
+const STEP_DELAY = 800;
+const TOTAL_DURATION = 7000;
+
+function renderScenario(idx) {
+  const body = document.getElementById("chatBody");
+  body.innerHTML = "";
+  const sc = scenarios[idx];
+  document.getElementById("modelTag").textContent = sc.model;
+  sc.messages.forEach((msg, i) => {
+    const div = document.createElement("div");
+    div.className = "msg";
+    if (msg.type === "user") {
+      div.innerHTML = `<div class="msg-label" style="text-align:right">ВЫ</div><div class="msg-user"><div class="msg-user-bubble">${msg.text}</div></div>`;
+    } else if (msg.type === "sys") {
+      div.innerHTML = `<div class="msg-label">АГЕНТ</div><div class="msg-sys"><div class="msg-sys-bubble">${msg.text}</div></div>`;
+    } else {
+      div.innerHTML = `<div class="msg-label">АГЕНТ</div><div class="msg-agent"><div class="msg-agent-bubble">${msg.text}</div></div>`;
+    }
+    body.appendChild(div);
+    setTimeout(() => div.classList.add("visible"), i * STEP_DELAY + 100);
+  });
+  updateDots(idx);
+  updateBtns(idx);
+  startProgress();
+}
+
+function updateDots(idx) {
+  document.querySelectorAll(".dot").forEach((d, i) => d.classList.toggle("active", i === idx));
+}
+function updateBtns(idx) {
+  document.querySelectorAll(".scenario-btn").forEach((b, i) => b.classList.toggle("active", i === idx));
+}
+
+function startProgress() {
+  clearInterval(progressInterval);
+  progressValue = 0;
+  const fill = document.getElementById("progressFill");
+  fill.style.transition = "none";
+  fill.style.width = "0%";
+  setTimeout(() => {
+    fill.style.transition = "width 0.1s linear";
+    progressInterval = setInterval(() => {
+      progressValue += (100 / (TOTAL_DURATION / 100));
+      if (progressValue >= 100) {
+        progressValue = 0;
+        clearInterval(progressInterval);
+        currentScenario = (currentScenario + 1) % scenarios.length;
+        renderScenario(currentScenario);
+      }
+      fill.style.width = progressValue + "%";
+    }, 100);
+  }, 50);
+}
+
+function setScenario(idx) {
+  clearInterval(progressInterval);
+  currentScenario = idx;
+  renderScenario(idx);
+}
+
+renderScenario(0);
+</script>

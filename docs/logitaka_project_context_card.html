@@ -1,0 +1,197 @@
+
+<style>
+  .pc-root { font-family: -apple-system, sans-serif; }
+  .pc-card { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: 12px; overflow: hidden; }
+  .pc-topbar { display: flex; align-items: center; justify-content: space-between; padding: 12px 18px; border-bottom: 0.5px solid var(--color-border-tertiary); background: var(--color-background-secondary); }
+  .pc-project-name { font-size: 13px; font-weight: 500; color: var(--color-text-primary); display: flex; align-items: center; gap: 8px; }
+  .pc-badge { font-size: 10px; padding: 2px 8px; border-radius: 3px; letter-spacing: 0.06em; background: #EAF3DE; color: #3B6D11; }
+  @media (prefers-color-scheme: dark) { .pc-badge { background: #27500A; color: #97C459; } }
+  .pc-tabs { display: flex; gap: 0; border-bottom: 0.5px solid var(--color-border-tertiary); }
+  .pc-tab { font-size: 12px; padding: 9px 16px; color: var(--color-text-tertiary); cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -1px; transition: all 0.2s; letter-spacing: 0.03em; }
+  .pc-tab:hover { color: var(--color-text-secondary); }
+  .pc-tab.active { color: var(--color-text-primary); border-bottom-color: #E05A2B; font-weight: 500; }
+  .pc-body { padding: 16px 18px; display: flex; flex-direction: column; gap: 12px; }
+  .pc-section { }
+  .pc-section-label { font-size: 10px; letter-spacing: 0.08em; color: var(--color-text-tertiary); margin-bottom: 6px; }
+  .pc-status-row { display: flex; align-items: center; gap: 10px; }
+  .pc-status-text { font-size: 14px; color: var(--color-text-primary); }
+  .pc-progress-bar { flex: 1; height: 3px; background: var(--color-background-secondary); border-radius: 2px; overflow: hidden; }
+  .pc-progress-fill { height: 100%; background: #E05A2B; border-radius: 2px; transition: width 1s ease; width: 0; }
+  .pc-pct { font-size: 12px; color: var(--color-text-secondary); }
+  .pc-decisions { display: flex; flex-direction: column; gap: 5px; }
+  .pc-decision { display: flex; align-items: flex-start; gap: 8px; padding: 7px 10px; background: var(--color-background-secondary); border-radius: 6px; border-left: 2px solid #E05A2B; }
+  .pc-decision-text { font-size: 13px; color: var(--color-text-secondary); line-height: 1.4; }
+  .pc-decision-date { font-size: 10px; color: var(--color-text-tertiary); white-space: nowrap; margin-top: 1px; margin-left: auto; flex-shrink: 0; }
+  .pc-tasks { display: flex; flex-direction: column; gap: 4px; }
+  .pc-task { display: flex; align-items: center; gap: 8px; padding: 6px 0; border-bottom: 0.5px solid var(--color-border-tertiary); }
+  .pc-task:last-child { border-bottom: none; }
+  .pc-task-check { width: 14px; height: 14px; border-radius: 3px; border: 0.5px solid var(--color-border-secondary); flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
+  .pc-task-check.done { background: var(--color-background-success); border-color: var(--color-border-success); }
+  .pc-task-check.done::after { content: ""; width: 6px; height: 4px; border-left: 1.5px solid var(--color-text-success); border-bottom: 1.5px solid var(--color-text-success); transform: rotate(-45deg) translateY(-1px); }
+  .pc-task-text { font-size: 13px; color: var(--color-text-secondary); flex: 1; }
+  .pc-task-text.done { color: var(--color-text-tertiary); text-decoration: line-through; }
+  .pc-task-due { font-size: 11px; color: var(--color-text-tertiary); }
+  .pc-task-due.urgent { color: var(--color-text-danger); }
+  .pc-questions { display: flex; flex-direction: column; gap: 4px; }
+  .pc-question { font-size: 13px; color: var(--color-text-secondary); padding: 6px 10px; background: var(--color-background-secondary); border-radius: 6px; display: flex; align-items: center; gap: 8px; }
+  .pc-q-icon { font-size: 11px; color: var(--color-text-tertiary); flex-shrink: 0; }
+  .pc-timeline { display: flex; flex-direction: column; gap: 0; }
+  .pc-tl-item { display: flex; gap: 10px; padding-bottom: 10px; position: relative; }
+  .pc-tl-item:last-child { padding-bottom: 0; }
+  .pc-tl-left { display: flex; flex-direction: column; align-items: center; width: 28px; flex-shrink: 0; }
+  .pc-tl-dot { width: 8px; height: 8px; border-radius: 50%; border: 1.5px solid var(--color-border-secondary); background: var(--color-background-primary); flex-shrink: 0; margin-top: 3px; }
+  .pc-tl-dot.current { border-color: #E05A2B; background: #E05A2B; }
+  .pc-tl-line { width: 1px; flex: 1; background: var(--color-border-tertiary); margin-top: 3px; }
+  .pc-tl-item:last-child .pc-tl-line { display: none; }
+  .pc-tl-date { font-size: 10px; color: var(--color-text-tertiary); margin-top: 3px; white-space: nowrap; }
+  .pc-tl-content { font-size: 12px; color: var(--color-text-secondary); line-height: 1.5; padding-top: 2px; }
+  .pc-tl-content strong { color: var(--color-text-primary); font-weight: 500; }
+  .pc-panel { display: none; }
+  .pc-panel.active { display: flex; flex-direction: column; gap: 12px; }
+  .pc-divider { height: 0.5px; background: var(--color-border-tertiary); }
+  .pc-model-row { display: flex; align-items: center; gap: 8px; padding-top: 4px; }
+  .pc-model-chip { font-size: 10px; padding: 2px 7px; background: var(--color-background-secondary); border: 0.5px solid var(--color-border-tertiary); border-radius: 3px; color: var(--color-text-tertiary); letter-spacing: 0.04em; }
+</style>
+
+<div class="pc-root">
+  <div class="pc-card">
+    <div class="pc-topbar">
+      <div class="pc-project-name">
+        Редизайн сайта
+        <span class="pc-badge">АКТИВНЫЙ</span>
+      </div>
+      <div style="font-size:11px;color:var(--color-text-tertiary)">Обновлено сегодня · 3 сессии</div>
+    </div>
+    <div class="pc-tabs">
+      <div class="pc-tab active" onclick="switchTab('overview')">Обзор</div>
+      <div class="pc-tab" onclick="switchTab('decisions')">Решения</div>
+      <div class="pc-tab" onclick="switchTab('history')">История</div>
+    </div>
+
+    <div id="tab-overview" class="pc-panel active pc-body">
+      <div class="pc-section">
+        <div class="pc-section-label">СТАТУС</div>
+        <div class="pc-status-row">
+          <div class="pc-status-text">Дизайн в работе</div>
+          <div class="pc-progress-bar"><div class="pc-progress-fill" id="progFill"></div></div>
+          <div class="pc-pct">40%</div>
+        </div>
+      </div>
+      <div class="pc-divider"></div>
+      <div class="pc-section">
+        <div class="pc-section-label">ЗАДАЧИ</div>
+        <div class="pc-tasks">
+          <div class="pc-task">
+            <div class="pc-task-check done"></div>
+            <span class="pc-task-text done">Согласовать структуру страниц</span>
+            <span class="pc-task-due">23 апр</span>
+          </div>
+          <div class="pc-task">
+            <div class="pc-task-check done"></div>
+            <span class="pc-task-text done">Передать бриф дизайнеру</span>
+            <span class="pc-task-due">25 апр</span>
+          </div>
+          <div class="pc-task">
+            <div class="pc-task-check"></div>
+            <span class="pc-task-text">Уведомить клиента о сдвиге сроков</span>
+            <span class="pc-task-due urgent">сегодня</span>
+          </div>
+          <div class="pc-task">
+            <div class="pc-task-check"></div>
+            <span class="pc-task-text">Финальная проверка макетов</span>
+            <span class="pc-task-due">7 мая</span>
+          </div>
+        </div>
+      </div>
+      <div class="pc-divider"></div>
+      <div class="pc-section">
+        <div class="pc-section-label">ОТКРЫТЫЕ ВОПРОСЫ</div>
+        <div class="pc-questions">
+          <div class="pc-question"><span class="pc-q-icon">?</span>Клиент одобрил новый дедлайн?</div>
+          <div class="pc-question"><span class="pc-q-icon">?</span>Нужна ли мобильная версия в этом релизе?</div>
+        </div>
+      </div>
+      <div class="pc-model-row">
+        <span style="font-size:10px;color:var(--color-text-tertiary)">Модели в этом проекте:</span>
+        <span class="pc-model-chip">GEMINI 2.5 PRO</span>
+        <span class="pc-model-chip">CLAUDE SONNET 4</span>
+      </div>
+    </div>
+
+    <div id="tab-decisions" class="pc-panel pc-body">
+      <div class="pc-section">
+        <div class="pc-section-label">ЗАФИКСИРОВАННЫЕ РЕШЕНИЯ</div>
+        <div class="pc-decisions">
+          <div class="pc-decision">
+            <div style="flex:1">
+              <div class="pc-decision-text">Дизайнер задерживает на неделю — новый дедлайн 7 мая.</div>
+            </div>
+            <div class="pc-decision-date">28 апр</div>
+          </div>
+          <div class="pc-decision">
+            <div style="flex:1">
+              <div class="pc-decision-text">Структура сайта: 5 страниц, без блога в первом релизе.</div>
+            </div>
+            <div class="pc-decision-date">24 апр</div>
+          </div>
+          <div class="pc-decision">
+            <div style="flex:1">
+              <div class="pc-decision-text">Работаем с текущим дизайнером, не ищем нового.</div>
+            </div>
+            <div class="pc-decision-date">23 апр</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="tab-history" class="pc-panel pc-body">
+      <div class="pc-section">
+        <div class="pc-section-label">ИСТОРИЯ СЕССИЙ</div>
+        <div class="pc-timeline">
+          <div class="pc-tl-item">
+            <div class="pc-tl-left">
+              <div class="pc-tl-dot current"></div>
+              <div class="pc-tl-line"></div>
+            </div>
+            <div>
+              <div class="pc-tl-date">Сегодня, 10:15</div>
+              <div class="pc-tl-content"><strong>Сессия 3.</strong> Обновили статус по дизайнеру. Добавили задачу уведомить клиента. Зафиксировали 1 решение.</div>
+            </div>
+          </div>
+          <div class="pc-tl-item">
+            <div class="pc-tl-left">
+              <div class="pc-tl-dot"></div>
+              <div class="pc-tl-line"></div>
+            </div>
+            <div>
+              <div class="pc-tl-date">28 апр, 17:40</div>
+              <div class="pc-tl-content"><strong>Сессия 2.</strong> Дизайнер сдвигает сроки. Обсудили варианты — решили не менять подрядчика. Зафиксировали 2 решения.</div>
+            </div>
+          </div>
+          <div class="pc-tl-item">
+            <div class="pc-tl-left">
+              <div class="pc-tl-dot"></div>
+              <div class="pc-tl-line"></div>
+            </div>
+            <div>
+              <div class="pc-tl-date">23 апр, 14:05</div>
+              <div class="pc-tl-content"><strong>Сессия 1.</strong> Запустили проект. Согласовали структуру из 5 страниц, передали бриф дизайнеру.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+function switchTab(name) {
+  document.querySelectorAll('.pc-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.pc-tab').forEach(t => t.classList.remove('active'));
+  document.getElementById('tab-' + name).classList.add('active');
+  event.target.classList.add('active');
+}
+setTimeout(() => {
+  document.getElementById('progFill').style.width = '40%';
+}, 300);
+</script>

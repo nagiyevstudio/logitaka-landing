@@ -1,10 +1,10 @@
 import { useTranslation } from 'react-i18next';
+import ContextCard from './ContextCard';
 
 const LiveContext = () => {
   const { t } = useTranslation();
   const body = t('landing.context.body', { returnObjects: true }) || [];
   const models = t('landing.context.models', { returnObjects: true }) || [];
-  const imagePlaceholder = t('landing.ui.imagePlaceholders.context');
 
   return (
     <section id="context">
@@ -24,15 +24,7 @@ const LiveContext = () => {
             <span>{models.join(', ')}</span>
           </p>
         </div>
-        <div className="panel reveal">
-          <div className="visual-placeholder">
-            {imagePlaceholder.match(/\.(png|jpg|jpeg|svg|webp)$/i) ? (
-              <img src={`/${imagePlaceholder}`} alt="" style={{ width: '100%', height: 'auto', display: 'block' }} />
-            ) : (
-              <div style={{ padding: '16px' }}>{imagePlaceholder}</div>
-            )}
-          </div>
-        </div>
+        <ContextCard />
       </div>
     </section>
   );

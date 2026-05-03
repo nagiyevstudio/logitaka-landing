@@ -398,6 +398,167 @@
           "label": "Contact"
         }
       ]
+    },
+    "chatDemo": {
+      "scenarios": [
+        {
+          "name": "Manager"
+        },
+        {
+          "name": "Freelancer"
+        },
+        {
+          "name": "Developer"
+        }
+      ],
+      "roles": {
+        "user": "YOU",
+        "agent": "AGENT"
+      },
+      "messages": {
+        "s0": [
+          {
+            "type": "user",
+            "text": "We have a Q2 team meeting tomorrow. Need to prepare an agenda and remind everyone by evening."
+          },
+          {
+            "type": "sys",
+            "icon": "✓",
+            "text": "Task created: Prepare agenda — by tomorrow"
+          },
+          {
+            "type": "sys",
+            "icon": "✓",
+            "text": "Event created: Q2 Team Meeting"
+          },
+          {
+            "type": "agent",
+            "text": "I've scheduled the meeting and added the tasks. Should I send a reminder to the team today at 18:00, or choose another time?"
+          }
+        ],
+        "s1": [
+          {
+            "type": "user",
+            "text": "Client Art-Studio was supposed to send logo edits yesterday. Silence so far."
+          },
+          {
+            "type": "sys",
+            "icon": "⚑",
+            "text": "Logged: Waiting for edits from Art-Studio"
+          },
+          {
+            "type": "sys",
+            "icon": "?",
+            "text": "Open issue: No response from client"
+          },
+          {
+            "type": "agent",
+            "text": "Understood, project status updated. Should I remind you to write them if they don't reply by evening?"
+          }
+        ],
+        "s2": [
+          {
+            "type": "user",
+            "text": "We're migrating to a new server on Friday. Can't forget about environment variables and SSL."
+          },
+          {
+            "type": "sys",
+            "icon": "✓",
+            "text": "Task created: Configure SSL — Friday"
+          },
+          {
+            "type": "sys",
+            "icon": "✓",
+            "text": "Task created: Migrate environment variables"
+          },
+          {
+            "type": "agent",
+            "text": "Added deployment tasks. Would you like me to create a migration checklist so we don't miss anything on Friday?"
+          }
+        ]
+      }
+    },
+    "contextCard": {
+      "project": "Website Redesign",
+      "badge": "ACTIVE",
+      "subtitle": "Updated today · 3 sessions",
+      "tabs": {
+        "overview": "Overview",
+        "decisions": "Decisions",
+        "history": "History"
+      },
+      "labels": {
+        "status": "STATUS",
+        "tasks": "TASKS",
+        "questions": "OPEN QUESTIONS",
+        "decisions": "LOGGED DECISIONS",
+        "history": "SESSION HISTORY",
+        "models": "Models in this project:"
+      },
+      "overview": {
+        "statusText": "Design in progress",
+        "tasks": [
+          {
+            "done": true,
+            "text": "Approve page structure",
+            "due": "Apr 23",
+            "urgent": false
+          },
+          {
+            "done": true,
+            "text": "Hand over brief to designer",
+            "due": "Apr 25",
+            "urgent": false
+          },
+          {
+            "done": false,
+            "text": "Notify client about timeline shift",
+            "due": "today",
+            "urgent": true
+          },
+          {
+            "done": false,
+            "text": "Final mockup review",
+            "due": "May 7",
+            "urgent": false
+          }
+        ],
+        "questions": [
+          "Did the client approve the new deadline?",
+          "Do we need a mobile version for this release?"
+        ]
+      },
+      "decisions": [
+        {
+          "text": "Designer is delayed by a week — new deadline May 7.",
+          "date": "Apr 28"
+        },
+        {
+          "text": "Site structure: 5 pages, no blog in the first release.",
+          "date": "Apr 24"
+        },
+        {
+          "text": "Continuing with current designer, not looking for a new one.",
+          "date": "Apr 23"
+        }
+      ],
+      "history": [
+        {
+          "date": "Today, 10:15",
+          "title": "Session 3.",
+          "text": " Updated designer status. Added task to notify client. Logged 1 decision."
+        },
+        {
+          "date": "Apr 28, 17:40",
+          "title": "Session 2.",
+          "text": " Timeline shifted. Discussed options — decided to keep current contractor. Logged 2 decisions."
+        },
+        {
+          "date": "Apr 23, 14:05",
+          "title": "Session 1.",
+          "text": " Project launched. Approved 5-page structure, handed over brief."
+        }
+      ]
     }
   },
   "models_page": {

@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import ChatDemo from './ChatDemo';
 
 const HowItWorks = () => {
   const { t } = useTranslation();
@@ -34,8 +35,8 @@ const HowItWorks = () => {
           </div>
         </div>
         
-        <div className="transformation-visual-slot reveal" aria-hidden="true">
-          <img src="/assets/visual1.png" alt="" />
+        <div className="transformation-visual-slot">
+          <ChatDemo />
         </div>
       </div>
     </section>

@@ -398,6 +398,167 @@
           "label": "Əlaqə"
         }
       ]
+    },
+    "chatDemo": {
+      "scenarios": [
+        {
+          "name": "Menecer"
+        },
+        {
+          "name": "Frilanser"
+        },
+        {
+          "name": "Proqramçı"
+        }
+      ],
+      "roles": {
+        "user": "SİZ",
+        "agent": "AGENT"
+      },
+      "messages": {
+        "s0": [
+          {
+            "type": "user",
+            "text": "Sabah Q2 komanda iclasımız var. Gündəliyi hazırlamaq və axşama qədər hamıya xatırlatmaq lazımdır."
+          },
+          {
+            "type": "sys",
+            "icon": "✓",
+            "text": "Tapşırıq yaradıldı: Gündəliyi hazırlamaq — sabaha qədər"
+          },
+          {
+            "type": "sys",
+            "icon": "✓",
+            "text": "Tədbir yaradıldı: Q2 Komanda İclası"
+          },
+          {
+            "type": "agent",
+            "text": "İclası qeydə aldım və tapşırıqları əlavə etdim. Komandaya xatırlatmanı bu gün 18:00-da göndərim, yoxsa başqa vaxt seçək?"
+          }
+        ],
+        "s1": [
+          {
+            "type": "user",
+            "text": "Art-Studio müştərisi loqo düzəlişlərini dünən göndərməli idi. Hələ də səssizlikdir."
+          },
+          {
+            "type": "sys",
+            "icon": "⚑",
+            "text": "Qeydə alındı: Art-Studio-dan düzəlişlər gözlənilir"
+          },
+          {
+            "type": "sys",
+            "icon": "?",
+            "text": "Açıq məsələ: Müştəridən cavab yoxdur"
+          },
+          {
+            "type": "agent",
+            "text": "Aydındır, layihə statusunu yenilədim. Əgər axşama qədər cavab verməsələr, onlara yazmağı sizə xatırladım?"
+          }
+        ],
+        "s2": [
+          {
+            "type": "user",
+            "text": "Cümə günü yeni serverə keçirik. Mühit dəyişənləri və SSL-i unutmaq olmaz."
+          },
+          {
+            "type": "sys",
+            "icon": "✓",
+            "text": "Tapşırıq yaradıldı: SSL-i konfiqurasiya etmək — Cümə"
+          },
+          {
+            "type": "sys",
+            "icon": "✓",
+            "text": "Tapşırıq yaradıldı: Mühit dəyişənlərini köçürmək"
+          },
+          {
+            "type": "agent",
+            "text": "Yerləşdirmə tapşırıqları əlavə edildi. Cümə günü heç nəyi unutmamaq üçün miqrasiya yoxlama siyahısı yaradım?"
+          }
+        ]
+      }
+    },
+    "contextCard": {
+      "project": "Saytın Yenidən Dizaynı",
+      "badge": "AKTİV",
+      "subtitle": "Bu gün yeniləndi · 3 sessiya",
+      "tabs": {
+        "overview": "İcmal",
+        "decisions": "Qərarlar",
+        "history": "Tarixçə"
+      },
+      "labels": {
+        "status": "STATUS",
+        "tasks": "TAPŞIRIQLAR",
+        "questions": "AÇIQ SUALLAR",
+        "decisions": "QEYD EDİLMİŞ QƏRARLAR",
+        "history": "SESSİYA TARİXÇƏSİ",
+        "models": "Bu layihədəki modellər:"
+      },
+      "overview": {
+        "statusText": "Dizayn prosesindədir",
+        "tasks": [
+          {
+            "done": true,
+            "text": "Səhifə strukturunu təsdiqləmək",
+            "due": "23 Apr",
+            "urgent": false
+          },
+          {
+            "done": true,
+            "text": "Brifi dizaynerə təhvil vermək",
+            "due": "25 Apr",
+            "urgent": false
+          },
+          {
+            "done": false,
+            "text": "Müştəriyə müddət dəyişikliyini bildirmək",
+            "due": "bu gün",
+            "urgent": true
+          },
+          {
+            "done": false,
+            "text": "Maketlərin yekun yoxlanışı",
+            "due": "7 May",
+            "urgent": false
+          }
+        ],
+        "questions": [
+          "Müştəri yeni son tarixi təsdiqlədi?",
+          "Bu buraxılışda mobil versiyaya ehtiyac var?"
+        ]
+      },
+      "decisions": [
+        {
+          "text": "Dizayner bir həftə gecikir — yeni son tarix 7 May.",
+          "date": "28 Apr"
+        },
+        {
+          "text": "Saytın strukturu: 5 səhifə, ilk buraxılışda bloq yoxdur.",
+          "date": "24 Apr"
+        },
+        {
+          "text": "Mövcud dizaynerlə davam edirik, yenisini axtarmırıq.",
+          "date": "23 Apr"
+        }
+      ],
+      "history": [
+        {
+          "date": "Bu gün, 10:15",
+          "title": "Sessiya 3.",
+          "text": " Dizaynerin statusu yeniləndi. Müştərini məlumatlandırmaq üçün tapşırıq əlavə edildi. 1 qərar qeyd edildi."
+        },
+        {
+          "date": "28 Apr, 17:40",
+          "title": "Sessiya 2.",
+          "text": " Müddət uzadıldı. Variantlar müzakirə edildi — podratçını dəyişməmək qərarı alındı. 2 qərar qeyd edildi."
+        },
+        {
+          "date": "23 Apr, 14:05",
+          "title": "Sessiya 1.",
+          "text": " Layihəyə başlanıldı. 5 səhifəlik struktur təsdiqləndi, brif təhvil verildi."
+        }
+      ]
     }
   },
   "models_page": {

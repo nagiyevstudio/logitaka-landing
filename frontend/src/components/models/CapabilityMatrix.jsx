@@ -1,16 +1,16 @@
 import { useTranslation } from 'react-i18next';
 
 const SCORES = {
-  qwen: [4, 4, 5, 4, 3, 1],
-  glm: [4, 3, 5, 4, 3, 2],
+  qwen: [5, 4, 5, 4, 3, 1],
+  glm: [5, 3, 5, 4, 3, 2],
   mistral: [4, 3, 5, 4, 4, 1],
   kimi: [3, 2, 3, 4, 5, 2],
   deepseek: [4, 3, 4, 5, 5, 2],
-  grok: [4, 3, 4, 4, 4, 3],
+  grok: [5, 4, 4, 4, 4, 3],
   gemini: [4, 5, 3, 5, 5, 4],
-  sonnet: [5, 5, 4, 4, 5, 4],
-  opus: [5, 4, 2, 5, 5, 5],
-  gpt: [5, 2, 4, 5, 5, 5]
+  sonnet: [3, 5, 4, 4, 4, 4],
+  opus: [2, 4, 2, 5, 5, 5],
+  gpt: [2, 3, 4, 5, 5, 5]
 };
 
 const CapabilityMatrix = () => {

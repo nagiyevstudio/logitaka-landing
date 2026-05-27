@@ -21,6 +21,15 @@
   --glass-border: rgba(255, 255, 255, 0.55);
   --max-width: 1240px;
   --header-height: 68px;
+  --pricing-bg: rgba(255, 255, 255, 0.08);
+  --pricing-bg-hover: rgba(255, 255, 255, 0.14);
+  --pricing-border: rgba(54, 69, 79, 0.08);
+  --pricing-featured-bg: rgba(255, 255, 255, 0.16);
+  --pricing-featured-hover: rgba(255, 255, 255, 0.22);
+  --color-starter: #00a896;
+  --color-starter-dim: rgba(0, 168, 150, 0.12);
+  --color-premium: #b8860b;
+  --color-premium-dim: rgba(184, 134, 11, 0.1);
 }
 
 [data-theme="dark"],
@@ -39,4 +48,13 @@ body[data-theme="dark"] {
   --shadow-accent: 0 0 48px rgba(255, 69, 0, 0.3), 0 4px 28px -4px rgba(255, 69, 0, 0.45);
   --glass: rgba(22, 27, 34, 0.68);
   --glass-border: rgba(255, 255, 255, 0.07);
+  --pricing-bg: rgba(255, 255, 255, 0.03);
+  --pricing-bg-hover: rgba(255, 255, 255, 0.08);
+  --pricing-border: rgba(255, 255, 255, 0.06);
+  --pricing-featured-bg: rgba(255, 255, 255, 0.06);
+  --pricing-featured-hover: rgba(255, 255, 255, 0.12);
+  --color-starter: #00f2fe;
+  --color-starter-dim: rgba(0, 242, 254, 0.12);
+  --color-premium: #ffd700;
+  --color-premium-dim: rgba(255, 215, 0, 0.12);
 }

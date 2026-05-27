@@ -533,27 +533,62 @@ section+section .section-inner::before {
   min-height: 520px;
   position: relative;
   border-radius: var(--radius);
-  transition: transform 250ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 250ms ease, border-color 250ms ease;
-  background: var(--surface);
-  border: 1px solid var(--line-strong);
+  transition: transform 250ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 250ms ease, border-color 250ms ease, background-color 250ms ease;
+  background: var(--pricing-bg);
+  border: 1px solid var(--pricing-border);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
 .pricing-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-soft);
-  border-color: rgba(255, 69, 0, 0.25);
+  box-shadow: 0 0 24px rgba(255, 69, 0, 0.18), var(--shadow-soft);
+  border-color: var(--accent);
+  background: var(--pricing-bg-hover);
 }
 
 .pricing-card.is-featured {
-  background: var(--surface-strong);
+  background: var(--pricing-featured-bg);
   border-color: var(--accent);
-  box-shadow: 0 0 0 1px rgba(255, 69, 0, 0.2), 0 12px 48px -8px rgba(255, 69, 0, 0.3);
+  box-shadow: 0 0 0 1px rgba(255, 69, 0, 0.25), 0 8px 32px -8px rgba(255, 69, 0, 0.25);
   z-index: 2;
   transform: scale(1.03);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
 .pricing-card.is-featured:hover {
-  transform: scale(1.03) translateY(-4px);
+  box-shadow: 0 0 32px rgba(255, 69, 0, 0.4), 0 12px 48px -4px rgba(255, 69, 0, 0.35);
+  background: var(--pricing-featured-hover);
+}
+
+/* Starter Theme (Turquoise) */
+.pricing-card.is-starter .panel-index {
+  color: var(--color-starter);
+  opacity: 0.85;
+}
+.pricing-card.is-starter:hover {
+  border-color: var(--color-starter);
+  box-shadow: 0 0 24px var(--color-starter-dim), var(--shadow-soft);
+}
+.pricing-card.is-starter .button-ghost:hover {
+  border-color: var(--color-starter);
+  background: var(--color-starter-dim);
+  color: var(--color-starter);
+}
+
+/* Premium Theme (Gold) */
+.pricing-card.is-premium .panel-index {
+  color: var(--color-premium);
+  opacity: 0.85;
+}
+.pricing-card.is-premium:hover {
+  border-color: var(--color-premium);
+  box-shadow: 0 0 24px var(--color-premium-dim), var(--shadow-soft);
+}
+.pricing-card.is-premium .button-ghost:hover {
+  border-color: var(--color-premium);
+  background: var(--color-premium-dim);
+  color: var(--color-premium);
 }
 
 .pricing-badge {

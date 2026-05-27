@@ -21,7 +21,7 @@ const Pricing = () => {
             const btnClass = isFeatured ? 'button button-solid' : 'button button-ghost';
             
             return (
-              <article className={`pricing-card ${isFeatured ? 'is-featured' : ''} reveal`} key={i}>
+              <article className={`pricing-card is-${card.label.toLowerCase()} ${isFeatured ? 'is-featured' : ''} reveal`} key={i}>
                 {isFeatured && <span className="pricing-badge">{popularBadge}</span>}
                 <div className="panel-index">{card.label}</div>
                 <h3 className="pricing-name">{card.name}</h3>
@@ -59,7 +59,7 @@ const Pricing = () => {
                 )}
                 
                 <div className="pricing-card-footer">
-                  <a className={btnClass} href={card.href || '#final-cta'}>
+                  <a className={btnClass} href={card.href ? `${card.href}${card.href.includes('?') ? '&' : '?'}plan=${card.label.toLowerCase()}` : '#final-cta'}>
                     {card.cta}
                   </a>
                 </div>

@@ -21,7 +21,7 @@ const ValueStack = () => {
               <div className="vst-header">
                 <span>Service</span>
                 <span>USD</span>
-                <span>AZN</span>
+                <span>₼</span>
               </div>
               <div id="value-stack-rows">
                 {services.map((s, i) => (

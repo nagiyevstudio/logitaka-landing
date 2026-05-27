@@ -18,7 +18,6 @@ const Pricing = () => {
         <div className="pricing-grid">
           {cards.map((card, i) => {
             const isFeatured = i === 1; // PRO is featured
-            const isCustom = i === cards.length - 1; // Custom
             const btnClass = isFeatured ? 'button button-solid' : 'button button-ghost';
             
             return (
@@ -28,34 +27,38 @@ const Pricing = () => {
                 <h3 className="pricing-name">{card.name}</h3>
                 
                 <div className="pricing-price-wrapper">
-                  <p className="pricing-price">{card.price}</p>
-                  {card.period && <span className="pricing-period">{card.period}</span>}
-                </div>
-                
-                {card.trial && (
-                  <div className="pricing-trial-badge">
-                    <span className="pulse-dot"></span>
-                    {card.trial}
+                  <div className="pricing-price-block">
+                    <p className="pricing-price">{card.price}</p>
+                    {card.period && <span className="pricing-period">{card.period}</span>}
                   </div>
-                )}
+                </div>
                 
                 <p className="pricing-copy">{card.body}</p>
                 
                 {card.features && (
                   <ul className="pricing-features-list">
-                    {card.features.map((feature, idx) => (
-                      <li key={idx} className="pricing-feature-item">
-                        <svg className="pricing-feature-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-                          <polyline points="20 6 9 17 4 12"></polyline>
-                        </svg>
-                        <span className="pricing-feature-text">{feature}</span>
-                      </li>
-                    ))}
+                    {card.features.map((feature, idx) => {
+                      const isFirstHighlight = i > 0 && idx === 0;
+                      return (
+                        <li key={idx} className={`pricing-feature-item ${isFirstHighlight ? 'is-highlighted-feature' : ''}`}>
+                          {isFirstHighlight ? (
+                            <svg className="pricing-feature-icon highlighted" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round">
+                              <polyline points="17 6 9 17 4 12"></polyline>
+                              <polyline points="22 6 14 17"></polyline>
+                            </svg>
+                          ) : (
+                            <svg className="pricing-feature-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                              <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                          )}
+                          <span className="pricing-feature-text">{feature}</span>
+                        </li>
+                      );
+                    })}
                   </ul>
                 )}
                 
                 <div className="pricing-card-footer">
-                  {!isCustom && <p className="pricing-beta-note">{betaNote}</p>}
                   <a className={btnClass} href={card.href || '#final-cta'}>
                     {card.cta}
                   </a>

@@ -238,52 +238,52 @@
           "name": "ChatGPT Plus",
           "provider": "OpenAI",
           "priceUSD": "$20",
-          "priceAZN": "~40 AZN"
+          "priceAZN": "~40 ₼"
         },
         {
           "name": "Claude Pro",
           "provider": "Anthropic",
           "priceUSD": "$20",
-          "priceAZN": "~40 AZN"
+          "priceAZN": "~40 ₼"
         },
         {
           "name": "Gemini AI Pro",
           "provider": "Google",
           "priceUSD": "$19.99",
-          "priceAZN": "~40 AZN"
+          "priceAZN": "~40 ₼"
         },
         {
           "name": "SuperGrok",
           "provider": "xAI",
           "priceUSD": "$30",
-          "priceAZN": "~60 AZN"
+          "priceAZN": "~60 ₼"
         },
         {
           "name": "Kimi Pro",
           "provider": "Moonshot AI",
           "priceUSD": "$19",
-          "priceAZN": "~38 AZN"
+          "priceAZN": "~38 ₼"
         },
         {
           "name": "Le Chat Pro",
           "provider": "Mistral",
           "priceUSD": "$14.99",
-          "priceAZN": "~30 AZN"
+          "priceAZN": "~30 ₼"
         },
         {
           "name": "z.ai Pro",
           "provider": "Zhipu AI",
           "priceUSD": "~$16",
-          "priceAZN": "~32 AZN"
+          "priceAZN": "~32 ₼"
         }
       ],
       "totalLabel": "Total separately",
-      "totalAZN": "~280 AZN",
+      "totalAZN": "~280 ₼",
       "totalUSD": "~$140",
       "vsLabel": "vs",
       "logitakaLabel": "Logitaka — full access",
-      "logitakaPrice": "from 4.99 AZN",
-      "disclaimer": "* Rate: 1 USD ≈ 2 AZN including 18% VAT on electronic services. Prices current at time of publication."
+      "logitakaPrice": "from 4.99 ₼",
+      "disclaimer": "* Rate: 1 USD ≈ 2 ₼ including 18% VAT on electronic services. Prices current at time of publication."
     },
     "pricing": {
       "title": "Pricing.",
@@ -292,10 +292,10 @@
         {
           "label": "Starter",
           "name": "Starter",
-          "price": "4.99 azn",
-          "period": "/ month",
+          "price": "0 ₼",
+          "period": " / 5 ₼ from next month",
           "trial": "First month free",
-          "body": "Full access to the base system. Ideal for personal productivity and daily tasks.",
+          "body": "A baseline system with everything you need to solve daily tasks, remember the essentials, and free up your mind",
           "features": [
             "Pulse",
             "5 basic projects + Decisions Block",
@@ -311,9 +311,9 @@
         {
           "label": "Pro",
           "name": "PRO",
-          "price": "19.99 azn",
+          "price": "19.99 ₼",
           "period": "/ month",
-          "body": "Maximum capabilities for daily professional work and deep analysis.",
+          "body": "A complete capability to dive deeply into projects, run regular discussions, log decisions, and protect key items",
           "features": [
             "Everything in Starter",
             "Discussion",
@@ -334,32 +334,17 @@
         {
           "label": "Premium",
           "name": "PREMIUM",
-          "price": "49.99 azn",
+          "price": "49.99 ₼",
           "period": "/ month",
-          "body": "Unlimited system for teams, developers, and large-scale projects.",
+          "body": "Unlimited opportunities for deep analysis, flexible control over team workflows, and surgical management tools",
           "features": [
             "Everything in PRO",
-            "Team",
-            "DevTeam",
+            "Team (unlimited members)",
+            "DevTeam — smart development workflow control via GitHub",
             "Unlimited complete projects"
           ],
           "cta": "Choose PREMIUM",
           "href": "https://app.logitaka.com/app/login"
-        },
-        {
-          "label": "Custom",
-          "name": "Business",
-          "price": "For companies",
-          "period": "",
-          "body": "For organizations with strict data privacy requirements. Deployment on local infrastructure with a local language model.",
-          "features": [
-            "On-premise deployment",
-            "Local LLM model",
-            "Custom features & integrations",
-            "24/7 priority support"
-          ],
-          "cta": "Contact us",
-          "href": "mailto:admin@logitaka.com"
         }
       ],
       "enterprise": {

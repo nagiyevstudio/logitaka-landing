@@ -238,52 +238,52 @@
           "name": "ChatGPT Plus",
           "provider": "OpenAI",
           "priceUSD": "$20",
-          "priceAZN": "~40 AZN"
+          "priceAZN": "~40 ₼"
         },
         {
           "name": "Claude Pro",
           "provider": "Anthropic",
           "priceUSD": "$20",
-          "priceAZN": "~40 AZN"
+          "priceAZN": "~40 ₼"
         },
         {
           "name": "Gemini AI Pro",
           "provider": "Google",
           "priceUSD": "$19.99",
-          "priceAZN": "~40 AZN"
+          "priceAZN": "~40 ₼"
         },
         {
           "name": "SuperGrok",
           "provider": "xAI",
           "priceUSD": "$30",
-          "priceAZN": "~60 AZN"
+          "priceAZN": "~60 ₼"
         },
         {
           "name": "Kimi Pro",
           "provider": "Moonshot AI",
           "priceUSD": "$19",
-          "priceAZN": "~38 AZN"
+          "priceAZN": "~38 ₼"
         },
         {
           "name": "Le Chat Pro",
           "provider": "Mistral",
           "priceUSD": "$14.99",
-          "priceAZN": "~30 AZN"
+          "priceAZN": "~30 ₼"
         },
         {
           "name": "z.ai Pro",
           "provider": "Zhipu AI",
           "priceUSD": "~$16",
-          "priceAZN": "~32 AZN"
+          "priceAZN": "~32 ₼"
         }
       ],
       "totalLabel": "Ayrı-ayrı cəmi",
-      "totalAZN": "~280 AZN",
+      "totalAZN": "~280 ₼",
       "totalUSD": "~$140",
       "vsLabel": "qarşı",
       "logitakaLabel": "Logitaka — tam giriş",
-      "logitakaPrice": "4.99 AZN-dən",
-      "disclaimer": "* Kurs: 1 USD ≈ 2 AZN (elektron xidmətlərə 18% ƏDV daxil olmaqla). Qiymətlər nəşr tarixinə görə aktualdır."
+      "logitakaPrice": "4.99 ₼-dən",
+      "disclaimer": "* Kurs: 1 USD ≈ 2 ₼ (elektron xidmətlərə 18% ƏDV daxil olmaqla). Qiymətlər nəşr tarixinə görə aktualdır."
     },
     "pricing": {
       "title": "Tariflər.",
@@ -292,12 +292,12 @@
         {
           "label": "Starter",
           "name": "Starter",
-          "price": "4,99 azn",
-          "period": "/ ay",
+          "price": "0 ₼",
+          "period": " / 5 ₼ növbəti aydan",
           "trial": "İlk ay pulsuz",
-          "body": "Baza sisteminə tam giriş. Fərdi məhsuldarlıq və gündəlik işlər üçün idealdır.",
+          "body": "Gündəlik tapşırıqları həll etmək, vacib məsələləri unutmamaq və zehni boşaltmaq üçün lazım olan baza sistemi",
           "features": [
-            "Puls",
+            "Nəbz",
             "5 baza layihəsi + Həllər Bloku",
             "Təqvim + xarici təqvimin qoşulması",
             "Abunəliklər",
@@ -311,9 +311,9 @@
         {
           "label": "Pro",
           "name": "PRO",
-          "price": "19,99 azn",
+          "price": "19,99 ₼",
           "period": "/ ay",
-          "body": "Gündəlik peşəkar iş və dərin analiz üçün maksimum imkanlar.",
+          "body": "Layihələrə dərindən daxil olmaq, müntəzəm müzakirələr aparmaq, qərarları qeyd etmək və vacib olanı qorumaq imkanı",
           "features": [
             "Starter-də olan hər şey",
             "Müzakirə",
@@ -334,32 +334,17 @@
         {
           "label": "Premium",
           "name": "PREMIUM",
-          "price": "49,99 azn",
+          "price": "49,99 ₼",
           "period": "/ ay",
-          "body": "Komandalar, developerlər və genişmiqyaslı layihələr üçün limitsiz sistem.",
+          "body": "Dərin analiz, komanda inkişafı proseslərinə çevik nəzarət və rəhbərlər üçün nöqtəvi idarəetmə limitsiz imkanları",
           "features": [
             "PRO-da olan hər şey",
-            "Komanda",
-            "DevTim (DevTeam)",
+            "Komanda (limitsiz sayda insan)",
+            "DevTeam — GitHub vasitəsilə inkişaf proseslərinə ağıllı nəzarət sistemi",
             "Limitsiz tam layihələr"
           ],
           "cta": "PREMIUM seçin",
           "href": "https://app.logitaka.com/app/login"
-        },
-        {
-          "label": "Custom",
-          "name": "Biznes",
-          "price": "Şirkətlər üçün",
-          "period": "",
-          "body": "Məlumat məxfiliyi tələbləri olan təşkilatlar üçün. Yerli dil modeli ilə yerli infrastrukturda quraşdırma.",
-          "features": [
-            "Yerli infrastrukturda quraşdırma",
-            "Yerli dil modeli",
-            "Fərdi təkmilləşdirmələr",
-            "24/7 prioritet dəstək"
-          ],
-          "cta": "Bizimlə əlaqə",
-          "href": "mailto:admin@logitaka.com"
         }
       ],
       "enterprise": {

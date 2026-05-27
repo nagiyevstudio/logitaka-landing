@@ -520,7 +520,7 @@ section+section .section-inner::before {
 /* ── PRICING ── */
 .pricing-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
   align-items: stretch;
 }
@@ -590,17 +590,25 @@ section+section .section-inner::before {
 
 .pricing-price-wrapper {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.pricing-price-block {
+  display: flex;
   align-items: baseline;
-  gap: 6px;
-  margin-bottom: 12px;
+  gap: 4px;
 }
 
 .pricing-price {
   margin: 0;
-  font-size: 2.3rem;
+  font-size: 2.8rem;
   line-height: 1;
   letter-spacing: -0.05em;
-  font-weight: 800;
+  font-weight: 500;
   color: var(--text);
 }
 
@@ -610,36 +618,36 @@ section+section .section-inner::before {
   font-weight: 500;
 }
 
-/* Trial pill/badge */
+/* Green trial pill/badge aligned next to the price */
 .pricing-trial-badge {
   display: inline-flex;
   align-items: center;
   gap: 6px;
   padding: 4px 10px;
-  background: var(--accent-dim);
-  border: 1px solid rgba(255, 69, 0, 0.2);
-  color: var(--accent-strong);
-  font-size: 0.72rem;
+  background: rgba(34, 197, 94, 0.12); /* high-end green alpha */
+  border: 1px solid rgba(34, 197, 94, 0.25);
+  color: #22c55e; /* vivid clean green */
+  font-size: 0.68rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.04em;
   border-radius: 100px;
-  margin-bottom: 18px;
-  width: fit-content;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(34, 197, 94, 0.08);
 }
 
 .pricing-trial-badge .pulse-dot {
   width: 6px;
   height: 6px;
-  background-color: var(--accent);
+  background-color: #22c55e;
   border-radius: 50%;
-  animation: pulseGlow 1.8s infinite ease-in-out;
+  animation: pulseGlowGreen 1.8s infinite ease-in-out;
 }
 
-@keyframes pulseGlow {
-  0% { transform: scale(0.95); opacity: 0.5; }
-  50% { transform: scale(1.2); opacity: 1; }
-  100% { transform: scale(0.95); opacity: 0.5; }
+@keyframes pulseGlowGreen {
+  0% { transform: scale(0.9); opacity: 0.4; }
+  50% { transform: scale(1.2); opacity: 1; box-shadow: 0 0 6px #22c55e; }
+  100% { transform: scale(0.9); opacity: 0.4; }
 }
 
 .pricing-copy {
@@ -665,6 +673,17 @@ section+section .section-inner::before {
   display: flex;
   align-items: flex-start;
   gap: 10px;
+  transition: all 150ms ease;
+}
+
+/* Highlighted first features of PRO & PREMIUM */
+.pricing-feature-item.is-highlighted-feature {
+  color: var(--accent);
+}
+
+.pricing-feature-item.is-highlighted-feature .pricing-feature-text {
+  color: var(--accent);
+  font-weight: 600;
 }
 
 .pricing-feature-icon {
@@ -672,6 +691,17 @@ section+section .section-inner::before {
   flex-shrink: 0;
   margin-top: 3px;
   opacity: 0.9;
+}
+
+.pricing-feature-icon.highlighted {
+  color: var(--accent);
+  animation: subtleBounce 2s infinite ease-in-out;
+}
+
+@keyframes subtleBounce {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(2px); }
+  100% { transform: translateX(0); }
 }
 
 .pricing-feature-text {
@@ -685,6 +715,16 @@ section+section .section-inner::before {
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+
+.pricing-card-footer .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  min-height: 50px;
+  box-sizing: border-box;
 }
 
 .pricing-beta-note {
@@ -774,8 +814,13 @@ section+section .section-inner::before {
 }
 
 .pricing-enterprise-action .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   padding: 14px 28px;
   min-width: 180px;
+  box-sizing: border-box;
 }
 
 /* ── VALUE STACK ── */

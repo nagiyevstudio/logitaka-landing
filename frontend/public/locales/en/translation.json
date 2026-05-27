@@ -282,7 +282,7 @@
       "totalUSD": "~$140",
       "vsLabel": "vs",
       "logitakaLabel": "Logitaka — full access",
-      "logitakaPrice": "from 20 AZN",
+      "logitakaPrice": "from 4.99 AZN",
       "disclaimer": "* Rate: 1 USD ≈ 2 AZN including 18% VAT on electronic services. Prices current at time of publication."
     },
     "pricing": {
@@ -292,28 +292,81 @@
         {
           "label": "Starter",
           "name": "Starter",
-          "price": "20 azn / month",
-          "body": "Full access to the system. Suitable for personal use and a small volume of tasks.",
-          "cta": "Register",
+          "price": "4.99 azn",
+          "period": "/ month",
+          "trial": "First month free",
+          "body": "Full access to the base system. Ideal for personal productivity and daily tasks.",
+          "features": [
+            "Pulse",
+            "5 basic projects + Decisions Block",
+            "Calendar + external calendar integration",
+            "Subscriptions",
+            "Summaries",
+            "Quick update",
+            "Voice assistant"
+          ],
+          "cta": "Try for free",
           "href": "https://app.logitaka.com/app/login"
         },
         {
           "label": "Pro",
-          "name": "Pro",
-          "price": "50 azn / month",
-          "body": "For those who use Logitaka daily as their main working tool.",
-          "cta": "Register",
+          "name": "PRO",
+          "price": "19.99 azn",
+          "period": "/ month",
+          "body": "Maximum capabilities for daily professional work and deep analysis.",
+          "features": [
+            "Everything in Starter",
+            "Discussion",
+            "Inbox",
+            "10 complete projects",
+            "Decisions",
+            "Library",
+            "Chat Shelf",
+            "Archive",
+            "Search",
+            "Selection of top 10 AI models in the world",
+            "Meeting Process",
+            "Express Meeting Process"
+          ],
+          "cta": "Choose PRO",
+          "href": "https://app.logitaka.com/app/login"
+        },
+        {
+          "label": "Premium",
+          "name": "PREMIUM",
+          "price": "49.99 azn",
+          "period": "/ month",
+          "body": "Unlimited system for teams, developers, and large-scale projects.",
+          "features": [
+            "Everything in PRO",
+            "Team",
+            "DevTeam",
+            "Unlimited complete projects"
+          ],
+          "cta": "Choose PREMIUM",
           "href": "https://app.logitaka.com/app/login"
         },
         {
           "label": "Custom",
-          "name": "Custom",
+          "name": "Business",
           "price": "For companies",
-          "body": "For organizations with data privacy requirements. Deployment on local infrastructure with a local language model. Contact us.",
-          "cta": "Contact",
+          "period": "",
+          "body": "For organizations with strict data privacy requirements. Deployment on local infrastructure with a local language model.",
+          "features": [
+            "On-premise deployment",
+            "Local LLM model",
+            "Custom features & integrations",
+            "24/7 priority support"
+          ],
+          "cta": "Contact us",
           "href": "mailto:admin@logitaka.com"
         }
       ],
+      "enterprise": {
+        "title": "Custom Solutions for Enterprise",
+        "description": "We offer flexible customization and complete deployment in a secure isolated Cloud (Private Cloud) or on your company's own local servers (On-Premise). You will receive dedicated language models, integration with internal databases, SLA guarantees, and absolute control over your confidentiality.",
+        "cta": "Discuss Project"
+      },
       "waitlist": "Beta testing is currently underway. Leave a request — you will be among the first to get access.",
       "cta": "Register",
       "betaNote": "Beta testing is currently underway. Leave a request — we'll give access as one of the first."

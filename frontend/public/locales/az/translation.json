@@ -282,7 +282,7 @@
       "totalUSD": "~$140",
       "vsLabel": "qarşı",
       "logitakaLabel": "Logitaka — tam giriş",
-      "logitakaPrice": "20 AZN-dən",
+      "logitakaPrice": "4.99 AZN-dən",
       "disclaimer": "* Kurs: 1 USD ≈ 2 AZN (elektron xidmətlərə 18% ƏDV daxil olmaqla). Qiymətlər nəşr tarixinə görə aktualdır."
     },
     "pricing": {
@@ -292,28 +292,81 @@
         {
           "label": "Starter",
           "name": "Starter",
-          "price": "20 azn / ay",
-          "body": "Sistemə tam giriş. Şəxsi istifadə və az həcmli tapşırıqlar üçün uyğundur.",
-          "cta": "Qeydiyyatdan keç",
+          "price": "4,99 azn",
+          "period": "/ ay",
+          "trial": "İlk ay pulsuz",
+          "body": "Baza sisteminə tam giriş. Fərdi məhsuldarlıq və gündəlik işlər üçün idealdır.",
+          "features": [
+            "Puls",
+            "5 baza layihəsi + Həllər Bloku",
+            "Təqvim + xarici təqvimin qoşulması",
+            "Abunəliklər",
+            "Xülasələr",
+            "Sürətli yenilənmə",
+            "Səsli assistent"
+          ],
+          "cta": "Pulsuz yoxlayın",
           "href": "https://app.logitaka.com/app/login"
         },
         {
           "label": "Pro",
-          "name": "Pro",
-          "price": "50 azn / ay",
-          "body": "Logitaka-nı gündəlik əsas iş aləti kimi istifadə edənlər üçün.",
-          "cta": "Qeydiyyatdan keç",
+          "name": "PRO",
+          "price": "19,99 azn",
+          "period": "/ ay",
+          "body": "Gündəlik peşəkar iş və dərin analiz üçün maksimum imkanlar.",
+          "features": [
+            "Starter-də olan hər şey",
+            "Müzakirə",
+            "Inbox",
+            "10 tam layihə",
+            "Həllər",
+            "Kitabxana",
+            "Çat rəfi",
+            "Arxiv",
+            "Axtarış",
+            "Dünyanın top 10 Sİ modelinin seçilməsi",
+            "İclas prosesi",
+            "Ekspres İclas prosesi"
+          ],
+          "cta": "PRO seçin",
+          "href": "https://app.logitaka.com/app/login"
+        },
+        {
+          "label": "Premium",
+          "name": "PREMIUM",
+          "price": "49,99 azn",
+          "period": "/ ay",
+          "body": "Komandalar, developerlər və genişmiqyaslı layihələr üçün limitsiz sistem.",
+          "features": [
+            "PRO-da olan hər şey",
+            "Komanda",
+            "DevTim (DevTeam)",
+            "Limitsiz tam layihələr"
+          ],
+          "cta": "PREMIUM seçin",
           "href": "https://app.logitaka.com/app/login"
         },
         {
           "label": "Custom",
-          "name": "Custom",
+          "name": "Biznes",
           "price": "Şirkətlər üçün",
-          "body": "Məlumat məxfiliyi tələbləri olan təşkilatlar üçün. Yerli dil modeli ilə yerli infrastrukturda quraşdırma. Bizimlə əlaqə saxlayın.",
-          "cta": "Əlaqə",
+          "period": "",
+          "body": "Məlumat məxfiliyi tələbləri olan təşkilatlar üçün. Yerli dil modeli ilə yerli infrastrukturda quraşdırma.",
+          "features": [
+            "Yerli infrastrukturda quraşdırma",
+            "Yerli dil modeli",
+            "Fərdi təkmilləşdirmələr",
+            "24/7 prioritet dəstək"
+          ],
+          "cta": "Bizimlə əlaqə",
           "href": "mailto:admin@logitaka.com"
         }
       ],
+      "enterprise": {
+        "title": "Biznes üçün Fərdi Həllər",
+        "description": "Biz fərdi uyğunlaşdırma və izolasiya olunmuş Buludda (Private Cloud) və ya şirkətinizin yerli serverlərində (On-Premise) tam quraşdırma təklif edirik. Siz ayrılmış dil modelləri, daxili məlumat bazaları ilə inteqrasiya, SLA zəmanətləri və konfidensiallığınıza mütləq nəzarət əldə edəcəksiniz.",
+        "cta": "Layihəni müzakirə etmək"
+      },
       "waitlist": "Hazırda beta-test gedir. Müraciət et — giriş əldə edən ilk şəxslərdən olacaqsan.",
       "cta": "Qeydiyyatdan keç",
       "betaNote": "Hazırda beta-test gedir. Müraciət et — giriş əldə edən ilk şəxslərdən biri olacaqsan."

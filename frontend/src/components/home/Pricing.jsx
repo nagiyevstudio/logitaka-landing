@@ -17,17 +17,43 @@ const Pricing = () => {
         
         <div className="pricing-grid">
           {cards.map((card, i) => {
-            const isFeatured = i === 1;
-            const isCustom = i === cards.length - 1;
-            const btnClass = i === 1 ? 'button button-solid' : 'button button-ghost';
+            const isFeatured = i === 1; // PRO is featured
+            const isCustom = i === cards.length - 1; // Custom
+            const btnClass = isFeatured ? 'button button-solid' : 'button button-ghost';
             
             return (
               <article className={`pricing-card ${isFeatured ? 'is-featured' : ''} reveal`} key={i}>
-                <span className="pricing-badge">{popularBadge}</span>
+                {isFeatured && <span className="pricing-badge">{popularBadge}</span>}
                 <div className="panel-index">{card.label}</div>
                 <h3 className="pricing-name">{card.name}</h3>
-                <p className="pricing-price">{card.price}</p>
+                
+                <div className="pricing-price-wrapper">
+                  <p className="pricing-price">{card.price}</p>
+                  {card.period && <span className="pricing-period">{card.period}</span>}
+                </div>
+                
+                {card.trial && (
+                  <div className="pricing-trial-badge">
+                    <span className="pulse-dot"></span>
+                    {card.trial}
+                  </div>
+                )}
+                
                 <p className="pricing-copy">{card.body}</p>
+                
+                {card.features && (
+                  <ul className="pricing-features-list">
+                    {card.features.map((feature, idx) => (
+                      <li key={idx} className="pricing-feature-item">
+                        <svg className="pricing-feature-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                          <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <span className="pricing-feature-text">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+                
                 <div className="pricing-card-footer">
                   {!isCustom && <p className="pricing-beta-note">{betaNote}</p>}
                   <a className={btnClass} href={card.href || '#final-cta'}>
@@ -38,9 +64,33 @@ const Pricing = () => {
             );
           })}
         </div>
+
+        {/* Enterprise & Corporate Customization Callout */}
+        <div className="pricing-enterprise-banner reveal">
+          <div className="enterprise-banner-glow"></div>
+          <div className="pricing-enterprise-content">
+            <div className="enterprise-badge">
+              <svg className="enterprise-badge-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                <rect x="2" y="2" width="20" height="8" rx="2" />
+                <rect x="2" y="14" width="20" height="8" rx="2" />
+                <line x1="6" y1="6" x2="6.01" y2="6" />
+                <line x1="6" y1="18" x2="6.01" y2="18" />
+              </svg>
+              ENTERPRISE & CLOUD
+            </div>
+            <h3 className="pricing-enterprise-title">{t('landing.pricing.enterprise.title')}</h3>
+            <p className="pricing-enterprise-desc">{t('landing.pricing.enterprise.description')}</p>
+          </div>
+          <div className="pricing-enterprise-action">
+            <a className="button button-solid" href="mailto:admin@logitaka.com">
+              {t('landing.pricing.enterprise.cta')}
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );
 };
 
 export default Pricing;
+

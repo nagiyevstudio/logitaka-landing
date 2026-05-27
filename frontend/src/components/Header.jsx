@@ -66,9 +66,7 @@ const Header = () => {
         </nav>
 
         <div className="header-controls">
-          <div className="desktop-only">
-            <LanguageSwitcher />
-          </div>
+          <LanguageSwitcher />
           <button className="theme-icon-btn" onClick={toggleTheme} type="button" aria-label="Toggle theme">
             <span className="theme-icon-sun" aria-hidden="true">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="square">
@@ -123,7 +121,6 @@ const Header = () => {
             </ul>
           </nav>
           <div className="mobile-menu-footer">
-            <LanguageSwitcher />
           </div>
         </div>
       </div>

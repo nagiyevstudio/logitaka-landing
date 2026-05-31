@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 
 const Pricing = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const cards = t('landing.pricing.cards', { returnObjects: true }) || [];
   const betaNote = t('landing.pricing.betaNote');
   const popularBadge = t('landing.pricing.popularBadge');
@@ -67,6 +67,19 @@ const Pricing = () => {
             );
           })}
         </div>
+
+        {/* Bridge to PRO Page */}
+        {t('landing.pricing.proBridge') && t('landing.pricing.proBridge') !== 'landing.pricing.proBridge' && (
+          <div className="pricing-pro-bridge reveal">
+            <a href={i18n.language === 'az' ? '/pro' : `/${i18n.language}/pro`} className="pro-bridge-link">
+              <span>{t('landing.pricing.proBridge')}</span>
+              <svg className="pro-bridge-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        )}
 
         {/* Enterprise & Corporate Customization Callout */}
         <div className="pricing-enterprise-banner reveal">

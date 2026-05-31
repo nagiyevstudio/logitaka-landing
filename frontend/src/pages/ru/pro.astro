@@ -1,0 +1,17 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import { getT } from '../../utils/i18n';
+import ProHero from '../../components/pro/ProHero.jsx';
+import ProTabs from '../../components/pro/ProTabs.jsx';
+
+const lang = 'ru';
+globalThis.currentLanguage = lang;
+const t = getT(lang);
+---
+
+<MainLayout title={t('pro_page.meta.title')} lang={lang}>
+  <div class="pro-page">
+    <ProHero />
+    <ProTabs client:load />
+  </div>
+</MainLayout>

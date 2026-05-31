@@ -1,0 +1,90 @@
+---
+// src/layouts/MainLayout.astro
+import '../styles/all.css';
+import Header from '../components/Header.jsx';
+import Footer from '../components/Footer.jsx';
+import { getT } from '../utils/i18n.js';
+
+interface Props {
+  title?: string;
+  description?: string;
+  lang?: string;
+}
+
+const { 
+  title = "Logitaka", 
+  description = "Logitaka - AI-driven platform", 
+  lang = "az" 
+} = Astro.props;
+
+// Set server-side global language for the react-i18next mock during SSR
+globalThis.currentLanguage = lang;
+
+const t = getT(lang);
+
+// Statically retrieve i18n configurations
+const navItems = t('landing.ui.nav') || [];
+const brandTagline = t('landing.ui.brandTagline');
+
+const footerNavItems = t('landing.footer.nav') || [];
+const footerLegalItems = t('landing.footer.legal') || [];
+const footerTagline = t('landing.footer.tagline');
+const footerCopyright = t('landing.footer.copyright');
+---
+
+<!DOCTYPE html>
+<html lang={lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+  </head>
+  <body>
+    <!-- Set client-side global language and theme before any hydration runs -->
+    <script is:inline define:vars={{ lang }}>
+      (function() {
+        globalThis.currentLanguage = lang;
+        const savedTheme = localStorage.getItem('logitaka-landing-theme');
+        const theme = savedTheme || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.body.setAttribute('data-theme', theme);
+      })();
+    </script>
+    <div class="site-shell">
+      <Header client:load lang={lang} navItems={navItems} brandTagline={brandTagline} />
+      <main>
+        <slot />
+      </main>
+      <Footer lang={lang} navItems={footerNavItems} legalItems={footerLegalItems} brandTagline={brandTagline} tagline={footerTagline} copyright={footerCopyright} />
+    </div>
+
+    <!-- Performant native scroll reveal script -->
+    <script>
+      const setupReveal = () => {
+        const revealObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                revealObserver.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+        );
+
+        const elements = document.querySelectorAll('.reveal');
+        elements.forEach((el) => revealObserver.observe(el));
+      };
+
+      // Initial load setup
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', setupReveal);
+      } else {
+        setupReveal();
+      }
+    </script>
+  </body>
+</html>

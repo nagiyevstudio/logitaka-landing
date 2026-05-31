@@ -7,10 +7,6 @@ const Capabilities = () => {
   return (
     <section id="capabilities">
       <div className="section-inner">
-        <div className="section-eyebrow">
-          <span className="section-kicker">03</span>
-          <span className="section-kicker-line" aria-hidden="true"></span>
-        </div>
         <h2 className="section-title medium reveal">{t('landing.capabilities.title')}</h2>
         
         <div className="cards-grid wide">

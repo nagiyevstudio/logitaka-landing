@@ -20,7 +20,7 @@ const FAQ = () => {
                 <span>{item.question}</span>
                 <span className="faq-toggle" aria-hidden="true">+</span>
               </summary>
-              <div className="faq-answer">{item.answer}</div>
+              <div className="faq-answer" dangerouslySetInnerHTML={{ __html: item.answer }}></div>
             </details>
           ))}
         </div>

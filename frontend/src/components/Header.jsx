@@ -1,15 +1,11 @@
 import { useEffect, useState } from 'react';
-import { useTranslation } from 'react-i18next';
-import { Link, useLocation } from 'react-router-dom';
 import LanguageSwitcher from './LanguageSwitcher';
 import { useTheme } from '../hooks/useTheme';
 
-const Header = () => {
-  const { t } = useTranslation();
+const Header = ({ lang = 'az', navItems = [], brandTagline = 'AI‑Powered OS' }) => {
   const { toggleTheme } = useTheme();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,11 +14,6 @@ const Header = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
-  // Close menu on route change
-  useEffect(() => {
-    setIsMenuOpen(false);
-  }, [location]);
 
   // Prevent body scroll when menu is open
   useEffect(() => {
@@ -33,40 +24,39 @@ const Header = () => {
     }
   }, [isMenuOpen]);
 
-  const navItems = t('landing.ui.nav', { returnObjects: true }) || [];
+  const getHref = (itemHref) => {
+    const isHash = itemHref.startsWith('#');
+    if (isHash) {
+      return lang === 'az' ? `/${itemHref}` : `/${lang}/${itemHref}`;
+    }
+    return lang === 'az' ? itemHref : `/${lang}${itemHref}`;
+  };
 
   return (
     <header className={`site-header ${isScrolled ? 'scrolled' : ''} ${isMenuOpen ? 'menu-open' : ''}`} id="site-header">
       <div className="header-inner">
-        <Link className="brand" to="/" aria-label="Logitaka">
+        <a className="brand" href={lang === 'az' ? '/' : `/${lang}`} aria-label="Logitaka">
           <img className="brand-logo brand-logo-dark" src="/assets/logo-logitaka-bb.svg" alt="Logitaka" height="28" />
           <img className="brand-logo brand-logo-light" src="/assets/logo-logitaka-wb.svg" alt="Logitaka" height="28" />
           <span className="brand-name-group">
             <span className="brand-name">Logitaka</span>
-            <span className="brand-tagline">{t('landing.ui.brandTagline')}</span>
+            <span className="brand-tagline">{brandTagline}</span>
           </span>
-        </Link>
+        </a>
 
         {/* Desktop Nav */}
         <nav className="header-nav desktop-only" aria-label="Primary">
           <ul className="header-nav-list">
-            {navItems.map((item, index) => {
-              const isHash = item.href.startsWith('#');
-              return (
-                <li key={index}>
-                  {isHash ? (
-                    <Link to={`/${item.href}`}>{item.label}</Link>
-                  ) : (
-                    <Link to={item.href}>{item.label}</Link>
-                  )}
-                </li>
-              );
-            })}
+            {navItems.map((item, index) => (
+              <li key={index}>
+                <a href={getHref(item.href)}>{item.label}</a>
+              </li>
+            ))}
           </ul>
         </nav>
 
         <div className="header-controls">
-          <LanguageSwitcher />
+          <LanguageSwitcher lang={lang} />
           <button className="theme-icon-btn" onClick={toggleTheme} type="button" aria-label="Toggle theme">
             <span className="theme-icon-sun" aria-hidden="true">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="square">
@@ -106,18 +96,11 @@ const Header = () => {
         <div className="mobile-menu-inner">
           <nav className="mobile-nav">
             <ul className="mobile-nav-list">
-              {navItems.map((item, index) => {
-                const isHash = item.href.startsWith('#');
-                return (
-                  <li key={index} style={{ animationDelay: `${index * 0.05}s` }}>
-                    {isHash ? (
-                      <Link to={`/${item.href}`}>{item.label}</Link>
-                    ) : (
-                      <Link to={item.href}>{item.label}</Link>
-                    )}
-                  </li>
-                );
-              })}
+              {navItems.map((item, index) => (
+                <li key={index} style={{ animationDelay: `${index * 0.05}s` }} onClick={() => setIsMenuOpen(false)}>
+                  <a href={getHref(item.href)}>{item.label}</a>
+                </li>
+              ))}
             </ul>
           </nav>
           <div className="mobile-menu-footer">

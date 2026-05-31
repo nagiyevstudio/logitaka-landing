@@ -1,8 +1,7 @@
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
 
-const ModelTeaser = () => {
-  const { t } = useTranslation();
+const ModelTeaser = ({ hideCta = false }) => {
+  const { t, i18n } = useTranslation();
   const bullets = t('landing.modelTeaser.bullets', { returnObjects: true }) || [];
 
   return (
@@ -16,11 +15,13 @@ const ModelTeaser = () => {
               <li key={i}>{bullet}</li>
             ))}
           </ul>
-          <div className="reveal">
-            <Link to="/models" className="button button-solid">
-              {t('landing.modelTeaser.cta')}
-            </Link>
-          </div>
+          {!hideCta && (
+            <div className="reveal">
+              <a href={i18n.language === 'az' ? '/pro#models' : `/${i18n.language}/pro#models`} className="button button-solid">
+                {t('landing.modelTeaser.cta')}
+              </a>
+            </div>
+          )}
         </div>
         <div className="model-teaser-visual reveal">
           <div className="teaser-visual-arrow">↓</div>

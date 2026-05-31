@@ -12,14 +12,6 @@
           "label": "How it works"
         },
         {
-          "href": "#capabilities",
-          "label": "Capabilities"
-        },
-        {
-          "href": "#audience",
-          "label": "For whom"
-        },
-        {
           "href": "#pricing",
           "label": "Pricing"
         },
@@ -28,8 +20,8 @@
           "label": "FAQ"
         },
         {
-          "href": "/models",
-          "label": "Models"
+          "href": "/pro",
+          "label": "For Pro"
         }
       ],
       "theme": {
@@ -407,20 +399,16 @@
           "label": "How it works"
         },
         {
-          "href": "#capabilities",
-          "label": "Capabilities"
-        },
-        {
-          "href": "#audience",
-          "label": "For whom"
-        },
-        {
           "href": "#pricing",
           "label": "Pricing"
         },
         {
           "href": "#faq",
           "label": "FAQ"
+        },
+        {
+          "href": "/pro",
+          "label": "For Pro"
         }
       ],
       "legal": [

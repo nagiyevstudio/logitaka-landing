@@ -12,14 +12,6 @@
           "label": "Necə işləyir"
         },
         {
-          "href": "#capabilities",
-          "label": "İmkanlar"
-        },
-        {
-          "href": "#audience",
-          "label": "Kimin üçün"
-        },
-        {
           "href": "#pricing",
           "label": "Qiymətlər"
         },
@@ -28,8 +20,8 @@
           "label": "FAQ"
         },
         {
-          "href": "/models",
-          "label": "Modellər"
+          "href": "/pro",
+          "label": "Pro üçün"
         }
       ],
       "theme": {
@@ -407,20 +399,16 @@
           "label": "Necə işləyir"
         },
         {
-          "href": "#capabilities",
-          "label": "İmkanlar"
-        },
-        {
-          "href": "#audience",
-          "label": "Kimin üçün"
-        },
-        {
           "href": "#pricing",
           "label": "Qiymətlər"
         },
         {
           "href": "#faq",
           "label": "FAQ"
+        },
+        {
+          "href": "/pro",
+          "label": "Pro üçün"
         }
       ],
       "legal": [

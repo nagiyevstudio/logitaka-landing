@@ -14,6 +14,29 @@ export const SUPPORTED_LOCALES = [
   { code: 'ru', label: 'RU' }
 ];
 
+// Map of supported language primary tags for quick lookup
+const SUPPORTED_PRIMARY = new Set(['az', 'en', 'ru']);
+
+/**
+ * Detect best supported locale from an Accept-Language header string.
+ * @param {string|null} acceptLanguage - The value of the Accept-Language header
+ * @returns {string} One of 'az', 'en', 'ru' (defaults to 'az')
+ */
+export function detectLocale(acceptLanguage) {
+  if (!acceptLanguage || typeof acceptLanguage !== 'string') return 'az';
+
+  // Split on commas to get ordered preferences, then take primary subtag
+  const parts = acceptLanguage.split(',').map(p => p.trim());
+  for (const part of parts) {
+    if (!part) continue;
+    const langTag = part.split(';')[0].trim();
+    const primary = langTag.split('-')[0].toLowerCase();
+    if (SUPPORTED_PRIMARY.has(primary)) return primary;
+  }
+
+  return 'az';
+}
+
 /**
  * Returns a translation function for the specified language
  * @param {string} lang - The locale ('az', 'en', 'ru')

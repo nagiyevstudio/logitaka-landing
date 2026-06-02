@@ -3,7 +3,7 @@
 import '../styles/all.css';
 import Header from '../components/Header.jsx';
 import Footer from '../components/Footer.jsx';
-import { getT } from '../utils/i18n.js';
+import { getT, detectLocale } from '../utils/i18n.js';
 
 interface Props {
   title?: string;
@@ -14,8 +14,11 @@ interface Props {
 const { 
   title = "Logitaka", 
   description = "Logitaka - AI-driven platform", 
-  lang = "az" 
+  lang: propLang = undefined
 } = Astro.props;
+
+const accept = Astro.request && Astro.request.headers ? Astro.request.headers.get('accept-language') : null;
+const lang = propLang || detectLocale(accept);
 
 // Set server-side global language for the react-i18next mock during SSR
 globalThis.currentLanguage = lang;

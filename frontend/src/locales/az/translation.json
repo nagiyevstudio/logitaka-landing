@@ -28,6 +28,7 @@
         "light": "İşıqlı mövzu",
         "dark": "Qaranlıq mövzu"
       },
+      "login": "Daxil ol",
       "imagePlaceholders": {
         "hero": "Opsional: insan, sistem və idarə olunan xaos haqqında hero-təsvir. Hələlik bu blok abstrakt vizuallaşdırma kimi işləyir.",
         "context": "assets/003.png",

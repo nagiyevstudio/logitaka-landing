@@ -25,6 +25,7 @@ const t = getT(lang);
 // Statically retrieve i18n configurations
 const navItems = t('landing.ui.nav') || [];
 const brandTagline = t('landing.ui.brandTagline');
+const loginLabel = t('landing.ui.login');
 
 const footerNavItems = t('landing.footer.nav') || [];
 const footerLegalItems = t('landing.footer.legal') || [];
@@ -53,7 +54,7 @@ const footerCopyright = t('landing.footer.copyright');
       })();
     </script>
     <div class="site-shell">
-      <Header client:load lang={lang} navItems={navItems} brandTagline={brandTagline} />
+      <Header client:load lang={lang} navItems={navItems} brandTagline={brandTagline} loginLabel={loginLabel} />
       <main>
         <slot />
       </main>

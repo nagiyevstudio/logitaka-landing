@@ -28,6 +28,7 @@
         "light": "Light theme",
         "dark": "Dark theme"
       },
+      "login": "Log In",
       "imagePlaceholders": {
         "hero": "Optional: hero image about a person, system, and controlled chaos. Currently, the block acts as abstract visualization.",
         "context": "assets/003.png",

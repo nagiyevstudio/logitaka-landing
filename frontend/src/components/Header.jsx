@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import LanguageSwitcher from './LanguageSwitcher';
 import { useTheme } from '../hooks/useTheme';
 
-const Header = ({ lang = 'az', navItems = [], brandTagline = 'AI‑Powered OS' }) => {
+const Header = ({ lang = 'az', navItems = [], brandTagline = 'AI‑Powered OS', loginLabel = 'Войти' }) => {
   const { toggleTheme } = useTheme();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -78,6 +78,11 @@ const Header = ({ lang = 'az', navItems = [], brandTagline = 'AI‑Powered OS' }
             </span>
           </button>
 
+          {/* Desktop Login Button */}
+          <a href="https://app.logitaka.com/app/login" className="header-login-btn desktop-only">
+            {loginLabel}
+          </a>
+
           {/* Burger Button */}
           <button 
             className={`burger-btn ${isMenuOpen ? 'active' : ''}`} 
@@ -102,6 +107,11 @@ const Header = ({ lang = 'az', navItems = [], brandTagline = 'AI‑Powered OS' }
                 </li>
               ))}
             </ul>
+            <div className="mobile-login-btn-container" style={{ animationDelay: `${navItems.length * 0.05}s` }}>
+              <a href="https://app.logitaka.com/app/login" className="mobile-login-btn" onClick={() => setIsMenuOpen(false)}>
+                {loginLabel}
+              </a>
+            </div>
           </nav>
           <div className="mobile-menu-footer">
           </div>

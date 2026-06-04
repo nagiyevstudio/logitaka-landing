@@ -151,16 +151,16 @@ const ProTabs = () => {
                   <div className="premium-details-grid cards-grid">
                     <div className="panel reveal is-visible">
                       <div className="panel-index">01</div>
-                      <h3 className="panel-title">Командный контекст</h3>
+                      <h3 className="panel-title">{t('pro_page.premium.team_context.title')}</h3>
                       <p className="panel-copy">
-                        Logitaka синхронизирует понимание проектов между всеми участниками команды. Задачи, открытые вопросы и решения видны каждому, исключая «испорченный телефон».
+                        {t('pro_page.premium.team_context.description')}
                       </p>
                     </div>
                     <div className="panel reveal is-visible">
                       <div className="panel-index">02</div>
-                      <h3 className="panel-title">On-Premise и Private Cloud</h3>
+                      <h3 className="panel-title">{t('pro_page.premium.on_premise.title')}</h3>
                       <p className="panel-copy">
-                        Для компаний со сверхвысокими требованиями безопасности мы разворачиваем Logitaka в их собственном облаке или локальной инфраструктуре с выделенными локальными моделями.
+                        {t('pro_page.premium.on_premise.description')}
                       </p>
                     </div>
                   </div>

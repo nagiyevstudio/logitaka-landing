@@ -1738,6 +1738,16 @@
       "models": "AI Modellər",
       "compare": "Kim yaxşıdır?",
       "advisor": "Sənin üçün nə?"
+    },
+    "premium": {
+      "team_context": {
+        "title": "Komanda konteksti",
+        "description": "Logitaka bütün komanda üzvləri arasında layihələrin anlaşılmasını sinxronlaşdırır. Tapşırıqlar, açıq suallar və qərarlar hər kəsə görünür, bu da anlaşılmazlığı aradan qaldırır."
+      },
+      "on_premise": {
+        "title": "On-Premise və Private Cloud",
+        "description": "Yüksək təhlükəsizlik tələbləri olan şirkətlər üçün biz Logitaka-nı onların öz buludunda və ya yerli infrastrukturunda xüsusi yerli modellərlə quraşdırırıq."
+      }
     }
   }
 }

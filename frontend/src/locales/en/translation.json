@@ -1738,6 +1738,16 @@
       "models": "AI Models",
       "compare": "Who's Best?",
       "advisor": "What's For You?"
+    },
+    "premium": {
+      "team_context": {
+        "title": "Team Context",
+        "description": "Logitaka synchronizes project understanding across all team members. Tasks, open questions, and decisions are visible to everyone, eliminating miscommunication."
+      },
+      "on_premise": {
+        "title": "On-Premise and Private Cloud",
+        "description": "For companies with ultra-high security requirements, we deploy Logitaka in their own private cloud or local infrastructure with dedicated local models."
+      }
     }
   }
 }

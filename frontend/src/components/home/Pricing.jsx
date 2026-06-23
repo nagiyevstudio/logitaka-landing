@@ -31,6 +31,7 @@ const Pricing = () => {
                     <p className="pricing-price">{card.price}</p>
                     {card.period && <span className="pricing-period">{card.period}</span>}
                   </div>
+                  {card.trial && <div className="pricing-trial-badge" style={{ color: 'var(--color-primary, #10b981)', fontSize: '0.85rem', marginTop: '0.25rem', fontWeight: '500' }}>{card.trial}</div>}
                 </div>
                 
                 <p className="pricing-copy">{card.body}</p>
@@ -71,7 +72,7 @@ const Pricing = () => {
         {/* Bridge to PRO Page */}
         {t('landing.pricing.proBridge') && t('landing.pricing.proBridge') !== 'landing.pricing.proBridge' && (
           <div className="pricing-pro-bridge reveal">
-            <a href={i18n.language === 'az' ? '/pro' : `/${i18n.language}/pro`} className="pro-bridge-link">
+            <a href="/pro" className="pro-bridge-link">
               <span>{t('landing.pricing.proBridge')}</span>
               <svg className="pro-bridge-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                 <line x1="5" y1="12" x2="19" y2="12"></line>

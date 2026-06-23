@@ -4,7 +4,7 @@ import MainLayout from './MainLayout.astro';
 
 const { frontmatter } = Astro.props;
 const title = frontmatter?.title || Astro.props.title || "Logitaka";
-const lang = frontmatter?.lang || Astro.props.lang || "az";
+const lang = frontmatter?.lang || Astro.props.lang || "en";
 ---
 
 <MainLayout title={`${title} — Logitaka`} lang={lang}>

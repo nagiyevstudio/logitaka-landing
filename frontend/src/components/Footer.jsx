@@ -1,5 +1,5 @@
 const Footer = ({
-  lang = 'az',
+  lang = 'en',
   navItems = [],
   legalItems = [],
   brandTagline = 'AI‑Powered OS',
@@ -12,9 +12,9 @@ const Footer = ({
     }
     const isHash = href.startsWith('#');
     if (isHash) {
-      return lang === 'az' ? `/${href}` : `/${lang}/${href}`;
+      return `/${href}`;
     }
-    return lang === 'az' ? href : `/${lang}${href}`;
+    return href;
   };
 
   return (
@@ -22,7 +22,7 @@ const Footer = ({
       <div className="footer-inner">
         <div className="footer-top">
           <div className="footer-brand">
-            <a className="brand" href={lang === 'az' ? '/' : `/${lang}`}>
+            <a className="brand" href="/">
               <img className="brand-logo brand-logo-dark" src="/assets/logo-logitaka-bb.svg" alt="Logitaka" height="28" />
               <img className="brand-logo brand-logo-light" src="/assets/logo-logitaka-wb.svg" alt="Logitaka" height="28" />
               <span className="brand-name-group">

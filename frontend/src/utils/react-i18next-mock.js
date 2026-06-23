@@ -4,7 +4,7 @@ import { getT } from './i18n.js';
 const tCache = {};
 
 export function useTranslation() {
-  const lang = globalThis.currentLanguage || (typeof document !== 'undefined' ? document.documentElement.lang : 'az');
+  const lang = globalThis.currentLanguage || (typeof document !== 'undefined' ? document.documentElement.lang : 'en');
   
   if (!tCache[lang]) {
     tCache[lang] = getT(lang);

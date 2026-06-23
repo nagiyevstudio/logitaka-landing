@@ -17,7 +17,7 @@ const ModelTeaser = ({ hideCta = false }) => {
           </ul>
           {!hideCta && (
             <div className="reveal">
-              <a href={i18n.language === 'az' ? '/pro#models' : `/${i18n.language}/pro#models`} className="button button-solid">
+              <a href="/pro#models" className="button button-solid">
                 {t('landing.modelTeaser.cta')}
               </a>
             </div>

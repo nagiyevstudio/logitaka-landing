@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 import { useTheme } from '../hooks/useTheme';
 
-const Header = ({ lang = 'az', navItems = [], brandTagline = 'AI‑Powered OS', loginLabel = 'Войти' }) => {
+const Header = ({ lang = 'en', navItems = [], brandTagline = 'AI‑Powered OS', loginLabel = 'Log In' }) => {
   const { toggleTheme } = useTheme();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,15 +27,15 @@ const Header = ({ lang = 'az', navItems = [], brandTagline = 'AI‑Powered OS', 
   const getHref = (itemHref) => {
     const isHash = itemHref.startsWith('#');
     if (isHash) {
-      return lang === 'az' ? `/${itemHref}` : `/${lang}/${itemHref}`;
+      return `/${itemHref}`;
     }
-    return lang === 'az' ? itemHref : `/${lang}${itemHref}`;
+    return itemHref;
   };
 
   return (
     <header className={`site-header ${isScrolled ? 'scrolled' : ''} ${isMenuOpen ? 'menu-open' : ''}`} id="site-header">
       <div className="header-inner">
-        <a className="brand" href={lang === 'az' ? '/' : `/${lang}`} aria-label="Logitaka">
+        <a className="brand" href="/" aria-label="Logitaka">
           <img className="brand-logo brand-logo-dark" src="/assets/logo-logitaka-bb.svg" alt="Logitaka" height="28" />
           <img className="brand-logo brand-logo-light" src="/assets/logo-logitaka-wb.svg" alt="Logitaka" height="28" />
           <span className="brand-name-group">

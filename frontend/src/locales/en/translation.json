@@ -305,7 +305,7 @@
         {
           "label": "Pro",
           "name": "PRO",
-          "price": "$10",
+          "price": "$9.99",
           "period": "/ month",
           "body": "A complete capability to dive deeply into projects, run regular discussions, log decisions, and protect key items",
           "features": [
@@ -328,7 +328,7 @@
         {
           "label": "Premium",
           "name": "PREMIUM",
-          "price": "$25",
+          "price": "$24.99",
           "period": "/ month",
           "body": "Unlimited opportunities for deep analysis, flexible control over team workflows, and surgical management tools",
           "features": [

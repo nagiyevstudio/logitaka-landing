@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/LegalLayout.astro
+layout: ../layouts/LegalLayout.astro
 title: "Privacy Policy"
 lang: "en"
 ---

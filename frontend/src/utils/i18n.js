@@ -1,49 +1,19 @@
-import azTranslation from '../locales/az/translation.json';
 import enTranslation from '../locales/en/translation.json';
-import ruTranslation from '../locales/ru/translation.json';
 
 const dictionaries = {
-  az: azTranslation,
-  en: enTranslation,
-  ru: ruTranslation
+  en: enTranslation
 };
 
 export const SUPPORTED_LOCALES = [
-  { code: 'az', label: 'AZ' },
-  { code: 'en', label: 'EN' },
-  { code: 'ru', label: 'RU' }
+  { code: 'en', label: 'EN' }
 ];
 
-// Map of supported language primary tags for quick lookup
-const SUPPORTED_PRIMARY = new Set(['az', 'en', 'ru']);
-
-/**
- * Detect best supported locale from an Accept-Language header string.
- * @param {string|null} acceptLanguage - The value of the Accept-Language header
- * @returns {string} One of 'az', 'en', 'ru' (defaults to 'az')
- */
-export function detectLocale(acceptLanguage) {
-  if (!acceptLanguage || typeof acceptLanguage !== 'string') return 'az';
-
-  // Split on commas to get ordered preferences, then take primary subtag
-  const parts = acceptLanguage.split(',').map(p => p.trim());
-  for (const part of parts) {
-    if (!part) continue;
-    const langTag = part.split(';')[0].trim();
-    const primary = langTag.split('-')[0].toLowerCase();
-    if (SUPPORTED_PRIMARY.has(primary)) return primary;
-  }
-
-  return 'az';
+export function detectLocale() {
+  return 'en';
 }
 
-/**
- * Returns a translation function for the specified language
- * @param {string} lang - The locale ('az', 'en', 'ru')
- * @returns {(key: string) => any} The t() function
- */
-export function getT(lang) {
-  const dict = dictionaries[lang] || dictionaries.az;
+export function getT() {
+  const dict = dictionaries.en;
   
   return function t(key) {
     const parts = key.split('.');
@@ -66,30 +36,6 @@ export function getT(lang) {
   };
 }
 
-/**
- * Helper to construct the localized URL path
- * @param {string} targetLang - Target locale ('az', 'en', 'ru')
- * @param {string} currentPath - Current pathname from Astro.url.pathname
- * @returns {string} The new localized path
- */
 export function getLocalizedPath(targetLang, currentPath) {
-  // Strip trailing slash if present
-  let cleanPath = currentPath;
-  if (cleanPath.endsWith('/') && cleanPath !== '/') {
-    cleanPath = cleanPath.slice(0, -1);
-  }
-
-  // Remove existing locale prefixes ('/en' or '/ru')
-  const pathParts = cleanPath.split('/');
-  if (pathParts[1] === 'en' || pathParts[1] === 'ru') {
-    pathParts.splice(1, 1);
-  }
-  cleanPath = pathParts.join('/') || '/';
-
-  // Construct new path
-  if (targetLang === 'az') {
-    return cleanPath;
-  }
-  
-  return cleanPath === '/' ? `/${targetLang}` : `/${targetLang}${cleanPath}`;
+  return '/';
 }

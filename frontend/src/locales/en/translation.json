@@ -286,9 +286,9 @@
         {
           "label": "Starter",
           "name": "Starter",
-          "price": "0 ₼",
-          "period": " / 4.99 ₼ from next month",
-          "trial": "First month free",
+          "price": "$4.99",
+          "period": "/ month",
+          "trial": "7-day free trial",
           "body": "A baseline system with everything you need to solve daily tasks, remember the essentials, and free up your mind",
           "features": [
             "Pulse",
@@ -305,7 +305,7 @@
         {
           "label": "Pro",
           "name": "PRO",
-          "price": "19.99 ₼",
+          "price": "$10",
           "period": "/ month",
           "body": "A complete capability to dive deeply into projects, run regular discussions, log decisions, and protect key items",
           "features": [
@@ -328,7 +328,7 @@
         {
           "label": "Premium",
           "name": "PREMIUM",
-          "price": "49.99 ₼",
+          "price": "$25",
           "period": "/ month",
           "body": "Unlimited opportunities for deep analysis, flexible control over team workflows, and surgical management tools",
           "features": [

@@ -1,68 +1,68 @@
 ---
-layout: ../layouts/LegalLayout.astro
-title: "İstifadə Şərtləri"
-lang: "az"
+layout: ../../layouts/LegalLayout.astro
+title: "Terms of Use"
+lang: "en"
 ---
 
-# İstifadə Şərtləri
-<p class="effective-date">Qüvvəyə minmə tarixi: 01.05.2026</p>
+# Terms of Use
+<p class="effective-date">Effective date: 01.05.2026</p>
 
-## 1. Xidmət haqqında
-Logitaka, **Faig Nagiyev** ("biz", "bizi" və ya "bizim") tərəfindən idarə olunan rəqəmsal məhsuldarlıq və layihə idarəetmə xidmətidir. Xidmət istifadəçilərə layihələri, tapşırıqları, sənədləri və iş proseslərini, o cümlədən Sİ funksiyaları vasitəsilə təşkil etməyə kömək edir.
+## 1. About the Service
+Logitaka is a digital productivity and project-management service operated by **Faig Nagiyev** ("we", "us", or "our"). The Service helps users organize projects, tasks, documents, and workflows, including through AI-assisted features.
 
-## 2. Uyğunluq
-Xidmətdən istifadə etmək üçün ən azı 18 yaşınız olmalı və ya tətbiq olunan qanunvericiliyə əsasən hüquqi müqavilə bağlamaq qabiliyyətinə malik olmalısınız. Logitaka-dan istifadə etməklə siz bu tələblərə cavab verdiyinizi bəyan edirsiniz.
+## 2. Eligibility
+You must be at least 18 years old, or otherwise legally capable of entering into a binding agreement under applicable law, to use the Service. By using Logitaka, you represent that you meet these requirements.
 
-## 3. Hesab qeydiyyatı və təhlükəsizlik
-Xidmətə daxil olmaq üçün hesab yaratmalısınız. Dəqiq məlumat təqdim etməyə və onu yeniləməyə razılaşırsınız. Siz aşağıdakılara görə məsuliyyət daşıyırsınız:
-* Parollarınızın məxfiliyini qorumaq;
-* Hesabınız altında baş verən bütün fəactivitylər;
-* Hər hansı icazəsiz giriş barədə bizə dərhal xəbər vermək.
+## 3. Account Registration and Security
+To access the Service, you must create an account. You agree to provide accurate information and keep it updated. You are responsible for:
+* Maintaining the confidentiality of your credentials;
+* All activity occurring under your account;
+* Notifying us immediately of any unauthorized access.
 
-## 4. Abunəliklər, Ödənişlər və Hesablaşma
-Logitaka ödənişli xidmətdir. Hazırda pulsuz sınaq müddəti və ya pulsuz giriş planı təklif edilmir. Ödəniş qaydaları aşağıdakı kimidir:
-* **Manual Ödəniş:** Ödənişlər avtomatik deyil. Hər hesablaşma dövrü üçün sizə əllə ödəniş linki göndəriləcək.
-* **Avtomatik Yenilənmə Yoxdur:** Avtomatik təkrarlanan ödəniş sistemi yoxdur. Ödənişli funksiyalardan istifadəni davam etdirmək üçün hər ödənişi özünüz tamamlamalısınız.
-* **Emal:** Ödənişlər üçüncü tərəf provayderi **Kapital Bank** vasitəsilə həyata keçirilir.
+## 4. Subscriptions, Payments, and Billing
+Logitaka is a paid service. We do not offer a free trial or free access plan at this time. Billing is handled as follows:
+* **Manual Payment:** Payments are not automatic. For each billing cycle, you will receive a manual payment link.
+* **No Auto-Renewal:** There is no automatic recurring charge. You must actively complete each payment to maintain access to paid features.
+* **Processing:** Payments are processed via a third-party provider, **Kapital Bank**.
 
-## 5. Geri qaytarılma
-Xidmətdən istifadəni dayandırmaq qərarına gəlsəniz, hesabınızdakı hər hansı **istifadə olunmamış qalıq balansı** üçün geri qaytarılma tələb edə bilərsiniz. Artıq istifadə olunmuş həcm və ya tamamlanmış ödəniş dövrləri üçün geri qaytarılma nəzərdə tutulmur.
+## 5. Refunds
+If you decide to stop using the Service, you may request a refund for any **unused remaining balance** on your account. We do not provide refunds for already consumed usage or completed billing periods.
 
-## 6. Qəbul edilən istifadə
-Siz Xidmətdən hər hansı qanunsuz, sui-istifadə və ya zərərli məqsədlər üçün, o cümlədən əqli mülkiyyətin pozulması, xidmətin təhlükəsizliyinə müdaxilə və ya zərərli məzmunun yüklənməsi üçün istifadə etməməyə razılaşırsınız.
+## 6. Acceptable Use
+You agree not to use the Service for any unlawful, abusive, or harmful activities, including but not limited to infringing on intellectual property, interfering with service security, or uploading malicious content.
 
-## 7. İstifadəçi məzmunu
-Yüklədiyiniz və ya yaratdığınız məzmunun ("İstifadəçi Məzmunu") mülkiyyət hüququ sizdə qalır. Siz bizə məzmununuzu yalnız Xidməti təmin etmək və tələb olunan funksiyaları (məsələn, Sİ xülasələri) yerinə yetirmək üçün zəruri olan həddə host etmək, saxlamaq və emal etmək üçün məhdud lisenziya verirsiniz.
+## 7. User Content
+You retain ownership of the content you upload or create ("User Content"). You grant us a limited license to host, store, and process your content only as necessary to provide the Service and operate requested features (such as AI summaries).
 
-## 8. Sİ funksiyaları
-Xidmət Sİ tərəfindən dəstəklənən funksiyaları ehtiva edir. Bu funksiyalardan istifadə etməklə siz aşağıdakıları qəbul edirsiniz:
-* Nəticələr qeyri-dəqiq, natamam və ya xüsusi ehtiyaclarınız üçün uyğunsuz ola bilər;
-* Sİ tərəfindən yaradılan hər hansı məzmuna etibar etməzdən əvvəl onu yoxlamağa görə siz məsuliyyət daşıyırsınız;
-* Logitaka peşəkar məsləhətləri (hüquqi, maliyyə və s.) əvəz etmir.
+## 8. AI Features
+The Service includes AI-assisted functionality. By using these features, you acknowledge that:
+* Outputs may be inaccurate, incomplete, or unsuitable for your specific needs;
+* You are responsible for reviewing all AI-generated content before relying on it;
+* Logitaka is not a substitute for professional advice (legal, financial, etc.).
 
-## 9. Xidmətin əlçatanlığı və dəyişikliklər
-İstənilən vaxt funksiyaları, qiymətləri, limitləri və istifadəyə əsaslanan rüsumları dəyişdirə bilərik. Xidmətin kəsintisiz və ya xətasız olacağına zəmanət vermirik. Texniki qulluq və yeniləmələr əlçatanlığa müvəqqəti təsir göstərə bilər.
+## 9. Service Availability and Changes
+We may change features, pricing, limits, and usage-based charges at any time. We do not guarantee that the Service will be uninterrupted or error-free. Maintenance and updates may temporarily affect availability.
 
-## 10. Əqli mülkiyyət
-Logitaka platforması, o cümlədən onun proqram təminatı, dizaynı və brendinqi bizə və ya lisenziya verənlərimizə məxsusdur və əqli mülkiyyət qanunları ilə qorunur. Siz Xidməti kopyalaya və ya tərs mühəndislik (reverse engineer) edə bilməzsiniz.
+## 10. Intellectual Property
+The Logitaka platform, including its software, design, and branding, is owned by us or our licensors and is protected by intellectual property laws. You may not copy or reverse-engineer the Service.
 
-## 11. Dayandırma və xitam
-Bu Şərtlərin pozulması, sui-istifadə, qanunsuz fəaliyyət və ya xidmət təhlükəsizliyi üçün risk yarandığı hallarda hesabınıza girişi əllə dayandıra və ya məhdudlaşdıra bilərik.
+## 11. Suspension and Termination
+We may manually suspend or restrict access to your account for violations of these Terms, abuse, unlawful activity, or risks to service security.
 
-## 12. Zəmanətlərdən imtina
-Xidmət "olduğu kimi" və "əlçatan olduğu kimi" təqdim edilir. Qanunla icazə verilən maksimum həddə hər hansı açıq və ya gizli zəmanətlərdən imtina edirik.
+## 12. Disclaimer of Warranties
+The Service is provided "as is" and "as available". We disclaim all warranties, express or implied, to the maximum extent permitted by law.
 
-## 13. Məsuliyyətin məhdudlaşdırılması
-Qanunla icazə verilən maksimum həddə, Xidmətlə bağlı hər hansı iddia üzrə ümumi məsuliyyətimiz hadisədən əvvəlki **1 ay** ərzində bizə ödədiyiniz məbləğdən və ya heç bir ödəniş edilməyibsə, **0** məbləğindən çox olmayacaqdır.
+## 13. Limitation of Liability
+To the maximum extent permitted by law, our total liability for any claim related to the Service shall not exceed the amount you paid us during the **1 month** preceding the event, or **0** if no payment was made.
 
-## 14. Məxfilik
-Xidmətdən istifadəniz həmçinin fərdi məlumatlarınızı necə emal etdiyimizi izah edən **Məxfilik Siyasətimiz** ilə tənzimlənir.
+## 14. Privacy
+Your use of the Service is also governed by our **Privacy Policy**, which explains how we handle your personal data.
 
-## 15. Tətbiq edilən hüquq və mübahisələrin həlli
-Bu Şərtlər **Azərbaycan Respublikasının** qanunları ilə tənzimlənir. Hər hansı mübahisələr **Bakı şəhəri, Azərbaycan Respublikası** məhkəmələrinin müstəsna yurisdiksiyasına tabedir.
+## 15. Governing Law and Disputes
+These Terms are governed by the laws of the **Republic of Azerbaijan**. Any disputes shall be subject to the exclusive jurisdiction of the courts of **Baku, Republic of Azerbaijan**.
 
-## 16. Bu Şərtlərdə dəyişikliklər
-Biz bu Şərtləri zaman-zaman yeniləyə bilərik. Yenilənmiş versiya dərc edildiyi andan qüvvəyə minir. Xidmətdən istifadəyə davam etmək yeni Şərtlərin qəbulu deməkdir.
+## 16. Changes to These Terms
+We may update these Terms from time to time. The updated version becomes effective when posted. Continued use of the Service constitutes acceptance of the new Terms.
 
-## 17. Əlaqə
-Sualınız olarsa, lütfən **support@logitaka.com** ünvanı ilə əlaqə saxlayın.
+## 17. Contact
+If you have questions, please contact us at **support@logitaka.com**.

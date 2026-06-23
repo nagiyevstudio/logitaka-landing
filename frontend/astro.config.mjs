@@ -7,8 +7,8 @@ import react from '@astrojs/react';
 export default defineConfig({
   integrations: [react()],
   i18n: {
-    defaultLocale: 'az',
-    locales: ['az', 'en', 'ru'],
+    defaultLocale: 'en',
+    locales: ['en'],
     routing: {
       prefixDefaultLocale: false,
     },

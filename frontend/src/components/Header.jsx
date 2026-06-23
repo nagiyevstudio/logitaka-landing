@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import LanguageSwitcher from './LanguageSwitcher';
+
 import { useTheme } from '../hooks/useTheme';
 
 const Header = ({ lang = 'az', navItems = [], brandTagline = 'AI‑Powered OS', loginLabel = 'Войти' }) => {
@@ -56,7 +56,7 @@ const Header = ({ lang = 'az', navItems = [], brandTagline = 'AI‑Powered OS', 
         </nav>
 
         <div className="header-controls">
-          <LanguageSwitcher lang={lang} />
+
           <button className="theme-icon-btn" onClick={toggleTheme} type="button" aria-label="Toggle theme">
             <span className="theme-icon-sun" aria-hidden="true">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="square">

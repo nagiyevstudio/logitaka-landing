@@ -21,7 +21,6 @@ const ValueStack = () => {
               <div className="vst-header">
                 <span>Service</span>
                 <span>USD</span>
-                <span>₼</span>
               </div>
               <div id="value-stack-rows">
                 {services.map((s, i) => (
@@ -31,17 +30,17 @@ const ValueStack = () => {
                       <span className="vst-provider">{s.provider}</span>
                     </div>
                     <span className="vst-price-usd">{s.priceUSD}{perMonth}</span>
-                    <span className="vst-price-azn">{s.priceAZN}</span>
                   </div>
                 ))}
               </div>
               <div className="vst-total-row">
                 <span className="vst-total-label">{t('landing.valueStack.totalLabel')}</span>
                 <span className="vst-total-usd">{t('landing.valueStack.totalUSD')}</span>
-                <span className="vst-total-azn">{t('landing.valueStack.totalAZN')}</span>
               </div>
             </div>
-            <p className="vst-disclaimer">{t('landing.valueStack.disclaimer')}</p>
+            {t('landing.valueStack.disclaimer') && (
+              <p className="vst-disclaimer">{t('landing.valueStack.disclaimer')}</p>
+            )}
           </div>
           
           <div className="value-stack-panel">
@@ -49,7 +48,7 @@ const ValueStack = () => {
             <div className="vsp-savings">
               <div className="vsp-savings-old">
                 <span className="vsp-old-label">{t('landing.valueStack.totalLabel')}</span>
-                <span className="vsp-old-price">{t('landing.valueStack.totalAZN')}</span>
+                <span className="vsp-old-price">{t('landing.valueStack.totalUSD')}</span>
               </div>
               <div className="vsp-divider"></div>
               <div className="vsp-savings-new">

@@ -19,7 +19,7 @@ const ChatDemo = () => {
       messages: t('landing.chatDemo.messages.s1', { returnObjects: true })
     },
     {
-      model: "GPT-5.5",
+      model: "GPT 5.5",
       name: t('landing.chatDemo.scenarios.2.name'),
       messages: t('landing.chatDemo.messages.s2', { returnObjects: true })
     }

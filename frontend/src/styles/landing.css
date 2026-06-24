@@ -832,7 +832,7 @@ section+section .section-inner::before {
 
 .vst-header {
   display: grid;
-  grid-template-columns: 1fr auto auto;
+  grid-template-columns: 1fr auto;
   gap: 12px;
   padding: 12px 20px;
   border-bottom: 1px solid var(--line-strong);
@@ -847,14 +847,13 @@ section+section .section-inner::before {
   color: var(--faint);
 }
 
-.vst-header span:nth-child(2),
-.vst-header span:nth-child(3) {
+.vst-header span:nth-child(2) {
   text-align: right;
 }
 
 .vst-row {
   display: grid;
-  grid-template-columns: 1fr auto auto;
+  grid-template-columns: 1fr auto;
   gap: 12px;
   padding: 13px 20px;
   border-bottom: 1px solid var(--line);
@@ -891,17 +890,11 @@ section+section .section-inner::before {
   white-space: nowrap;
 }
 
-.vst-price-azn {
-  font-size: 0.9rem;
-  font-weight: 700;
-  color: var(--text);
-  text-align: right;
-  white-space: nowrap;
-}
+/* Removed .vst-price-azn */
 
 .vst-total-row {
   display: grid;
-  grid-template-columns: 1fr auto auto;
+  grid-template-columns: 1fr auto;
   gap: 12px;
   padding: 16px 20px;
   background: color-mix(in srgb, var(--surface) 60%, var(--accent-dim));
@@ -918,14 +911,6 @@ section+section .section-inner::before {
 }
 
 .vst-total-usd {
-  font-size: 0.9rem;
-  color: var(--muted);
-  text-align: right;
-  text-decoration: line-through;
-  text-decoration-color: var(--accent);
-}
-
-.vst-total-azn {
   font-size: 1.15rem;
   font-weight: 700;
   color: var(--text);
@@ -933,6 +918,8 @@ section+section .section-inner::before {
   text-decoration: line-through;
   text-decoration-color: var(--accent);
 }
+
+/* Removed .vst-total-azn */
 
 /* Right panel */
 .value-stack-panel {

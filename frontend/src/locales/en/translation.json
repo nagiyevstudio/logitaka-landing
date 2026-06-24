@@ -230,53 +230,45 @@
         {
           "name": "ChatGPT Plus",
           "provider": "OpenAI",
-          "priceUSD": "$20",
-          "priceAZN": "~40 ₼"
+          "priceUSD": "$20"
         },
         {
           "name": "Claude Pro",
           "provider": "Anthropic",
-          "priceUSD": "$20",
-          "priceAZN": "~40 ₼"
+          "priceUSD": "$20"
         },
         {
           "name": "Gemini AI Pro",
           "provider": "Google",
-          "priceUSD": "$19.99",
-          "priceAZN": "~40 ₼"
+          "priceUSD": "$19.99"
         },
         {
           "name": "SuperGrok",
           "provider": "xAI",
-          "priceUSD": "$30",
-          "priceAZN": "~60 ₼"
+          "priceUSD": "$30"
         },
         {
           "name": "Kimi Pro",
           "provider": "Moonshot AI",
-          "priceUSD": "$19",
-          "priceAZN": "~38 ₼"
+          "priceUSD": "$19"
         },
         {
           "name": "Le Chat Pro",
           "provider": "Mistral",
-          "priceUSD": "$14.99",
-          "priceAZN": "~30 ₼"
+          "priceUSD": "$14.99"
         },
         {
           "name": "z.ai Pro",
           "provider": "Zhipu AI",
-          "priceUSD": "~$16",
-          "priceAZN": "~32 ₼"
+          "priceUSD": "~$16"
         }
       ],
       "totalLabel": "Total separately",
-      "totalAZN": "~280 ₼",
       "totalUSD": "~$140",
       "vsLabel": "vs",
       "logitakaLabel": "Logitaka — full access",
-      "logitakaPrice": "from 19.99 ₼",
-      "disclaimer": "* Rate: 1 USD ≈ 2 ₼ including 18% VAT on electronic services. Prices current at time of publication."
+      "logitakaPrice": "from $9.99",
+      "disclaimer": ""
     },
     "pricing": {
       "title": "Pricing.",
@@ -703,7 +695,7 @@
     "models": [
       {
         "id": "qwen",
-        "name": "Qwen 3.6 Plus",
+        "name": "Qwen 3.7 Max & Qwen 3.7 Plus",
         "provider": "Alibaba",
         "tier": "base",
         "tierLabel": "Minimal Usage",
@@ -721,7 +713,7 @@
       },
       {
         "id": "glm",
-        "name": "GLM-5.1",
+        "name": "GLM-5.2",
         "provider": "Zhipu AI (Tsinghua)",
         "tier": "eco",
         "tierLabel": "Eco-friendly Usage",
@@ -847,7 +839,7 @@
       },
       {
         "id": "opus",
-        "name": "Claude Opus 4.7",
+        "name": "Claude Opus 4.8",
         "provider": "Anthropic",
         "tier": "heavy",
         "tierLabel": "Extreme Usage",
@@ -865,13 +857,13 @@
       },
       {
         "id": "gpt",
-        "name": "GPT-5.5",
+        "name": "GPT 5.5",
         "provider": "OpenAI",
         "tier": "heavy",
         "tierLabel": "Extreme Usage",
         "cost": 14.6,
         "multiplier": "x14.6",
-        "about": "OpenAI catalyzed the mass AI era in 2022. GPT-5.5 represents one of the most potent computational tools available, excelling specifically in multi-step agentic tasks and technical orchestration.",
+        "about": "OpenAI catalyzed the mass AI era in 2022. GPT 5.5 represents one of the most potent computational tools available, excelling specifically in multi-step agentic tasks and technical orchestration.",
         "strengths": [
           "Agentic Tasks",
           "Complex Scenarios",
@@ -882,14 +874,100 @@
         "excessive": "For the majority of standard Logitaka workflows. Unless you are orchestrating complex logic or parsing massive datasets, this is an unnecessary expense."
       }
     ],
+    "compareModels": [
+      {
+        "id": "qwen_plus",
+        "name": "Qwen 3.7 Plus",
+        "cost": 1,
+        "multiplier": "x1",
+        "tier": "base"
+      },
+      {
+        "id": "mistral",
+        "name": "Mistral Large 3",
+        "cost": 1.11,
+        "multiplier": "x1.11",
+        "tier": "base"
+      },
+      {
+        "id": "deepseek",
+        "name": "DeepSeek v4 Pro",
+        "cost": 1.52,
+        "multiplier": "x1.52",
+        "tier": "eco"
+      },
+      {
+        "id": "kimi",
+        "name": "Kimi K2.6",
+        "cost": 2.36,
+        "multiplier": "x2.36",
+        "tier": "eco"
+      },
+      {
+        "id": "grok",
+        "name": "Grok 4.3",
+        "cost": 2.35,
+        "multiplier": "x2.35",
+        "tier": "mid"
+      },
+      {
+        "id": "glm",
+        "name": "GLM-5.2",
+        "cost": 3.17,
+        "multiplier": "x3.17",
+        "tier": "eco"
+      },
+      {
+        "id": "gemini_flash",
+        "name": "Gemini 3.5 Flash",
+        "cost": 4.58,
+        "multiplier": "x4.58",
+        "tier": "eco"
+      },
+      {
+        "id": "qwen_max",
+        "name": "Qwen 3.7 Max",
+        "cost": 5.56,
+        "multiplier": "x5.56",
+        "tier": "mid"
+      },
+      {
+        "id": "gemini_pro",
+        "name": "Gemini 3.1 Pro",
+        "cost": 6.11,
+        "multiplier": "x6.11",
+        "tier": "mid"
+      },
+      {
+        "id": "sonnet",
+        "name": "Claude Sonnet 4.6",
+        "cost": 8.33,
+        "multiplier": "x8.33",
+        "tier": "pro"
+      },
+      {
+        "id": "opus",
+        "name": "Claude Opus 4.8",
+        "cost": 13.89,
+        "multiplier": "x13.89",
+        "tier": "heavy"
+      },
+      {
+        "id": "gpt",
+        "name": "GPT 5.5",
+        "cost": 14.58,
+        "multiplier": "x14.58",
+        "tier": "heavy"
+      }
+    ],
     "scenarioItems": [
       {
         "icon": "🏠",
         "title": "Personal Projects and Life",
         "desc": "Home renovations, financial planning, travel, health, and education. These are all high-value projects.",
         "models": [
-          "Qwen 3.6 Plus",
-          "GLM-5.1"
+          "Qwen 3.7 Plus",
+          "GLM-5.2"
         ]
       },
       {
@@ -935,8 +1013,8 @@
         "title": "Strategic Decisions",
         "desc": "High-stakes tasks occurring quarterly—where the margin for error is zero.",
         "models": [
-          "Claude Opus 4.7",
-          "GPT-5.5"
+          "Claude Opus 4.8",
+          "GPT 5.5"
         ]
       }
     ],
@@ -959,13 +1037,13 @@
                 "cost": "$$$"
               },
               "hard": {
-                "model": "Claude Opus 4.7",
+                "model": "Claude Opus 4.8",
                 "cost": "$$$$$"
               }
             },
             "contours": {
               "meeting": {
-                "model": "GLM-5.1",
+                "model": "GLM-5.2",
                 "cost": "$$",
                 "desc": "Rapid cross-departmental status synchronization."
               },
@@ -983,7 +1061,7 @@
             "rationale": "For product leadership, structural integrity, task management, and communication empathy (Gemini) are paramount.",
             "tasks": {
               "daily": {
-                "model": "Qwen 3.6 Plus",
+                "model": "Qwen 3.7 Plus",
                 "cost": "$"
               },
               "important": {
@@ -997,7 +1075,7 @@
             },
             "contours": {
               "meeting": {
-                "model": "Qwen 3.6 Plus",
+                "model": "Qwen 3.7 Plus",
                 "cost": "$",
                 "desc": "Optimized for quick stand-ups and task tracking."
               },
@@ -1007,7 +1085,7 @@
                 "desc": "Data synthesis and unconventional problem solving."
               },
               "devchat": {
-                "model": "GPT-5.5",
+                "model": "GPT 5.5",
                 "cost": "$$$$$",
                 "desc": "Precision delivery of requirements to engineering teams."
               }
@@ -1019,7 +1097,7 @@
             "rationale": "Human-centric work necessitates high empathy (Gemini), while processing hundreds of candidates requires a long context window (Kimi).",
             "tasks": {
               "daily": {
-                "model": "Qwen 3.6 Plus",
+                "model": "Qwen 3.7 Plus",
                 "cost": "$"
               },
               "important": {
@@ -1033,7 +1111,7 @@
             },
             "contours": {
               "meeting": {
-                "model": "GLM-5.1",
+                "model": "GLM-5.2",
                 "cost": "$$",
                 "desc": "Hiring funnel synchronization."
               },
@@ -1065,7 +1143,7 @@
                 "cost": "$$$"
               },
               "hard": {
-                "model": "GPT-5.5",
+                "model": "GPT 5.5",
                 "cost": "$$$$$"
               }
             },
@@ -1093,7 +1171,7 @@
             "rationale": "Primary coding occurs in the IDE; Logitaka focuses on structural models and task logging.",
             "tasks": {
               "daily": {
-                "model": "Qwen 3.6 Plus",
+                "model": "Qwen 3.7 Plus",
                 "cost": "$"
               },
               "important": {
@@ -1107,7 +1185,7 @@
             },
             "contours": {
               "meeting": {
-                "model": "Qwen 3.6 Plus",
+                "model": "Qwen 3.7 Plus",
                 "cost": "$",
                 "desc": "Sprint reporting."
               },
@@ -1129,7 +1207,7 @@
             "rationale": "Systematic pedantry, test case management, and long-form log analysis (Kimi) are critical for quality assurance.",
             "tasks": {
               "daily": {
-                "model": "GLM-5.1",
+                "model": "GLM-5.2",
                 "cost": "$$"
               },
               "important": {
@@ -1143,7 +1221,7 @@
             },
             "contours": {
               "meeting": {
-                "model": "Qwen 3.6 Plus",
+                "model": "Qwen 3.7 Plus",
                 "cost": "$",
                 "desc": "Defect reporting and status."
               },
@@ -1167,7 +1245,7 @@
             "rationale": "Qwen provides high interface awareness for routine work, while Gemini serves as an empathetic creative partner.",
             "tasks": {
               "daily": {
-                "model": "Qwen 3.6 Plus",
+                "model": "Qwen 3.7 Plus",
                 "cost": "$"
               },
               "important": {
@@ -1199,7 +1277,7 @@
             "rationale": "Schedule orchestration, reference sourcing, and management of lengthy rights-transfer agreements.",
             "tasks": {
               "daily": {
-                "model": "Qwen 3.6 Plus",
+                "model": "Qwen 3.7 Plus",
                 "cost": "$"
               },
               "important": {
@@ -1213,7 +1291,7 @@
             },
             "contours": {
               "meeting": {
-                "model": "Qwen 3.6 Plus",
+                "model": "Qwen 3.7 Plus",
                 "cost": "$",
                 "desc": "Schedule and client tracking."
               },
@@ -1237,7 +1315,7 @@
             "rationale": "Gemini 3.1 Pro generates vibrant, human-centric prose and manages documentation with superior context.",
             "tasks": {
               "daily": {
-                "model": "Qwen 3.6 Plus",
+                "model": "Qwen 3.7 Plus",
                 "cost": "$"
               },
               "important": {
@@ -1251,7 +1329,7 @@
             },
             "contours": {
               "meeting": {
-                "model": "Qwen 3.6 Plus",
+                "model": "Qwen 3.7 Plus",
                 "cost": "$",
                 "desc": "Content planning and deadline coordination."
               },
@@ -1269,7 +1347,7 @@
             "rationale": "Demands high-level data analytics (structure) combined with audience sentiment awareness.",
             "tasks": {
               "daily": {
-                "model": "GLM-5.1",
+                "model": "GLM-5.2",
                 "cost": "$$"
               },
               "important": {
@@ -1283,7 +1361,7 @@
             },
             "contours": {
               "meeting": {
-                "model": "GLM-5.1",
+                "model": "GLM-5.2",
                 "cost": "$$",
                 "desc": "Campaign metrics and performance summaries."
               },
@@ -1307,7 +1385,7 @@
             "rationale": "Reviewing extensive PDF libraries and drafting essays. The primary requirement is long-form document processing.",
             "tasks": {
               "daily": {
-                "model": "Qwen 3.6 Plus",
+                "model": "Qwen 3.7 Plus",
                 "cost": "$"
               },
               "important": {
@@ -1321,7 +1399,7 @@
             },
             "contours": {
               "meeting": {
-                "model": "Qwen 3.6 Plus",
+                "model": "Qwen 3.7 Plus",
                 "cost": "$",
                 "desc": "Tracking schedules and assignments."
               },
@@ -1375,7 +1453,7 @@
             "rationale": "Analyzing thousands of pages of research, grant writing, and peer review.",
             "tasks": {
               "daily": {
-                "model": "GLM-5.1",
+                "model": "GLM-5.2",
                 "cost": "$$"
               },
               "important": {
@@ -1389,7 +1467,7 @@
             },
             "contours": {
               "meeting": {
-                "model": "GLM-5.1",
+                "model": "GLM-5.2",
                 "cost": "$$",
                 "desc": "Lecture scheduling."
               },
@@ -1410,10 +1488,10 @@
           {
             "roleId": "lawyer",
             "roleLabel": "Lawyer",
-            "rationale": "In the legal field, errors are fatal. For complex challenges, GPT-5.5 is utilized for absolute technical precision.",
+            "rationale": "In the legal field, errors are fatal. For complex challenges, GPT 5.5 is utilized for absolute technical precision.",
             "tasks": {
               "daily": {
-                "model": "GLM-5.1",
+                "model": "GLM-5.2",
                 "cost": "$$"
               },
               "important": {
@@ -1421,13 +1499,13 @@
                 "cost": "$$"
               },
               "hard": {
-                "model": "GPT-5.5",
+                "model": "GPT 5.5",
                 "cost": "$$$$$"
               }
             },
             "contours": {
               "meeting": {
-                "model": "GLM-5.1",
+                "model": "GLM-5.2",
                 "cost": "$$",
                 "desc": "Court case status tracking."
               },
@@ -1453,7 +1531,7 @@
                 "cost": "$$"
               },
               "hard": {
-                "model": "GPT-5.5",
+                "model": "GPT 5.5",
                 "cost": "$$$$$"
               }
             },
@@ -1483,7 +1561,7 @@
             "rationale": "Complex calculations, industry standards and regulatory codes, and multi-level project planning.",
             "tasks": {
               "daily": {
-                "model": "Qwen 3.6 Plus",
+                "model": "Qwen 3.7 Plus",
                 "cost": "$"
               },
               "important": {
@@ -1497,7 +1575,7 @@
             },
             "contours": {
               "meeting": {
-                "model": "Qwen 3.6 Plus",
+                "model": "Qwen 3.7 Plus",
                 "cost": "$",
                 "desc": "Contractor synchronization."
               },
@@ -1550,10 +1628,10 @@
           {
             "roleId": "doctor",
             "roleLabel": "Doctor / Clinic Admin",
-            "rationale": "Patient interactions are managed by the empathetic Sonnet, while treatment protocols necessitate the uncompromising precision of GPT-5.5.",
+            "rationale": "Patient interactions are managed by the empathetic Sonnet, while treatment protocols necessitate the uncompromising precision of GPT 5.5.",
             "tasks": {
               "daily": {
-                "model": "Qwen 3.6 Plus",
+                "model": "Qwen 3.7 Plus",
                 "cost": "$"
               },
               "important": {
@@ -1561,7 +1639,7 @@
                 "cost": "$$$"
               },
               "hard": {
-                "model": "GPT-5.5",
+                "model": "GPT 5.5",
                 "cost": "$$$$$"
               }
             },
@@ -1585,7 +1663,7 @@
             "rationale": "Exclusive focus on high empathy and the detection of subtle nuances in human communication (Sonnet/Opus).",
             "tasks": {
               "daily": {
-                "model": "GLM-5.1",
+                "model": "GLM-5.2",
                 "cost": "$$"
               },
               "important": {
@@ -1599,7 +1677,7 @@
             },
             "contours": {
               "meeting": {
-                "model": "GLM-5.1",
+                "model": "GLM-5.2",
                 "cost": "$$",
                 "desc": "Session scheduling."
               },
@@ -1623,7 +1701,7 @@
             "rationale": "Coordinating volunteers, managing grants, and overseeing charters. A balance of administrative structure and empathy.",
             "tasks": {
               "daily": {
-                "model": "Qwen 3.6 Plus",
+                "model": "Qwen 3.7 Plus",
                 "cost": "$"
               },
               "important": {
@@ -1637,7 +1715,7 @@
             },
             "contours": {
               "meeting": {
-                "model": "Qwen 3.6 Plus",
+                "model": "Qwen 3.7 Plus",
                 "cost": "$",
                 "desc": "Volunteer coordination and updates."
               },
@@ -1661,7 +1739,7 @@
             "rationale": "Independent management. Focused on reducing cognitive load, lifestyle planning, and cost efficiency.",
             "tasks": {
               "daily": {
-                "model": "Qwen 3.6 Plus",
+                "model": "Qwen 3.7 Plus",
                 "cost": "$"
               },
               "important": {
@@ -1675,7 +1753,7 @@
             },
             "contours": {
               "meeting": {
-                "model": "Qwen 3.6 Plus",
+                "model": "Qwen 3.7 Plus",
                 "cost": "$",
                 "desc": "Daily self-sync: prioritizing the day's objectives."
               },
@@ -1693,7 +1771,7 @@
             "rationale": "Optimized for value. Premium models are strictly excessive; base models efficiently handle all home-centric tasks.",
             "tasks": {
               "daily": {
-                "model": "Qwen 3.6 Plus",
+                "model": "Qwen 3.7 Plus",
                 "cost": "$"
               },
               "important": {
@@ -1701,18 +1779,18 @@
                 "cost": "$"
               },
               "hard": {
-                "model": "GLM-5.1",
+                "model": "GLM-5.2",
                 "cost": "$$"
               }
             },
             "contours": {
               "meeting": {
-                "model": "Qwen 3.6 Plus",
+                "model": "Qwen 3.7 Plus",
                 "cost": "$",
                 "desc": "Household chores and procurement lists."
               },
               "discussion": {
-                "model": "GLM-5.1",
+                "model": "GLM-5.2",
                 "cost": "$$",
                 "desc": "Planning travel itineraries or home improvement stages."
               },

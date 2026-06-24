@@ -1,21 +1,23 @@
 import { useTranslation } from 'react-i18next';
 
 const SCORES = {
-  qwen: [5, 4, 5, 4, 3, 1],
-  glm: [5, 3, 5, 4, 3, 2],
+  qwen_plus: [5, 4, 5, 4, 3, 1],
+  qwen_max: [5, 4, 4, 5, 5, 3],
+  glm: [5, 3, 5, 4, 4, 2],
   mistral: [4, 3, 5, 4, 4, 1],
-  kimi: [3, 2, 3, 4, 5, 2],
-  deepseek: [4, 3, 4, 5, 5, 2],
-  grok: [5, 4, 4, 4, 4, 3],
-  gemini: [4, 5, 3, 4, 5, 4],
-  sonnet: [3, 4, 4, 4, 4, 4],
-  opus: [2, 3, 2, 5, 5, 5],
-  gpt: [2, 3, 4, 5, 5, 5]
+  kimi: [3, 3, 3, 4, 5, 2],
+  deepseek: [4, 3, 4, 5, 5, 1],
+  grok: [5, 4, 4, 4, 4, 2],
+  gemini_flash: [4, 4, 5, 4, 4, 3],
+  gemini_pro: [4, 5, 3, 4, 5, 4],
+  sonnet: [4, 4, 4, 5, 5, 4],
+  opus: [3, 4, 3, 5, 5, 5],
+  gpt: [3, 3, 4, 5, 5, 5]
 };
 
 const CapabilityMatrix = () => {
   const { t } = useTranslation();
-  const models = t('models_page.models', { returnObjects: true }) || [];
+  const models = t('models_page.compareModels', { returnObjects: true }) || [];
   const cols = t('models_page.matrix.cols', { returnObjects: true }) || [];
   const modelLabel = t('models_page.labels.model');
 

@@ -283,13 +283,13 @@
           "trial": "7-day free trial",
           "body": "A baseline system with everything you need to solve daily tasks, remember the essentials, and free up your mind",
           "features": [
-            "Pulse",
-            "5 basic projects + Decisions Block",
+            "Voice assistant",
+            "5 basic projects",
+            "Project Structured Memory",
             "Calendar + external calendar integration",
             "Subscriptions",
             "Summaries",
-            "Quick update",
-            "Voice assistant"
+            "Quick update"
           ],
           "cta": "Try for free",
           "href": "https://app.logitaka.com/app/login"
@@ -304,15 +304,13 @@
             "Everything in Starter",
             "Discussion",
             "Inbox",
-            "10 complete projects",
-            "Decisions",
+            "10 Full Projects",
             "Library",
             "Chat Shelf",
             "Archive",
             "Search",
-            "Selection of top 10 AI models in the world",
-            "Meeting Process",
-            "Express Meeting Process"
+            "All Top AI models worldwide",
+            "Meeting & Express Meeting Processes"
           ],
           "cta": "Choose PRO",
           "href": "https://app.logitaka.com/app/login"
@@ -325,6 +323,9 @@
           "body": "Unlimited opportunities for deep analysis, flexible control over team workflows, and surgical management tools",
           "features": [
             "Everything in PRO",
+            "Independent AI Analytics",
+            "Personal AI Profiler",
+            "AI Strategist Insights",
             "Team (unlimited members)",
             "DevTeam — smart development workflow control via GitHub",
             "Unlimited complete projects"

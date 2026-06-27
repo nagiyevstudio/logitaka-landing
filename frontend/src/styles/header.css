@@ -2,16 +2,17 @@
 .site-header {
   position: sticky; top: 0; z-index: 1000;
   height: var(--header-height);
-  backdrop-filter: blur(24px) saturate(160%);
-  -webkit-backdrop-filter: blur(24px) saturate(160%);
-  background: color-mix(in srgb, var(--bg) 72%, transparent);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background: color-mix(in srgb, var(--bg) 60%, transparent);
   border-bottom: 1px solid var(--line);
-  transition: background 300ms ease;
+  transition: background 300ms ease, backdrop-filter 300ms ease, -webkit-backdrop-filter 300ms ease;
 }
 
 .site-header.menu-open {
   background: var(--bg);
   backdrop-filter: none;
+  -webkit-backdrop-filter: none;
 }
 
 .header-inner {

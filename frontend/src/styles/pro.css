@@ -96,9 +96,9 @@
 /* ── STICKY TABS BAR ── */
 .pro-tabs-bar-wrapper {
   position: sticky;
-  top: 60px; /* site-header height */
+  top: var(--header-height); /* site-header height */
   z-index: 99;
-  background: var(--surface-dim);
+  background: color-mix(in srgb, var(--bg) 50%, transparent);
   border-top: 1px solid var(--line-strong);
   border-bottom: 1px solid var(--line-strong);
   transition: background-color 200ms ease, border-color 200ms ease, box-shadow 200ms ease;
@@ -107,7 +107,7 @@
 }
 
 .pro-tabs-bar-wrapper.is-stuck {
-  background: color-mix(in srgb, var(--surface) 85%, transparent);
+  background: color-mix(in srgb, var(--bg) 60%, transparent);
   border-bottom-color: var(--accent-dim);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15), var(--shadow-soft);
 }
@@ -226,6 +226,6 @@
   }
   
   .pro-tabs-bar-wrapper {
-    top: 56px; /* adjust for mobile header height */
+    top: var(--header-height); /* adjust for mobile header height */
   }
 }

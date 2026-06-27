@@ -14,6 +14,9 @@ export default defineConfig({
     },
   },
   vite: {
+    build: {
+      cssMinify: 'esbuild'
+    },
     resolve: {
       alias: {
         'react-i18next': '/src/utils/react-i18next-mock.js'

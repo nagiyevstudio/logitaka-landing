@@ -9,17 +9,17 @@ const ChatDemo = () => {
 
   const scenariosData = [
     {
-      model: "Gemini 3.1 Pro",
+      model: "Task Planner AI",
       name: t('landing.chatDemo.scenarios.0.name'),
       messages: t('landing.chatDemo.messages.s0', { returnObjects: true })
     },
     {
-      model: "Claude Sonnet 4.6",
+      model: "Context Retention AI",
       name: t('landing.chatDemo.scenarios.1.name'),
       messages: t('landing.chatDemo.messages.s1', { returnObjects: true })
     },
     {
-      model: "GPT 5.5",
+      model: "Precise Logic AI",
       name: t('landing.chatDemo.scenarios.2.name'),
       messages: t('landing.chatDemo.messages.s2', { returnObjects: true })
     }

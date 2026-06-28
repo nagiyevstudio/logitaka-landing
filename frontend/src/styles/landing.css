@@ -99,9 +99,9 @@ section+section .section-inner::before {
 
 .hero-headline {
   margin: 0;
-  font-size: clamp(3rem, 7vw, 6.5rem);
-  line-height: 0.9;
-  letter-spacing: -0.055em;
+  font-size: clamp(2.8rem, 5.8vw, 5.2rem);
+  line-height: 0.95;
+  letter-spacing: -0.05em;
   font-weight: 700;
 }
 

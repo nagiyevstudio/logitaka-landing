@@ -45,6 +45,37 @@ const footerCopyright = t('landing.footer.copyright');
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <meta name="description" content={description} />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://logitaka.com/" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content="https://logitaka.com/assets/og-image.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://logitaka.com/" />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content="https://logitaka.com/assets/og-image.png" />
+
+    <!-- Schema.org JSON-LD for SoftwareApplication -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Logitaka",
+        "operatingSystem": "All",
+        "applicationCategory": "BusinessApplication",
+        "description": "Logitaka is a voice-first cognitive exoskeleton and project operating system that structures raw audio thoughts into clean tasks, calendar events, and roadmaps.",
+        "offers": {
+          "@type": "Offer",
+          "price": "4.99",
+          "priceCurrency": "USD"
+        }
+      }
+    </script>
   </head>
   <body>
     <!-- Set client-side global language and theme before any hydration runs -->

@@ -2,13 +2,8 @@ import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
 // Tab imports
-import Capabilities from '../home/Capabilities.jsx';
-import LiveContext from '../home/LiveContext.jsx';
-import ModelTeaser from '../home/ModelTeaser.jsx';
 
-import DevTeam from '../home/DevTeam.jsx';
 
-import ModelCards from '../models/ModelCards.jsx';
 
 import PriceChart from '../models/PriceChart.jsx';
 import CapabilityMatrix from '../models/CapabilityMatrix.jsx';
@@ -55,7 +50,7 @@ const ProTabs = () => {
   useEffect(() => {
     const handleHash = () => {
       const hash = window.location.hash.replace('#', '');
-      if (['pro', 'premium', 'models', 'compare', 'advisor'].includes(hash)) {
+      if (['pro', 'premium', 'compare', 'advisor'].includes(hash)) {
         setActiveTab(hash);
       }
     };
@@ -97,7 +92,6 @@ const ProTabs = () => {
   const tabs = [
     { id: 'pro', label: t('pro_page.tabs.pro') },
     { id: 'premium', label: t('pro_page.tabs.premium') },
-    { id: 'models', label: t('pro_page.tabs.models') },
     { id: 'compare', label: t('pro_page.tabs.compare') },
     { id: 'advisor', label: t('pro_page.tabs.advisor') },
   ];
@@ -131,48 +125,39 @@ const ProTabs = () => {
         {/* TAB 1: PRO */}
         <div className={`pro-tab-panel ${activeTab === 'pro' ? 'active' : ''}`} role="tabpanel" style={{ display: activeTab === 'pro' ? 'block' : 'none' }}>
           {visitedTabs.pro && (
-            <>
-              <Capabilities />
-              <hr className="divider" />
-              <LiveContext client:visible />
-              <hr className="divider" />
-              <ModelTeaser hideCta={true} />
-            </>
+            <section className="pro-details-section premium-details-section" style={{ padding: '20px 0 60px' }}>
+              <div className="section-inner">
+                <div className="premium-details-grid cards-grid">
+                  {(t('pro_page.pro_details', { returnObjects: true }) || []).map((item, index) => (
+                    <div className="panel reveal is-visible" key={index}>
+                      <div className="panel-index">{String(index + 1).padStart(2, '0')}</div>
+                      <h3 className="panel-title">{item.title}</h3>
+                      <p className="panel-copy">{item.description}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </section>
           )}
         </div>
 
         {/* TAB 2: PREMIUM */}
         <div className={`pro-tab-panel ${activeTab === 'premium' ? 'active' : ''}`} role="tabpanel" style={{ display: activeTab === 'premium' ? 'block' : 'none' }}>
           {visitedTabs.premium && (
-            <>
-              <DevTeam />
-              <section className="premium-details-section">
-                <div className="section-inner">
-                  <div className="premium-details-grid cards-grid">
-                    <div className="panel reveal is-visible">
-                      <div className="panel-index">01</div>
-                      <h3 className="panel-title">{t('pro_page.premium.team_context.title')}</h3>
-                      <p className="panel-copy">
-                        {t('pro_page.premium.team_context.description')}
-                      </p>
+            <section className="premium-details-section" style={{ padding: '20px 0 60px' }}>
+              <div className="section-inner">
+                <div className="premium-details-grid cards-grid">
+                  {(t('pro_page.premium_details', { returnObjects: true }) || []).map((item, index) => (
+                    <div className="panel reveal is-visible" key={index}>
+                      <div className="panel-index">{String(index + 1).padStart(2, '0')}</div>
+                      <h3 className="panel-title">{item.title}</h3>
+                      <p className="panel-copy">{item.description}</p>
                     </div>
-                    <div className="panel reveal is-visible">
-                      <div className="panel-index">02</div>
-                      <h3 className="panel-title">{t('pro_page.premium.on_premise.title')}</h3>
-                      <p className="panel-copy">
-                        {t('pro_page.premium.on_premise.description')}
-                      </p>
-                    </div>
-                  </div>
+                  ))}
                 </div>
-              </section>
-            </>
+              </div>
+            </section>
           )}
-        </div>
-
-        {/* TAB 3: MODELS */}
-        <div className={`pro-tab-panel ${activeTab === 'models' ? 'active' : ''}`} role="tabpanel" style={{ display: activeTab === 'models' ? 'block' : 'none' }}>
-          {visitedTabs.models && <ModelCards />}
         </div>
 
         {/* TAB 4: COMPARE */}

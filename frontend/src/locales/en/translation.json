@@ -817,7 +817,7 @@
       },
       {
         "id": "gpt",
-        "name": "GPT 5.5",
+        "name": "GPT 5.6",
         "cost": 18.42,
         "multiplier": "x18.42",
         "tier": "heavy"
@@ -846,7 +846,7 @@
         "desc": "Client management, deadlines, formal correspondence, and agreements. Structured tasks with moderate context.",
         "models": [
           "Mistral Large 3",
-          "Claude Sonnet 4.6"
+          "Claude Sonnet 5"
         ]
       },
       {
@@ -854,9 +854,9 @@
         "title": "Small Business and Teams",
         "desc": "Collaborative projects, oversight, task delegation, and the formalization of team decisions.",
         "models": [
-          "Claude Sonnet 4.6",
+          "Claude Sonnet 5",
           "DeepSeek v4 Pro",
-          "Grok 4.3"
+          "Grok 4.5"
         ]
       },
       {
@@ -874,7 +874,7 @@
         "title": "Technical Projects",
         "desc": "Architectural planning, technical decision trails, and maintaining team alignment on specifications.",
         "models": [
-          "Claude Sonnet 4.6",
+          "Claude Sonnet 5",
           "DeepSeek v4 Pro"
         ]
       },
@@ -884,7 +884,7 @@
         "desc": "High-stakes tasks occurring quarterly—where the margin for error is zero.",
         "models": [
           "Claude Opus 4.8",
-          "GPT 5.5"
+          "GPT 5.6"
         ]
       }
     ],
@@ -903,7 +903,7 @@
                 "cost": "$"
               },
               "important": {
-                "model": "Grok 4.3",
+                "model": "Grok 4.5",
                 "cost": "$$$"
               },
               "hard": {
@@ -918,7 +918,7 @@
                 "desc": "Fast end-of-day voice-to-structure dump."
               },
               "discussion": {
-                "model": "Grok 4.3",
+                "model": "Grok 4.5",
                 "cost": "$$$",
                 "desc": "Brainstorming business strategies and next steps."
               }
@@ -938,7 +938,7 @@
                 "cost": "$$"
               },
               "hard": {
-                "model": "Grok 4.3",
+                "model": "Grok 4.5",
                 "cost": "$$$"
               }
             },
@@ -949,7 +949,7 @@
                 "desc": "Quick stand-ups, backlog grooming, and action item tracking."
               },
               "discussion": {
-                "model": "Grok 4.3",
+                "model": "Grok 4.5",
                 "cost": "$$$",
                 "desc": "Synthesizing requirements and resolving architectural trade-offs."
               }
@@ -1074,7 +1074,7 @@
                 "cost": "$$"
               },
               "hard": {
-                "model": "GPT 5.5",
+                "model": "GPT 5.6",
                 "cost": "$$$$$"
               }
             },

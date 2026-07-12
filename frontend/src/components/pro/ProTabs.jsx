@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 
 
 import PriceChart from '../models/PriceChart.jsx';
-import CapabilityMatrix from '../models/CapabilityMatrix.jsx';
+
 import ValueStack from '../home/ValueStack.jsx';
 
 import Scenarios from '../models/Scenarios.jsx';
@@ -165,8 +165,6 @@ const ProTabs = () => {
           {visitedTabs.compare && (
             <>
               <PriceChart client:visible />
-              <hr className="divider" />
-              <CapabilityMatrix />
               <hr className="divider" />
               <ValueStack />
             </>

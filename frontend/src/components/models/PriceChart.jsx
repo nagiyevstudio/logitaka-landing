@@ -3,9 +3,7 @@ import { useTranslation } from 'react-i18next';
 
 const TIER_COLORS = { base:'#14b8a6', eco:'#16a34a', mid:'#d97706', pro:'#ff4500', heavy:'#b91c1c' };
 const MODEL_COLORS = {
-  deepseek: '#14b8a6', // Same color as Mistral Large 3 (base tier)
-  grok: '#22c55e',     // Green
-  gemini_flash: '#d97706' // Same color as Qwen 3.7 Max (mid tier)
+  // No overrides needed — all models use their tier color
 };
 
 const PriceChart = () => {
@@ -16,7 +14,7 @@ const PriceChart = () => {
   const chartRef = useRef(null);
 
   const sortedModels = [...models].sort((a, b) => a.cost - b.cost);
-  const maxCost = 14.6;
+  const maxCost = 35.09;
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {

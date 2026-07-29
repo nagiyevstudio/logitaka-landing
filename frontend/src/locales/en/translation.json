@@ -725,20 +725,6 @@
         "tier": "base"
       },
       {
-        "id": "gpt_mini",
-        "name": "GPT-5.4 mini",
-        "cost": 2.76,
-        "multiplier": "x2.76",
-        "tier": "eco"
-      },
-      {
-        "id": "mimo_pro",
-        "name": "Mimo v2.5 Pro",
-        "cost": 3.16,
-        "multiplier": "x3.16",
-        "tier": "eco"
-      },
-      {
         "id": "kimi",
         "name": "Kimi K2.6",
         "cost": 3.2,
@@ -768,9 +754,9 @@
       },
       {
         "id": "gemini_flash",
-        "name": "Gemini 3.5 Flash",
-        "cost": 5.53,
-        "multiplier": "x5.53",
+        "name": "Gemini 3.6 Flash",
+        "cost": 5.33,
+        "multiplier": "x5.33",
         "tier": "mid"
       },
       {
@@ -802,8 +788,15 @@
         "tier": "pro"
       },
       {
+        "id": "kimi_k3",
+        "name": "Kimi K3",
+        "cost": 10.4,
+        "multiplier": "x10.4",
+        "tier": "pro"
+      },
+      {
         "id": "opus",
-        "name": "Claude Opus 4.8",
+        "name": "Claude Opus 5",
         "cost": 17.54,
         "multiplier": "x17.54",
         "tier": "heavy"
@@ -811,13 +804,6 @@
       {
         "id": "gpt_sol",
         "name": "GPT-5.6 Sol",
-        "cost": 18.42,
-        "multiplier": "x18.42",
-        "tier": "heavy"
-      },
-      {
-        "id": "gpt",
-        "name": "GPT 5.6",
         "cost": 18.42,
         "multiplier": "x18.42",
         "tier": "heavy"

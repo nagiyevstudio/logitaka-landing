@@ -1,18 +1,22 @@
 import { useTranslation } from 'react-i18next';
 
 const SCORES = {
+  minimax: [3, 2, 5, 3, 2, 1],
+  mimo_xiaomi: [4, 3, 4, 3, 3, 1],
   qwen_plus: [5, 4, 5, 4, 3, 1],
-  qwen_max: [5, 4, 4, 5, 5, 3],
-  glm: [5, 3, 5, 4, 4, 2],
   mistral: [4, 3, 5, 4, 4, 1],
-  kimi: [3, 3, 3, 4, 5, 2],
   deepseek: [4, 3, 4, 5, 5, 1],
-  grok: [5, 4, 4, 4, 4, 2],
+  glm: [5, 3, 5, 4, 4, 2],
+  qwen_max: [5, 4, 4, 5, 5, 3],
   gemini_flash: [4, 4, 5, 4, 4, 3],
-  gemini_pro: [4, 5, 3, 4, 5, 4],
+  grok: [5, 4, 4, 4, 4, 2],
   sonnet: [4, 4, 4, 5, 5, 4],
+  gemini_pro: [4, 5, 3, 4, 5, 4],
+  gpt_terra: [4, 4, 3, 5, 5, 4],
+  kimi_k3: [4, 4, 3, 5, 5, 3],
   opus: [3, 4, 3, 5, 5, 5],
-  gpt: [3, 3, 4, 5, 5, 5]
+  gpt_sol: [4, 4, 3, 5, 5, 5],
+  fable: [4, 5, 3, 5, 5, 5]
 };
 
 const CapabilityMatrix = () => {

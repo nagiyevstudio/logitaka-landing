@@ -5,7 +5,7 @@
       "description": "Just say what's happening. Logitaka will figure it out, organize, remind, and tell you what to do next."
     },
     "ui": {
-      "brandTagline": "AI‑Powered OS",
+      "brandTagline": "Vibe to Structure",
       "nav": [
         {
           "href": "#how-it-works",
@@ -689,7 +689,7 @@
       "byTaskType": "By task type"
     },
     "ui": {
-      "brandTagline": "AI-Powered OS",
+      "brandTagline": "Vibe to Structure",
       "themeToggle": "Toggle Theme"
     },
     "hero": {
@@ -783,32 +783,11 @@
         "tier": "base"
       },
       {
-        "id": "gemini_flash_3",
-        "name": "Gemini 3 Flash",
-        "cost": 1.84,
-        "multiplier": "x1.84",
-        "tier": "base"
-      },
-      {
         "id": "deepseek",
         "name": "DeepSeek v4 Pro",
         "cost": 1.95,
         "multiplier": "x1.95",
         "tier": "base"
-      },
-      {
-        "id": "kimi",
-        "name": "Kimi K2.6",
-        "cost": 3.2,
-        "multiplier": "x3.20",
-        "tier": "eco"
-      },
-      {
-        "id": "gpt_luna",
-        "name": "GPT-5.6 Luna",
-        "cost": 3.68,
-        "multiplier": "x3.68",
-        "tier": "eco"
       },
       {
         "id": "glm",
@@ -922,7 +901,7 @@
         "title": "Research and Analytics",
         "desc": "Deep analysis, comparative studies, managing massive datasets, and information synthesis.",
         "models": [
-          "Kimi K2.6",
+          "Kimi K3",
           "DeepSeek v4 Pro",
           "Gemini 3.1 Pro"
         ]
@@ -1095,7 +1074,7 @@
                 "cost": "$$"
               },
               "hard": {
-                "model": "Kimi K2.6",
+                "model": "Kimi K3",
                 "cost": "$$"
               }
             },
@@ -1106,7 +1085,7 @@
                 "desc": "Campaign tracking and budget review syncs."
               },
               "discussion": {
-                "model": "Kimi K2.6",
+                "model": "Kimi K3",
                 "cost": "$$",
                 "desc": "Synthesizing market research data and campaign reports."
               }
@@ -1128,8 +1107,8 @@
                 "cost": "$$"
               },
               "important": {
-                "model": "Kimi K2.6",
-                "cost": "$$"
+                "model": "Kimi K3",
+                "cost": "$$$"
               },
               "hard": {
                 "model": "GPT 5.6",

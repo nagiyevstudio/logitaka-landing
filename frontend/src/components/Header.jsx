@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 import { useTheme } from '../hooks/useTheme';
 
-const Header = ({ lang = 'en', navItems = [], brandTagline = 'AI‑Powered OS', loginLabel = 'Log In' }) => {
+const Header = ({ lang = 'en', navItems = [], brandTagline = 'Vibe to Structure', loginLabel = 'Log In' }) => {
   const { toggleTheme } = useTheme();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);

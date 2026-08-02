@@ -1,0 +1,23 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import { getT } from '../utils/i18n';
+import ModelsHero from '../components/models/ModelsHero.jsx';
+import CapabilityMatrix from '../components/models/CapabilityMatrix.jsx';
+import PriceChart from '../components/models/PriceChart.jsx';
+import Scenarios from '../components/models/Scenarios.jsx';
+import AdvisorWidget from '../components/models/AdvisorWidget.jsx';
+
+const lang = 'en';
+globalThis.currentLanguage = lang;
+const t = getT(lang);
+---
+
+<MainLayout title={t('models_page.meta.title')} lang={lang}>
+  <div class="models-page">
+    <ModelsHero client:load />
+    <CapabilityMatrix client:visible />
+    <PriceChart client:visible />
+    <Scenarios client:visible />
+    <AdvisorWidget client:load />
+  </div>
+</MainLayout>

@@ -16,6 +16,10 @@
           "label": "Pricing"
         },
         {
+          "href": "/models",
+          "label": "Models"
+        },
+        {
           "href": "#faq",
           "label": "FAQ"
         },
@@ -37,28 +41,28 @@
     },
     "hero": {
       "kicker": "Logitaka",
-      "headline": "Speak your mind. Logitaka structures it.",
-      "subheadline": "The voice-first operating system for solopreneurs and knowledge workers. Dictate raw thoughts, tasks, or meeting minutes — Logitaka instantly structures them into clean tasks, calendar events, and project context.",
-      "ctaPrimary": "Try Logitaka Free",
-      "ctaSecondary": "Watch 60-Second Demo",
+      "headline": "Speak your mind. Watch it become a plan.",
+      "subheadline": "Logitaka Talk is a fullscreen voice workspace. Speak naturally — tasks, events, and decisions assemble into live draft cards as you talk. Review the batch. Hit confirm. It's on your roadmap. No typing. No forms. No second pass.",
+      "ctaPrimary": "Try Talk Free",
+      "ctaSecondary": "See how Talk works",
       "stats": [
         {
-          "value": "15s",
-          "label": "voice dump vs. 10m typing"
+          "value": "3 min",
+          "label": "one voice session"
         },
         {
-          "value": "100%",
-          "label": "cognitive load offloaded"
+          "value": "8",
+          "label": "actions per batch"
         },
         {
-          "value": "Active",
-          "label": "context tracking 24/7"
+          "value": "0",
+          "label": "typing required"
         }
       ],
       "supporting": [
-        "A sharp, living, minimalist space without unnecessary visual noise.",
-        "One system for daily sessions, projects, decisions, and next steps.",
-        "Fast reasoning, context retention, desktop and mobile as equal modes."
+        "Open Talk. Speak naturally. Live draft cards build across your projects in real time.",
+        "Review the batch before anything is applied. Nothing touches your workspace until you confirm.",
+        "Hit Apply. Logitaka executes exactly what you reviewed — no second AI pass, no surprises."
       ],
       "visualCards": [
         {
@@ -102,32 +106,32 @@
       "closing": "This isn't a willpower problem. This is a problem of lacking an active cognitive exoskeleton that holds your work context together."
     },
     "transformation": {
-      "title": "How it works.",
+      "title": "How Talk works.",
       "body": [
-        "On first entry, Logitaka asks questions and listens. Based on what you tell — it automatically forms a structure: projects, tasks, decisions, plan, calendar.",
-        "The more you tell — the more accurately the system understands your situation.",
-        "Under the hood is a structured project engine that formats your thoughts into concrete action items, guided by seasoned project management methodologies."
+        "Open Logitaka Talk. Speak naturally — about tasks, decisions, events, or anything on your mind. Live draft cards assemble in real time across your projects as you talk.",
+        "Review the batch before anything is applied. Nothing touches your workspace until you confirm.",
+        "Hit Apply. Logitaka executes exactly the batch you reviewed — no second AI pass, no surprises."
       ],
       "coreLabel": "Core Statement",
-      "coreBody": "Under the hood is not just AI, but a structured engine that formats your thoughts into concrete plans. The system doesn't adapt to chaos, but guides you out of it. Works for you 24/7.",
-      "listLabel": "What begins to appear",
+      "coreBody": "Talk is not a chatbot. It is a deterministic voice workspace: what you see as drafts is exactly what gets applied. Natural speech becomes structured reality in one session.",
+      "listLabel": "What one session creates",
       "list": [
-        "The more you tell — the clearer the system understands your reality.",
-        "Important fragments stop living separately and fold into a solid picture.",
-        "Decisions, plans, and next steps stop getting lost in the chaos of conversation.",
-        "The structure doesn't freeze. It continues to live and update with you."
+        "Tasks, events, decisions, and notes — structured across multiple projects at once.",
+        "Corrections happen in place: say 'not tomorrow, Friday' and the card updates immediately.",
+        "Nothing writes to your workspace until you confirm the full batch.",
+        "Missing fields show as empty slots — fill them with your next phrase."
       ]
     },
     "capabilities": {
       "title": "What the system does.",
       "items": [
         {
-          "title": "Voice-to-Structure & Express Meetings",
+          "title": "Logitaka Talk & Structured Meetings",
           "body": "Speak naturally. Whether it's a 15-second task or a 10-minute project dump, Logitaka automatically updates tasks, calendars, and decisions across all your projects at once."
         },
         {
-          "title": "Independent AI Critic (The Anti-Yes-Man)",
-          "body": "Unlike traditional AI chats that simply agree with you, Logitaka employs an independent critic. It objectively reviews your project roadmap against international best practices, pointing out risks and blind spots."
+          "title": "Project Health & Risk Radar",
+          "body": "Logitaka runs an independent review of your project roadmap against best practices, surfacing actual risks and blind spots without agreeing with everything you say."
         },
         {
           "title": "Telegram Sync & Daily Briefs",
@@ -159,7 +163,7 @@
       ]
     },
     "modelTeaser": {
-      "title": "10+ Top AI Models. Pay Only for Real Complexity.",
+      "title": "40+ Top AI Models. Pay Only for Real Complexity.",
       "subtitle": "Why use a sledgehammer to crack a nut? Logitaka lets you use fast, cost-effective models for daily routines, saving heavyweights for truly complex challenges.",
       "card1": {
         "title": "Routine Tasks",
@@ -279,7 +283,7 @@
           "trial": "7-day free trial",
           "body": "A baseline system with everything you need to solve daily tasks, remember the essentials, and free up your mind",
           "features": [
-            "Voice assistant",
+            "Logitaka Talk voice workspace",
             "5 basic projects",
             "Project Structured Memory",
             "Calendar + external calendar integration",
@@ -306,7 +310,7 @@
             "Archive",
             "Search",
             "All Top AI models worldwide",
-            "Meeting & Express Meeting Processes"
+            "Structured Meetings"
           ],
           "cta": "Choose PRO",
           "href": "https://app.logitaka.com/app/login"
@@ -343,24 +347,73 @@
       "title": "FAQ",
       "items": [
         {
-          "question": "What is Logitaka?",
-          "answer": "Logitaka is a voice-first cognitive exoskeleton and project operating system designed for professionals who manage high cognitive loads. It takes raw, unstructured voice recordings or text notes and formats them into organized tasks, calendar events, and project roadmaps."
+          "question": "What is Logitaka Talk?",
+          "answer": "A fullscreen voice workspace. Speak naturally and Logitaka assembles your words into structured draft cards — tasks, events, decisions, notes — in real time. Review and confirm to apply."
         },
         {
-          "question": "How does voice-to-structure work?",
-          "answer": "It is simple: you press record and dictate your raw thoughts, project updates, or meeting minutes. Behind the scenes, Logitaka's structured engine processes the audio, extracts tasks and decisions, schedules deadlines, and updates your project space in seconds."
+          "question": "Does it write to my projects while I speak?",
+          "answer": "No. Everything you see while speaking is a draft. Nothing touches your workspace until you hit Apply — then Logitaka executes exactly the batch you reviewed, with no second AI pass."
+        },
+        {
+          "question": "What if it misunderstands me?",
+          "answer": "Corrections happen in place. Say \"not tomorrow, Friday\" and the card updates. Missing fields show as empty slots you can fill with your next phrase."
+        },
+        {
+          "question": "How long is a session?",
+          "answer": "Up to 3 minutes or 8 actions per batch, whichever comes first. Apply, then start a new one."
+        },
+        {
+          "question": "Which AI models power it?",
+          "answer": "Logitaka routes requests across 43 active models from 8 providers — including OpenAI, Google, Anthropic, Mistral, Alibaba, xAI, Moonshot, and Xiaomi. The system automatically selects the right model based on task complexity, balancing speed and cost."
+        },
+        {
+          "question": "Is Logitaka a chatbot?",
+          "answer": "No. Logitaka Talk is a deterministic voice workspace, not a chat interface. When you confirm a batch, Logitaka executes exactly what you reviewed — there is no second AI pass and no reinterpretation at apply time."
+        },
+        {
+          "question": "What plans include Talk?",
+          "answer": "Talk is available on every tier — Starter, Pro, and Premium. Inbox, Focus, Discussion, and Structured Meetings are Pro and above. DevTeam/GitHub, AI Strategist Insights, Personal AI Profiler, and Independent AI Analytics are Premium only."
+        },
+        {
+          "question": "How is my data handled?",
+          "answer": "Payments are processed securely via Lemon Squeezy — Logitaka never sees or stores your card details. Have strict compliance needs or want a custom deployment? Contact us at support@logitaka.com."
         },
         {
           "question": "Who is Logitaka for?",
-          "answer": "Logitaka is built specifically for Solopreneurs, Product Managers, Consultants, Tech Leads, and Deep Focus professionals who need to manage complex information streams and cannot afford to lose project context."
+          "answer": "Founders, managers, and freelancers who think faster than they type. If you constantly have more to track than you have time to write down, Talk was built for you."
+        }
+      ]
+    },
+    "socialProof": {
+      "testimonials": [
+        {
+          "name": "[DRAFT] Placeholder Name A",
+          "role": "[DRAFT] Founder",
+          "quote": "[DRAFT] Replace with real quote from an actual user."
         },
         {
-          "question": "How much does it cost?",
-          "answer": "We offer transparent pricing: Starter is $4.99/mo (includes voice assistant and 5 basic projects), PRO is $9.99/mo (includes full project history, discussions, and advanced model support), and Premium is $24.99/mo (includes AI strategist, critic reports, and team collaboration features)."
+          "name": "[DRAFT] Placeholder Name B",
+          "role": "[DRAFT] Product Manager",
+          "quote": "[DRAFT] Replace with real quote from an actual user."
         },
         {
-          "question": "How is my data protected?",
-          "answer": "We prioritize privacy. All payments are securely processed via Lemon Squeezy, and we do not store your credit card information. For organizations with strict security requirements, we offer Custom On-Premise deployments with dedicated local models."
+          "name": "[DRAFT] Placeholder Name C",
+          "role": "[DRAFT] Freelancer",
+          "quote": "[DRAFT] Replace with real quote from an actual user."
+        }
+      ],
+      "stats": [
+        {
+          "value": "43",
+          "label": "AI models"
+        },
+        {
+          "value": "8",
+          "label": "providers"
+        },
+        {
+          "value": "3 min",
+          "label": "voice session limit"
         }
       ]
     },
@@ -385,6 +438,10 @@
           "label": "Pricing"
         },
         {
+          "href": "/models",
+          "label": "Models"
+        },
+        {
           "href": "#faq",
           "label": "FAQ"
         },
@@ -406,6 +463,21 @@
           "href": "mailto:support@logitaka.com",
           "label": "Contact"
         }
+      ]
+    },
+    "talk": {
+      "eyebrow": "The wedge · Logitaka Talk",
+      "title": "One voice session. A fully structured day.",
+      "subtitle": "Open Talk. Speak. Watch live draft cards build themselves across your projects — tasks, events, decisions, notes. Confirm once, and it's real.",
+      "steps": [
+        { "title": "Speak", "body": "Open fullscreen Talk and talk naturally. One session covers up to 3 minutes and 8 actions — across multiple projects." },
+        { "title": "Watch it structure", "body": "The live model assembles your words into draft cards in real time. Missing fields show as empty slots. Wrong project? Say so — it corrects in place, no duplicates." },
+        { "title": "Confirm", "body": "Review the batch. Hit Apply. Logitaka executes exactly what you saw — no second AI pass, no surprises." }
+      ],
+      "chips": [
+        "Deterministic confirm — what you see is exactly what gets applied",
+        "Multi-project scopes in one session",
+        "Nothing writes to your workspace until you confirm"
       ]
     },
     "chatDemo": {
@@ -869,7 +941,7 @@
         "title": "Strategic Decisions",
         "desc": "High-stakes tasks occurring quarterly—where the margin for error is zero.",
         "models": [
-          "Claude Opus 4.8",
+          "Claude Opus 5",
           "GPT 5.6"
         ]
       }
@@ -893,7 +965,7 @@
                 "cost": "$$$"
               },
               "hard": {
-                "model": "Claude Opus 4.8",
+                "model": "Claude Opus 5",
                 "cost": "$$$$$"
               }
             },
@@ -955,7 +1027,7 @@
                 "cost": "$$$"
               },
               "hard": {
-                "model": "Claude Opus 4.8",
+                "model": "Claude Opus 5",
                 "cost": "$$$$$"
               }
             },
@@ -1166,7 +1238,7 @@
     },
     "pro_details": [
       {
-        "title": "Meeting & Express Meeting",
+        "title": "Structured Meetings",
         "description": "Voice-dump updates across all active projects. Logitaka's structured meetings walk you through project statuses, decisions, and tasks, making the entire workspace instantly actual."
       },
       {

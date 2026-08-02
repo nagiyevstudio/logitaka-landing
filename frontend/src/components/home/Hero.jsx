@@ -15,22 +15,27 @@ const Hero = () => {
           <h1 className="hero-headline">{t('landing.hero.headline')}</h1>
           <p className="hero-subheadline">{t('landing.hero.subheadline')}</p>
           <div className="hero-actions reveal">
-            <a href="#pricing" className="button button-solid">
+            <a href="https://app.logitaka.com/app/login" className="button button-solid">
               {t('landing.hero.ctaPrimary')}
             </a>
-            <a href="#how-it-works" className="button button-ghost">
+            <a href="#talk" className="button button-ghost">
               {t('landing.hero.ctaSecondary')}
             </a>
           </div>
         </div>
 
-        {/* Right Column: Premium Mockup Image Placeholder */}
+        {/* Right Column: Premium Mockup Image */}
         <div className="hero-visual-column">
           <div className="hero-image-wrapper">
             <img 
-              src="/assets/hero-placeholder.png" 
-              alt="Logitaka App Mockup" 
-              className="hero-mockup-image" 
+              src="/assets/hero-talk-dark.png" 
+              alt="Logitaka Talk fullscreen voice workspace — live speech assembling into structured draft cards" 
+              className="hero-mockup-image hero-mockup-dark" 
+            />
+            <img 
+              src="/assets/hero-talk-light.png" 
+              alt="Logitaka Talk fullscreen voice workspace — live speech assembling into structured draft cards" 
+              className="hero-mockup-image hero-mockup-light" 
             />
           </div>
         </div>

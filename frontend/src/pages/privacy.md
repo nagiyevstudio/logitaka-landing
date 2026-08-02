@@ -35,7 +35,7 @@ We collect only the information necessary to provide and secure the Service. Thi
 
 ### Payment-related Information
 * Payment status and reference/confirmation data received from the payment provider.
-* **Note:** Logitaka does **not** receive or store full card or payment instrument details. All such data is processed directly by **Kapital Bank** or its authorized payment systems.
+* **Note:** Logitaka does **not** receive or store full card or payment instrument details. All such data is processed directly by **Lemon Squeezy** or its authorized payment systems.
 
 ## 3. How We Use Information
 We use your data to:
@@ -56,14 +56,14 @@ When you use AI features, your prompts and related project context are processed
 Technical and diagnostic records related to AI requests may be retained for up to **72 hours** to ensure reliability and then are automatically deleted.
 
 ## 5. Payments
-Payments are handled manually through payment links. All financial transactions are processed by our payment provider, **Kapital Bank**. We do not store your full card details on our servers.
+Payments are handled through automated subscription checkout links. All financial transactions are processed by our payment provider, **Lemon Squeezy**. We do not store your full card details on our servers.
 
 ## 6. How We Share Information
 We do not sell your data. We share information only with service providers necessary for the operation of Logitaka:
 * **Infrastructure:** Hetzner (servers located in Nuremberg, Germany);
 * **Email Delivery:** supremecluster.com;
 * **AI Providers:** As listed in Section 4;
-* **Payment Services:** Kapital Bank;
+* **Payment Services:** Lemon Squeezy;
 * **Legal Disclosures:** Where required by law or lawful government request.
 
 We do **not** use third-party analytics or marketing trackers.

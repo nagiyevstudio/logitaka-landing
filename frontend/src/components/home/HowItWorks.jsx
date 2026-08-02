@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import ChatDemo from './ChatDemo';
+import TalkDemo from './TalkDemo';
 
 const HowItWorks = () => {
   const { t } = useTranslation();
@@ -36,7 +36,7 @@ const HowItWorks = () => {
         </div>
         
         <div className="transformation-visual-slot">
-          <ChatDemo />
+          <TalkDemo />
         </div>
       </div>
     </section>

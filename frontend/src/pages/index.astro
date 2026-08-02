@@ -2,8 +2,14 @@
 import MainLayout from '../layouts/MainLayout.astro';
 import { getT } from '../utils/i18n';
 import Hero from '../components/home/Hero.jsx';
+import TalkSection from '../components/home/TalkSection.jsx';
 import Problem from '../components/home/Problem.jsx';
 import HowItWorks from '../components/home/HowItWorks.jsx';
+import Capabilities from '../components/home/Capabilities.jsx';
+import LiveContext from '../components/home/LiveContext.jsx';
+import ValueStack from '../components/home/ValueStack.jsx';
+import Audience from '../components/home/Audience.jsx';
+import SocialProof from '../components/home/SocialProof.jsx';
 import Pricing from '../components/home/Pricing.jsx';
 import FAQ from '../components/home/FAQ.jsx';
 import FinalCTA from '../components/home/FinalCTA.jsx';
@@ -15,8 +21,14 @@ const t = getT();
 
 <MainLayout title={t('landing.meta.title')} description={t('landing.meta.description')} lang={lang}>
   <Hero />
+  <TalkSection client:visible />
   <Problem />
   <HowItWorks client:visible />
+  <Capabilities />
+  <LiveContext client:visible />
+  <ValueStack />
+  <Audience />
+  <SocialProof />
   <Pricing />
   <FAQ />
   <FinalCTA />

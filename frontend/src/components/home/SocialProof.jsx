@@ -24,8 +24,22 @@ const SocialProof = () => {
             <div className="panel quote-card" key={idx}>
               <p className="quote-text">"{item.quote}"</p>
               <div className="quote-author">
-                <span className="author-name">{item.name}</span>
-                <span className="author-role">{item.role}</span>
+                {(item.avatar || item.avatarFallback) && (
+                  <img
+                    src={item.avatar || item.avatarFallback}
+                    alt={item.name}
+                    className="author-avatar"
+                    onError={(e) => {
+                      if (item.avatarFallback && e.currentTarget.src !== item.avatarFallback) {
+                        e.currentTarget.src = item.avatarFallback;
+                      }
+                    }}
+                  />
+                )}
+                <div className="author-info">
+                  <span className="author-name">{item.name}</span>
+                  <span className="author-role">{item.role}</span>
+                </div>
               </div>
             </div>
           ))}

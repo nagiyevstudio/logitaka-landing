@@ -238,6 +238,22 @@ body:not([data-theme='dark']) .hero-mockup-light { display: block; }
 
 .quote-card .quote-author {
   display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.quote-card .author-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  flex-shrink: 0;
+}
+
+.quote-card .author-info {
+  display: flex;
   flex-direction: column;
   gap: 2px;
 }

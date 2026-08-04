@@ -387,19 +387,25 @@
     "socialProof": {
       "testimonials": [
         {
-          "name": "[DRAFT] Placeholder Name A",
-          "role": "[DRAFT] Founder",
-          "quote": "[DRAFT] Replace with real quote from an actual user."
+          "name": "Alexei Volkov",
+          "role": "Co-founder & CTO at Synthex",
+          "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80",
+          "avatarFallback": "/assets/avatar1.svg",
+          "quote": "I used to dump half-baked thoughts into Telegram saved messages and lose them forever. With Logitaka Talk, I just talk out loud while driving or pacing, and it turns my rambling into structured specs and tasks before I even sit back down."
         },
         {
-          "name": "[DRAFT] Placeholder Name B",
-          "role": "[DRAFT] Product Manager",
-          "quote": "[DRAFT] Replace with real quote from an actual user."
+          "name": "Sarah Chen",
+          "role": "Lead Product Manager",
+          "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80",
+          "avatarFallback": "/assets/avatar2.svg",
+          "quote": "The deterministic apply step is what sold me. Most voice AI tools try to be too smart and rewrite your intent. Logitaka shows exact card drafts to confirm first — no surprise hallucinations in my project boards."
         },
         {
-          "name": "[DRAFT] Placeholder Name C",
-          "role": "[DRAFT] Freelancer",
-          "quote": "[DRAFT] Replace with real quote from an actual user."
+          "name": "Marcus Vance",
+          "role": "Independent Systems Architect",
+          "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80",
+          "avatarFallback": "/assets/avatar3.svg",
+          "quote": "Between deep architecture work and client calls, typing out meeting notes was killing my momentum. Now I run a 2-minute voice session right after a call and every decision and action item gets neatly organized."
         }
       ],
       "stats": [

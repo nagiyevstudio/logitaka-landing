@@ -12,20 +12,20 @@
           "label": "How it works"
         },
         {
-          "href": "#audience",
-          "label": "Who it's for"
-        },
-        {
-          "href": "#capabilities",
-          "label": "Capabilities"
-        },
-        {
           "href": "#pricing",
           "label": "Pricing"
         },
         {
+          "href": "/models",
+          "label": "Models"
+        },
+        {
           "href": "#faq",
           "label": "FAQ"
+        },
+        {
+          "href": "/pro",
+          "label": "For Pro"
         }
       ],
       "theme": {
@@ -166,32 +166,37 @@
         "Zero context loss between calls, no matter how many parallel client accounts you run."
       ],
       "closing": "You speak the decisions. Logitaka preserves the client history.",
-      "modelsLabel": "System:",
+      "modelsLabel": "Uses:",
       "models": [
-        "Multi-Project Isolation",
-        "Deterministic State",
-        "Private Workspace Encryption"
+        "OpenAI",
+        "Google",
+        "Anthropic",
+        "Zhipu",
+        "Kimi",
+        "Mistral",
+        "Alibaba",
+        "xAI"
       ]
     },
     "modelTeaser": {
-      "title": "Intelligent Model Routing Under the Hood.",
-      "subtitle": "Logitaka selects the optimal model for speed, precision, and reasoning across your daily client operations.",
+      "title": "40+ Top AI Models. Pay Only for Real Complexity.",
+      "subtitle": "Why use a sledgehammer to crack a nut? Logitaka lets you use fast, cost-effective models for daily routines, saving heavyweights for truly complex challenges.",
       "card1": {
-        "title": "Voice Structuring",
-        "desc": "Real-time parsing & draft cards",
-        "badge": "Sub-second latency"
+        "title": "Routine Tasks",
+        "desc": "Reports, planning, dailies",
+        "badge": "$ (Minimal cost)"
       },
       "card2": {
-        "title": "Strategic Analytics",
-        "desc": "Risk radar & roadmap review",
-        "badge": "Deep reasoning"
+        "title": "Complex Challenges",
+        "desc": "Architecture, deep analysis",
+        "badge": "$$$$$ (Extreme cost)"
       },
       "bullets": [
-        "Zero setup: Logitaka handles routing automatically",
-        "Deterministic execution: no hallucinated project changes",
-        "Private context: client data remains isolated"
+        "Smart defaults: cost-effective AI for 90% of tasks",
+        "Seamless switching: change models in one click",
+        "Transparent spending: always know what you pay for"
       ],
-      "cta": "Get Started with Logitaka"
+      "cta": "Find the perfect AI setup for my role"
     },
     "audience": {
       "title": "Built for multi-client workflows.",
@@ -233,38 +238,58 @@
       "closing": "Fewer switches. More client impact."
     },
     "valueStack": {
-      "label": "Operational Efficiency",
-      "title": "Save 5+ hours of post-call admin every week.",
-      "subtitle": "Stop spending billable hours manually typing meeting notes, updating task boards, and reorganizing client roadmaps.",
+      "label": "Comparison",
+      "title": "What it would cost separately.",
+      "subtitle": "Accessing the same models directly would cost you several times more. Logitaka gives you everything — in one interface, for one subscription.",
       "perMonth": "/ mo",
       "services": [
         {
-          "name": "Meeting Notes Typing",
-          "provider": "Manual Overhead",
-          "priceUSD": "15 hrs"
+          "name": "ChatGPT Plus",
+          "provider": "OpenAI",
+          "priceUSD": "$20"
         },
         {
-          "name": "Project Board Updates",
-          "provider": "Manual Overhead",
-          "priceUSD": "8 hrs"
+          "name": "Claude Pro",
+          "provider": "Anthropic",
+          "priceUSD": "$20"
         },
         {
-          "name": "Context Lost Recovery",
-          "provider": "Context Switching",
-          "priceUSD": "6 hrs"
+          "name": "Gemini AI Pro",
+          "provider": "Google",
+          "priceUSD": "$19.99"
+        },
+        {
+          "name": "SuperGrok",
+          "provider": "xAI",
+          "priceUSD": "$30"
+        },
+        {
+          "name": "Kimi Pro",
+          "provider": "Moonshot AI",
+          "priceUSD": "$19"
+        },
+        {
+          "name": "Le Chat Pro",
+          "provider": "Mistral",
+          "priceUSD": "$14.99"
+        },
+        {
+          "name": "z.ai Pro",
+          "provider": "Zhipu AI",
+          "priceUSD": "~$16"
         }
       ],
-      "totalLabel": "Weekly Admin Drag",
-      "totalUSD": "~29 hrs",
+      "totalLabel": "Total separately",
+      "totalUSD": "~$140",
       "vsLabel": "vs",
-      "logitakaLabel": "Logitaka Voice Workflow",
+      "logitakaLabel": "Logitaka — full access",
       "logitakaPrice": "from $9.99",
       "disclaimer": ""
     },
     "pricing": {
       "title": "Pricing.",
       "popularBadge": "Popular",
-      "proBridge": "Explore detailed capabilities for consulting practices →",
+      "proBridge": "Logitaka does more. View pro capabilities and compare 10+ AI models →",
       "cards": [
         {
           "label": "Starter",
@@ -418,20 +443,20 @@
           "label": "How it works"
         },
         {
-          "href": "#audience",
-          "label": "Who it's for"
-        },
-        {
-          "href": "#capabilities",
-          "label": "Capabilities"
-        },
-        {
           "href": "#pricing",
           "label": "Pricing"
         },
         {
+          "href": "/models",
+          "label": "Models"
+        },
+        {
           "href": "#faq",
           "label": "FAQ"
+        },
+        {
+          "href": "/pro",
+          "label": "For Pro"
         }
       ],
       "legal": [

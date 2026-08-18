@@ -1,8 +1,8 @@
 {
   "landing": {
     "meta": {
-      "title": "Logitaka — AI System for Task and Context Management",
-      "description": "Just say what's happening. Logitaka will figure it out, organize, remind, and tell you what to do next."
+      "title": "Logitaka — Post-Call Voice Follow-Up for Consultants & Operators",
+      "description": "After a client call, speak your follow-up — Logitaka turns voice input into tasks, dates, and decisions directly in the right project."
     },
     "ui": {
       "brandTagline": "Vibe to Structure",
@@ -12,20 +12,20 @@
           "label": "How it works"
         },
         {
+          "href": "#audience",
+          "label": "Who it's for"
+        },
+        {
+          "href": "#capabilities",
+          "label": "Capabilities"
+        },
+        {
           "href": "#pricing",
           "label": "Pricing"
         },
         {
-          "href": "/models",
-          "label": "Models"
-        },
-        {
           "href": "#faq",
           "label": "FAQ"
-        },
-        {
-          "href": "/pro",
-          "label": "For Pro"
         }
       ],
       "theme": {
@@ -40,240 +40,231 @@
       }
     },
     "hero": {
-      "kicker": "Logitaka",
-      "headline": "Speak your mind. Watch it become a plan.",
-      "subheadline": "Logitaka Talk is a fullscreen voice workspace. Speak naturally — tasks, events, and decisions assemble into live draft cards as you talk. Review the batch. Hit confirm. It's on your roadmap. No typing. No forms. No second pass.",
-      "ctaPrimary": "Try Talk Free",
+      "kicker": "For Independent Consultants & Fractional Operators",
+      "headline": "Lead 10 client streams without losing context after calls.",
+      "subheadline": "After a client call, speak your follow-up — Logitaka turns voice into tasks, dates, and decisions in the right project.",
+      "ctaPrimary": "Try on your projects",
       "ctaSecondary": "See how Talk works",
+      "loop": [
+        {
+          "step": "Speak",
+          "title": "Speak",
+          "desc": "Say what was agreed in 60s"
+        },
+        {
+          "step": "Review",
+          "title": "Review",
+          "desc": "Verify auto-generated draft cards"
+        },
+        {
+          "step": "Apply",
+          "title": "Apply",
+          "desc": "One click updates the client project"
+        }
+      ],
       "stats": [
         {
-          "value": "3 min",
-          "label": "one voice session"
+          "value": "60 sec",
+          "label": "post-call voice debrief"
         },
         {
-          "value": "8",
-          "label": "actions per batch"
+          "value": "5–15",
+          "label": "client streams in parallel"
         },
         {
-          "value": "0",
-          "label": "typing required"
+          "value": "0 min",
+          "label": "evening typing debt"
         }
       ],
       "supporting": [
-        "Open Talk. Speak naturally. Live draft cards build across your projects in real time.",
-        "Review the batch before anything is applied. Nothing touches your workspace until you confirm.",
-        "Hit Apply. Logitaka executes exactly what you reviewed — no second AI pass, no surprises."
+        "Open Talk after any client call. Speak naturally — tasks and decisions assemble across your client projects in real time.",
+        "Review the batch before anything is applied. Nothing touches your client boards until you confirm.",
+        "Hit Apply. Logitaka executes exactly what you reviewed — deterministic, no hallucinations, no surprises."
       ],
       "visualCards": [
         {
-          "title": "Raw Input",
-          "body": "Voice, text, notes, chat fragments, incomplete thoughts."
+          "title": "Voice Follow-up",
+          "body": "Spoken client debrief, commitments, new deadlines, roadmap pivots."
         },
         {
-          "title": "Structured System",
-          "body": "Projects, tasks, decisions, plan, calendar, current real context."
+          "title": "Project Structure",
+          "body": "Tasks, milestones, decisions, and calendar events filed into the right client board."
         },
         {
-          "title": "Movement",
-          "body": "The system doesn't just store. It leads further and keeps order alive."
+          "title": "Continuous Memory",
+          "body": "Full client history preserved for next week's sync without manual notes."
         }
       ]
     },
     "problem": {
-      "title": "Recognize yourself in at least one.",
+      "title": "Why managing multiple client streams drains your day.",
       "items": [
         {
-          "title": "Too many threads — only one head",
-          "body": "Work projects, client agreements, team status, raw ideas. Everything is important, everything is urgent. It just doesn't fit."
+          "title": "5–15 client streams — one head",
+          "body": "You jump from a strategy sync with Client A to a review with Client B. By afternoon, the specifics and verbal agreements of the morning calls are fading."
         },
         {
-          "title": "Decisions vanish in chat archives",
-          "body": "You agreed on a change during a call, but it was never documented. A week later, the context is lost."
+          "title": "Decisions vanish in transit",
+          "body": "You agreed on a scope pivot or moved a milestone during the call. Because it wasn't documented immediately, client expectations drift."
         },
         {
-          "title": "Stuck at the start of the day",
-          "body": "You have a mountain of ideas and feedback, but when you sit down to work, it's unclear what task to prioritize first."
+          "title": "Post-call administrative drag",
+          "body": "Writing summaries, creating tasks, and updating deadlines across multiple project boards burns 30+ minutes of manual typing every day."
         },
         {
-          "title": "Static plans die fast",
-          "body": "You wrote a task list or spreadsheet. Three days later, project reality has shifted, and the plan is obsolete."
-        },
-        {
-          "title": "Drowning in administrative noise",
-          "body": "You spend more time organizing, typing, and status checking than actually executing."
+          "title": "Evening context reconstruction",
+          "body": "At the end of the day, you're left digging through notepad scraps and chat tabs trying to remember what was promised to whom."
         }
       ],
-      "closing": "This isn't a willpower problem. This is a problem of lacking an active cognitive exoskeleton that holds your work context together."
+      "closing": "This isn't a discipline issue. It is the cost of high context switching without an automated operational memory."
     },
     "transformation": {
-      "title": "How Talk works.",
+      "title": "The post-call loop.",
       "body": [
-        "Open Logitaka Talk. Speak naturally — about tasks, decisions, events, or anything on your mind. Live draft cards assemble in real time across your projects as you talk.",
-        "Review the batch before anything is applied. Nothing touches your workspace until you confirm.",
-        "Hit Apply. Logitaka executes exactly the batch you reviewed — no second AI pass, no surprises."
+        "Finish the client call. Open Logitaka Talk. Spend 60 seconds speaking your follow-up — what was agreed, what tasks are due, and what decisions were locked in.",
+        "Review the batch on screen. Verify project assignments and dates before anything is committed to your workspace.",
+        "Hit Apply. Logitaka executes the exact batch you reviewed into the client project — no second AI pass, no surprises."
       ],
-      "coreLabel": "Core Statement",
-      "coreBody": "Talk is not a chatbot. It is a deterministic voice workspace: what you see as drafts is exactly what gets applied. Natural speech becomes structured reality in one session.",
-      "listLabel": "What one session creates",
+      "coreLabel": "The Guarantee",
+      "coreBody": "Logitaka Talk is not an open-ended chatbot. It is a deterministic operational workspace: what you approve in drafts is precisely what enters the client project.",
+      "listLabel": "What one 60-second session creates",
       "list": [
-        "Tasks, events, decisions, and notes — structured across multiple projects at once.",
-        "Corrections happen in place: say 'not tomorrow, Friday' and the card updates immediately.",
-        "Nothing writes to your workspace until you confirm the full batch.",
-        "Missing fields show as empty slots — fill them with your next phrase."
+        "Action items, client deliverables, and milestones mapped to the exact client project.",
+        "In-place corrections: say 'actually, push Acme review to next Tuesday' and the card updates immediately.",
+        "Strict isolation: client projects remain structured, separated, and always up to date.",
+        "Nothing writes to your client boards until you hit confirm."
       ]
     },
     "capabilities": {
-      "title": "What the system does.",
+      "title": "How Logitaka holds your client practice together.",
       "items": [
         {
-          "title": "Logitaka Talk & Structured Meetings",
-          "body": "Speak naturally. Whether it's a 15-second task or a 10-minute project dump, Logitaka automatically updates tasks, calendars, and decisions across all your projects at once."
+          "title": "Post-Call Voice Follow-Ups",
+          "body": "Turn a 60-second post-meeting voice debrief into structured deliverables, deadlines, and project updates across client workspaces."
         },
         {
-          "title": "Project Health & Risk Radar",
-          "body": "Logitaka runs an independent review of your project roadmap against best practices, surfacing actual risks and blind spots without agreeing with everything you say."
+          "title": "Client Health & Risk Radar",
+          "body": "Logitaka reviews active client roadmaps against best practices, surfacing missed commitments and delivery risks before clients raise them."
         },
         {
-          "title": "Telegram Sync & Daily Briefs",
-          "body": "Stay updated directly in your pocket. Get a daily text brief of your priorities, active risks, and even a customized comic strip visual of your daily schedule."
+          "title": "Morning Briefs & Telegram Sync",
+          "body": "Start your day with a clear brief in Telegram: which client calls are scheduled, what deliverables are due today, and priority risks across all accounts."
         },
         {
-          "title": "Focus Sessions & Pomodoro",
-          "body": "Activate focus mode on any task. Logitaka breaks it down into subtasks, starting a Pomodoro timer and launching a context-aware AI partner by your side to help you execute."
+          "title": "Focus Sessions & Deep Work",
+          "body": "Execute complex client deliverables without distraction. Logitaka breaks tasks into sprint blocks with contextual project memory at your side."
         }
       ],
-      "closing": "You do the thinking. Logitaka maintains the order."
+      "closing": "You deliver senior expertise. Logitaka maintains operational order."
     },
     "context": {
-      "label": "Live Context",
-      "title": "Context that doesn't disappear.",
+      "label": "Client Memory",
+      "title": "Client context that never decays.",
       "body": [
-        "A regular AI chat doesn't remember you between sessions. Logitaka works differently.",
-        "Every conversation is summarized and entered into the project context. Decisions are fixed separately. Plans are extracted automatically. You can return in a week — the system knows where you stopped.",
-        "Works with leading models — OpenAI, Google, Anthropic, and others. You can switch between models — the context is shared and up-to-date."
+        "Generic AI chats forget your client context as soon as you close the tab. Logitaka builds an enduring operational memory for every client stream.",
+        "Every voice follow-up, decision, and deliverable is filed under the respective client workspace. When you prepare for next week's call, the entire history is instantly accessible.",
+        "Zero context loss between calls, no matter how many parallel client accounts you run."
       ],
-      "closing": "You think out loud. Logitaka turns it into a structure.",
-      "modelsLabel": "Uses:",
+      "closing": "You speak the decisions. Logitaka preserves the client history.",
+      "modelsLabel": "System:",
       "models": [
-        "OpenAI",
-        "Google",
-        "Anthropic",
-        "Zhipu",
-        "Kimi"
+        "Multi-Project Isolation",
+        "Deterministic State",
+        "Private Workspace Encryption"
       ]
     },
     "modelTeaser": {
-      "title": "40+ Top AI Models. Pay Only for Real Complexity.",
-      "subtitle": "Why use a sledgehammer to crack a nut? Logitaka lets you use fast, cost-effective models for daily routines, saving heavyweights for truly complex challenges.",
+      "title": "Intelligent Model Routing Under the Hood.",
+      "subtitle": "Logitaka selects the optimal model for speed, precision, and reasoning across your daily client operations.",
       "card1": {
-        "title": "Routine Tasks",
-        "desc": "Reports, planning, dailies",
-        "badge": "$ (Minimal cost)"
+        "title": "Voice Structuring",
+        "desc": "Real-time parsing & draft cards",
+        "badge": "Sub-second latency"
       },
       "card2": {
-        "title": "Complex Challenges",
-        "desc": "Architecture, deep analysis",
-        "badge": "$$$$$ (Extreme cost)"
+        "title": "Strategic Analytics",
+        "desc": "Risk radar & roadmap review",
+        "badge": "Deep reasoning"
       },
       "bullets": [
-        "Smart defaults: cost-effective AI for 90% of tasks",
-        "Seamless switching: change models in one click",
-        "Transparent spending: always know what you pay for"
+        "Zero setup: Logitaka handles routing automatically",
+        "Deterministic execution: no hallucinated project changes",
+        "Private context: client data remains isolated"
       ],
-      "cta": "Find the perfect AI setup for my role"
+      "cta": "Get Started with Logitaka"
     },
     "audience": {
-      "title": "For anyone who has a lot of tasks.",
+      "title": "Built for multi-client workflows.",
       "items": [
         {
-          "title": "Freelancer / designer / blogger",
-          "body": "Clients, deadlines, ideas, messages — the system keeps everything in one place."
+          "title": "Independent Consultants",
+          "body": "Management, strategy, and technology consultants juggling 5–10 active client engagements who need fast follow-ups without manual typing."
         },
         {
-          "title": "Manager / entrepreneur",
-          "body": "Team, projects, decisions, control — without having to keep everything in your head."
+          "title": "Fractional Operators & CXOs",
+          "body": "Fractional CTOs, CMOs, and COOs operating across 3–6 companies simultaneously who cannot afford to mix up client contexts."
         },
         {
-          "title": "Developer",
-          "body": "Project context, decision history, tasks — plus direct integration with code editor."
+          "title": "Boutique Agencies & Studio Leads",
+          "body": "Founders and practice leads handling key accounts, high-stakes client communications, and multi-track delivery."
         },
         {
-          "title": "Anyone with a large volume of tasks",
-          "body": "It doesn't matter what you do. Zero entry barrier — just speak."
+          "title": "Solo Advisors & Specialists",
+          "body": "High-billing advisors conducting regular client syncs who need to turn verbal advice into concrete next steps immediately."
         }
       ],
-      "closing": "The entry barrier is zero. Anyone can handle it — just speak."
+      "closing": "If your day revolves around multiple client calls and high context-switching, Logitaka was built for your workflow."
     },
     "devTeam": {
-      "label": "Dev Team",
-      "title": "Operational layer around development.",
+      "label": "Tech Practice",
+      "title": "Operational bridge for technical advisors.",
       "body": [
-        "Code is not the only place where context gets lost. Decisions disappear in chats. A week later, the team cannot restore why they did it exactly this way.",
-        "Logitaka fixes the history of decisions, the current state of the project, and next steps — in one place, always up-to-date.",
-        "For those working with AI assistants in code: discuss the task in Logitaka — with one action send ready instructions to the editor. Code is executed under your control, with verified instructions, without extra iterations."
+        "For technical consultants and fractional CTOs: discuss architectural decisions in Logitaka and push structured instructions directly to repositories and boards.",
+        "Decisions, technical trade-offs, and next steps stay linked to the client's actual project context.",
+        "Fewer lost technical requirements, faster alignment with client engineering teams."
       ],
-      "visualLabel": "What enhances this mode",
+      "visualLabel": "What enhances this workflow",
       "points": [
-        "Fewer switches between chat, code, and project memory.",
-        "Reasons for decisions don't disappear a day after discussion.",
-        "Next steps stay next to the real technical context.",
-        "AI coding remains under control, rather than turning into chaotic copying."
+        "Fewer switches between client calls, notes, and technical specs.",
+        "Architecture decisions logged with clear context and rationale.",
+        "Next steps stay directly beside the real client roadmap.",
+        "Controlled task delegation without chaotic communication."
       ],
-      "closing": "Fewer switches. More done."
+      "closing": "Fewer switches. More client impact."
     },
     "valueStack": {
-      "label": "Comparison",
-      "title": "What it would cost separately.",
-      "subtitle": "Accessing the same models directly would cost you several times more. Logitaka gives you everything — in one interface, for one subscription.",
+      "label": "Operational Efficiency",
+      "title": "Save 5+ hours of post-call admin every week.",
+      "subtitle": "Stop spending billable hours manually typing meeting notes, updating task boards, and reorganizing client roadmaps.",
       "perMonth": "/ mo",
       "services": [
         {
-          "name": "ChatGPT Plus",
-          "provider": "OpenAI",
-          "priceUSD": "$20"
+          "name": "Meeting Notes Typing",
+          "provider": "Manual Overhead",
+          "priceUSD": "15 hrs"
         },
         {
-          "name": "Claude Pro",
-          "provider": "Anthropic",
-          "priceUSD": "$20"
+          "name": "Project Board Updates",
+          "provider": "Manual Overhead",
+          "priceUSD": "8 hrs"
         },
         {
-          "name": "Gemini AI Pro",
-          "provider": "Google",
-          "priceUSD": "$19.99"
-        },
-        {
-          "name": "SuperGrok",
-          "provider": "xAI",
-          "priceUSD": "$30"
-        },
-        {
-          "name": "Kimi Pro",
-          "provider": "Moonshot AI",
-          "priceUSD": "$19"
-        },
-        {
-          "name": "Le Chat Pro",
-          "provider": "Mistral",
-          "priceUSD": "$14.99"
-        },
-        {
-          "name": "z.ai Pro",
-          "provider": "Zhipu AI",
-          "priceUSD": "~$16"
+          "name": "Context Lost Recovery",
+          "provider": "Context Switching",
+          "priceUSD": "6 hrs"
         }
       ],
-      "totalLabel": "Total separately",
-      "totalUSD": "~$140",
+      "totalLabel": "Weekly Admin Drag",
+      "totalUSD": "~29 hrs",
       "vsLabel": "vs",
-      "logitakaLabel": "Logitaka — full access",
+      "logitakaLabel": "Logitaka Voice Workflow",
       "logitakaPrice": "from $9.99",
       "disclaimer": ""
     },
     "pricing": {
       "title": "Pricing.",
       "popularBadge": "Popular",
-      "proBridge": "Logitaka does more. View pro capabilities and compare 10+ AI models →",
+      "proBridge": "Explore detailed capabilities for consulting practices →",
       "cards": [
         {
           "label": "Starter",
@@ -281,15 +272,14 @@
           "price": "$4.99",
           "period": "/ month",
           "trial": "7-day free trial",
-          "body": "A baseline system with everything you need to solve daily tasks, remember the essentials, and free up your mind",
+          "body": "Essential workspace for solo consultants managing up to 5 concurrent client streams",
           "features": [
             "Logitaka Talk voice workspace",
-            "5 basic projects",
-            "Project Structured Memory",
-            "Calendar + external calendar integration",
-            "Subscriptions",
-            "Summaries",
-            "Quick update"
+            "Up to 5 active client projects",
+            "Client Structured Memory",
+            "Calendar & external sync",
+            "Daily briefs & summaries",
+            "Fast post-call updates"
           ],
           "cta": "Try for free",
           "href": "https://app.logitaka.com/app/login"
@@ -299,19 +289,15 @@
           "name": "PRO",
           "price": "$9.99",
           "period": "/ month",
-          "body": "A complete capability to dive deeply into projects, run regular discussions, log decisions, and protect key items",
+          "body": "Full operational cockpit for active consultants and fractional operators running up to 10 client streams",
           "features": [
             "Everything in Starter",
-            "Discussion",
-            "Inbox",
-            "10 Full Projects",
-            "Team (10 members)",
-            "Library",
-            "Chat Shelf",
-            "Archive",
-            "Search",
-            "All Top AI models worldwide",
-            "Structured Meetings"
+            "Up to 10 active client projects",
+            "Structured Client Meetings",
+            "Inbox (Audio, Files, Notes)",
+            "Client discussion threads",
+            "Cross-project global search",
+            "Team access (up to 5 seats)"
           ],
           "cta": "Choose PRO",
           "href": "https://app.logitaka.com/app/login"
@@ -321,23 +307,23 @@
           "name": "PREMIUM",
           "price": "$24.99",
           "period": "/ month",
-          "body": "Unlimited opportunities for deep analysis, flexible control over team workflows, and surgical management tools",
+          "body": "For boutique agencies and multi-partner practices managing unlimited client accounts",
           "features": [
             "Everything in PRO",
-            "Independent AI Analytics",
-            "Personal AI Profiler",
+            "Unlimited client projects",
+            "Client Health & Risk Radar",
             "AI Strategist Insights",
-            "Team (unlimited members)",
-            "Unlimited complete projects"
+            "Personal Operational Profiler",
+            "Unlimited team members"
           ],
           "cta": "Choose PREMIUM",
           "href": "https://app.logitaka.com/app/login"
         }
       ],
       "enterprise": {
-        "title": "Custom Solutions for Enterprise",
-        "description": "We offer flexible customization and complete deployment in a secure isolated Cloud (Private Cloud) or on your company's own local servers (On-Premise). You will receive dedicated language models, integration with internal databases, SLA guarantees, and absolute control over your confidentiality.",
-        "cta": "Discuss Project"
+        "title": "Custom Deployments for Firms & Agencies",
+        "description": "Need dedicated private cloud hosting, strict NDA isolated databases, custom SLA guarantees, or on-premise infrastructure for high-compliance client work? Contact our team.",
+        "cta": "Contact Enterprise"
       },
       "waitlist": "Beta testing is currently underway. Leave a request — you will be among the first to get access.",
       "cta": "Register",
@@ -347,92 +333,84 @@
       "title": "FAQ",
       "items": [
         {
-          "question": "What is Logitaka Talk?",
-          "answer": "A fullscreen voice workspace. Speak naturally and Logitaka assembles your words into structured draft cards — tasks, events, decisions, notes — in real time. Review and confirm to apply."
+          "question": "How does the post-call follow-up workflow work?",
+          "answer": "Immediately after a client call, open Logitaka Talk and speak what was agreed (actions, deadlines, key decisions). In 30–60 seconds, Logitaka parses your speech into draft cards mapped to the right client project. You review the cards on screen, make any verbal adjustments, and click Confirm to apply them."
         },
         {
-          "question": "Does it write to my projects while I speak?",
-          "answer": "No. Everything you see while speaking is a draft. Nothing touches your workspace until you hit Apply — then Logitaka executes exactly the batch you reviewed, with no second AI pass."
+          "question": "Does it modify my client projects while I speak?",
+          "answer": "No. Everything displayed while speaking is an isolated draft. Nothing touches your client workspaces until you explicitly hit Apply — then Logitaka executes the exact reviewed batch deterministically, with no second AI pass."
         },
         {
-          "question": "What if it misunderstands me?",
-          "answer": "Corrections happen in place. Say \"not tomorrow, Friday\" and the card updates. Missing fields show as empty slots you can fill with your next phrase."
+          "question": "Can I mention multiple clients in a single voice session?",
+          "answer": "Yes. Logitaka can route distinct tasks and decisions to different client projects in a single session (e.g. \"For Acme Corp, send proposal on Thursday; for Beta Studio, review budget tomorrow\")."
         },
         {
-          "question": "How long is a session?",
-          "answer": "Up to 3 minutes or 8 actions per batch, whichever comes first. Apply, then start a new one."
+          "question": "What if I miss a detail or want to correct a date?",
+          "answer": "Corrections happen in place. Simply say \"Actually, set the Acme deadline to Friday\" and the card updates immediately without duplicating."
         },
         {
-          "question": "Which AI models power it?",
-          "answer": "Logitaka routes requests across 43 active models from 8 providers — including OpenAI, Google, Anthropic, Mistral, Alibaba, xAI, Moonshot, and Xiaomi. The system automatically selects the right model based on task complexity, balancing speed and cost."
+          "question": "How is client data protected and isolated?",
+          "answer": "Every client project maintains isolated context. We do not use your private client data or notes to train public models. All transmissions and storage use enterprise-grade encryption."
         },
         {
-          "question": "Is Logitaka a chatbot?",
-          "answer": "No. Logitaka Talk is a deterministic voice workspace, not a chat interface. When you confirm a batch, Logitaka executes exactly what you reviewed — there is no second AI pass and no reinterpretation at apply time."
+          "question": "Who is Logitaka best suited for?",
+          "answer": "Independent consultants, fractional operators (CTO/CMO/COO), boutique agency leads, and advisors running 5 to 15 parallel client engagements who need to eliminate post-call administrative overhead."
         },
         {
-          "question": "What plans include Talk?",
-          "answer": "Talk is available on every tier — Starter, Pro, and Premium. Inbox, Focus, Discussion, and Structured Meetings are Pro and above. AI Strategist Insights, Personal AI Profiler, and Independent AI Analytics are Premium only."
-        },
-        {
-          "question": "How is my data handled?",
-          "answer": "Payments are processed securely via Lemon Squeezy — Logitaka never sees or stores your card details. Have strict compliance needs or want a custom deployment? Contact us at support@logitaka.com."
-        },
-        {
-          "question": "Who is Logitaka for?",
-          "answer": "Founders, managers, and freelancers who think faster than they type. If you constantly have more to track than you have time to write down, Talk was built for you."
+          "question": "What plans include the Talk voice workspace?",
+          "answer": "Logitaka Talk is included in every plan — Starter (up to 5 projects), Pro (up to 10 projects + Structured Meetings), and Premium (unlimited projects + Risk Radar)."
         }
       ]
     },
     "socialProof": {
       "testimonials": [
         {
-          "name": "Alexei Volkov",
-          "role": "Co-founder & CTO at Synthex",
+          "name": "David Sterling",
+          "role": "Fractional COO & Operations Advisor",
           "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80",
           "avatarFallback": "/assets/avatar1.svg",
-          "quote": "I used to dump half-baked thoughts into Telegram saved messages and lose them forever. With Logitaka Talk, I just talk out loud while driving or pacing, and it turns my rambling into structured specs and tasks before I even sit back down."
+          "quote": "I run operations for 4 growth-stage companies. Between back-to-back calls, I had zero time to write follow-ups. With Logitaka Talk, I do a 45-second voice debrief after each call, and tasks and decisions land in the right company project before the next call starts."
         },
         {
-          "name": "Sarah Chen",
-          "role": "Lead Product Manager",
+          "name": "Elena Rostova",
+          "role": "Independent Brand & Strategy Consultant",
           "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80",
           "avatarFallback": "/assets/avatar2.svg",
-          "quote": "The deterministic apply step is what sold me. Most voice AI tools try to be too smart and rewrite your intent. Logitaka shows exact card drafts to confirm first — no surprise hallucinations in my project boards."
+          "quote": "The deterministic review step is crucial when you work with clients under NDA. I see exact draft cards before anything is saved. No AI hallucinations in my client deliverables."
         },
         {
           "name": "Marcus Vance",
-          "role": "Independent Systems Architect",
+          "role": "Principal Consultant, Cloud Architecture",
           "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80",
           "avatarFallback": "/assets/avatar3.svg",
-          "quote": "Between deep architecture work and client calls, typing out meeting notes was killing my momentum. Now I run a 2-minute voice session right after a call and every decision and action item gets neatly organized."
+          "quote": "I manage 8 active advisory clients. Logitaka eliminated my evening admin backlog completely. I finish my day at 5 PM knowing every client commitment was captured and filed."
         }
       ],
       "stats": [
         {
-          "value": "43",
-          "label": "AI models"
+          "value": "60 sec",
+          "label": "average post-call follow-up"
         },
         {
-          "value": "8",
-          "label": "providers"
+          "value": "100%",
+          "label": "deterministic review before apply"
         },
         {
-          "value": "3 min",
-          "label": "voice session limit"
+          "value": "0 min",
+          "label": "evening typing debt"
         }
       ]
     },
     "finalCta": {
       "label": "Final CTA",
-      "title": "Speak your mind. Logitaka structures it.",
-      "body": "Start offloading your cognitive load. Logitaka is configured and ready for live use.",
-      "primary": "Try Logitaka Free",
+      "title": "End your client call. Speak your follow-up. Done.",
+      "body": "Start managing 5–15 client streams without administrative drag or lost context. Free 7-day trial, instant setup.",
+      "primary": "Try on your projects",
       "secondary": "Watch 60-Second Demo",
       "notice": "By signing up, you agree to the <a href=\"/terms\">Terms of Use</a> and acknowledge the <a href=\"/privacy\">Privacy Policy</a>."
     },
     "footer": {
-      "tagline": "The system keeps order — you just live.",
+      "tagline": "Operational memory for your client practice.",
       "copyright": "© 2026 Logitaka. All rights reserved.",
       "nav": [
         {
@@ -440,20 +418,20 @@
           "label": "How it works"
         },
         {
+          "href": "#audience",
+          "label": "Who it's for"
+        },
+        {
+          "href": "#capabilities",
+          "label": "Capabilities"
+        },
+        {
           "href": "#pricing",
           "label": "Pricing"
         },
         {
-          "href": "/models",
-          "label": "Models"
-        },
-        {
           "href": "#faq",
           "label": "FAQ"
-        },
-        {
-          "href": "/pro",
-          "label": "For Pro"
         }
       ],
       "legal": [
@@ -472,18 +450,27 @@
       ]
     },
     "talk": {
-      "eyebrow": "The wedge · Logitaka Talk",
-      "title": "One voice session. A fully structured day.",
-      "subtitle": "Open Talk. Speak. Watch live draft cards build themselves across your projects — tasks, events, decisions, notes. Confirm once, and it's real.",
+      "eyebrow": "The post-call workflow · Logitaka Talk",
+      "title": "One 60-second follow-up. Zero administrative debt.",
+      "subtitle": "Just finished a client call? Open Talk and speak. Tasks, dates, and decisions assemble into live draft cards in real time. Confirm once, and the client project is up to date.",
       "steps": [
-        { "title": "Speak", "body": "Open fullscreen Talk and talk naturally. One session covers up to 3 minutes and 8 actions — across multiple projects." },
-        { "title": "Watch it structure", "body": "The live model assembles your words into draft cards in real time. Missing fields show as empty slots. Wrong project? Say so — it corrects in place, no duplicates." },
-        { "title": "Confirm", "body": "Review the batch. Hit Apply. Logitaka executes exactly what you saw — no second AI pass, no surprises." }
+        {
+          "title": "Speak",
+          "body": "Speak naturally right after your call. Cover tasks, deadlines, client commitments, and roadmap decisions in one quick voice stream."
+        },
+        {
+          "title": "Review",
+          "body": "The engine routes actions into the right client project and builds draft cards in real time. Wrong project or date? Say it out loud — it updates in place."
+        },
+        {
+          "title": "Apply",
+          "body": "Review the batch. Hit Confirm. Logitaka applies the changes directly into the project board — deterministic, no hallucinations, no second pass."
+        }
       ],
       "chips": [
         "Deterministic confirm — what you see is exactly what gets applied",
-        "Multi-project scopes in one session",
-        "Nothing writes to your workspace until you confirm"
+        "Multi-client project routing in one voice session",
+        "Zero typing after 4 back-to-back client calls"
       ]
     },
     "chatDemo": {
@@ -566,9 +553,9 @@
       }
     },
     "contextCard": {
-      "project": "Website Redesign",
-      "badge": "ACTIVE",
-      "subtitle": "Updated today · 3 sessions",
+      "project": "Acme Corp — Advisory Stream",
+      "badge": "CLIENT STREAM",
+      "subtitle": "Updated 2m ago after client call · 4 sessions",
       "tabs": {
         "overview": "Overview",
         "decisions": "Decisions",
@@ -576,74 +563,74 @@
       },
       "labels": {
         "status": "STATUS",
-        "tasks": "TASKS",
-        "questions": "OPEN QUESTIONS",
-        "decisions": "LOGGED DECISIONS",
+        "tasks": "ACTIVE DELIVERABLES",
+        "questions": "CLIENT QUESTIONS",
+        "decisions": "LOCKED DECISIONS",
         "history": "SESSION HISTORY",
-        "models": "Models in this project:"
+        "models": "Isolated Workspace:"
       },
       "overview": {
-        "statusText": "Design in progress",
+        "statusText": "Q3 Roadmap in execution",
         "tasks": [
           {
             "done": true,
-            "text": "Approve page structure",
+            "text": "Deliver tech architecture assessment",
             "due": "Apr 23",
             "urgent": false
           },
           {
             "done": true,
-            "text": "Hand over brief to designer",
+            "text": "Review candidate profile for VP Eng",
             "due": "Apr 25",
             "urgent": false
           },
           {
             "done": false,
-            "text": "Notify client about timeline shift",
-            "due": "today",
+            "text": "Send updated proposal to CEO",
+            "due": "Thursday",
             "urgent": true
           },
           {
             "done": false,
-            "text": "Final mockup review",
+            "text": "Executive team sync on auth migration",
             "due": "May 7",
             "urgent": false
           }
         ],
         "questions": [
-          "Did the client approve the new deadline?",
-          "Do we need a mobile version for this release?"
+          "Did client finance approve the Q3 budget reallocation?",
+          "Who is the point of contact for compliance sign-off?"
         ]
       },
       "decisions": [
         {
-          "text": "Designer is delayed by a week — new deadline May 7.",
+          "text": "Postponed auth migration to Q3 to prioritize enterprise onboarding.",
+          "date": "Today, 14:15"
+        },
+        {
+          "text": "Agreed to conduct weekly 30-min strategy syncs on Tuesdays.",
           "date": "Apr 28"
         },
         {
-          "text": "Site structure: 5 pages, no blog in the first release.",
-          "date": "Apr 24"
-        },
-        {
-          "text": "Continuing with current designer, not looking for a new one.",
+          "text": "Engage external auditor for SOC2 readiness assessment.",
           "date": "Apr 23"
         }
       ],
       "history": [
         {
-          "date": "Today, 10:15",
-          "title": "Session 3.",
-          "text": " Updated designer status. Added task to notify client. Logged 1 decision."
+          "date": "Today, 14:15",
+          "title": "Post-Call Debrief.",
+          "text": " Logged 1 decision (auth migration), created task to send updated proposal by Thursday."
         },
         {
           "date": "Apr 28, 17:40",
-          "title": "Session 2.",
-          "text": " Timeline shifted. Discussed options — decided to keep current contractor. Logged 2 decisions."
+          "title": "Strategy Sync.",
+          "text": " Finalized Q3 budget constraints, updated weekly sync cadence."
         },
         {
           "date": "Apr 23, 14:05",
-          "title": "Session 1.",
-          "text": " Project launched. Approved 5-page structure, handed over brief."
+          "title": "Kickoff Session.",
+          "text": " Scoped initial 3-month advisory deliverables and engagement boundaries."
         }
       ]
     },

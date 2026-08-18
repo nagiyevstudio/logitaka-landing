@@ -117,11 +117,91 @@ section+section .section-inner::before {
   line-height: 1.65;
 }
 
+/* ── HERO 3-STEP LOOP ── */
+.hero-loop {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  width: 100%;
+  margin-top: 4px;
+}
+
+.hero-loop-step {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 14px 16px;
+  border-radius: var(--radius-sm, 8px);
+  border: 1px solid var(--line);
+  background: var(--surface);
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.hero-loop-step:hover {
+  border-color: var(--line-strong);
+  transform: translateY(-1px);
+}
+
+.hero-loop-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hero-loop-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(255, 69, 0, 0.12);
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.hero-loop-name {
+  font-size: 0.9rem;
+  font-weight: 650;
+  color: var(--text);
+  letter-spacing: -0.01em;
+}
+
+.hero-loop-desc {
+  font-size: 0.78rem;
+  color: var(--muted);
+  line-height: 1.4;
+}
+
+.hero-loop-arrow {
+  position: absolute;
+  right: -9px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--muted);
+  opacity: 0.4;
+  font-size: 0.85rem;
+  z-index: 2;
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .hero-loop {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .hero-loop-arrow {
+    display: none;
+  }
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
-  margin-top: 12px;
+  margin-top: 8px;
   width: 100%;
 }
 
@@ -368,16 +448,110 @@ body:not([data-theme='dark']) .hero-mockup-light { display: block; }
 }
 
 .transformation-visual-slot {
-  min-height: 480px;
-  background: var(--surface-dim);
-  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
 }
 
-.transformation-visual-slot img {
-  display: block;
+/* ── TRANSFORMATION FLOW CARD ── */
+.tf-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 24px;
   width: 100%;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.tf-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 14px 16px;
+  background: var(--surface-dim);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm, 8px);
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.tf-step:hover {
+  border-color: var(--line-strong);
+}
+
+.tf-step.highlight {
+  border-color: rgba(255, 69, 0, 0.4);
+  background: rgba(255, 69, 0, 0.04);
+}
+
+.tf-step-icon {
+  font-size: 1.3rem;
+  line-height: 1;
+  padding-top: 2px;
+}
+
+.tf-step-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.tf-step-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tf-step-num {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.tf-step-time {
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+
+.tf-step-badge {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #10b981;
+  background: rgba(16, 185, 129, 0.1);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.tf-step-title {
+  font-size: 0.92rem;
+  font-weight: 650;
+  color: var(--text);
+}
+
+.tf-step-desc {
+  font-size: 0.8rem;
+  color: var(--muted);
+  line-height: 1.4;
+  margin: 0;
+}
+
+.tf-connector {
+  display: flex;
+  justify-content: center;
+  height: 12px;
+  align-items: center;
+}
+
+.tf-connector-line {
+  width: 1px;
   height: 100%;
-  object-fit: contain;
+  background: var(--line-strong);
 }
 
 .dev-team-grid {

@@ -92,8 +92,8 @@ const ContextCard = () => {
           
           <div className="pc-model-row">
             <span style={{ fontSize: '10px', color: 'var(--muted)' }}>{pd.labels.models}</span>
-            <span className="pc-model-chip">Gemini 3.1 Pro</span>
-            <span className="pc-model-chip">Claude Sonnet 4.6</span>
+            <span className="pc-model-chip">Deterministic State</span>
+            <span className="pc-model-chip">Encrypted Memory</span>
           </div>
         </div>
 

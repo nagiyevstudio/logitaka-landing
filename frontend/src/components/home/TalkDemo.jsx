@@ -14,7 +14,7 @@ const RESET_PAUSE    = 1000;
 const TOTAL_LOOP_EST = 14000; // rough estimate for timer
 
 const TRANSCRIPT =
-  'Call the designer tomorrow at 3, and move the SMM task to Friday in Logitaka';
+  'Just finished sync with Acme Corp: send updated proposal by Thursday, and schedule client review for Friday at 3';
 
 /* ─── Component ─────────────────────────────────────────── */
 const TalkDemo = () => {
@@ -176,16 +176,16 @@ const TalkDemo = () => {
 
           {/* Cards */}
           <div className="talk-demo-cards">
-            {/* Logitaka frame with task + event */}
+            {/* Acme Corp frame with task + event */}
             <div className="talk-project-frame solid">
-              <div className="talk-project-label">Logitaka</div>
+              <div className="talk-project-label">Acme Corp</div>
               <div className="talk-draft-card visible">
                 <div className="talk-card-type">Task</div>
-                <div className="talk-card-title">Move SMM task to Friday</div>
+                <div className="talk-card-title">Send updated proposal</div>
               </div>
               <div className="talk-draft-card visible">
                 <div className="talk-card-type">Event</div>
-                <div className="talk-card-title">Call the designer</div>
+                <div className="talk-card-title">Client review call</div>
                 <span className="talk-card-time-chip">15:00</span>
               </div>
             </div>
@@ -202,7 +202,7 @@ const TalkDemo = () => {
 
             {/* Batch summary */}
             <div className="talk-batch-summary visible">
-              3 changes · 1 project
+              3 changes · Acme Corp
             </div>
           </div>
 
@@ -268,24 +268,24 @@ const TalkDemo = () => {
 
         {/* Cards area */}
         <div className="talk-demo-cards">
-          {/* Logitaka frame — solid from start, but project resolves at phase 5 */}
+          {/* Acme Corp frame — solid from start, but project resolves at phase 5 */}
           <div className="talk-project-frame solid">
-            <div className="talk-project-label">Logitaka</div>
+            <div className="talk-project-label">Acme Corp</div>
 
             {/* Task card */}
             <div className={`talk-draft-card ${showCard(2) ? (isApplied ? 'applied' : 'visible') : ''}`}>
               {isApplied ? (
                 <div className="talk-card-inner">
                   <span className="talk-applied-check">✓ Applied</span>
-                  <span className="talk-card-title">Move SMM task to Friday</span>
+                  <span className="talk-card-title">Send updated proposal</span>
                 </div>
               ) : showCard(2) ? (
                 <>
                   <div className="talk-card-type">Task</div>
-                  <div className="talk-card-title">Move SMM task to Friday</div>
+                  <div className="talk-card-title">Send updated proposal</div>
                   {phase >= 6 && (
                     <div className="talk-card-meta">
-                      Date: <span className={`talk-card-slot ${phase >= 6 ? 'filled' : ''}`}>Fri</span>
+                      Date: <span className={`talk-card-slot ${phase >= 6 ? 'filled' : ''}`}>Thu</span>
                     </div>
                   )}
                 </>
@@ -297,23 +297,23 @@ const TalkDemo = () => {
               {isApplied ? (
                 <div className="talk-card-inner">
                   <span className="talk-applied-check">✓ Applied</span>
-                  <span className="talk-card-title">Call the designer</span>
+                  <span className="talk-card-title">Client review call</span>
                   <span className="talk-card-time-chip">15:00</span>
                 </div>
               ) : showCard(3) ? (
                 <>
                   <div className="talk-card-type">Event</div>
-                  <div className="talk-card-title">Call the designer</div>
+                  <div className="talk-card-title">Client review call</div>
                   <span className="talk-card-time-chip">15:00</span>
                 </>
               ) : null}
             </div>
           </div>
 
-          {/* Dashed Project ? frame that resolves to Logitaka */}
+          {/* Dashed Project ? frame that resolves to Acme Corp */}
           {phase < 5 && (
             <div className="talk-project-frame dashed">
-              <div className="talk-project-label">Project ?</div>
+              <div className="talk-project-label">Client ?</div>
             </div>
           )}
 
@@ -342,7 +342,7 @@ const TalkDemo = () => {
 
           {/* Batch summary */}
           <div className={`talk-batch-summary ${phase >= 7 ? 'visible' : ''}`}>
-            3 changes · 1 project
+            3 changes · Acme Corp
           </div>
         </div>
 

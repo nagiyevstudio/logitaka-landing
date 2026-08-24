@@ -170,7 +170,7 @@
 
 **vs**
 
-**Logitaka — full access:** from $9.99/mo
+**Logitaka — full access:** from $14.99/mo
 
 ---
 
@@ -204,7 +204,7 @@
 
 **Title:** Pricing.
 
-### Starter — $4.99/month
+### Starter — $7.99/month
 - 7-day free trial
 - A baseline system with everything you need to solve daily tasks, remember the essentials, and free up your mind
 - Logitaka Talk voice workspace
@@ -216,7 +216,7 @@
 - Quick update
 - **CTA:** Try for free
 
-### PRO — $9.99/month ⭐ Popular
+### PRO — $14.99/month ⭐ Popular
 - A complete capability to dive deeply into projects, run regular discussions, log decisions, and protect key items
 - Everything in Starter
 - Discussion
@@ -230,7 +230,7 @@
 - Structured Meetings
 - **CTA:** Choose PRO
 
-### PREMIUM — $24.99/month
+### PREMIUM — $29.99/month
 - Unlimited opportunities for deep analysis, flexible control over team workflows, and surgical management tools
 - Everything in PRO
 - Independent AI Analytics

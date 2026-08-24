@@ -57,7 +57,7 @@ Source: `OS/apps/frontend/src/server/*`, `plan-capabilities.ts`, `navigation.ts`
 
 ## 3. Tiers (authoritative: `plan-capabilities.ts`) — landing prices are current
 
-| | **Starter $4.99** | **Pro $9.99** | **Premium $24.99** |
+| | **Starter $7.99** | **Pro $14.99** | **Premium $29.99** |
 |---|---|---|---|
 | Projects | 5 | 10 | unlimited |
 | People / team | 0 | 5 | unlimited |

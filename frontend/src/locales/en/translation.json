@@ -283,7 +283,7 @@
       "totalUSD": "~$140",
       "vsLabel": "vs",
       "logitakaLabel": "Logitaka — full access",
-      "logitakaPrice": "from $9.99",
+      "logitakaPrice": "from $14.99",
       "disclaimer": ""
     },
     "pricing": {
@@ -294,7 +294,7 @@
         {
           "label": "Starter",
           "name": "Starter",
-          "price": "$4.99",
+          "price": "$7.99",
           "period": "/ month",
           "trial": "7-day free trial",
           "body": "Essential workspace for solo consultants managing up to 5 concurrent client streams",
@@ -312,7 +312,7 @@
         {
           "label": "Pro",
           "name": "PRO",
-          "price": "$9.99",
+          "price": "$14.99",
           "period": "/ month",
           "body": "Full operational cockpit for active consultants and fractional operators running up to 10 client streams",
           "features": [
@@ -330,7 +330,7 @@
         {
           "label": "Premium",
           "name": "PREMIUM",
-          "price": "$24.99",
+          "price": "$29.99",
           "period": "/ month",
           "body": "For boutique agencies and multi-partner practices managing unlimited client accounts",
           "features": [

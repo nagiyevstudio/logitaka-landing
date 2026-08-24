@@ -51,7 +51,7 @@ Suggested additional questions (answer strictly from the fact-sheet):
 - Who is it for? (founders/managers/freelancers who think faster than they type)
 
 ### 3. Pricing features — align `landing.pricing.cards[*].features` with the fact-sheet tiers
-- Starter $4.99 / Pro $9.99 / Premium $24.99 (prices are correct — keep them).
+- Starter $7.99 / Pro $14.99 / Premium $29.99 (prices are correct — keep them).
 - **Pro:** replace `"Meeting & Express Meeting Processes"` with `"Structured Meetings"`.
 - Verify each feature maps to the fact-sheet tier table; fix any that don't.
 - Name Talk explicitly in Starter (it currently says "Voice assistant" → `"Logitaka Talk voice workspace"`).

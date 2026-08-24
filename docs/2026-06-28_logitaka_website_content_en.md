@@ -89,15 +89,15 @@ This document compiles the current, final English copywriting, positioning, and 
 ---
 
 ## 7. Pricing Table (USD only)
-* **Starter Tier — $4.99 / month:**
+* **Starter Tier — $7.99 / month:**
   - *Description:* A baseline system with everything you need to solve daily tasks, remember the essentials, and free up your mind.
   - *Features:* Voice assistant, 5 basic projects, Project Structured Memory, Calendar + external calendar integration, Subscriptions tracker, Summaries, Quick update.
   - *CTA:* `Try Logitaka Free`
-* **PRO Tier — $9.99 / month:**
+* **PRO Tier — $14.99 / month:**
   - *Description:* A complete capability to dive deeply into projects, run regular discussions, log decisions, and protect key items.
   - *Features:* Everything in Starter, Discussion context, Inbox space, 10 Full Projects, Library (document files), Chat Shelf, Archive workspace, Global Search, All Top AI models worldwide, Meeting & Express Meeting Processes.
   - *CTA:* `Choose PRO`
-* **PREMIUM Tier — $24.99 / month:**
+* **PREMIUM Tier — $29.99 / month:**
   - *Description:* Unlimited opportunities for deep analysis, flexible control over team workflows, and surgical management tools.
   - *Features:* Everything in PRO, Independent AI Analytics (Critic), Personal AI Profiler, AI Strategist Insights, Team delegation (unlimited members), DevTeam — smart development workflow control via GitHub, Unlimited complete projects.
   - *CTA:* `Choose PREMIUM`
@@ -115,7 +115,7 @@ This document compiles the current, final English copywriting, positioning, and 
 3. **Who is Logitaka for?**
    - *Answer:* Logitaka is built specifically for Solopreneurs, Product Managers, Consultants, Tech Leads, and Deep Focus professionals who need to manage complex information streams and cannot afford to lose project context.
 4. **How much does it cost?**
-   - *Answer:* We offer transparent pricing: Starter is $4.99/mo (includes voice assistant and 5 basic projects), PRO is $9.99/mo (includes full project history, discussions, and advanced model support), and Premium is $24.99/mo (includes AI strategist, critic reports, and team collaboration features).
+   - *Answer:* We offer transparent pricing: Starter is $7.99/mo (includes voice assistant and 5 basic projects), PRO is $14.99/mo (includes full project history, discussions, and advanced model support), and Premium is $29.99/mo (includes AI strategist, critic reports, and team collaboration features).
 5. **How is my data protected?**
    - *Answer:* We prioritize privacy. All payments are securely processed via Lemon Squeezy, and we do not store your credit card information. For organizations with strict security requirements, we offer Custom On-Premise deployments with dedicated local models.
 

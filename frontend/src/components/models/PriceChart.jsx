@@ -14,7 +14,7 @@ const PriceChart = () => {
   const chartRef = useRef(null);
 
   const sortedModels = [...models].sort((a, b) => a.cost - b.cost);
-  const maxCost = 35.09;
+  const maxCost = sortedModels.length > 0 ? sortedModels[sortedModels.length - 1].cost : 1;
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -51,8 +51,9 @@ const PriceChart = () => {
                     className="bar-fill" 
                     style={{ 
                       background: MODEL_COLORS[m.id] || TIER_COLORS[m.tier],
-                      width: isVisible ? `${(m.cost / maxCost) * 100}%` : '0%',
-                      transitionDelay: `${i * 90}ms`
+                      width: isVisible ? `${Math.max((m.cost / maxCost) * 100, 1.2)}%` : '0%',
+                      minWidth: isVisible ? '6px' : '0',
+                      transitionDelay: `${i * 60}ms`
                     }}
                   ></div>
                 </div>

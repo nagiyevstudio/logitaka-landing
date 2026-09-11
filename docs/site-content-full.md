@@ -346,22 +346,25 @@
 
 | Model | Cost (relative) | Tier |
 |-------|----------------|------|
-| MiniMax M3 | x1 | Base |
-| Xiaomi MiMo-V2.5-Pro | x1.31 | Base |
-| Qwen 3.7 Plus | x1.33 | Base |
-| Mistral Large 3 | x1.58 | Base |
-| DeepSeek v4 Pro | x1.95 | Base |
-| GLM-5.2 | x4.46 | Mid |
-| Qwen 3.7 Max | x5.21 | Mid |
-| Gemini 3.6 Flash | x5.33 | Mid |
-| Grok 4.5 | x6.32 | Mid |
-| Claude Sonnet 5 | x7.02 | Mid |
-| Gemini 3.1 Pro | x7.37 | Mid |
-| GPT-5.6 Terra | x9.21 | Pro |
-| Kimi K3 | x10.4 | Pro |
-| Claude Opus 5 | x17.54 | Heavy |
-| GPT-5.6 Sol | x18.42 | Heavy |
-| Claude Fable 5 | x35.09 | Heavy |
+| GLM-5.3-Flash | x1 | Base |
+| Muse Spark 1.3 Contributor | x1.19 | Base |
+| DeepSeek V4.1 Flash | x2.11 | Base |
+| MiniMax M3 | x3.28 | Eco |
+| Qwen 3.7 Plus | x4.5 | Eco |
+| Mimo v2.5 Pro | x5.22 | Eco |
+| Mistral Medium 3.5 | x6.49 | Eco |
+| Gemini 3.8 Flash | x11.35 | Mid |
+| GLM-5.3 | x18.38 | Mid |
+| Grok 4.6 | x25.95 | Mid |
+| Qwen 3.8 Max | x25.95 | Mid |
+| Claude Sonnet 5 | x30.27 | Mid |
+| GPT-5.6 Sol | x30.27 | Mid |
+| Gemini 3.1 Pro | x32.43 | Pro |
+| GPT-5.6 Terra | x32.43 | Pro |
+| Kimi K3 | x45.41 | Pro |
+| Claude Opus 5 | x75.68 | Heavy |
+| Claude Fable 5.1 | x151.35 | Heavy |
+| GPT-6 Astra | x151.35 | Heavy |
 
 ## Scenarios — "For your tasks"
 
@@ -369,11 +372,11 @@
 
 **Description:** Disregard marketing hype—choose based on functional requirements.
 
-1. 🏠 **Personal Projects and Life** — Home renovations, financial planning, travel, health, and education. These are all high-value projects. → Qwen 3.7 Plus, GLM-5.2
+1. 🏠 **Personal Projects and Life** — Home renovations, financial planning, travel, health, and education. These are all high-value projects. → Qwen 3.7 Plus, GLM-5.3
 2. 💼 **Freelance and Private Practice** — Client management, deadlines, formal correspondence, and agreements. Structured tasks with moderate context. → Mistral Large 3, Claude Sonnet 5
-3. 🏢 **Small Business and Teams** — Collaborative projects, oversight, task delegation, and the formalization of team decisions. → Claude Sonnet 5, DeepSeek v4 Pro, Grok 4.5
-4. 🔬 **Research and Analytics** — Deep analysis, comparative studies, managing massive datasets, and information synthesis. → Kimi K3, DeepSeek v4 Pro, Gemini 3.1 Pro
-5. ⚙️ **Technical Projects** — Architectural planning, technical decision trails, and maintaining team alignment on specifications. → Claude Sonnet 5, DeepSeek v4 Pro
+3. 🏢 **Small Business and Teams** — Collaborative projects, oversight, task delegation, and the formalization of team decisions. → Claude Sonnet 5, DeepSeek V4.1 Flash, Grok 4.6
+4. 🔬 **Research and Analytics** — Deep analysis, comparative studies, managing massive datasets, and information synthesis. → Kimi K3, DeepSeek V4.1 Flash, Gemini 3.1 Pro
+5. ⚙️ **Technical Projects** — Architectural planning, technical decision trails, and maintaining team alignment on specifications. → Claude Sonnet 5, DeepSeek V4.1 Flash
 6. 🎯 **Strategic Decisions** — High-stakes tasks occurring quarterly—where the margin for error is zero. → Claude Opus 5, GPT 5.6
 
 ## Model Selection Advisor
@@ -392,19 +395,19 @@
 | Task Level | Model | Cost |
 |---|---|---|
 | Daily | Mistral Large 3 | $ |
-| Important | Grok 4.5 | $$$ |
+| Important | Grok 4.6 | $$$ |
 | Complex | Claude Opus 5 | $$$$$ |
-| Meeting contour | GLM-5.2 | $$ — Fast end-of-day voice-to-structure dump. |
-| Discussion contour | Grok 4.5 | $$$ — Brainstorming business strategies and next steps. |
+| Meeting contour | GLM-5.3 | $$ — Fast end-of-day voice-to-structure dump. |
+| Discussion contour | Grok 4.6 | $$$ — Brainstorming business strategies and next steps. |
 
 **Product & Project Managers:** Product leaders need to synthesize user feedback, structure specifications, and prioritize backlogs without manual typing.
 | Task Level | Model | Cost |
 |---|---|---|
 | Daily | Qwen 3.7 Plus | $ |
-| Important | DeepSeek v4 Pro | $$ |
-| Complex | Grok 4.5 | $$$ |
+| Important | DeepSeek V4.1 Flash | $$ |
+| Complex | Grok 4.6 | $$$ |
 | Meeting contour | Qwen 3.7 Plus | $ — Quick stand-ups, backlog grooming, and action item tracking. |
-| Discussion contour | Grok 4.5 | $$$ — Synthesizing requirements and resolving architectural trade-offs. |
+| Discussion contour | Grok 4.6 | $$$ — Synthesizing requirements and resolving architectural trade-offs. |
 
 **Agency Owners:** Agency owners deal with dozens of client threads. Logitaka maintains separate contexts for each project, ensuring no decision is lost.
 | Task Level | Model | Cost |
@@ -412,7 +415,7 @@
 | Daily | Mistral Large 3 | $ |
 | Important | Gemini 3.1 Pro | $$$ |
 | Complex | Claude Opus 5 | $$$$$ |
-| Meeting contour | GLM-5.2 | $$ — Syncing client milestones and deliverables. |
+| Meeting contour | GLM-5.3 | $$ — Syncing client milestones and deliverables. |
 | Discussion contour | Gemini 3.1 Pro | $$$ — Drafting client proposals and reviewing project health. |
 
 ### Consulting and Strategy
@@ -421,7 +424,7 @@
 | Task Level | Model | Cost |
 |---|---|---|
 | Daily | Qwen 3.7 Plus | $ |
-| Important | DeepSeek v4 Pro | $$ |
+| Important | DeepSeek V4.1 Flash | $$ |
 | Complex | Gemini 3.1 Pro | $$$ |
 | Meeting contour | Qwen 3.7 Plus | $ — Deconstruct client calls into actions and decisions. |
 | Discussion contour | Gemini 3.1 Pro | $$$ — Structuring frameworks, strategies, and advisory reports. |
@@ -430,9 +433,9 @@
 | Task Level | Model | Cost |
 |---|---|---|
 | Daily | Qwen 3.7 Plus | $ |
-| Important | DeepSeek v4 Pro | $$ |
+| Important | DeepSeek V4.1 Flash | $$ |
 | Complex | Kimi K3 | $$ |
-| Meeting contour | GLM-5.2 | $$ — Campaign tracking and budget review syncs. |
+| Meeting contour | GLM-5.3 | $$ — Campaign tracking and budget review syncs. |
 | Discussion contour | Kimi K3 | $$ — Synthesizing market research data and campaign reports. |
 
 ### Engineering and Design
@@ -440,7 +443,7 @@
 **Tech Leads & Dev Leads:** Tech leads coordinate technical requirements. Logitaka maintains decision records and project specifications next to code templates.
 | Task Level | Model | Cost |
 |---|---|---|
-| Daily | DeepSeek v4 Pro | $$ |
+| Daily | DeepSeek V4.1 Flash | $$ |
 | Important | Kimi K3 | $$$ |
 | Complex | GPT 5.6 | $$$$$ |
 | Meeting contour | Mistral Large 3 | $ — Tracking pull request reviews and architectural syncs. |
@@ -450,7 +453,7 @@
 | Task Level | Model | Cost |
 |---|---|---|
 | Daily | Qwen 3.7 Plus | $ |
-| Important | DeepSeek v4 Pro | $$ |
+| Important | DeepSeek V4.1 Flash | $$ |
 | Complex | Gemini 3.1 Pro | $$$ |
 | Meeting contour | Qwen 3.7 Plus | $ — Logging feedback from mockups reviews. |
 | Discussion contour | Gemini 3.1 Pro | $$$ — Brainstorming creative directions and design specifications. |
@@ -462,9 +465,9 @@
 |---|---|---|
 | Daily | Qwen 3.7 Plus | $ |
 | Important | Mistral Large 3 | $ |
-| Complex | GLM-5.2 | $$ |
+| Complex | GLM-5.3 | $$ |
 | Meeting contour | Qwen 3.7 Plus | $ — Offloading task lists and daily routines immediately. |
-| Discussion contour | GLM-5.2 | $$ — Guided focus sessions and Pomodoro-supported work loops. |
+| Discussion contour | GLM-5.3 | $$ — Guided focus sessions and Pomodoro-supported work loops. |
 
 ---
 

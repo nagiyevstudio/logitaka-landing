@@ -718,7 +718,7 @@
     },
     "intro": {
       "eyebrow": "Introduction",
-      "title": "10 Models. Each in its place.",
+      "title": "19 Models. Each in its place.",
       "description": "You might not have encountered most of them. That does not mean they are inferior to the ones you know."
     },
     "price": {
@@ -773,115 +773,136 @@
     },
     "compareModels": [
       {
-        "id": "minimax",
-        "name": "MiniMax M3",
+        "id": "glm_flash",
+        "name": "GLM-5.3-Flash",
         "cost": 1,
         "multiplier": "x1",
         "tier": "base"
       },
       {
-        "id": "mimo_xiaomi",
-        "name": "Xiaomi MiMo-V2.5-Pro",
-        "cost": 1.31,
-        "multiplier": "x1.31",
-        "tier": "base"
-      },
-      {
-        "id": "qwen_plus",
-        "name": "Qwen 3.7 Plus",
-        "cost": 1.33,
-        "multiplier": "x1.33",
-        "tier": "base"
-      },
-      {
-        "id": "mistral",
-        "name": "Mistral Large 3",
-        "cost": 1.58,
-        "multiplier": "x1.58",
+        "id": "muse_spark",
+        "name": "Muse Spark 1.3 Contributor",
+        "cost": 1.19,
+        "multiplier": "x1.19",
         "tier": "base"
       },
       {
         "id": "deepseek",
-        "name": "DeepSeek v4 Pro",
-        "cost": 1.95,
-        "multiplier": "x1.95",
+        "name": "DeepSeek V4.1 Flash",
+        "cost": 2.11,
+        "multiplier": "x2.11",
         "tier": "base"
       },
       {
-        "id": "glm",
-        "name": "GLM-5.2",
-        "cost": 4.46,
-        "multiplier": "x4.46",
-        "tier": "mid"
+        "id": "minimax",
+        "name": "MiniMax M3",
+        "cost": 3.28,
+        "multiplier": "x3.28",
+        "tier": "eco"
       },
       {
-        "id": "qwen_max",
-        "name": "Qwen 3.7 Max",
-        "cost": 5.21,
-        "multiplier": "x5.21",
-        "tier": "mid"
+        "id": "qwen_plus",
+        "name": "Qwen 3.7 Plus",
+        "cost": 4.5,
+        "multiplier": "x4.5",
+        "tier": "eco"
+      },
+      {
+        "id": "mimo_xiaomi",
+        "name": "Mimo v2.5 Pro",
+        "cost": 5.22,
+        "multiplier": "x5.22",
+        "tier": "eco"
+      },
+      {
+        "id": "mistral_medium",
+        "name": "Mistral Medium 3.5",
+        "cost": 6.49,
+        "multiplier": "x6.49",
+        "tier": "eco"
       },
       {
         "id": "gemini_flash",
-        "name": "Gemini 3.6 Flash",
-        "cost": 5.33,
-        "multiplier": "x5.33",
+        "name": "Gemini 3.8 Flash",
+        "cost": 11.35,
+        "multiplier": "x11.35",
+        "tier": "mid"
+      },
+      {
+        "id": "glm",
+        "name": "GLM-5.3",
+        "cost": 18.38,
+        "multiplier": "x18.38",
         "tier": "mid"
       },
       {
         "id": "grok",
-        "name": "Grok 4.5",
-        "cost": 6.32,
-        "multiplier": "x6.32",
+        "name": "Grok 4.6",
+        "cost": 25.95,
+        "multiplier": "x25.95",
+        "tier": "mid"
+      },
+      {
+        "id": "qwen_max",
+        "name": "Qwen 3.8 Max",
+        "cost": 25.95,
+        "multiplier": "x25.95",
         "tier": "mid"
       },
       {
         "id": "sonnet",
         "name": "Claude Sonnet 5",
-        "cost": 7.02,
-        "multiplier": "x7.02",
+        "cost": 30.27,
+        "multiplier": "x30.27",
+        "tier": "mid"
+      },
+      {
+        "id": "gpt_sol",
+        "name": "GPT-5.6 Sol",
+        "cost": 30.27,
+        "multiplier": "x30.27",
         "tier": "mid"
       },
       {
         "id": "gemini_pro",
         "name": "Gemini 3.1 Pro",
-        "cost": 7.37,
-        "multiplier": "x7.37",
-        "tier": "mid"
+        "cost": 32.43,
+        "multiplier": "x32.43",
+        "tier": "pro"
       },
       {
         "id": "gpt_terra",
         "name": "GPT-5.6 Terra",
-        "cost": 9.21,
-        "multiplier": "x9.21",
+        "cost": 32.43,
+        "multiplier": "x32.43",
         "tier": "pro"
       },
       {
         "id": "kimi_k3",
         "name": "Kimi K3",
-        "cost": 10.4,
-        "multiplier": "x10.4",
+        "cost": 45.41,
+        "multiplier": "x45.41",
         "tier": "pro"
       },
       {
         "id": "opus",
         "name": "Claude Opus 5",
-        "cost": 17.54,
-        "multiplier": "x17.54",
-        "tier": "heavy"
-      },
-      {
-        "id": "gpt_sol",
-        "name": "GPT-5.6 Sol",
-        "cost": 18.42,
-        "multiplier": "x18.42",
+        "cost": 75.68,
+        "multiplier": "x75.68",
         "tier": "heavy"
       },
       {
         "id": "fable",
-        "name": "Claude Fable 5",
-        "cost": 35.09,
-        "multiplier": "x35.09",
+        "name": "Claude Fable 5.1",
+        "cost": 151.35,
+        "multiplier": "x151.35",
+        "tier": "heavy"
+      },
+      {
+        "id": "gpt_6",
+        "name": "GPT-6 Astra",
+        "cost": 151.35,
+        "multiplier": "x151.35",
         "tier": "heavy"
       }
     ],
@@ -892,7 +913,7 @@
         "desc": "Home renovations, financial planning, travel, health, and education. These are all high-value projects.",
         "models": [
           "Qwen 3.7 Plus",
-          "GLM-5.2"
+          "GLM-5.3"
         ]
       },
       {
@@ -910,8 +931,8 @@
         "desc": "Collaborative projects, oversight, task delegation, and the formalization of team decisions.",
         "models": [
           "Claude Sonnet 5",
-          "DeepSeek v4 Pro",
-          "Grok 4.5"
+          "DeepSeek V4.1 Flash",
+          "Grok 4.6"
         ]
       },
       {
@@ -920,7 +941,7 @@
         "desc": "Deep analysis, comparative studies, managing massive datasets, and information synthesis.",
         "models": [
           "Kimi K3",
-          "DeepSeek v4 Pro",
+          "DeepSeek V4.1 Flash",
           "Gemini 3.1 Pro"
         ]
       },
@@ -930,7 +951,7 @@
         "desc": "Architectural planning, technical decision trails, and maintaining team alignment on specifications.",
         "models": [
           "Claude Sonnet 5",
-          "DeepSeek v4 Pro"
+          "DeepSeek V4.1 Flash"
         ]
       },
       {
@@ -958,7 +979,7 @@
                 "cost": "$"
               },
               "important": {
-                "model": "Grok 4.5",
+                "model": "Grok 4.6",
                 "cost": "$$$"
               },
               "hard": {
@@ -968,12 +989,12 @@
             },
             "contours": {
               "meeting": {
-                "model": "GLM-5.2",
+                "model": "GLM-5.3",
                 "cost": "$$",
                 "desc": "Fast end-of-day voice-to-structure dump."
               },
               "discussion": {
-                "model": "Grok 4.5",
+                "model": "Grok 4.6",
                 "cost": "$$$",
                 "desc": "Brainstorming business strategies and next steps."
               }
@@ -989,11 +1010,11 @@
                 "cost": "$"
               },
               "important": {
-                "model": "DeepSeek v4 Pro",
+                "model": "DeepSeek V4.1 Flash",
                 "cost": "$$"
               },
               "hard": {
-                "model": "Grok 4.5",
+                "model": "Grok 4.6",
                 "cost": "$$$"
               }
             },
@@ -1004,7 +1025,7 @@
                 "desc": "Quick stand-ups, backlog grooming, and action item tracking."
               },
               "discussion": {
-                "model": "Grok 4.5",
+                "model": "Grok 4.6",
                 "cost": "$$$",
                 "desc": "Synthesizing requirements and resolving architectural trade-offs."
               }
@@ -1030,7 +1051,7 @@
             },
             "contours": {
               "meeting": {
-                "model": "GLM-5.2",
+                "model": "GLM-5.3",
                 "cost": "$$",
                 "desc": "Syncing client milestones and deliverables."
               },
@@ -1057,7 +1078,7 @@
                 "cost": "$"
               },
               "important": {
-                "model": "DeepSeek v4 Pro",
+                "model": "DeepSeek V4.1 Flash",
                 "cost": "$$"
               },
               "hard": {
@@ -1088,7 +1109,7 @@
                 "cost": "$"
               },
               "important": {
-                "model": "DeepSeek v4 Pro",
+                "model": "DeepSeek V4.1 Flash",
                 "cost": "$$"
               },
               "hard": {
@@ -1098,7 +1119,7 @@
             },
             "contours": {
               "meeting": {
-                "model": "GLM-5.2",
+                "model": "GLM-5.3",
                 "cost": "$$",
                 "desc": "Campaign tracking and budget review syncs."
               },
@@ -1121,7 +1142,7 @@
             "rationale": "Tech leads coordinate technical requirements. Logitaka maintains decision records and project specifications next to code templates.",
             "tasks": {
               "daily": {
-                "model": "DeepSeek v4 Pro",
+                "model": "DeepSeek V4.1 Flash",
                 "cost": "$$"
               },
               "important": {
@@ -1156,7 +1177,7 @@
                 "cost": "$"
               },
               "important": {
-                "model": "DeepSeek v4 Pro",
+                "model": "DeepSeek V4.1 Flash",
                 "cost": "$$"
               },
               "hard": {
@@ -1197,7 +1218,7 @@
                 "cost": "$"
               },
               "hard": {
-                "model": "GLM-5.2",
+                "model": "GLM-5.3",
                 "cost": "$$"
               }
             },
@@ -1208,7 +1229,7 @@
                 "desc": "Offloading task lists and daily routines immediately."
               },
               "discussion": {
-                "model": "GLM-5.2",
+                "model": "GLM-5.3",
                 "cost": "$$",
                 "desc": "Guided focus sessions and Pomodoro-supported work loops."
               }

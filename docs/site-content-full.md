@@ -358,10 +358,10 @@
 | Grok 4.6 | x25.95 | Mid |
 | Qwen 3.8 Max | x25.95 | Mid |
 | Claude Sonnet 5 | x30.27 | Mid |
-| GPT-5.6 Sol | x30.27 | Mid |
 | Gemini 3.1 Pro | x32.43 | Pro |
 | GPT-5.6 Terra | x32.43 | Pro |
 | Kimi K3 | x45.41 | Pro |
+| GPT-5.6 Sol | x60.54 | Heavy |
 | Claude Opus 5 | x75.68 | Heavy |
 | Claude Fable 5.1 | x151.35 | Heavy |
 | GPT-6 Astra | x151.35 | Heavy |

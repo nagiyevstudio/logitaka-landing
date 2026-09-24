@@ -8,12 +8,12 @@ const FAQ = () => {
     <section id="faq">
       <div className="section-inner">
         <div className="section-eyebrow">
-          <span className="section-kicker">06</span>
+          <span className="section-kicker">10 // CLEAR ANSWERS</span>
           <span className="section-kicker-line" aria-hidden="true"></span>
         </div>
         <h2 className="section-title medium reveal">{t('landing.faq.title')}</h2>
         
-        <div className="faq-list">
+        <div className="faq-list" style={{ marginTop: '24px' }}>
           {items.map((item, i) => (
             <details className="faq-item" key={i} open={i === 0}>
               <summary>

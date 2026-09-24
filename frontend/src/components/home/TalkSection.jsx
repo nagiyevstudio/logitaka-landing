@@ -7,12 +7,12 @@ const TalkSection = () => {
   const chips = t('landing.talk.chips', { returnObjects: true }) || [];
 
   return (
-    <section id="talk">
+    <section id="how-it-works">
       <div className="section-inner split-grid">
         {/* Left: sticky text column */}
         <div className="talk-text">
           <div className="section-eyebrow">
-            <span className="section-kicker">01.5</span>
+            <span className="section-kicker">02 // INGESTION & CONTROL</span>
             <span className="section-kicker-line" aria-hidden="true"></span>
           </div>
           <h2 className="section-title medium reveal">{t('landing.talk.title')}</h2>
@@ -37,8 +37,10 @@ const TalkSection = () => {
           </div>
         </div>
 
-        {/* Right: animated demo */}
-        <TalkDemo />
+        {/* Right: interactive demo / video frame */}
+        <div className="talk-demo-column">
+          <TalkDemo />
+        </div>
       </div>
     </section>
   );

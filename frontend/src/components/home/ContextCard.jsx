@@ -101,13 +101,34 @@ const ContextCard = () => {
         <div className={`pc-panel pc-body ${activeTab === 'decisions' ? 'active' : ''}`}>
           <div className="pc-section">
             <div className="pc-section-label">{pd.labels.decisions}</div>
-            <div className="pc-decisions">
+            <div className="pc-decisions" style={{ display: 'grid', gap: '10px' }}>
               {pd.decisions.map((dec, idx) => (
-                <div className="pc-decision" key={idx}>
-                  <div style={{ flex: 1 }}>
-                    <div className="pc-decision-text">{dec.text}</div>
+                <div className="pc-decision" key={idx} style={{ 
+                  display: 'grid', 
+                  gap: '6px', 
+                  padding: '12px 14px', 
+                  background: 'var(--surface-dim)', 
+                  borderRadius: '8px', 
+                  border: '1px solid var(--line)' 
+                }}>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '8px' }}>
+                    <div className="pc-decision-text" style={{ fontWeight: 650, color: 'var(--text)', fontSize: '0.88rem', lineHeight: 1.4 }}>
+                      {dec.text}
+                    </div>
+                    <span className="pc-decision-date" style={{ fontSize: '0.72rem', color: 'var(--muted)', whiteSpace: 'nowrap' }}>
+                      {dec.date}
+                    </span>
                   </div>
-                  <div className="pc-decision-date">{dec.date}</div>
+                  {dec.why && (
+                    <div style={{ fontSize: '0.8rem', color: 'var(--muted)', lineHeight: 1.4 }}>
+                      <strong style={{ color: 'var(--text)' }}>Why:</strong> {dec.why}
+                    </div>
+                  )}
+                  {dec.impact && (
+                    <div style={{ fontSize: '0.8rem', color: 'var(--accent)', lineHeight: 1.4 }}>
+                      <strong>Impact:</strong> {dec.impact}
+                    </div>
+                  )}
                 </div>
               ))}
             </div>

@@ -6,21 +6,23 @@ const ValueStack = () => {
   const perMonth = t('landing.valueStack.perMonth');
 
   return (
-    <section id="value-stack">
+    <section id="economics">
       <div className="section-inner">
         <div className="section-eyebrow">
-          <span className="section-kicker">{t('landing.valueStack.label')}</span>
+          <span className="section-kicker">07 // STACK ECONOMICS</span>
           <span className="section-kicker-line" aria-hidden="true"></span>
         </div>
-        <h2 className="section-title medium reveal">{t('landing.valueStack.title')}</h2>
-        <p className="section-copy reveal">{t('landing.valueStack.subtitle')}</p>
+        <div className="section-text">
+          <h2 className="section-title medium reveal">{t('landing.valueStack.title')}</h2>
+          <p className="section-copy reveal">{t('landing.valueStack.subtitle')}</p>
+        </div>
         
-        <div className="value-stack-grid reveal">
+        <div className="value-stack-grid reveal" style={{ marginTop: '24px' }}>
           <div>
             <div className="value-stack-table">
               <div className="vst-header">
-                <span>Service</span>
-                <span>USD</span>
+                <span>Tool / Capability</span>
+                <span>Market Price</span>
               </div>
               <div id="value-stack-rows">
                 {services.map((s, i) => (
@@ -35,11 +37,13 @@ const ValueStack = () => {
               </div>
               <div className="vst-total-row">
                 <span className="vst-total-label">{t('landing.valueStack.totalLabel')}</span>
-                <span className="vst-total-usd">{t('landing.valueStack.totalUSD')}</span>
+                <span className="vst-total-usd">{t('landing.valueStack.totalUSD')}{perMonth}</span>
               </div>
             </div>
             {t('landing.valueStack.disclaimer') && (
-              <p className="vst-disclaimer">{t('landing.valueStack.disclaimer')}</p>
+              <p className="vst-disclaimer" style={{ fontSize: '0.78rem', color: 'var(--faint)', marginTop: '12px' }}>
+                {t('landing.valueStack.disclaimer')}
+              </p>
             )}
           </div>
           
@@ -59,7 +63,7 @@ const ValueStack = () => {
             </div>
             <div className="vsp-badge">
               <span className="vsp-badge-icon">&#10003;</span>
-              <span>{t('landing.valueStack.logitakaLabel')}</span>
+              <span>Unified practice memory across all streams</span>
             </div>
           </div>
         </div>

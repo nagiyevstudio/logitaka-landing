@@ -8,7 +8,7 @@ const Problem = () => {
     <section id="problem">
       <div className="section-inner">
         <div className="section-eyebrow">
-          <span className="section-kicker">01</span>
+          <span className="section-kicker">01 // THE BOTTLENECK</span>
           <span className="section-kicker-line" aria-hidden="true"></span>
         </div>
         <h2 className="section-title medium reveal">{t('landing.problem.title')}</h2>
@@ -18,12 +18,19 @@ const Problem = () => {
             <article className="panel reveal" key={i}>
               <div className="panel-index">{String(i + 1).padStart(2, '0')}</div>
               <h3 className="panel-title">{item.title}</h3>
+              {item.quote && (
+                <blockquote className="panel-quote">
+                  {item.quote}
+                </blockquote>
+              )}
               <p className="panel-copy">{item.body}</p>
             </article>
           ))}
         </div>
         
-        <p className="section-copy reveal">{t('landing.problem.closing')}</p>
+        <p className="section-copy reveal" style={{ maxWidth: '72ch', fontWeight: 500 }}>
+          {t('landing.problem.closing')}
+        </p>
       </div>
     </section>
   );

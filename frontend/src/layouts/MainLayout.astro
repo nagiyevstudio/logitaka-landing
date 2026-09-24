@@ -17,8 +17,7 @@ const {
   lang: propLang = undefined
 } = Astro.props;
 
-const accept = Astro.request && Astro.request.headers ? Astro.request.headers.get('accept-language') : null;
-const lang = propLang || detectLocale(accept);
+const lang = propLang || 'en';
 
 // Set server-side global language for the react-i18next mock during SSR
 globalThis.currentLanguage = lang;
@@ -68,7 +67,7 @@ const footerCopyright = t('landing.footer.copyright');
         "name": "Logitaka",
         "operatingSystem": "All",
         "applicationCategory": "BusinessApplication",
-        "description": "Logitaka is a voice-first cognitive exoskeleton and project operating system that structures raw audio thoughts into clean tasks, calendar events, and roadmaps.",
+        "description": "Logitaka is the Work OS for consultants and boutique practices: conversation turns into tasks, decisions, and client memory with proactive supervision.",
         "offers": {
           "@type": "Offer",
           "price": "7.99",

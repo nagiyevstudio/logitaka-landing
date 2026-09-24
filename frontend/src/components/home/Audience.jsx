@@ -8,22 +8,24 @@ const Audience = () => {
     <section id="audience">
       <div className="section-inner">
         <div className="section-eyebrow">
-          <span className="section-kicker">04</span>
+          <span className="section-kicker">01.5 // BUILT FOR HIGH PARALLELISM</span>
           <span className="section-kicker-line" aria-hidden="true"></span>
         </div>
         <h2 className="section-title medium reveal">{t('landing.audience.title')}</h2>
         
-        <div className="cards-grid wide">
+        <div className="cards-grid wide" style={{ marginTop: '24px' }}>
           {items.map((item, i) => (
             <article className="panel reveal" key={i}>
-              <div className="panel-index">{String(i + 1).padStart(2, '0')}</div>
+              <div className="panel-index">0{i + 1}</div>
               <h3 className="panel-title">{item.title}</h3>
               <p className="panel-copy">{item.body}</p>
             </article>
           ))}
         </div>
         
-        <p className="section-copy reveal">{t('landing.audience.closing')}</p>
+        <p className="section-copy reveal" style={{ maxWidth: '72ch', fontWeight: 500 }}>
+          {t('landing.audience.closing')}
+        </p>
       </div>
     </section>
   );

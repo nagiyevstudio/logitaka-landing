@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 const Hero = () => {
   const { t } = useTranslation();
   const loopSteps = t('landing.hero.loop', { returnObjects: true }) || [];
+  const stats = t('landing.hero.stats', { returnObjects: true }) || [];
 
   return (
     <section className="hero" id="hero">
@@ -23,7 +24,7 @@ const Hero = () => {
                 <div className="hero-loop-step" key={idx}>
                   <div className="hero-loop-header">
                     <span className="hero-loop-num">{idx + 1}</span>
-                    <span className="hero-loop-name">{item.step}</span>
+                    <span className="hero-loop-name">{item.title}</span>
                   </div>
                   <span className="hero-loop-desc">{item.desc}</span>
                   {idx < loopSteps.length - 1 && (
@@ -38,23 +39,52 @@ const Hero = () => {
             <a href="https://app.logitaka.com/app/login" className="button button-solid">
               {t('landing.hero.ctaPrimary')}
             </a>
-            <a href="#talk" className="button button-ghost">
+            <a href="#how-it-works" className="button button-ghost">
               {t('landing.hero.ctaSecondary')}
             </a>
           </div>
+
+          {/* Hero Key Metrics */}
+          {Array.isArray(stats) && stats.length > 0 && (
+            <div className="hero-metrics reveal">
+              {stats.map((s, idx) => (
+                <div className="hero-metric-item" key={idx}>
+                  <span className="hero-metric-value">{s.value}</span>
+                  <span className="hero-metric-label">{s.label}</span>
+                </div>
+              ))}
+            </div>
+          )}
         </div>
 
-        {/* Right Column: Premium Mockup Image */}
+        {/* Right Column: Live Workspace Visual / Video Container */}
         <div className="hero-visual-column">
           <div className="hero-image-wrapper">
-            <img 
-              src="/assets/hero-talk-dark.png" 
-              alt="Logitaka Talk fullscreen voice workspace — post-call speech assembling into structured draft cards" 
-              className="hero-mockup-image hero-mockup-dark" 
-            />
+            <div className="hero-video-badge">
+              <span className="hero-eyebrow-dot" aria-hidden="true"></span>
+              <span>{t('landing.hero.videoBadge')}</span>
+            </div>
+            
+            {/* HTML5 video element with fallback to high-res workspace screenshots */}
+            <video 
+              className="hero-mockup-video" 
+              autoPlay 
+              loop 
+              muted 
+              playsInline 
+              poster="/assets/hero-talk-dark.png"
+            >
+              <source src="/assets/hero-demo.webm" type="video/webm" />
+              <source src="/assets/hero-demo.mp4" type="video/mp4" />
+              <img 
+                src="/assets/hero-talk-dark.png" 
+                alt="Logitaka live workspace — real-time multi-project speech and document routing" 
+                className="hero-mockup-image hero-mockup-dark" 
+              />
+            </video>
             <img 
               src="/assets/hero-talk-light.png" 
-              alt="Logitaka Talk fullscreen voice workspace — post-call speech assembling into structured draft cards" 
+              alt="Logitaka live workspace — real-time multi-project speech and document routing" 
               className="hero-mockup-image hero-mockup-light" 
             />
           </div>
@@ -65,4 +95,3 @@ const Hero = () => {
 };
 
 export default Hero;
-

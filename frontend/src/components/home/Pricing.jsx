@@ -4,7 +4,6 @@ const Pricing = () => {
   const { t } = useTranslation();
   const cards = t('landing.pricing.cards', { returnObjects: true }) || [];
   const popularBadge = t('landing.pricing.popularBadge');
-  const disclaimer = t('landing.pricing.disclaimer');
   const enterprise = t('landing.pricing.enterprise', { returnObjects: true }) || {};
 
   return (
@@ -16,24 +15,7 @@ const Pricing = () => {
         </div>
         <div className="section-text">
           <h2 className="section-title medium reveal">{t('landing.pricing.title')}</h2>
-          {disclaimer && (
-            <div className="pricing-disclaimer-pill reveal" style={{
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: '8px',
-              padding: '6px 14px',
-              borderRadius: '20px',
-              background: 'rgba(245, 158, 11, 0.1)',
-              border: '1px solid rgba(245, 158, 11, 0.25)',
-              color: '#f59e0b',
-              fontSize: '0.8rem',
-              fontWeight: 500,
-              marginTop: '12px'
-            }}>
-              <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#f59e0b' }}></span>
-              {disclaimer}
-            </div>
-          )}
+          <p className="section-copy reveal">{t('landing.pricing.trialNote')}</p>
         </div>
         
         <div className="pricing-grid" style={{ marginTop: '28px' }}>
@@ -78,7 +60,7 @@ const Pricing = () => {
                 )}
                 
                 <div className="pricing-card-footer">
-                  <a className={btnClass} href={card.href ? `${card.href}?plan=${card.label.toLowerCase()}` : '#final-cta'}>
+                  <a className={btnClass} href={card.href || '#final-cta'}>
                     {card.cta}
                   </a>
                 </div>

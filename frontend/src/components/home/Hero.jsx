@@ -36,13 +36,14 @@ const Hero = () => {
           )}
 
           <div className="hero-actions reveal">
-            <a href="https://app.logitaka.com/app/login" className="button button-solid">
+            <a href="https://app.logitaka.com/app/login?plan=pro" className="button button-solid">
               {t('landing.hero.ctaPrimary')}
             </a>
             <a href="#how-it-works" className="button button-ghost">
               {t('landing.hero.ctaSecondary')}
             </a>
           </div>
+          <p className="section-copy reveal">{t('landing.hero.trialNote')}</p>
 
           {/* Hero Key Metrics */}
           {Array.isArray(stats) && stats.length > 0 && (

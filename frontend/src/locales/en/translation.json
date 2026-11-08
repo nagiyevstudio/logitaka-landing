@@ -51,8 +51,9 @@
       "kicker": "The Work OS for Independent Consultants & Boutique Practices",
       "headline": "Turn conversation into tasks, decisions, and client memory.",
       "subheadline": "Run 5–15 parallel client streams without context collapse. Voice and files assemble into structured deliverables on the fly, while proactive supervision guards against missed commitments.",
-      "ctaPrimary": "Start 7-Day Free Trial",
+      "ctaPrimary": "Create a Free Account",
       "ctaSecondary": "Explore How It Works",
+      "trialNote": "Try Logitaka Pro free for up to 14 days. Includes $2 in trial credit. No card required.",
       "loop": [
         {
           "step": "Speak or Drop",
@@ -361,7 +362,7 @@
     "pricing": {
       "eyebrow": "Pricing",
       "title": "Fair pricing based on client streams — not team seats.",
-      "disclaimer": "Pricing structure in active finalization ahead of upcoming public launch.",
+      "trialNote": "New accounts can try Pro free for up to 14 days with $2 in trial credit. No card required.",
       "popularBadge": "Most Popular",
       "cards": [
         {
@@ -369,7 +370,6 @@
           "name": "STARTER",
           "price": "$7.99",
           "period": "/ month",
-          "trial": "7-day free trial",
           "body": "Essential workspace for solo consultants managing up to 5 concurrent client streams",
           "features": [
             "Up to 5 active client streams",
@@ -379,7 +379,7 @@
             "Commitments & Subscriptions registry",
             "Optional Telegram Daily Briefs"
           ],
-          "cta": "Start 7-Day Free Trial",
+          "cta": "Log In to Subscribe",
           "href": "https://app.logitaka.com/app/login"
         },
         {
@@ -387,6 +387,7 @@
           "name": "PRO",
           "price": "$14.99",
           "period": "/ month",
+          "trial": "Up to 14 days free",
           "body": "Complete operational workspace for active advisors and fractional operators running up to 10 client streams",
           "features": [
             "Everything in Starter",
@@ -397,8 +398,8 @@
             "People registry & calendar feeds: up to 5",
             "Customizable Skill Builder runtime"
           ],
-          "cta": "Choose PRO",
-          "href": "https://app.logitaka.com/app/login"
+          "cta": "Create a Free Account",
+          "href": "https://app.logitaka.com/app/login?plan=pro"
         },
         {
           "label": "Premium",
@@ -415,7 +416,7 @@
             "Unlimited people in registry & subscriptions",
             "Priority compute & model routing"
           ],
-          "cta": "Choose PREMIUM",
+          "cta": "Log In to Subscribe",
           "href": "https://app.logitaka.com/app/login"
         }
       ],
@@ -429,6 +430,10 @@
       "eyebrow": "Clear Answers",
       "title": "Frequently Asked Questions",
       "items": [
+        {
+          "question": "How does the free Pro trial work?",
+          "answer": "Create a new Logitaka account before January 1, 2027 at midnight Baku time (UTC+4). After you verify your email, you get Pro access and $2 in trial credit. The trial ends after 14 days or when the credit runs out, whichever comes first. You can start without a payment card and choose a paid plan if you want to continue."
+        },
         {
           "question": "How is my client data protected and stored?",
           "answer": "All production infrastructure and data stores reside strictly within the European Union (Hetzner Cloud, Germany/Finland) communicating via HTTPS/TLS. Voice transcription is handled in volatile memory without caching persistent audio, and uploaded documents are physically erased from disk immediately upon artifact generation. Client streams are strictly segregated at the runtime directory level, and you retain the right to export your entire practice in open Markdown or trigger a complete cascade account deletion at any time."
@@ -462,8 +467,8 @@
     "finalCta": {
       "label": "Practice Operating System",
       "title": "End your client call. Speak your follow-up. Done.",
-      "body": "Lead 5–15 client streams without administrative drag or lost context. Free 7-day trial, instant setup, cancel anytime.",
-      "primary": "Start Free 7-Day Trial",
+      "body": "Create your account and try Logitaka Pro free for up to 14 days with $2 in trial credit. No card required.",
+      "primary": "Create a Free Account",
       "secondary": "Explore How It Works",
       "notice": "By signing up, you agree to the <a href=\"/terms\">Terms of Use</a> and acknowledge the <a href=\"/privacy\">Privacy Policy</a>."
     },

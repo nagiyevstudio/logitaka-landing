@@ -11,7 +11,7 @@ const Pricing = () => {
     <section id="pricing">
       <div className="section-inner">
         <div className="section-eyebrow">
-          <span className="section-kicker">09 // PRICING</span>
+          <span className="section-kicker">{t('landing.kickers.pricing')}</span>
           <span className="section-kicker-line" aria-hidden="true"></span>
         </div>
         <div className="section-text">
@@ -99,7 +99,7 @@ const Pricing = () => {
                   <line x1="6" y1="6" x2="6.01" y2="6" />
                   <line x1="6" y1="18" x2="6.01" y2="18" />
                 </svg>
-                ENTERPRISE & CLOUD
+                {t('landing.pricing.enterprise.tag')}
               </div>
               <h3 className="pricing-enterprise-title">{enterprise.title}</h3>
               <p className="pricing-enterprise-desc">{enterprise.description}</p>

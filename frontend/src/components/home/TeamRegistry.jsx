@@ -8,7 +8,7 @@ const TeamRegistry = () => {
     <section id="team">
       <div className="section-inner">
         <div className="section-eyebrow">
-          <span className="section-kicker">05 // FRICTIONLESS DELEGATION</span>
+          <span className="section-kicker">{t('landing.kickers.team')}</span>
           <span className="section-kicker-line" aria-hidden="true"></span>
         </div>
         <div className="section-text">
@@ -16,7 +16,7 @@ const TeamRegistry = () => {
           <p className="section-copy reveal">{t('landing.team.subtitle')}</p>
         </div>
 
-        <div className="cards-grid reveal" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', marginTop: '28px' }}>
+        <div className="cards-grid reveal" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(min(300px, 100%), 1fr))', marginTop: '28px' }}>
           {points.map((p, idx) => (
             <article className="panel" key={idx} style={{ padding: '28px' }}>
               <div className="panel-index" style={{ color: 'var(--accent)' }}>0{idx + 1}</div>

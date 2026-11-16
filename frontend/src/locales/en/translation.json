@@ -5,7 +5,7 @@
       "description": "Turn conversation into tasks, decisions, and client memory. Lead 5–15 parallel client streams with proactive supervision in one unified workspace."
     },
     "ui": {
-      "brandTagline": "AI Powered OS",
+      "brandTagline": "Client Memory OS",
       "nav": [
         {
           "href": "#how-it-works",
@@ -13,19 +13,19 @@
         },
         {
           "href": "#memory",
-          "label": "Memory & Decisions"
+          "label": "Memory"
+        },
+        {
+          "href": "#assistants",
+          "label": "Assistants"
+        },
+        {
+          "href": "#models",
+          "label": "Models"
         },
         {
           "href": "#supervision",
           "label": "Supervision"
-        },
-        {
-          "href": "#team",
-          "label": "Delegation"
-        },
-        {
-          "href": "#economics",
-          "label": "Stack Economics"
         },
         {
           "href": "#pricing",
@@ -48,10 +48,10 @@
       }
     },
     "hero": {
-      "kicker": "The Work OS for Independent Consultants & Boutique Practices",
+      "kicker": "For consultants & boutique practices",
       "headline": "Turn conversation into tasks, decisions, and client memory.",
-      "subheadline": "Run 5–15 parallel client streams without context collapse. Voice and files assemble into structured deliverables on the fly, while proactive supervision guards against missed commitments.",
-      "ctaPrimary": "Start 7-Day Free Trial",
+      "subheadline": "Talk after a call — tasks, dates, and decisions land in the right client project while you speak. Review once, and it's all in memory.",
+      "ctaPrimary": "Start Free — No Card Required",
       "ctaSecondary": "Explore How It Works",
       "loop": [
         {
@@ -72,25 +72,26 @@
       ],
       "stats": [
         {
-          "value": "5–15",
-          "label": "client streams in parallel"
+          "value": "60 sec",
+          "label": "from sign-up to your first workspace"
         },
         {
-          "value": "0 min",
-          "label": "evening typing debt"
+          "value": "50+",
+          "label": "AI models, one memory"
         },
         {
-          "value": "100%",
-          "label": "deterministic review (Draft & Apply)"
+          "value": "0",
+          "label": "voice recordings or raw files kept"
         }
       ],
-      "videoBadge": "LIVE WORKSPACE DEMO",
+      "videoBadge": "Real app recording",
       "videoCaption": "Watch real-time voice and multi-project routing in action",
       "supporting": [
         "Open Talk after any client call. Speak naturally — tasks and decisions assemble across your client projects in real time.",
         "Review the batch before anything is applied. Nothing touches your client boards until you confirm.",
-        "Hit Apply. Logitaka executes exactly what you reviewed — deterministic, no hallucinations, no surprises."
-      ]
+        "Hit Apply. Logitaka applies exactly what you approved — nothing more, nothing hidden."
+      ],
+      "imageAlt": "Logitaka live workspace — real-time multi-project speech and document routing"
     },
     "problem": {
       "eyebrow": "The Reality of Practice",
@@ -144,26 +145,26 @@
     },
     "talk": {
       "eyebrow": "Zero-Friction Ingestion",
-      "title": "Intake that routes itself across projects — hands-free.",
-      "subtitle": "Talk Live for real-time voice, Inbox for client files. Speak naturally or drop documents: tasks, decisions, and open questions map to the right client streams simultaneously. Raw inputs are permanently erased immediately upon processing.",
+      "title": "Speak on the go. Drop the long stuff in Inbox.",
+      "subtitle": "Talk Live is for quick debriefs between calls: speak naturally and watch tasks, events, and decisions assemble across your clients in real time. Inbox (Pro) is for everything longer — pasted notes, long recordings, PDFs, spreadsheets — routed to the right client in one pass.",
       "steps": [
         {
           "title": "Speak or Drop",
-          "body": "Talk through a debrief after a sync or drag in client PDFs, audio, and spreadsheets. Multi-project routing maps distinct action items to different accounts in a single pass."
+          "body": "Debrief after a call in Talk Live — or, on Pro, drop client PDFs, audio, and long notes into Inbox. One pass, several clients."
         },
         {
           "title": "Draft & Apply",
-          "body": "Every task, date, and decision appears as an editable draft card. The system never modifies your workspace proactively — what you approve in drafts is precisely what gets committed."
+          "body": "Every task, date, and decision appears as an editable card, grouped by client. Fix anything by voice or by hand — then one Apply commits exactly what you approved."
         },
         {
-          "title": "Immediate Purge",
-          "body": "The moment artifacts are created, raw audio and uploaded files are permanently deleted. Your practice keeps structured memory; your clients' raw data leaves no footprint in the cloud."
+          "title": "Nothing Left Behind",
+          "body": "Live voice is processed in real time and never recorded. Uploaded files are deleted once their content is saved to the client's project — your workspace keeps the structure, not the raw data."
         }
       ],
       "chips": [
-        "Deterministic Draft & Apply — no silent AI hallucinations",
+        "Draft & Apply — nothing changes until you approve",
         "Multi-project routing in a single voice debrief",
-        "Raw inputs permanently erased immediately after processing"
+        "No voice recorded · uploaded files deleted after processing"
       ]
     },
     "memory": {
@@ -184,9 +185,18 @@
         {
           "tag": "STRUCTURED CLIENT MEMORY",
           "title": "Included in every tier",
-          "body": "Client memory is the foundational core of Logitaka, included from Starter ($7.99/mo). Agent-agnostic and distributed, it keeps each client context strictly isolated and permanently accessible across devices."
+          "body": "Client memory is the foundational core of Logitaka, included from Starter ($7.99/mo). It is model-agnostic: switch between 50+ AI models at any time — your decisions, notes, and history stay put, each client context strictly isolated and accessible across devices."
         }
-      ]
+      ],
+      "recall": {
+        "tag": "RECALL",
+        "title": "Ask three weeks later. The answer is already there.",
+        "when": "Talk Live · three weeks later",
+        "question": "What did we agree with Acme on the auth migration — and why?",
+        "answer": "You postponed the auth migration to Q3. Reason: Acme put enterprise onboarding ahead of the infrastructure refactor. Consequence: the frontend sprint was shortened by two weeks and the retainer scope was amended.",
+        "source": "From Decision Memory · Acme Corp — Strategy Stream",
+        "body": "Capture is only half the job. Logitaka keeps every decision with its reason and consequence, so the voice assistant — and on Pro, the project and global assistants — answer from your client's memory, not from a chat you scrolled past weeks ago."
+      }
     },
     "contextCard": {
       "project": "Acme Corp — Strategy Stream",
@@ -203,7 +213,11 @@
         "questions": "OPEN QUESTIONS",
         "decisions": "LOCKED DECISIONS",
         "history": "SESSION HISTORY",
-        "models": "Practice Memory:"
+        "models": "Practice Memory:",
+        "chipReasons": "Decisions with reasons",
+        "chipIsolated": "Isolated per client",
+        "why": "Why:",
+        "impact": "Impact:"
       },
       "overview": {
         "statusText": "Q3 Advisory Roadmap in execution",
@@ -284,7 +298,7 @@
     "team": {
       "eyebrow": "Frictionless Delegation",
       "title": "Delegate responsibilities without handing out workspace logins or paying per-seat fees.",
-      "subtitle": "For independent advisors and boutique studios, managing subcontractors and partners shouldn't mean managing another SaaS user directory.",
+      "subtitle": "For independent advisors and boutique studios, managing subcontractors and partners shouldn't mean managing another SaaS user directory. Available on Pro and Premium.",
       "points": [
         {
           "title": "Responsibility Registry",
@@ -302,9 +316,9 @@
     },
     "commitments": {
       "eyebrow": "Mental Bandwidth",
-      "title": "Clear the mental noise: all recurring obligations in one transparent register.",
-      "subtitle": "A consulting practice is powered by an individual. Scattering recurring SaaS tools, servers, client subscriptions, and personal commitments across accounts creates constant background anxiety.",
-      "body": "Logitaka unifies recurring obligations into a single lifecycle register: who you pay, from which account, exact amounts, and renewal dates. Reminders surface in your internal calendar a month ahead and in Pulse a week ahead — so you know precisely what to renew, pause, or cancel."
+      "title": "Every recurring payment in one register — before it renews.",
+      "subtitle": "Tools, hosting, rent, subscriptions — scattered across cards and accounts, they create constant background noise.",
+      "body": "Logitaka keeps recurring and one-off payments in a single register: what you pay, how much, from which account, and when it renews. Upcoming payments show up in your calendar and Pulse, and you can mark a payment as made just by saying so."
     },
     "valueStack": {
       "label": "Stack Economics",
@@ -333,7 +347,10 @@
       "vsLabel": "vs",
       "logitakaLabel": "Logitaka (PRO)",
       "logitakaPrice": "$14.99",
-      "disclaimer": "Prices verified across public vendor pricing pages (Sept 2026). Logitaka replaces disjointed subscriptions with unified context."
+      "disclaimer": "Prices verified across public vendor pricing pages (Sept 2026). Logitaka replaces disjointed subscriptions with unified context.",
+      "colTool": "Tool / Capability",
+      "colPrice": "Market Price",
+      "badge": "Unified practice memory across all streams"
     },
     "privacy": {
       "eyebrow": "Data Governance",
@@ -342,26 +359,26 @@
       "pillars": [
         {
           "title": "EU Data Residency",
-          "body": "Production infrastructure and user data are hosted on dedicated servers strictly located within the European Union (Hetzner Cloud, Germany/Finland)."
+          "body": "Production infrastructure and user data are hosted on dedicated servers in the European Union (Hetzner, Nuremberg, Germany)."
         },
         {
-          "title": "Ephemeral Intake & Physical Purge",
-          "body": "Voice input is processed in volatile memory, and uploaded files are physically erased immediately after deliverables are finalized. No client audio or files sit indefinitely in cloud buckets."
+          "title": "Ephemeral Intake",
+          "body": "Talk Live streams your voice to a real-time model and keeps only what you approve — no audio is recorded. Files you upload are deleted once their content is saved to the client's project. Raw client material doesn't sit in cloud storage."
         },
         {
-          "title": "Workspace Segregation & Hardened Auth",
-          "body": "Client streams are strictly segregated at the filesystem runtime level. User authentication uses cryptographic scrypt key derivation and constant-time comparisons, with HTTPS/TLS across all endpoints."
+          "title": "Workspace Segregation & Secure Access",
+          "body": "Each workspace and client stream is strictly isolated. All traffic is encrypted with HTTPS/TLS, and passwords are stored with modern key derivation (scrypt)."
         },
         {
-          "title": "Total Ownership & Cascade Erasure",
-          "body": "Your practice memory belongs entirely to you. Export your entire history, decisions, and profile in open Markdown at any time, or execute a complete cascade account purge."
+          "title": "No Training on Your Data by Default",
+          "body": "Default models are configured so providers don't train on your data. Some cheaper models may — they are clearly labeled and only used if you deliberately pick them. Your practice memory belongs to you: full data export and account deletion are available on request."
         }
       ]
     },
     "pricing": {
       "eyebrow": "Pricing",
       "title": "Fair pricing based on client streams — not team seats.",
-      "disclaimer": "Pricing structure in active finalization ahead of upcoming public launch.",
+      "disclaimer": "Your subscription is your AI balance: the full price becomes credit for AI work each month, and every model shows how fast it spends it. Pick lighter models to make it last, or top up when you need more.",
       "popularBadge": "Most Popular",
       "cards": [
         {
@@ -369,17 +386,16 @@
           "name": "STARTER",
           "price": "$7.99",
           "period": "/ month",
-          "trial": "7-day free trial",
-          "body": "Essential workspace for solo consultants managing up to 5 concurrent client streams",
+          "body": "A voice-first memory for anyone who doesn't want to forget a thing — tasks, dates, decisions, and open questions across up to 5 areas of life or work",
           "features": [
-            "Up to 5 active client streams",
+            "Up to 5 active projects",
             "Logitaka Talk Live voice workspace",
-            "Client Structured Memory (included)",
+            "Decisions, notes & open questions memory",
             "Event calendar sync (iOS & Google)",
             "Commitments & Subscriptions registry",
             "Optional Telegram Daily Briefs"
           ],
-          "cta": "Start 7-Day Free Trial",
+          "cta": "Choose Starter",
           "href": "https://app.logitaka.com/app/login"
         },
         {
@@ -391,14 +407,18 @@
           "features": [
             "Everything in Starter",
             "Up to 10 active client streams",
-            "Structured Client Meetings",
-            "Inbox (Audio, Files, Notes)",
+            "Project & Global AI Assistants (50+ models)",
+            "Client document library",
+            "Inbox: long notes, audio, files — routed to clients",
+            "Email in Global Assistant: read, sort, draft replies",
+            "Structured Client Meetings & Focus sessions",
             "Cross-project global search",
             "People registry & calendar feeds: up to 5",
-            "Customizable Skill Builder runtime"
+            "Custom Skills"
           ],
-          "cta": "Choose PRO",
-          "href": "https://app.logitaka.com/app/login"
+          "cta": "Start Free on Pro",
+          "href": "https://app.logitaka.com/app/login",
+          "trial": "14 days free · $2 AI balance · no card"
         },
         {
           "label": "Premium",
@@ -412,8 +432,7 @@
             "Client Health & Risk Radar",
             "AI Strategist Insights",
             "Personal Operational Profiler",
-            "Unlimited people in registry & subscriptions",
-            "Priority compute & model routing"
+            "Unlimited people in registry & subscriptions"
           ],
           "cta": "Choose PREMIUM",
           "href": "https://app.logitaka.com/app/login"
@@ -422,7 +441,8 @@
       "enterprise": {
         "title": "Custom Deployments for High-Compliance Firms",
         "description": "Need dedicated private cloud hosting, isolated database instances, or custom compliance SLA guarantees for institutional client work? Contact our engineering team.",
-        "cta": "Contact Enterprise"
+        "cta": "Contact Enterprise",
+        "tag": "ENTERPRISE & CLOUD"
       }
     },
     "faq": {
@@ -430,12 +450,16 @@
       "title": "Frequently Asked Questions",
       "items": [
         {
+          "question": "How does the free start work?",
+          "answer": "Sign up with Google or email — no card needed. You get 14 days of Pro with $2 of AI balance to try Logitaka on your own projects: assistants, Inbox, documents, and meetings included. When the balance or the 14 days run out, pick a plan; your projects, decisions, and notes stay where they are."
+        },
+        {
           "question": "How is my client data protected and stored?",
-          "answer": "All production infrastructure and data stores reside strictly within the European Union (Hetzner Cloud, Germany/Finland) communicating via HTTPS/TLS. Voice transcription is handled in volatile memory without caching persistent audio, and uploaded documents are physically erased from disk immediately upon artifact generation. Client streams are strictly segregated at the runtime directory level, and you retain the right to export your entire practice in open Markdown or trigger a complete cascade account deletion at any time."
+          "answer": "All production infrastructure and data stores are in the European Union (Hetzner, Nuremberg, Germany), with HTTPS/TLS on every connection. Live voice is processed in real time and never recorded, and uploaded files are deleted once their content is saved to your project. Client streams are strictly segregated. Default AI models are configured so providers don't train on your data; cheaper models that may train are clearly labeled and used only if you choose them. Full data export and account deletion are available on request."
         },
         {
           "question": "Why doesn't Logitaka join client calls as an AI bot?",
-          "answer": "Clients increasingly ban bot notetakers due to GDPR risks, sensitive IP, and recent high-profile cloud recording leaks. Inviting a bot into executive meetings creates unnecessary tension. With Logitaka, you either conduct a 60-second debrief in Talk Live immediately after the sync or drop your meeting recording into Inbox. Context is extracted, structured into client streams, and the raw audio is permanently deleted."
+          "answer": "Clients increasingly ban bot notetakers due to GDPR risks, sensitive IP, and recent high-profile cloud recording leaks. Inviting a bot into executive meetings creates unnecessary tension. With Logitaka, you do a 60-second debrief in Talk Live right after the call — nothing is recorded — or, on Pro, drop your own recording into Inbox: the commitments land in the right client's project and the audio file is deleted."
         },
         {
           "question": "Why don't all tasks sync to my Apple or Google Calendar?",
@@ -455,15 +479,15 @@
         },
         {
           "question": "How are time tracking and invoicing handled?",
-          "answer": "Because every consulting practice evaluates work differently (fixed fee, retainers, hourly milestones), Logitaka avoids rigid, one-size-fits-all billing modules. Instead, time tracking and billing criteria are created as tailored User Skills via Skill Builder, executing exactly according to your defined methodology."
+          "answer": "Logitaka doesn't track time or send invoices — it's your practice memory, not a billing system. Because every practice bills differently (fixed fee, retainers, hourly milestones), you can create a custom Skill that turns a client's history — completed tasks, decisions, meetings — into a summary for your invoice, in your own format."
         }
       ]
     },
     "finalCta": {
       "label": "Practice Operating System",
       "title": "End your client call. Speak your follow-up. Done.",
-      "body": "Lead 5–15 client streams without administrative drag or lost context. Free 7-day trial, instant setup, cancel anytime.",
-      "primary": "Start Free 7-Day Trial",
+      "body": "Lead 5–15 client streams without administrative drag or lost context. Try Pro free for 14 days with $2 of AI balance — no card. Sign up with Google or email.",
+      "primary": "Try Pro Free",
       "secondary": "Explore How It Works",
       "notice": "By signing up, you agree to the <a href=\"/terms\">Terms of Use</a> and acknowledge the <a href=\"/privacy\">Privacy Policy</a>."
     },
@@ -480,8 +504,12 @@
           "label": "Memory"
         },
         {
-          "href": "#supervision",
-          "label": "Supervision"
+          "href": "#assistants",
+          "label": "Assistants"
+        },
+        {
+          "href": "#models",
+          "label": "Models"
         },
         {
           "href": "#team",
@@ -510,6 +538,192 @@
           "label": "Contact"
         }
       ]
+    },
+    "assistants": {
+      "title": "Ask anything about any client. Then act on it.",
+      "subtitle": "On Pro, AI assistants work directly with your client memory — reading plans, decisions, documents, and email, and making changes you can see.",
+      "items": [
+        {
+          "name": "Project Assistant",
+          "badge": "Pro",
+          "desc": "A deep conversation inside one client: it reads the plan, decisions, and documents, searches the web when needed, and updates tasks and records decisions as you talk. Finalize the conversation and it becomes a document in the client's library."
+        },
+        {
+          "name": "Global Assistant",
+          "badge": "Pro",
+          "desc": "One conversation across your whole practice: compare clients, spot overlaps, move work between projects, and search past chats."
+        },
+        {
+          "name": "Email",
+          "badge": "Pro",
+          "desc": "Connect your mailbox. Ask what a client sent, get the gist, file attachments to the right project, and have replies drafted. Nothing is sent until you confirm the exact recipient, subject, and text."
+        },
+        {
+          "name": "Client Meetings",
+          "badge": "Pro",
+          "desc": "A guided review that walks through every active client, surfaces open questions and blockers, records decisions, and closes with a written report."
+        },
+        {
+          "name": "Focus Sessions",
+          "badge": "Pro",
+          "desc": "Pick one task, start the timer, and work it through with an AI partner that keeps you on the next step."
+        }
+      ],
+      "chat": {
+        "header": "Global Assistant",
+        "context": "Workspace · Email connected",
+        "question": "Did Northwind send anything about the budget this week?",
+        "answer": "Yes — two emails from Dana Reyes on Wednesday:",
+        "points": [
+          "Q4 budget approved at $48k (you asked for $55k)",
+          "Revised SOW attached — scope trimmed to phases 1–2"
+        ],
+        "offer": "That answers the open question in Northwind's plan. File the SOW to their library and mark the question resolved?",
+        "followUp": "Yes. And draft a reply confirming we start phase 1 on Monday.",
+        "draftLabel": "DRAFT — NOT SENT",
+        "draft": "To: Dana Reyes · Re: Q4 budget — Thanks, Dana. Confirmed: we'll kick off phase 1 on Monday under the revised SOW…",
+        "send": "Send",
+        "edit": "Edit",
+        "footnote": "Illustrative example · email is sent only after your explicit confirmation"
+      }
+    },
+    "models": {
+      "title": "Every frontier model. One memory.",
+      "subtitle": "Logitaka works with 50+ models from 8 providers — Claude, GPT, Gemini, Grok, DeepSeek, Qwen, and more. Switch any time: your plans, decisions, and history live in your workspace, not in a model's chat.",
+      "points": [
+        "Auto picks a suitable model for each job — it's the default and the most economical choice.",
+        "Already working in Claude or Codex? Connect them to Logitaka and they read and update the same client memory — with your consent, project by project (paid plans).",
+        "Every model shows how fast it spends your balance, so you choose consciously.",
+        "Discounted models are labeled when promotions run.",
+        "Your subscription is your AI balance — every charge is visible as it happens. No hidden caps."
+      ],
+      "selector": {
+        "title": "Choose a model",
+        "caption": "Relative balance spend",
+        "rows": [
+          {
+            "name": "Auto",
+            "rate": "0.5×"
+          },
+          {
+            "name": "GLM 5.3 Flash",
+            "rate": "0.06×",
+            "promo": "SALE"
+          },
+          {
+            "name": "DeepSeek V4 Pro",
+            "rate": "0.9×",
+            "promo": "SALE"
+          },
+          {
+            "name": "Gemini 3.8 Flash",
+            "rate": "1.2×"
+          },
+          {
+            "name": "Claude Sonnet 5.5",
+            "rate": "2.8×"
+          },
+          {
+            "name": "Claude Opus 5.5",
+            "rate": "5×",
+            "tone": "high"
+          },
+          {
+            "name": "GPT-6 Astra",
+            "rate": "12.5×",
+            "tone": "high"
+          }
+        ],
+        "footnote": "Snapshot from the app, Oct 2026 · multipliers follow provider pricing"
+      }
+    },
+    "kickers": {
+      "problem": "01 // THE BOTTLENECK",
+      "audience": "02 // BUILT FOR HIGH PARALLELISM",
+      "talk": "03 // INGESTION & CONTROL",
+      "memory": "04 // PRACTICE ARCHITECTURE",
+      "assistants": "05 // AI ASSISTANTS",
+      "models": "06 // MODEL CHOICE",
+      "supervision": "07 // EXECUTIVE OVERSIGHT",
+      "team": "08 // FRICTIONLESS DELEGATION",
+      "commitments": "09 // MENTAL BANDWIDTH",
+      "valueStack": "10 // STACK ECONOMICS",
+      "privacy": "11 // DATA GOVERNANCE",
+      "pricing": "12 // PRICING",
+      "faq": "13 // CLEAR ANSWERS"
+    },
+    "demo": {
+      "talk": {
+        "aria": "Logitaka Talk demo: voice transcript assembles structured draft cards — task, event, and correction — across projects, then applies them with one confirm.",
+        "brand": "Talk",
+        "transcript": "Just finished sync with Acme Corp: send updated proposal by Thursday, and schedule client review for Friday at 3",
+        "project": "Acme Corp",
+        "unknownProject": "Client ?",
+        "task": "Task",
+        "event": "Event",
+        "correction": "Correction",
+        "taskTitle": "Send updated proposal",
+        "eventTitle": "Client review call",
+        "date": "Date:",
+        "oldDay": "Thu",
+        "newDay": "Fri",
+        "summary": "3 changes · Acme Corp",
+        "apply": "Apply",
+        "applied": "✓ Applied"
+      },
+      "brief": {
+        "bot": "Logitaka Practice Bot",
+        "when": "Daily Morning Brief · 08:00 AM",
+        "greeting": "🌅 Good morning. Here is your practice focus:",
+        "doneLabel": "Yesterday Finalized:",
+        "done": [
+          "✓ Delivered Acme architecture assessment",
+          "✓ Auth migration shifted to Q3"
+        ],
+        "todayLabel": "Today's Hard Deliverables:",
+        "today": [
+          "• 14:00 — Strategy sync with Acme CEO",
+          "• Send updated retainer proposal (due today)"
+        ],
+        "riskLabel": "⚠️ Risk Radar Alert:",
+        "risk": "FinTech Advisory milestone pending client sign-off for 4 days.",
+        "footnote": "No scrolling required · Opens your day in 15 seconds"
+      },
+      "obligations": {
+        "header": "RECURRING OBLIGATIONS & SERVICES",
+        "alert": "Pulse alert 7d ahead",
+        "footnote": "Included across all plans · Does not clutter your external calendar",
+        "items": [
+          {
+            "name": "ElevenLabs Speech API",
+            "account": "ops@practice.io",
+            "amount": "$44/mo",
+            "due": "In 3 days",
+            "status": "Active"
+          },
+          {
+            "name": "EU Dedicated Server (Hetzner)",
+            "account": "infra@practice.io",
+            "amount": "$89/mo",
+            "due": "Oct 12",
+            "status": "Active"
+          },
+          {
+            "name": "ChatGPT Team Subscription",
+            "account": "team@practice.io",
+            "amount": "$60/mo",
+            "due": "Oct 18",
+            "status": "Reviewing"
+          },
+          {
+            "name": "Client Prototyping Sandbox",
+            "account": "sandbox@client.com",
+            "amount": "$29/mo",
+            "due": "Cancelled",
+            "status": "Purged"
+          }
+        ]
+      }
     }
   }
 }

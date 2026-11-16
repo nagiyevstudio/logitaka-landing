@@ -8,7 +8,7 @@ const FAQ = () => {
     <section id="faq">
       <div className="section-inner">
         <div className="section-eyebrow">
-          <span className="section-kicker">10 // CLEAR ANSWERS</span>
+          <span className="section-kicker">{t('landing.kickers.faq')}</span>
           <span className="section-kicker-line" aria-hidden="true"></span>
         </div>
         <h2 className="section-title medium reveal">{t('landing.faq.title')}</h2>

@@ -1,3 +1,5 @@
+import { getLocalizedPath } from '../utils/i18n';
+
 const Footer = ({
   lang = 'en',
   navItems = [],
@@ -6,13 +8,14 @@ const Footer = ({
   tagline = 'The system keeps order — you just live.',
   copyright = '© 2026 Logitaka. All rights reserved.'
 }) => {
+  const homePath = getLocalizedPath(lang);
   const getHref = (href) => {
     if (href.startsWith('http') || href.startsWith('mailto')) {
       return href;
     }
     const isHash = href.startsWith('#');
     if (isHash) {
-      return `/${href}`;
+      return `${homePath}${href}`;
     }
     return href;
   };
@@ -22,11 +25,11 @@ const Footer = ({
       <div className="footer-inner">
         <div className="footer-top">
           <div className="footer-brand">
-            <a className="brand" href="/">
+            <a className="brand" href={homePath}>
               <img className="brand-logo brand-logo-dark" src="/assets/logo-logitaka-bb.svg" alt="Logitaka" height="28" />
               <img className="brand-logo brand-logo-light" src="/assets/logo-logitaka-wb.svg" alt="Logitaka" height="28" />
               <span className="brand-name-group">
-                <span className="brand-name">Logitaka</span>
+                <span className="brand-name" lang="en">Logitaka</span>
                 <span className="brand-tagline">{brandTagline}</span>
               </span>
             </a>

@@ -1,0 +1,724 @@
+{
+  "landing": {
+    "meta": {
+      "title": "Logitaka — Məsləhətçilər və butik komandalar üçün iş əməliyyat sistemi",
+      "description": "Söhbəti tapşırıqlara, qərarlara və müştəri yaddaşına çevirin. 5–15 paralel müştəri axınını vahid iş məkanında, proaktiv nəzarətlə idarə edin."
+    },
+    "ui": {
+      "brandTagline": "Müştəri yaddaşı OS",
+      "nav": [
+        {
+          "href": "#how-it-works",
+          "label": "Necə işləyir"
+        },
+        {
+          "href": "#memory",
+          "label": "Yaddaş"
+        },
+        {
+          "href": "#assistants",
+          "label": "Assistentlər"
+        },
+        {
+          "href": "#models",
+          "label": "Modellər"
+        },
+        {
+          "href": "#supervision",
+          "label": "Nəzarət"
+        },
+        {
+          "href": "#pricing",
+          "label": "Qiymətlər"
+        },
+        {
+          "href": "#faq",
+          "label": "Suallar"
+        }
+      ],
+      "theme": {
+        "light": "İşıqlı tema",
+        "dark": "Qaranlıq tema"
+      },
+      "login": "Daxil ol",
+      "imagePlaceholders": {
+        "hero": "assets/hero-talk-dark.png",
+        "context": "assets/003.png",
+        "dev": "assets/004.png"
+      }
+    },
+    "hero": {
+      "kicker": "Müstəqil məsləhətçilər və butik komandalar üçün iş əməliyyat sistemi",
+      "headline": "Söhbəti tapşırıqlara, qərarlara və müştəri yaddaşına çevirin.",
+      "subheadline": "5–15 paralel müştəri axınını kontekst itirmədən idarə edin. Səs və fayllar elə anındaca strukturlaşdırılmış nəticələrə çevrilir, proaktiv nəzarət isə verilmiş vədlərin unudulmasına imkan vermir.",
+      "ctaPrimary": "Pulsuz başla — kart tələb olunmur",
+      "ctaSecondary": "Necə işlədiyinə bax",
+      "loop": [
+        {
+          "step": "Danış və ya yüklə",
+          "title": "Qəbul",
+          "desc": "Talk Live-da danışın və ya faylları Inbox-a atın"
+        },
+        {
+          "step": "Yoxla",
+          "title": "Qaralama və təsdiq",
+          "desc": "Avtomatik yaradılmış kartları tətbiq etməzdən əvvəl yoxlayın"
+        },
+        {
+          "step": "Yaddaş",
+          "title": "Konteksti qoru",
+          "desc": "Qərarlar arxivlənir, xam məlumat silinir"
+        }
+      ],
+      "stats": [
+        {
+          "value": "60 san",
+          "label": "qeydiyyatdan ilk iş məkanınıza qədər"
+        },
+        {
+          "value": "50+",
+          "label": "AI model, bir yaddaş"
+        },
+        {
+          "value": "0",
+          "label": "saxlanılan səs yazısı"
+        }
+      ],
+      "videoBadge": "CANLI İŞ MƏKANI DEMOSU",
+      "videoCaption": "Real vaxtda səsin və bir neçə layihə üzrə bölüşdürmənin necə işlədiyinə baxın",
+      "supporting": [
+        "Hər müştəri zəngindən sonra Talk-u açın. Təbii danışın — tapşırıqlar və qərarlar real vaxtda müştəri layihələriniz üzrə yığılır.",
+        "Heç nə tətbiq olunmazdan əvvəl bütün paketi yoxlayın. Siz təsdiqləməyənə qədər müştəri lövhələrinizdə heç nə dəyişmir.",
+        "«Tətbiq et» düyməsini basın. Logitaka yalnız təsdiqlədiyinizi tətbiq edir — artıq heç nə, gizli heç nə."
+      ],
+      "imageAlt": "Logitaka canlı iş məkanı — real vaxtda bir neçə layihə üzrə nitqin və sənədlərin bölüşdürülməsi"
+    },
+    "problem": {
+      "eyebrow": "Praktikanın reallığı",
+      "title": "Əsas maneə müştəri sifarişlərinin azlığı deyil. Əsas maneə — paralel kontekstlər arasında daim keçid etməkdir.",
+      "items": [
+        {
+          "title": "15 dəqiqəlik axtarış panikası",
+          "quote": "“Əsl xərc proqram abunələri deyil — müştəri zəngindən əvvəlki 15 dəqiqəlik təlaşlı axtarışdır: ‘Dayan, o söhbəti harada qeyd etmişdim?’”",
+          "body": "Müxtəlif kanallarda 6-dan çox layihə apardıqda vacib öhdəliklər bloknot qeydləri, çat mesajları və yaddaşdakı qeydlər arasında səpələnir."
+        },
+        {
+          "title": "Qərarlar yolda itir",
+          "quote": "“Alətlər müştəri ilə görüşməyib. Üç ay əvvəl o otaqda nə vəd edildiyini bilmirlər.”",
+          "body": "Tapşırıq izləyiciləri sadə qeyd qutularını saxlayır. Yol xəritəsinin niyə dəyişdiyini və hansı güzəştlərə gedildiyini isə qoruyub saxlamırlar."
+        },
+        {
+          "title": "Axşamlar 30–60 dəqiqəlik yazı borcu",
+          "quote": "“İnzibati iş detektiv işinə çevrilir. Müştəriyə hesab kəsməsək, heç bir gəlirimiz olmur.”",
+          "body": "Növbəti addımları bərpa etmək, xülasələr yazmaq və müştəri lövhələrində tapşırıqlar açmaq məsləhət işinə sərf olunmalı olan dəyərli enerjini aparır."
+        },
+        {
+          "title": "İnsan beyninin yüklənməsi",
+          "quote": "“Bütün proseslər yalnız mənim başımda idi. Bu, məni itirilmiş gəlirdən daha çox qorxudurdu.”",
+          "body": "Həm müştəri üçün kritik nəticələri, həm də əməliyyat öhdəliklərini öz yaddaşınızda daşıyırsınız. Beyniniz verilənlər bazası olanda praktikanız sərt bir tavana dirənir."
+        }
+      ],
+      "closing": "Bu, intizam problemi deyil. Vahid əməliyyat yaddaşı olmadan yüksək paralellikdə işləməyin qaçılmaz nəticəsidir."
+    },
+    "audience": {
+      "eyebrow": "Yüksək paralellik üçün",
+      "title": "Bir neçə müştəri axınını idarə edən təcrübəli peşəkarlar üçün yaradılıb.",
+      "items": [
+        {
+          "title": "Müstəqil idarəetmə və strategiya məsləhətçiləri",
+          "body": "Eyni anda 5–10 aktiv müştəri ilə işləyən, növbəti addımların asanlıqla qeyd olunmasına və layihə kontekstinin itməməsinə ehtiyacı olan, axşamlar inzibati işlə yığılıb qalmaq istəməyən məsləhətçilər."
+        },
+        {
+          "title": "Fraksional CXO-lar və operatorlar",
+          "body": "Eyni vaxtda 3–6 şirkətdə çalışan və müştərilərin arxitekturasını və ya şifahi öhdəlikləri qarışdırmağa haqqı olmayan fraksional CTO, CMO və COO-lar."
+        },
+        {
+          "title": "Butik agentliklər və studiya rəhbərləri",
+          "body": "Kritik müştəri hesablarına baxan, risklərə proaktiv nəzarət istəyən, lakin xarici podratçılar üçün hər istifadəçiyə görə proqram vergisi ödəmək istəməyən təsisçilər və rəhbərlər."
+        },
+        {
+          "title": "Yüksək tarifli fərdi ekspertlər",
+          "body": "Ardıcıl müştəri sessiyaları keçirən və şifahi razılaşmaların dərhal strukturlaşdırılmış tapşırıqlara və qəti qərarlara çevrilməsinə ehtiyacı olan ekspertlər."
+        }
+      ],
+      "closing": "Gəliriniz müştərilərin sizinlə qalmasından asılıdırsa və gününüz paralel layihələrdən ibarətdirsə, Logitaka məhz sizin praktikanız üçün yaradılıb."
+    },
+    "talk": {
+      "eyebrow": "Asan qəbul",
+      "title": "Yolda danışın. Uzun materialları Inbox-a atın.",
+      "subtitle": "Talk Live zənglər arasındakı qısa xülasələr üçündür: təbii danışın və tapşırıqların, hadisələrin və qərarların müştəriləriniz üzrə real vaxtda yığıldığını izləyin. Inbox (Pro) isə daha uzun hər şey üçündür — yapışdırılmış qeydlər, uzun yazılar, PDF-lər, cədvəllər — bir keçiddə lazımi müştəriyə yönləndirilir.",
+      "steps": [
+        {
+          "title": "Danış və ya yüklə",
+          "body": "Zəngdən sonra Talk Live-da xülasə deyin — və ya Pro planında müştəri PDF-lərini, audio və uzun qeydləri Inbox-a atın. Bir keçid, bir neçə müştəri."
+        },
+        {
+          "title": "Qaralama və təsdiq",
+          "body": "Hər tapşırıq, tarix və qərar müştərilər üzrə qruplaşdırılmış redaktə oluna bilən kart kimi görünür. İstənilən şeyi səslə və ya əllə düzəldin — sonra bir «Tətbiq et» yalnız təsdiqlədiyinizi tətbiq edir."
+        },
+        {
+          "title": "Heç nə artıq qalmır",
+          "body": "Canlı səs real vaxtda emal olunur və heç vaxt yazılmır. Yüklənmiş fayllar məzmunu müştəri layihəsinə saxlanılan kimi silinir — iş məkanınız xam məlumatı deyil, strukturu saxlayır."
+        }
+      ],
+      "chips": [
+        "Qaralama və təsdiq — siz təsdiqləməyənə qədər heç nə dəyişmir",
+        "Bir səsli xülasədə bir neçə layihəyə yönləndirmə",
+        "Səs saxlanılmır · yüklənmiş fayllar emaldan sonra silinir"
+      ]
+    },
+    "memory": {
+      "eyebrow": "Praktikanın arxitekturası",
+      "title": "Əksər proqramlar tapşırıqları izləyir. Logitaka istiqaməti qoruyur.",
+      "subtitle": "Tapşırıqlar nə etməli olduğunuzu deyir. Qərarlar isə bu yolu niyə seçdiyinizi və bunun sonra nəyi dəyişdirdiyini qeyd edir.",
+      "cards": [
+        {
+          "tag": "QƏRAR YADDAŞI",
+          "title": "İstiqamətin davamlılığı",
+          "body": "Qərarlar keçici tapşırıq lövhələrindən ayrı, uzunmüddətli obyektlər kimi qeyd olunur. Müştəri üç ay sonra mərhələnin niyə dəyişdiyini və ya layihə həcminin niyə yerdəyişdiyini soruşanda, dəqiq səbəb və nəticələr dərhal əlinizdə olur."
+        },
+        {
+          "tag": "AÇIQ SUALLAR",
+          "title": "Sıfır zehni yük",
+          "body": "Adi tapşırıq menecerləri təcili olmayan fikirlərə də süni tarixlər qoymağa məcbur edir və onları daim təxirə salmaq yorğunluq yaradır. Açıq Suallar təqvimdən ayrı yaşayır — gündəliyiniz təmiz qalır, heç nə də unudulmur."
+        },
+        {
+          "tag": "STRUKTURLAŞDIRILMIŞ MÜŞTƏRİ YADDAŞI",
+          "title": "Bütün planlarda daxildir",
+          "body": "Müştəri yaddaşı Logitaka-nın əsasını təşkil edir və Starter planından ($7.99/ay) başlayaraq daxildir. O, modeldən asılı deyil: istənilən vaxt 50-dən çox AI model arasında keçid edin — qərarlarınız, qeydləriniz və tarixçəniz yerində qalır, hər müştərinin konteksti ciddi şəkildə ayrılıb və bütün cihazlardan əlçatandır."
+        }
+      ],
+      "recall": {
+        "tag": "XATIRLATMA",
+        "title": "Üç həftə sonra soruşun. Cavab artıq hazırdır.",
+        "when": "Talk Live · üç həftə sonra",
+        "question": "Auth miqrasiyası ilə bağlı Acme ilə nə razılaşdıq — və niyə?",
+        "answer": "Auth miqrasiyasını III rübə keçirdiniz. Səbəb: Acme korporativ müştərilərin qoşulmasını infrastrukturun yenidən qurulmasından üstün tutdu. Nəticə: frontend sprinti iki həftə qısaldıldı və retainer müqaviləsinin həcmi dəyişdirildi.",
+        "source": "Qərar Yaddaşından · Acme Corp — Strategiya axını",
+        "body": "Qeyd etmək işin yalnız yarısıdır. Logitaka hər qərarı səbəbi və nəticəsi ilə birlikdə saxlayır ki, səsli assistent — Pro planında isə layihə və qlobal assistentlər də — həftələr əvvəl sürüşdürüb keçdiyiniz çatdan deyil, müştərinizin yaddaşından cavab versin."
+      }
+    },
+    "contextCard": {
+      "project": "Acme Corp — Strategiya axını",
+      "badge": "MÜŞTƏRİ AXINI",
+      "subtitle": "Canlı praktika yaddaşı · 4 sessiya",
+      "tabs": {
+        "overview": "İcmal",
+        "decisions": "Qərarlar",
+        "history": "Tarixçə"
+      },
+      "labels": {
+        "status": "STATUS",
+        "tasks": "AKTİV NƏTİCƏLƏR",
+        "questions": "AÇIQ SUALLAR",
+        "decisions": "QƏTİ QƏRARLAR",
+        "history": "SESSİYA TARİXÇƏSİ",
+        "models": "Praktika yaddaşı:",
+        "chipReasons": "Səbəbləri ilə qərarlar",
+        "chipIsolated": "Hər müştəri ayrıca",
+        "why": "Niyə:",
+        "impact": "Təsiri:"
+      },
+      "overview": {
+        "statusText": "III rüb üzrə məsləhət yol xəritəsi icra olunur",
+        "tasks": [
+          {
+            "done": true,
+            "text": "Texniki arxitektura qiymətləndirməsini təqdim et",
+            "due": "Təqdim olundu",
+            "urgent": false
+          },
+          {
+            "done": true,
+            "text": "VP Eng namizədinin profilini nəzərdən keçir",
+            "due": "Təsdiqləndi",
+            "urgent": false
+          },
+          {
+            "done": false,
+            "text": "Yenilənmiş retainer təklifini CEO-ya göndər",
+            "due": "Cümə axşamı",
+            "urgent": true
+          }
+        ],
+        "questions": [
+          "Müştərinin maliyyə şöbəsi III rüb büdcəsinin yenidən bölüşdürülməsini təsdiqlədimi?",
+          "Uyğunluq (compliance) təsdiqi üzrə əsas əlaqə şəxsi kimdir?"
+        ]
+      },
+      "decisions": [
+        {
+          "text": "Korporativ çatdırılmaya fokuslanmaq üçün auth miqrasiyası III rübə keçirildi.",
+          "why": "Müştəri infrastrukturun yenidən qurulmasından əvvəl korporativ müştərilərin dərhal qoşulmasını prioritet etdi.",
+          "impact": "Frontend sprinti 2 həftə qısaldıldı; retainer həcmi dəyişdirildi.",
+          "date": "Bu gün, 14:15"
+        },
+        {
+          "text": "Hər çərşənbə axşamı saat 14:00-da həftəlik 30 dəqiqəlik strategiya görüşləri razılaşdırıldı.",
+          "why": "Komandalar arasında yüksək paralellik sabit uzlaşma nöqtəsi tələb edirdi.",
+          "impact": "Müştəri tərəfi üçün təqvim abunəsi aktivdir.",
+          "date": "18 sen"
+        }
+      ],
+      "history": [
+        {
+          "date": "Bu gün, 14:15",
+          "title": "Zəngdən sonrakı xülasə",
+          "text": " 1 qərar qeyd olundu (auth miqrasiyası), cümə axşamına təklifin göndərilməsi tapşırığı yaradıldı."
+        },
+        {
+          "date": "18 sen, 14:00",
+          "title": "Strategiya görüşü",
+          "text": " Görüş qrafiki və mərhələlərin tarixləri təsdiqləndi."
+        }
+      ]
+    },
+    "supervision": {
+      "eyebrow": "Rəhbər nəzarəti",
+      "title": "Bütün müştəri axınlarına proaktiv nəzarət — hələ brauzeri açmamışdan əvvəl.",
+      "subtitle": "Nəzarət qatı ödənişli iş vaxtınızı qoruyan və çatdırılma riskləri müştəri itkisinə çevrilməzdən əvvəl sizi xəbərdar edən idarəetmə səviyyəsidir.",
+      "features": [
+        {
+          "name": "Daily Pulse",
+          "badge": "Günün fokusu",
+          "desc": "Gününüz üçün vahid əməliyyat paneli: bütün müştərilər üzrə gecikmiş işləri, sərt müştəri müddətlərini və işi bloklayan açıq sualları göstərir."
+        },
+        {
+          "name": "Telegram-da gündəlik xülasə",
+          "badge": "Sürüşdürmədən",
+          "desc": "Səhərlər birbaşa Telegram-a gələn istəyə bağlı rəhbər xülasəsi. Telefon ekranına sürüşdürmədən sığacaq şəkildə hazırlanır — tətbiqi açmağı unutsanız belə, günə hazır başlayırsınız."
+        },
+        {
+          "name": "Müştəri sağlamlığı və risk radarı",
+          "badge": "PREMIUM",
+          "desc": "Yol xəritəsini faktiki irəliləyişlə müqayisə edən müstəqil, obyektiv AI auditi — durğunluğu, həcmin nəzarətsiz genişlənməsini və çatdırılma risklərini müştəri hiss etməzdən əvvəl aşkar edir."
+        }
+      ]
+    },
+    "team": {
+      "eyebrow": "Asan həvalə",
+      "title": "Məsuliyyətləri həvalə edin — iş məkanına giriş vermədən və hər istifadəçiyə görə ödəmədən.",
+      "subtitle": "Müstəqil məsləhətçilər və butik studiyalar üçün subpodratçıları və tərəfdaşları idarə etmək daha bir SaaS istifadəçi kataloqunu idarə etmək demək olmamalıdır. Pro və Premium planlarında mövcuddur.",
+      "points": [
+        {
+          "title": "Məsuliyyət reyestri",
+          "desc": "Əməkdaşları, subpodratçıları və tərəfdaşları konkret layihələrə və mərhələlərə bağlayın. Şəxsi iş məkanınızda kimin nəyə cavabdeh olduğunu izləyin."
+        },
+        {
+          "title": "Şəxsi təqvim abunələri",
+          "desc": "Əməkdaşlar təmiz təqvim lentlərinə abunə olurlar. Onlara təyin olunmuş vaxta bağlı hadisələr birbaşa Apple və ya Google Calendar-a gəlir — sisteminizə heç vaxt daxil olmadan və digər müştəriləri görmədən."
+        },
+        {
+          "title": "İstifadəçiyə görə ödəniş yoxdur",
+          "desc": "Lisenziya yerləri yoxdur, onboarding prosedurları yoxdur və həssas müştəri kontekstinin xarici podratçılara sızma riski sıfırdır."
+        }
+      ]
+    },
+    "commitments": {
+      "eyebrow": "Zehni yükün azaldılması",
+      "title": "Bütün təkrarlanan ödənişlər bir reyestrdə — yenilənməzdən əvvəl.",
+      "subtitle": "Alətlər, hostinq, icarə, abunələr — müxtəlif kartlara və hesablara səpələnərək daimi fon səs-küyü yaradır.",
+      "body": "Logitaka təkrarlanan və birdəfəlik ödənişləri vahid reyestrdə saxlayır: nəyə, nə qədər, hansı hesabdan ödədiyinizi və nə vaxt yeniləndiyini. Yaxınlaşan ödənişlər təqviminizdə və Pulse-da görünür, ödənişi isə sadəcə deməklə ödənilmiş kimi qeyd edə bilərsiniz."
+    },
+    "valueStack": {
+      "label": "Alətlərin iqtisadiyyatı",
+      "title": "Ayda $100+ dəyərində səpələnmiş abunələr əvəzinə vahid iş məkanı.",
+      "subtitle": "Logitaka-nın bir interfeysdə verdiyini əldə etmək üçün 3–4 əlaqəsiz SaaS məhsulundan istifadə etməli olardınız — hər birinin öz girişi və ayrıca yaddaşı ilə.",
+      "perMonth": "/ ay",
+      "services": [
+        {
+          "name": "Layihə çatdırılması və PSA (Productive.io / Scoro)",
+          "provider": "Minimum 3 istifadəçi",
+          "priceUSD": "$75"
+        },
+        {
+          "name": "AI qeydçi və müştəri yaddaşı (Day.ai / Tl;dv)",
+          "provider": "Agent başına / Turbo plan",
+          "priceUSD": "$25"
+        },
+        {
+          "name": "Ağıllı təqvim və planlayıcı",
+          "provider": "Fərdi plan",
+          "priceUSD": "$15"
+        }
+      ],
+      "totalLabel": "Səpələnmiş alətlər",
+      "totalUSD": "$115",
+      "vsLabel": "vs",
+      "logitakaLabel": "LOGITAKA (PRO)",
+      "logitakaPrice": "$14.99",
+      "disclaimer": "Qiymətlər satıcıların açıq qiymət səhifələrindən yoxlanılıb (sentyabr 2026). Logitaka dağınıq abunələri vahid kontekstlə əvəz edir.",
+      "colTool": "Alət / İmkan",
+      "colPrice": "Bazar qiyməti",
+      "badge": "Bütün axınlar üçün vahid praktika yaddaşı"
+    },
+    "privacy": {
+      "eyebrow": "Məlumatların idarə olunması",
+      "title": "Marketinq şüarları deyil, konkret məxfilik mexanizmləri.",
+      "subtitle": "Təcrübəli məsləhətçilər həssas müştəri yol xəritələri və NDA-larla işləyirlər. Biz kor-koranə etimad istəmirik — yoxlanıla bilən arxitektura sərhədləri qururuq.",
+      "pillars": [
+        {
+          "title": "Məlumatlar Avropa İttifaqında",
+          "body": "İstehsal infrastrukturu və istifadəçi məlumatları Avropa İttifaqında ayrılmış serverlərdə yerləşir (Hetzner, Nürnberq, Almaniya)."
+        },
+        {
+          "title": "Müvəqqəti qəbul və fiziki silinmə",
+          "body": "Səsli giriş müvəqqəti yaddaşda emal olunur, yüklənmiş fayllar isə nəticələr hazır olan kimi fiziki olaraq silinir. Müştəri audiosu və faylları buludda qeyri-müəyyən müddətə saxlanılmır."
+        },
+        {
+          "title": "İş məkanlarının ayrılması və təhlükəsiz giriş",
+          "body": "Hər iş məkanı və müştəri axını ciddi şəkildə təcrid olunub. Bütün trafik HTTPS/TLS ilə şifrələnir, parollar isə müasir açar törətmə üsulu (scrypt) ilə saxlanılır."
+        },
+        {
+          "title": "Standart olaraq məlumatlarınızla öyrətmə yoxdur",
+          "body": "Standart modellər provayderlərin məlumatlarınız üzərində öyrətmə aparmaması üçün konfiqurasiya olunub. Bəzi daha ucuz modellər bunu edə bilər — onlar aydın şəkildə işarələnib və yalnız siz onları şüurlu seçdikdə istifadə olunur. Praktika yaddaşınız sizə məxsusdur: tam məlumat ixracı və hesabın silinməsi sorğu ilə mümkündür."
+        }
+      ]
+    },
+    "pricing": {
+      "eyebrow": "Qiymətlər",
+      "title": "Komanda yerlərinə görə deyil, müştəri axınlarına görə ədalətli qiymət.",
+      "disclaimer": "Abunəniz sizin AI balansınızdır: tam məbləğ hər ay AI işi üçün kreditə çevrilir və hər model onu nə qədər sürətlə xərclədiyini göstərir. Balansı uzatmaq üçün daha yüngül modelləri seçin və ya lazım olduqda artırın.",
+      "popularBadge": "Ən populyar",
+      "cards": [
+        {
+          "label": "Starter",
+          "name": "STARTER",
+          "price": "$7.99",
+          "period": "/ ay",
+          "body": "Heç nəyi unutmaq istəməyən hər kəs üçün səsli yaddaş — həyatın və ya işin 5 sahəsinə qədər tapşırıqlar, tarixlər, qərarlar və açıq suallar",
+          "features": [
+            "5-ə qədər aktiv layihə",
+            "Logitaka Talk Live səsli iş məkanı",
+            "Qərarlar, qeydlər və açıq suallar yaddaşı",
+            "Hadisələrin təqvimlə sinxronizasiyası (iOS və Google)",
+            "Öhdəliklər və abunələr reyestri",
+            "İstəyə bağlı Telegram gündəlik xülasəsi"
+          ],
+          "cta": "STARTER seç",
+          "href": "https://app.logitaka.com/app/login"
+        },
+        {
+          "label": "Pro",
+          "name": "PRO",
+          "price": "$14.99",
+          "period": "/ ay",
+          "body": "10-a qədər müştəri axını aparan aktiv məsləhətçilər və fraksional operatorlar üçün tam əməliyyat iş məkanı",
+          "features": [
+            "Starter-dakı hər şey",
+            "10-a qədər aktiv müştəri axını",
+            "Layihə və qlobal AI assistentləri (50+ model)",
+            "Müştəri sənədləri kitabxanası",
+            "Inbox: uzun qeydlər, audio, fayllar — müştərilərə yönləndirilir",
+            "Qlobal assistentdə e-poçt: oxumaq, çeşidləmək, cavab qaralamaları",
+            "Strukturlaşdırılmış müştəri görüşləri və fokus sessiyaları",
+            "Bütün layihələr üzrə qlobal axtarış",
+            "Şəxslər reyestri və təqvim lentləri: 5-ə qədər",
+            "Fərdi bacarıqlar (Skills)"
+          ],
+          "cta": "Pulsuz başla",
+          "href": "https://app.logitaka.com/app/login",
+          "trial": "Kart tələb olunmur"
+        },
+        {
+          "label": "Premium",
+          "name": "PREMIUM",
+          "price": "$29.99",
+          "period": "/ ay",
+          "body": "Limitsiz müştəri hesabı idarə edən butik agentliklər, məsləhət studiyaları və çox tərəfdaşlı praktikalar üçün",
+          "features": [
+            "PRO-dakı hər şey",
+            "Limitsiz aktiv müştəri axını",
+            "Müştəri sağlamlığı və risk radarı",
+            "AI strateq tövsiyələri",
+            "Şəxsi əməliyyat profili",
+            "Reyestrdə və abunələrdə limitsiz şəxs"
+          ],
+          "cta": "PREMIUM seç",
+          "href": "https://app.logitaka.com/app/login"
+        }
+      ],
+      "enterprise": {
+        "title": "Yüksək uyğunluq tələbləri olan şirkətlər üçün fərdi yerləşdirmə",
+        "description": "İnstitusional müştəri işləri üçün ayrılmış özəl bulud hostinqinə, təcrid olunmuş verilənlər bazasına və ya fərdi uyğunluq SLA zəmanətlərinə ehtiyacınız var? Mühəndis komandamızla əlaqə saxlayın.",
+        "cta": "ENTERPRISE üçün əlaqə",
+        "tag": "ENTERPRISE VƏ BULUD"
+      }
+    },
+    "faq": {
+      "eyebrow": "Aydın cavablar",
+      "title": "Tez-tez verilən suallar",
+      "items": [
+        {
+          "question": "Müştəri məlumatlarım necə qorunur və harada saxlanılır?",
+          "answer": "Bütün istehsal infrastrukturu və məlumat anbarları Avropa İttifaqındadır (Hetzner, Nürnberq, Almaniya), hər bağlantıda HTTPS/TLS istifadə olunur. Canlı səs real vaxtda emal olunur — audionuzu heç vaxt saxlamırıq — yüklənmiş fayllar isə məzmunu layihənizə saxlanılan kimi silinir. Müştəri axınları ciddi şəkildə ayrılıb. Standart AI modelləri provayderlərin məlumatlarınızla öyrətmə aparmaması üçün konfiqurasiya olunub; öyrətmə apara bilən daha ucuz modellər aydın şəkildə işarələnib və yalnız siz seçdikdə istifadə olunur. Tam məlumat ixracı və hesabın silinməsi sorğu ilə mümkündür."
+        },
+        {
+          "question": "Logitaka niyə müştəri zənglərinə AI bot kimi qoşulmur?",
+          "answer": "GDPR riskləri, həssas əqli mülkiyyət və son vaxtlar baş verən bulud yazılarının sızması səbəbindən müştərilər bot-qeydçiləri getdikcə daha çox qadağan edirlər. Rəhbər görüşlərinə bot dəvət etmək lazımsız gərginlik yaradır. Logitaka ilə siz ya görüşdən dərhal sonra Talk Live-da 60 saniyəlik xülasə deyirsiniz, ya da görüşün yazısını Inbox-a atırsınız. Kontekst çıxarılır, müştəri axınlarına bölünür, xam audio isə həmişəlik silinir."
+        },
+        {
+          "question": "Niyə bütün tapşırıqlar Apple və ya Google təqvimimə sinxronlaşmır?",
+          "answer": "Bu, şüurlu dizayn prinsipidir. Aktiv məsləhətçi bir neçə müştəri üzrə gündə 8–10 tapşırıqla işləyir. Onları xarici təqvimə sinxronlaşdırmaq cədvəlinizi istifadəyə yararsız tam günlük bannerlər divarına çevirir. Logitaka xarici təqviminizə yalnız vaxta bağlı hadisələri (konkret saatı olan görüşləri və müddətləri) göndərir. Tam tapşırıq siyahınız Logitaka iş məkanınızda yaşayır və hər səhər sürüşdürmə tələb etməyən Telegram xülasəsində gəlir."
+        },
+        {
+          "question": "Tapşırıqlarla Qərar Yaddaşı arasında fərq nədir?",
+          "answer": "Tapşırıqlar bu gün nəyin icra olunmalı olduğunu müəyyən edir. Qərar Yaddaşı isə istiqamət seçimlərini qeyd edir — konkret yolun niyə seçildiyini və bundan sonra nəyin dəyişdiyini. Adi layihə alətləri tapşırıq bağlanan kimi razılaşmanın niyə edildiyini unudur. Logitaka qərarların uzunmüddətli davamlılığını qoruyur ki, aylar əvvəl nə vəd edildiyini həmişə biləsiniz."
+        },
+        {
+          "question": "Açıq Suallar nədir və niyə tarixləri yoxdur?",
+          "answer": "Ənənəvi tapşırıq menecerləri hər qeyd üçün süni son tarix tələb edir və təcili olmayan işləri gündən-günə təxirə salmaq zehni yorğunluq yaradır. Logitaka-da Açıq Suallar dərhal müddəti olmayan fikirləri, strateji sualları və gözləyən məsələləri qeyd edir. Onlar gündəlik təqviminizi qarışdırmadan layihələr üzrə səliqəli saxlanılır."
+        },
+        {
+          "question": "İstifadəçi yerləri olmadan komanda həvaləsi necə işləyir?",
+          "answer": "Logitaka əməkdaşlara Məsuliyyət Reyestri kimi yanaşır. Sisteminizdə tapşırıqları və mərhələləri komanda üzvlərinə və ya xarici podratçılara təyin edirsiniz. Onlar təhlükəsiz təqvim lentinə abunə olur və vaxta bağlı öhdəliklərini birbaşa telefon təqvimlərində alırlar — Logitaka iş məkanınıza heç vaxt daxil olmadan və məxfi müştəri kontekstinə çıxış əldə etmədən."
+        },
+        {
+          "question": "Vaxt uçotu və hesab-fakturalar necə həll olunur?",
+          "answer": "Logitaka vaxtı izləmir və hesab-faktura göndərmir — bu, hesablaşma sistemi deyil, praktikanızın yaddaşıdır. Hər praktika fərqli hesablaşdığı üçün (sabit ödəniş, retainer, saatlıq mərhələlər) siz müştərinin tarixçəsini — tamamlanmış tapşırıqları, qərarları, görüşləri — öz formatınızda hesab-faktura üçün xülasəyə çevirən fərdi bacarıq (Skill) yarada bilərsiniz."
+        }
+      ]
+    },
+    "finalCta": {
+      "label": "Praktika əməliyyat sistemi",
+      "title": "Müştəri zəngini bitirin. Növbəti addımları deyin. Hazırdır.",
+      "body": "5–15 müştəri axınını inzibati yük və kontekst itkisi olmadan idarə edin. Kartsız pulsuz başlayın, bir dəqiqəyə qurun, istənilən vaxt imtina edin.",
+      "primary": "Pulsuz başla — kart tələb olunmur",
+      "secondary": "Necə işlədiyinə bax",
+      "notice": "Qeydiyyatdan keçməklə <a href=\"/terms\">İstifadə Şərtləri</a> ilə razılaşır və <a href=\"/privacy\">Məxfilik Siyasəti</a> ilə tanış olduğunuzu təsdiqləyirsiniz."
+    },
+    "footer": {
+      "tagline": "Məsləhətçilər və butik komandalar üçün iş əməliyyat sistemi.",
+      "copyright": "© 2026 Logitaka. Bütün hüquqlar qorunur.",
+      "nav": [
+        {
+          "href": "#how-it-works",
+          "label": "Necə işləyir"
+        },
+        {
+          "href": "#memory",
+          "label": "Yaddaş"
+        },
+        {
+          "href": "#assistants",
+          "label": "Assistentlər"
+        },
+        {
+          "href": "#models",
+          "label": "Modellər"
+        },
+        {
+          "href": "#team",
+          "label": "Həvalə"
+        },
+        {
+          "href": "#pricing",
+          "label": "Qiymətlər"
+        },
+        {
+          "href": "#faq",
+          "label": "Suallar"
+        }
+      ],
+      "legal": [
+        {
+          "href": "/terms",
+          "label": "İstifadə Şərtləri"
+        },
+        {
+          "href": "/privacy",
+          "label": "Məxfilik Siyasəti"
+        },
+        {
+          "href": "mailto:support@logitaka.com",
+          "label": "Əlaqə"
+        }
+      ]
+    },
+    "assistants": {
+      "title": "İstənilən müştəri haqqında istənilən sualı verin. Sonra hərəkətə keçin.",
+      "subtitle": "Pro planında AI assistentlər birbaşa müştəri yaddaşınızla işləyir — planları, qərarları, sənədləri və e-poçtu oxuyur və görə biləcəyiniz dəyişikliklər edir.",
+      "items": [
+        {
+          "name": "Layihə assistenti",
+          "badge": "Pro",
+          "desc": "Bir müştəri daxilində dərin söhbət: planı, qərarları və sənədləri oxuyur, lazım olduqda internetdə axtarır, danışdıqca tapşırıqları yeniləyir və qərarları qeyd edir. Söhbəti tamamlayın — o, müştərinin kitabxanasında sənədə çevrilir."
+        },
+        {
+          "name": "Qlobal assistent",
+          "badge": "Pro",
+          "desc": "Bütün praktikanız üzrə bir söhbət: müştəriləri müqayisə edin, kəsişmələri tapın, işi layihələr arasında köçürün və keçmiş çatlarda axtarın."
+        },
+        {
+          "name": "E-poçt",
+          "badge": "Pro",
+          "desc": "Poçt qutunuzu qoşun. Müştərinin nə göndərdiyini soruşun, qısa məzmunu alın, qoşmaları lazımi layihəyə yerləşdirin və cavab qaralamaları hazırlatdırın. Siz alıcını, mövzunu və mətni dəqiq təsdiqləməyənə qədər heç nə göndərilmir."
+        },
+        {
+          "name": "Müştəri görüşləri",
+          "badge": "Pro",
+          "desc": "Bütün aktiv müştəriləri bir-bir nəzərdən keçirən, açıq sualları və maneələri üzə çıxaran, qərarları qeyd edən və yazılı hesabatla bitən idarə olunan icmal."
+        },
+        {
+          "name": "Fokus sessiyaları",
+          "badge": "Pro",
+          "desc": "Bir tapşırıq seçin, taymeri işə salın və sizi növbəti addımda saxlayan AI tərəfdaşla onu sona çatdırın."
+        }
+      ],
+      "chat": {
+        "header": "Qlobal assistent",
+        "context": "İş məkanı · E-poçt qoşulub",
+        "question": "Northwind bu həftə büdcə ilə bağlı nəsə göndərib?",
+        "answer": "Bəli — çərşənbə günü Dana Reyes-dən iki məktub:",
+        "points": [
+          "IV rüb büdcəsi $48k olaraq təsdiqlənib (siz $55k istəmişdiniz)",
+          "Yenilənmiş SOW əlavə olunub — həcm 1–2-ci mərhələlərə qədər azaldılıb"
+        ],
+        "offer": "Bu, Northwind planındakı açıq suala cavab verir. SOW-u onların kitabxanasına yerləşdirim və sualı həll olunmuş kimi qeyd edim?",
+        "followUp": "Bəli. Bir də 1-ci mərhələyə bazar ertəsi başladığımızı təsdiqləyən cavab qaralaması hazırla.",
+        "draftLabel": "QARALAMA — GÖNDƏRİLMƏYİB",
+        "draft": "Kimə: Dana Reyes · Mövzu: IV rüb büdcəsi — Təşəkkürlər, Dana. Təsdiqləyirəm: yenilənmiş SOW əsasında 1-ci mərhələyə bazar ertəsi başlayırıq…",
+        "send": "Göndər",
+        "edit": "Redaktə et",
+        "footnote": "Nümunə xarakterlidir · e-poçt yalnız sizin açıq təsdiqinizdən sonra göndərilir"
+      }
+    },
+    "models": {
+      "title": "Bütün qabaqcıl modellər. Bir yaddaş.",
+      "subtitle": "Logitaka 8 provayderin 50-dən çox modeli ilə işləyir — Claude, GPT, Gemini, Grok, DeepSeek, Qwen və digərləri. İstənilən vaxt keçid edin: planlarınız, qərarlarınız və tarixçəniz modelin çatında deyil, iş məkanınızda yaşayır.",
+      "points": [
+        "Auto hər iş üçün uyğun modeli seçir — bu, standart və ən qənaətcil seçimdir.",
+        "Hər model balansınızı nə qədər sürətlə xərclədiyini göstərir, beləliklə şüurlu seçim edirsiniz.",
+        "Kampaniyalar zamanı endirimli modellər işarələnir.",
+        "Abunəniz sizin AI balansınızdır — hər xərc baş verdiyi anda görünür. Gizli limitlər yoxdur."
+      ],
+      "selector": {
+        "title": "Model seçin",
+        "caption": "Balansın nisbi xərci",
+        "rows": [
+          {
+            "name": "Auto",
+            "rate": "0.5×"
+          },
+          {
+            "name": "GLM 5.3 Flash",
+            "rate": "0.06×",
+            "promo": "ENDİRİM"
+          },
+          {
+            "name": "DeepSeek V4 Pro",
+            "rate": "0.9×",
+            "promo": "ENDİRİM"
+          },
+          {
+            "name": "Gemini 3.8 Flash",
+            "rate": "1.2×"
+          },
+          {
+            "name": "Claude Sonnet 5.5",
+            "rate": "2.8×"
+          },
+          {
+            "name": "Claude Opus 5.5",
+            "rate": "5×",
+            "tone": "high"
+          },
+          {
+            "name": "GPT-6 Astra",
+            "rate": "12.5×",
+            "tone": "high"
+          }
+        ],
+        "footnote": "Tətbiqdən görüntü, oktyabr 2026 · əmsallar provayderlərin qiymətlərinə uyğundur"
+      }
+    },
+    "kickers": {
+      "problem": "01 // ƏSAS MANEƏ",
+      "audience": "02 // YÜKSƏK PARALELLİK ÜÇÜN",
+      "talk": "03 // QƏBUL VƏ NƏZARƏT",
+      "memory": "04 // PRAKTİKANIN ARXİTEKTURASI",
+      "assistants": "05 // AI ASSİSTENTLƏR",
+      "models": "06 // MODEL SEÇİMİ",
+      "supervision": "07 // RƏHBƏR NƏZARƏTİ",
+      "team": "08 // ASAN HƏVALƏ",
+      "commitments": "09 // ZEHNİ YÜK",
+      "valueStack": "10 // ALƏTLƏRİN İQTİSADİYYATI",
+      "privacy": "11 // MƏLUMATLARIN İDARƏ OLUNMASI",
+      "pricing": "12 // QİYMƏTLƏR",
+      "faq": "13 // AYDIN CAVABLAR"
+    },
+    "demo": {
+      "talk": {
+        "aria": "Logitaka Talk demosu: səsli mətn layihələr üzrə strukturlaşdırılmış qaralama kartlarına — tapşırıq, hadisə və düzəliş — çevrilir, sonra bir təsdiqlə tətbiq olunur.",
+        "brand": "Talk",
+        "transcript": "Acme Corp ilə görüşü indicə bitirdim: yenilənmiş təklifi cümə axşamına qədər göndər, müştəri icmalını isə cümə saat 3-ə təyin et",
+        "project": "Acme Corp",
+        "unknownProject": "Müştəri ?",
+        "task": "Tapşırıq",
+        "event": "Hadisə",
+        "correction": "Düzəliş",
+        "taskTitle": "Yenilənmiş təklifi göndər",
+        "eventTitle": "Müştəri ilə icmal zəngi",
+        "date": "Tarix:",
+        "oldDay": "C.a.",
+        "newDay": "Cümə",
+        "summary": "3 dəyişiklik · Acme Corp",
+        "apply": "Tətbiq et",
+        "applied": "✓ Tətbiq olundu"
+      },
+      "brief": {
+        "bot": "Logitaka Practice Bot",
+        "when": "Səhər xülasəsi · 08:00",
+        "greeting": "🌅 Sabahınız xeyir. Bu günün fokusu:",
+        "doneLabel": "Dünən tamamlandı:",
+        "done": [
+          "✓ Acme arxitektura qiymətləndirməsi təqdim olundu",
+          "✓ Auth miqrasiyası III rübə keçirildi"
+        ],
+        "todayLabel": "Bu günün vacib işləri:",
+        "today": [
+          "• 14:00 — Acme CEO ilə strategiya görüşü",
+          "• Yenilənmiş retainer təklifini göndər (son gün bu gün)"
+        ],
+        "riskLabel": "⚠️ Risk radarı:",
+        "risk": "FinTech Advisory mərhələsi 4 gündür müştərinin təsdiqini gözləyir.",
+        "footnote": "Sürüşdürmək lazım deyil · Gününüzü 15 saniyəyə açır"
+      },
+      "obligations": {
+        "header": "TƏKRARLANAN ÖDƏNİŞLƏR VƏ XİDMƏTLƏR",
+        "alert": "Pulse 7 gün əvvəl xəbər verir",
+        "footnote": "Bütün planlarda daxildir · Xarici təqviminizi qarışdırmır",
+        "items": [
+          {
+            "name": "ElevenLabs Speech API",
+            "account": "ops@practice.io",
+            "amount": "$44/ay",
+            "due": "3 gündən sonra",
+            "status": "Aktiv"
+          },
+          {
+            "name": "AB-də ayrılmış server (Hetzner)",
+            "account": "infra@practice.io",
+            "amount": "$89/ay",
+            "due": "12 okt",
+            "status": "Aktiv"
+          },
+          {
+            "name": "ChatGPT Team abunəsi",
+            "account": "team@practice.io",
+            "amount": "$60/ay",
+            "due": "18 okt",
+            "status": "Nəzərdən keçirilir"
+          },
+          {
+            "name": "Müştəri prototip mühiti",
+            "account": "sandbox@client.com",
+            "amount": "$29/ay",
+            "due": "Ləğv edilib",
+            "status": "Silinib"
+          }
+        ]
+      }
+    }
+  }
+}

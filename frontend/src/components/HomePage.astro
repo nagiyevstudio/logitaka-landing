@@ -1,0 +1,46 @@
+---
+// Shared landing page body, rendered once per locale (/ and /az/)
+import MainLayout from '../layouts/MainLayout.astro';
+import { getT } from '../utils/i18n';
+import Hero from './home/Hero.jsx';
+import Problem from './home/Problem.jsx';
+import Audience from './home/Audience.jsx';
+import TalkSection from './home/TalkSection.jsx';
+import CoreMemory from './home/CoreMemory.jsx';
+import Assistants from './home/Assistants.jsx';
+import ModelChoice from './home/ModelChoice.jsx';
+import Supervision from './home/Supervision.jsx';
+import TeamRegistry from './home/TeamRegistry.jsx';
+import Obligations from './home/Obligations.jsx';
+import ValueStack from './home/ValueStack.jsx';
+import TrustPrivacy from './home/TrustPrivacy.jsx';
+import Pricing from './home/Pricing.jsx';
+import FAQ from './home/FAQ.jsx';
+import FinalCTA from './home/FinalCTA.jsx';
+
+interface Props {
+  lang: string;
+}
+
+const { lang } = Astro.props;
+globalThis.currentLanguage = lang;
+const t = getT(lang);
+---
+
+<MainLayout title={t('landing.meta.title')} description={t('landing.meta.description')} lang={lang}>
+  <Hero client:load />
+  <Problem client:visible />
+  <Audience client:visible />
+  <TalkSection client:visible />
+  <CoreMemory client:visible />
+  <Assistants client:visible />
+  <ModelChoice client:visible />
+  <Supervision client:visible />
+  <TeamRegistry client:visible />
+  <Obligations client:visible />
+  <ValueStack client:visible />
+  <TrustPrivacy client:visible />
+  <Pricing client:visible />
+  <FAQ client:visible />
+  <FinalCTA client:visible />
+</MainLayout>

@@ -164,6 +164,34 @@ body:not([data-theme='dark']) .brand-logo-light { display: block; }
   background: var(--surface);
 }
 
+/* ─── LANGUAGE SWITCH ──────────────────────────────────────── */
+.lang-switch {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.lang-switch-link {
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  padding: 6px 7px;
+  border-radius: 6px;
+  transition: all 150ms ease;
+}
+
+.lang-switch-link:hover {
+  color: var(--text);
+  background: var(--surface);
+}
+
+.lang-switch-link.is-active {
+  color: var(--text);
+  pointer-events: none;
+}
+
 body[data-theme='dark'] .theme-icon-sun  { display: none; }
 body[data-theme='dark'] .theme-icon-moon { display: flex; }
 body:not([data-theme='dark']) .theme-icon-sun  { display: flex; }

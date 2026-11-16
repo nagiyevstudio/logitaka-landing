@@ -1,37 +1,5 @@
 ---
-import MainLayout from '../layouts/MainLayout.astro';
-import { getT } from '../utils/i18n';
-import Hero from '../components/home/Hero.jsx';
-import Problem from '../components/home/Problem.jsx';
-import Audience from '../components/home/Audience.jsx';
-import TalkSection from '../components/home/TalkSection.jsx';
-import CoreMemory from '../components/home/CoreMemory.jsx';
-import Supervision from '../components/home/Supervision.jsx';
-import TeamRegistry from '../components/home/TeamRegistry.jsx';
-import Obligations from '../components/home/Obligations.jsx';
-import ValueStack from '../components/home/ValueStack.jsx';
-import TrustPrivacy from '../components/home/TrustPrivacy.jsx';
-import Pricing from '../components/home/Pricing.jsx';
-import FAQ from '../components/home/FAQ.jsx';
-import FinalCTA from '../components/home/FinalCTA.jsx';
-
-const lang = 'en';
-globalThis.currentLanguage = lang;
-const t = getT(lang);
+import HomePage from '../components/HomePage.astro';
 ---
 
-<MainLayout title={t('landing.meta.title')} description={t('landing.meta.description')} lang={lang}>
-  <Hero client:load />
-  <Problem client:visible />
-  <Audience client:visible />
-  <TalkSection client:visible />
-  <CoreMemory client:visible />
-  <Supervision client:visible />
-  <TeamRegistry client:visible />
-  <Obligations client:visible />
-  <ValueStack client:visible />
-  <TrustPrivacy client:visible />
-  <Pricing client:visible />
-  <FAQ client:visible />
-  <FinalCTA client:visible />
-</MainLayout>
+<HomePage lang="en" />

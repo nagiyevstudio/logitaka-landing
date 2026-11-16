@@ -3,18 +3,15 @@ import { useTranslation } from 'react-i18next';
 const Obligations = () => {
   const { t } = useTranslation();
 
-  const mockObligations = [
-    { name: 'ElevenLabs Speech API', account: 'ops@practice.io', amount: '$44/mo', due: 'In 3 days', status: 'Active', badgeColor: '#10b981' },
-    { name: 'EU Dedicated Server (Hetzner)', account: 'infra@practice.io', amount: '$89/mo', due: 'Oct 12', status: 'Active', badgeColor: '#10b981' },
-    { name: 'ChatGPT Team Subscription', account: 'team@practice.io', amount: '$60/mo', due: 'Oct 18', status: 'Reviewing', badgeColor: '#f59e0b' },
-    { name: 'Client Prototyping Sandbox', account: 'sandbox@client.com', amount: '$29/mo', due: 'Cancelled', status: 'Purged', badgeColor: 'var(--muted)' }
-  ];
+  const o = t('landing.demo.obligations');
+  const badgeColors = ['#10b981', '#10b981', '#f59e0b', 'var(--muted)'];
+  const mockObligations = o.items.map((item, i) => ({ ...item, badgeColor: badgeColors[i] || 'var(--muted)' }));
 
   return (
     <section id="commitments">
       <div className="section-inner">
         <div className="section-eyebrow">
-          <span className="section-kicker">06 // MENTAL BANDWIDTH</span>
+          <span className="section-kicker">{t('landing.kickers.commitments')}</span>
           <span className="section-kicker-line" aria-hidden="true"></span>
         </div>
 
@@ -30,9 +27,9 @@ const Obligations = () => {
             <div className="panel" style={{ padding: '24px', background: 'var(--surface)' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px', borderBottom: '1px solid var(--line)', paddingBottom: '12px' }}>
                 <span style={{ fontSize: '0.75rem', fontWeight: 700, letterSpacing: '0.1em', color: 'var(--accent)' }}>
-                  RECURRING OBLIGATIONS & SERVICES
+                  {o.header}
                 </span>
-                <span style={{ fontSize: '0.75rem', color: 'var(--faint)' }}>Pulse alert 7d ahead</span>
+                <span style={{ fontSize: '0.75rem', color: 'var(--faint)' }}>{o.alert}</span>
               </div>
 
               <div style={{ display: 'grid', gap: '12px' }}>
@@ -62,7 +59,7 @@ const Obligations = () => {
               </div>
 
               <div style={{ marginTop: '14px', textAlign: 'center', fontSize: '0.75rem', color: 'var(--faint)' }}>
-                Included across all plans · Does not clutter your external calendar
+                {o.footnote}
               </div>
             </div>
           </div>

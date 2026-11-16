@@ -3,12 +3,13 @@ import { useTranslation } from 'react-i18next';
 const Supervision = () => {
   const { t } = useTranslation();
   const features = t('landing.supervision.features', { returnObjects: true }) || [];
+  const b = t('landing.demo.brief');
 
   return (
     <section id="supervision">
       <div className="section-inner">
         <div className="section-eyebrow">
-          <span className="section-kicker">04 // EXECUTIVE OVERSIGHT</span>
+          <span className="section-kicker">{t('landing.kickers.supervision')}</span>
           <span className="section-kicker-line" aria-hidden="true"></span>
         </div>
         <div className="section-text">
@@ -30,9 +31,10 @@ const Supervision = () => {
                     fontWeight: 700, 
                     padding: '3px 8px', 
                     borderRadius: '4px', 
-                    background: item.badge === 'Premium' ? 'rgba(255, 69, 0, 0.15)' : 'var(--surface-dim)',
-                    color: item.badge === 'Premium' ? 'var(--accent)' : 'var(--muted)',
-                    border: '1px solid var(--line)'
+                    background: item.badge?.toLowerCase() === 'premium' ? 'rgba(255, 69, 0, 0.15)' : 'var(--surface-dim)',
+                    color: item.badge?.toLowerCase() === 'premium' ? 'var(--accent)' : 'var(--muted)',
+                    border: '1px solid var(--line)',
+                    whiteSpace: 'nowrap'
                   }}>
                     {item.badge}
                   </span>
@@ -72,8 +74,8 @@ const Supervision = () => {
                   L
                 </div>
                 <div>
-                  <div style={{ fontWeight: 600, fontSize: '0.95rem' }}>Logitaka Practice Bot</div>
-                  <div style={{ fontSize: '0.75rem', color: 'var(--muted)' }}>Daily Morning Brief · 08:00 AM</div>
+                  <div style={{ fontWeight: 600, fontSize: '0.95rem' }}>{b.bot}</div>
+                  <div style={{ fontSize: '0.75rem', color: 'var(--muted)' }}>{b.when}</div>
                 </div>
               </div>
 
@@ -88,29 +90,29 @@ const Supervision = () => {
                 color: 'var(--text)'
               }}>
                 <div style={{ fontWeight: 700, color: 'var(--accent)', marginBottom: '6px' }}>
-                  🌅 Good morning. Here is your practice focus:
+                  {b.greeting}
                 </div>
                 
                 <div style={{ marginTop: '10px' }}>
-                  <strong>Yesterday Finalized:</strong><br />
-                  ✓ Delivered Acme architecture assessment<br />
-                  ✓ Auth migration shifted to Q3
+                  <strong>{b.doneLabel}</strong><br />
+                  {b.done[0]}<br />
+                  {b.done[1]}
                 </div>
 
                 <div style={{ marginTop: '12px' }}>
-                  <strong>Today's Hard Deliverables:</strong><br />
-                  • 14:00 — Strategy sync with Acme CEO<br />
-                  • Send updated retainer proposal (due today)
+                  <strong>{b.todayLabel}</strong><br />
+                  {b.today[0]}<br />
+                  {b.today[1]}
                 </div>
 
                 <div style={{ marginTop: '12px', borderTop: '1px dashed var(--line)', paddingTop: '10px' }}>
-                  <span style={{ color: '#f59e0b', fontWeight: 600 }}>⚠️ Risk Radar Alert:</span><br />
-                  FinTech Advisory milestone pending client sign-off for 4 days.
+                  <span style={{ color: '#f59e0b', fontWeight: 600 }}>{b.riskLabel}</span><br />
+                  {b.risk}
                 </div>
               </div>
 
               <div style={{ marginTop: '14px', textAlign: 'center', fontSize: '0.75rem', color: 'var(--faint)' }}>
-                No scrolling required · Opens your day in 15 seconds
+                {b.footnote}
               </div>
             </div>
           </div>

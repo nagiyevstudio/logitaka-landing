@@ -8,7 +8,7 @@ const TrustPrivacy = () => {
     <section id="trust">
       <div className="section-inner">
         <div className="section-eyebrow">
-          <span className="section-kicker">08 // DATA GOVERNANCE</span>
+          <span className="section-kicker">{t('landing.kickers.privacy')}</span>
           <span className="section-kicker-line" aria-hidden="true"></span>
         </div>
         <div className="section-text">
@@ -16,7 +16,7 @@ const TrustPrivacy = () => {
           <p className="section-copy reveal">{t('landing.privacy.subtitle')}</p>
         </div>
 
-        <div className="cards-grid reveal" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', marginTop: '28px' }}>
+        <div className="cards-grid reveal" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(min(260px, 100%), 1fr))', marginTop: '28px' }}>
           {pillars.map((item, idx) => (
             <article className="panel" key={idx} style={{ padding: '24px' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '12px' }}>

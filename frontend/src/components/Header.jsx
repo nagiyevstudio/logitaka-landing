@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react';
 
 import { useTheme } from '../hooks/useTheme';
+import { SUPPORTED_LOCALES, getLocalizedPath } from '../utils/i18n';
 
 const Header = ({ lang = 'en', navItems = [], brandTagline = 'AI Powered OS', loginLabel = 'Log In' }) => {
+  const homePath = getLocalizedPath(lang);
   const { toggleTheme } = useTheme();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,19 +29,36 @@ const Header = ({ lang = 'en', navItems = [], brandTagline = 'AI Powered OS', lo
   const getHref = (itemHref) => {
     const isHash = itemHref.startsWith('#');
     if (isHash) {
-      return `/${itemHref}`;
+      return `${homePath}${itemHref}`;
     }
     return itemHref;
   };
 
+  const langSwitch = (
+    <div className="lang-switch" aria-label="Language">
+      {SUPPORTED_LOCALES.map((loc) => (
+        <a
+          key={loc.code}
+          href={getLocalizedPath(loc.code)}
+          hrefLang={loc.code}
+          lang={loc.code}
+          className={`lang-switch-link ${loc.code === lang ? 'is-active' : ''}`}
+          aria-current={loc.code === lang ? 'true' : undefined}
+        >
+          {loc.label}
+        </a>
+      ))}
+    </div>
+  );
+
   return (
     <header className={`site-header ${isScrolled ? 'scrolled' : ''} ${isMenuOpen ? 'menu-open' : ''}`} id="site-header">
       <div className="header-inner">
-        <a className="brand" href="/" aria-label="Logitaka">
+        <a className="brand" href={homePath} aria-label="Logitaka">
           <img className="brand-logo brand-logo-dark" src="/assets/logo-logitaka-bb.svg" alt="Logitaka" height="28" />
           <img className="brand-logo brand-logo-light" src="/assets/logo-logitaka-wb.svg" alt="Logitaka" height="28" />
           <span className="brand-name-group">
-            <span className="brand-name">Logitaka</span>
+            <span className="brand-name" lang="en">Logitaka</span>
             <span className="brand-tagline">{brandTagline}</span>
           </span>
         </a>
@@ -56,6 +75,7 @@ const Header = ({ lang = 'en', navItems = [], brandTagline = 'AI Powered OS', lo
         </nav>
 
         <div className="header-controls">
+          {langSwitch}
 
           <button className="theme-icon-btn" onClick={toggleTheme} type="button" aria-label="Toggle theme">
             <span className="theme-icon-sun" aria-hidden="true">

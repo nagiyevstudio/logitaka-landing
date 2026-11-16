@@ -8,7 +8,7 @@ const Audience = () => {
     <section id="audience">
       <div className="section-inner">
         <div className="section-eyebrow">
-          <span className="section-kicker">01.5 // BUILT FOR HIGH PARALLELISM</span>
+          <span className="section-kicker">{t('landing.kickers.audience')}</span>
           <span className="section-kicker-line" aria-hidden="true"></span>
         </div>
         <h2 className="section-title medium reveal">{t('landing.audience.title')}</h2>

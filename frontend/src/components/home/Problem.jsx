@@ -8,7 +8,7 @@ const Problem = () => {
     <section id="problem">
       <div className="section-inner">
         <div className="section-eyebrow">
-          <span className="section-kicker">01 // THE BOTTLENECK</span>
+          <span className="section-kicker">{t('landing.kickers.problem')}</span>
           <span className="section-kicker-line" aria-hidden="true"></span>
         </div>
         <h2 className="section-title medium reveal">{t('landing.problem.title')}</h2>

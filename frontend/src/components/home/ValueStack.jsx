@@ -9,7 +9,7 @@ const ValueStack = () => {
     <section id="economics">
       <div className="section-inner">
         <div className="section-eyebrow">
-          <span className="section-kicker">07 // STACK ECONOMICS</span>
+          <span className="section-kicker">{t('landing.kickers.valueStack')}</span>
           <span className="section-kicker-line" aria-hidden="true"></span>
         </div>
         <div className="section-text">
@@ -21,8 +21,8 @@ const ValueStack = () => {
           <div>
             <div className="value-stack-table">
               <div className="vst-header">
-                <span>Tool / Capability</span>
-                <span>Market Price</span>
+                <span>{t('landing.valueStack.colTool')}</span>
+                <span>{t('landing.valueStack.colPrice')}</span>
               </div>
               <div id="value-stack-rows">
                 {services.map((s, i) => (
@@ -63,7 +63,7 @@ const ValueStack = () => {
             </div>
             <div className="vsp-badge">
               <span className="vsp-badge-icon">&#10003;</span>
-              <span>Unified practice memory across all streams</span>
+              <span>{t('landing.valueStack.badge')}</span>
             </div>
           </div>
         </div>

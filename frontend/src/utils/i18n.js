@@ -1,41 +1,50 @@
 import enTranslation from '../locales/en/translation.json';
+import azTranslation from '../locales/az/translation.json';
 
 const dictionaries = {
-  en: enTranslation
+  en: enTranslation,
+  az: azTranslation
 };
 
+export const DEFAULT_LOCALE = 'en';
+
 export const SUPPORTED_LOCALES = [
-  { code: 'en', label: 'EN' }
+  { code: 'en', label: 'EN' },
+  { code: 'az', label: 'AZ' }
 ];
 
-export function detectLocale() {
-  return 'en';
+export function detectLocale(pathname = '') {
+  const first = pathname.split('/').filter(Boolean)[0];
+  return dictionaries[first] ? first : DEFAULT_LOCALE;
 }
 
-export function getT() {
-  const dict = dictionaries.en;
-  
+function lookup(dict, key) {
+  let current = dict;
+  for (const part of key.split('.')) {
+    if (current === undefined || current === null) return undefined;
+    current = current[part];
+  }
+  return current;
+}
+
+export function getT(lang = DEFAULT_LOCALE) {
+  const dict = dictionaries[lang] || dictionaries[DEFAULT_LOCALE];
+
   return function t(key) {
-    const parts = key.split('.');
-    let current = dict;
-    
-    for (const part of parts) {
-      if (current === undefined || current === null) {
-        console.warn(`Translation key not found: ${key} (failed at "${part}")`);
-        return key;
-      }
-      current = current[part];
+    let value = lookup(dict, key);
+    if (value === undefined && dict !== dictionaries[DEFAULT_LOCALE]) {
+      // Fall back to English so a missing translation never shows a raw key
+      value = lookup(dictionaries[DEFAULT_LOCALE], key);
     }
-    
-    if (current === undefined) {
+    if (value === undefined) {
       console.warn(`Translation key not found: ${key}`);
       return key;
     }
-    
-    return current;
+    return value;
   };
 }
 
-export function getLocalizedPath(targetLang, currentPath) {
-  return '/';
+// Home path for a locale: "/" for English, "/az/" for Azerbaijani
+export function getLocalizedPath(targetLang) {
+  return targetLang === DEFAULT_LOCALE ? '/' : `/${targetLang}/`;
 }

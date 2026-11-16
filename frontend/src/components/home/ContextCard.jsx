@@ -92,8 +92,8 @@ const ContextCard = () => {
           
           <div className="pc-model-row">
             <span style={{ fontSize: '10px', color: 'var(--muted)' }}>{pd.labels.models}</span>
-            <span className="pc-model-chip">Deterministic State</span>
-            <span className="pc-model-chip">Encrypted Memory</span>
+            <span className="pc-model-chip">{pd.labels.chipReasons}</span>
+            <span className="pc-model-chip">{pd.labels.chipIsolated}</span>
           </div>
         </div>
 
@@ -121,12 +121,12 @@ const ContextCard = () => {
                   </div>
                   {dec.why && (
                     <div style={{ fontSize: '0.8rem', color: 'var(--muted)', lineHeight: 1.4 }}>
-                      <strong style={{ color: 'var(--text)' }}>Why:</strong> {dec.why}
+                      <strong style={{ color: 'var(--text)' }}>{pd.labels.why}</strong> {dec.why}
                     </div>
                   )}
                   {dec.impact && (
                     <div style={{ fontSize: '0.8rem', color: 'var(--accent)', lineHeight: 1.4 }}>
-                      <strong>Impact:</strong> {dec.impact}
+                      <strong>{pd.labels.impact}</strong> {dec.impact}
                     </div>
                   )}
                 </div>

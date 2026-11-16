@@ -3,7 +3,9 @@
 import '../styles/all.css';
 import Header from '../components/Header.jsx';
 import Footer from '../components/Footer.jsx';
-import { getT, detectLocale } from '../utils/i18n.js';
+import { getT, getLocalizedPath, SUPPORTED_LOCALES, DEFAULT_LOCALE } from '../utils/i18n.js';
+
+const SITE = 'https://logitaka.com';
 
 interface Props {
   title?: string;
@@ -33,6 +35,9 @@ const footerNavItems = t('landing.footer.nav') || [];
 const footerLegalItems = t('landing.footer.legal') || [];
 const footerTagline = t('landing.footer.tagline');
 const footerCopyright = t('landing.footer.copyright');
+
+const pageUrl = `${SITE}${getLocalizedPath(lang)}`;
+const ogLocale = lang === 'az' ? 'az_AZ' : 'en_US';
 ---
 
 <!DOCTYPE html>
@@ -44,17 +49,23 @@ const footerCopyright = t('landing.footer.copyright');
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <meta name="description" content={description} />
+    <link rel="canonical" href={pageUrl} />
+    {SUPPORTED_LOCALES.map((loc) => (
+      <link rel="alternate" hreflang={loc.code} href={`${SITE}${getLocalizedPath(loc.code)}`} />
+    ))}
+    <link rel="alternate" hreflang="x-default" href={`${SITE}${getLocalizedPath(DEFAULT_LOCALE)}`} />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://logitaka.com/" />
+    <meta property="og:locale" content={ogLocale} />
+    <meta property="og:url" content={pageUrl} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content="https://logitaka.com/assets/og-image.png" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://logitaka.com/" />
+    <meta property="twitter:url" content={pageUrl} />
     <meta property="twitter:title" content={title} />
     <meta property="twitter:description" content={description} />
     <meta property="twitter:image" content="https://logitaka.com/assets/og-image.png" />

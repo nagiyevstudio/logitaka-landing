@@ -12,7 +12,7 @@ const FinalCTA = () => {
             <p>{t('landing.finalCta.body')}</p>
           </div>
           <div className="cta-actions">
-            <a className="button button-solid" href="https://app.logitaka.com/app/login">
+            <a className="button button-solid" href="https://app.logitaka.com/app/login?plan=pro">
               {t('landing.finalCta.primary')}
             </a>
             <p className="cta-notice" dangerouslySetInnerHTML={{ __html: t('landing.finalCta.notice') }}></p>

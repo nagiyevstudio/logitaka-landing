@@ -20,10 +20,9 @@ To access the Service, you must create an account. You agree to provide accurate
 * Notifying us immediately of any unauthorized access.
 
 ## 4. Subscriptions, Payments, and Billing
-Logitaka is a paid service. We do not offer a free trial or free access plan at this time. Billing is handled as follows:
-* **Manual Payment:** Payments are not automatic. For each billing cycle, you will receive a manual payment link.
-* **No Auto-Renewal:** There is no automatic recurring charge. You must actively complete each payment to maintain access to paid features.
-* **Processing:** Payments are processed via a third-party provider, **Lemon Squeezy**.
+Logitaka offers paid subscriptions and may offer a limited promotional trial to eligible new accounts. The plan, trial duration, and usage credit are shown at registration. The trial starts after email verification and ends when its duration or trial credit runs out, whichever comes first. A payment card is not required to start, and the trial does not automatically convert to a paid subscription.
+
+Paid subscriptions are processed by **Lemon Squeezy**. The price, billing schedule, and renewal terms are shown at checkout.
 
 ## 5. Refunds
 If you decide to stop using the Service, you may request a refund for any **unused remaining balance** on your account. We do not provide refunds for already consumed usage or completed billing periods.

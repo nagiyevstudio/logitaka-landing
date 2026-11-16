@@ -14,7 +14,7 @@ const Hero = () => {
           <p className="hero-subheadline">{t('landing.hero.subheadline')}</p>
 
           <div className="hero-actions">
-            <a href="https://app.logitaka.com/app/login" className="button button-solid">
+            <a href="https://app.logitaka.com/app/login?plan=pro" className="button button-solid">
               {t('landing.hero.ctaPrimary')}
             </a>
             <a href="#how-it-works" className="button button-ghost">

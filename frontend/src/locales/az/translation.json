@@ -417,7 +417,7 @@
             "Fərdi bacarıqlar (Skills)"
           ],
           "cta": "Pulsuz başla",
-          "href": "https://app.logitaka.com/app/login",
+          "href": "https://app.logitaka.com/app/login?plan=pro",
           "trial": "Kart tələb olunmur"
         },
         {
@@ -443,7 +443,8 @@
         "description": "İnstitusional müştəri işləri üçün ayrılmış özəl bulud hostinqinə, təcrid olunmuş verilənlər bazasına və ya fərdi uyğunluq SLA zəmanətlərinə ehtiyacınız var? Mühəndis komandamızla əlaqə saxlayın.",
         "cta": "ENTERPRISE üçün əlaqə",
         "tag": "ENTERPRISE VƏ BULUD"
-      }
+      },
+      "trialNote": "Yeni hesablar PRO tarifini 14 günə qədər pulsuz sınaya bilər: $2 sınaq krediti, kart tələb olunmur."
     },
     "faq": {
       "eyebrow": "Aydın cavablar",

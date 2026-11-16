@@ -395,7 +395,7 @@
             "Commitments & Subscriptions registry",
             "Optional Telegram Daily Briefs"
           ],
-          "cta": "Choose Starter",
+          "cta": "Log In to Subscribe",
           "href": "https://app.logitaka.com/app/login"
         },
         {
@@ -416,9 +416,9 @@
             "People registry & calendar feeds: up to 5",
             "Custom Skills"
           ],
-          "cta": "Start Free on Pro",
-          "href": "https://app.logitaka.com/app/login",
-          "trial": "14 days free · $2 AI balance · no card"
+          "cta": "Create a Free Account",
+          "href": "https://app.logitaka.com/app/login?plan=pro",
+          "trial": "Up to 14 days free · $2 credit · no card"
         },
         {
           "label": "Premium",
@@ -434,7 +434,7 @@
             "Personal Operational Profiler",
             "Unlimited people in registry & subscriptions"
           ],
-          "cta": "Choose PREMIUM",
+          "cta": "Log In to Subscribe",
           "href": "https://app.logitaka.com/app/login"
         }
       ],
@@ -443,15 +443,16 @@
         "description": "Need dedicated private cloud hosting, isolated database instances, or custom compliance SLA guarantees for institutional client work? Contact our engineering team.",
         "cta": "Contact Enterprise",
         "tag": "ENTERPRISE & CLOUD"
-      }
+      },
+      "trialNote": "New accounts can try Pro free for up to 14 days with $2 in trial credit. No card required."
     },
     "faq": {
       "eyebrow": "Clear Answers",
       "title": "Frequently Asked Questions",
       "items": [
         {
-          "question": "How does the free start work?",
-          "answer": "Sign up with Google or email — no card needed. You get 14 days of Pro with $2 of AI balance to try Logitaka on your own projects: assistants, Inbox, documents, and meetings included. When the balance or the 14 days run out, pick a plan; your projects, decisions, and notes stay where they are."
+          "question": "How does the free Pro trial work?",
+          "answer": "Create a new Logitaka account before January 1, 2027 at midnight Baku time (UTC+4) — with Google or email, no payment card. Once your email is verified (Google does this instantly), you get Pro access and $2 in trial credit. The trial ends after 14 days or when the credit runs out, whichever comes first, and it never turns into a paid subscription by itself. Your projects, decisions, and notes stay where they are when you pick a plan."
         },
         {
           "question": "How is my client data protected and stored?",
@@ -486,7 +487,7 @@
     "finalCta": {
       "label": "Practice Operating System",
       "title": "End your client call. Speak your follow-up. Done.",
-      "body": "Lead 5–15 client streams without administrative drag or lost context. Try Pro free for 14 days with $2 of AI balance — no card. Sign up with Google or email.",
+      "body": "Lead 5–15 client streams without administrative drag or lost context. Try Pro free for up to 14 days with $2 in trial credit — no card. Sign up with Google or email.",
       "primary": "Try Pro Free",
       "secondary": "Explore How It Works",
       "notice": "By signing up, you agree to the <a href=\"/terms\">Terms of Use</a> and acknowledge the <a href=\"/privacy\">Privacy Policy</a>."

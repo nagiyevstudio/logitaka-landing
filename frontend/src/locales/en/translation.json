@@ -2,7 +2,7 @@
   "landing": {
     "meta": {
       "title": "Logitaka — The Work OS for Consultants & Boutique Practices",
-      "description": "Turn conversation into tasks, decisions, and client memory. Lead 5–15 parallel client streams with proactive supervision in one unified workspace."
+      "description": "Turn conversation into tasks, decisions, and client memory. Work across client projects in Logitaka or connect Claude and Codex through MCP."
     },
     "ui": {
       "brandTagline": "Client Memory OS",
@@ -16,12 +16,12 @@
           "label": "Memory"
         },
         {
-          "href": "#assistants",
-          "label": "Assistants"
+          "href": "#mcp",
+          "label": "MCP"
         },
         {
-          "href": "#models",
-          "label": "Models"
+          "href": "#assistants",
+          "label": "Assistants"
         },
         {
           "href": "#supervision",
@@ -50,7 +50,7 @@
     "hero": {
       "kicker": "For consultants & boutique practices",
       "headline": "Turn conversation into tasks, decisions, and client memory.",
-      "subheadline": "Talk after a call — tasks, dates, and decisions land in the right client project while you speak. Review once, and it's all in memory.",
+      "subheadline": "Debrief after a client call and turn what you said into tasks, events, and decisions. Review the draft cards and apply them to the right projects.",
       "ctaPrimary": "Start Free — No Card Required",
       "ctaSecondary": "Explore How It Works",
       "loop": [
@@ -67,7 +67,7 @@
         {
           "step": "Memory",
           "title": "Lock Context",
-          "desc": "Decisions filed, raw inputs erased"
+          "desc": "Save decisions and their reasons in the project"
         }
       ],
       "stats": [
@@ -80,18 +80,18 @@
           "label": "AI models, one memory"
         },
         {
-          "value": "0",
-          "label": "voice recordings or raw files kept"
+          "value": "MCP",
+          "label": "connect Claude or Codex"
         }
       ],
       "videoBadge": "Real app recording",
       "videoCaption": "Watch real-time voice and multi-project routing in action",
       "supporting": [
         "Open Talk after any client call. Speak naturally — tasks and decisions assemble across your client projects in real time.",
-        "Review the batch before anything is applied. Nothing touches your client boards until you confirm.",
-        "Hit Apply. Logitaka applies exactly what you approved — nothing more, nothing hidden."
+        "Review and edit the draft cards before applying them.",
+        "Select Apply to save the actions to their projects."
       ],
-      "imageAlt": "Logitaka live workspace — real-time multi-project speech and document routing"
+      "imageAlt": "Talk Live demo showing voice commands and draft cards across projects"
     },
     "problem": {
       "eyebrow": "The Reality of Practice",
@@ -145,27 +145,33 @@
     },
     "talk": {
       "eyebrow": "Zero-Friction Ingestion",
-      "title": "Speak on the go. Drop the long stuff in Inbox.",
-      "subtitle": "Talk Live is for quick debriefs between calls: speak naturally and watch tasks, events, and decisions assemble across your clients in real time. Inbox (Pro) is for everything longer — pasted notes, long recordings, PDFs, spreadsheets — routed to the right client in one pass.",
+      "title": "Ask, act, or find your way by voice.",
+      "subtitle": "Talk Live is your voice assistant for quick work across projects. Ask what you agreed with a client, open a project, or capture the next steps after a call.",
       "steps": [
         {
-          "title": "Speak or Drop",
-          "body": "Debrief after a call in Talk Live — or, on Pro, drop client PDFs, audio, and long notes into Inbox. One pass, several clients."
+          "title": "Ask a question",
+          "body": "Find a deadline or recall why a decision was made. Talk Live answers from your project context."
         },
         {
-          "title": "Draft & Apply",
-          "body": "Every task, date, and decision appears as an editable card, grouped by client. Fix anything by voice or by hand — then one Apply commits exactly what you approved."
+          "title": "Capture an action",
+          "body": "Speak to draft a task, schedule an event, or record a decision. Review the cards grouped by project and apply them when ready."
         },
         {
-          "title": "Nothing Left Behind",
-          "body": "Live voice is processed in real time and never recorded. Uploaded files are deleted once their content is saved to the client's project — your workspace keeps the structure, not the raw data."
+          "title": "Jump to the right place",
+          "body": "Ask Talk Live to open a project, a document, or the workspace section you need."
         }
       ],
       "chips": [
-        "Draft & Apply — nothing changes until you approve",
-        "Multi-project routing in a single voice debrief",
-        "No voice recorded · uploaded files deleted after processing"
+        "Draft & Apply for voice actions",
+        "Work across projects in one conversation"
       ]
+    },
+    "inbox": {
+      "kicker": "Inbox · Pro and Premium",
+      "title": "Turn client materials into project memory.",
+      "body": "Drop in PDFs, spreadsheets, screenshots, or recordings, or paste your notes. Inbox extracts the content and turns it into material you can find and use in the right project. If the destination is unclear, you choose it.",
+      "exampleTitle": "From call recording to project reference",
+      "example": "Upload your recording to Inbox. The transcript becomes a searchable project document you can refer to when reviewing what the client said or planning the follow-up."
     },
     "memory": {
       "eyebrow": "Practice Architecture",
@@ -185,7 +191,7 @@
         {
           "tag": "STRUCTURED CLIENT MEMORY",
           "title": "Included in every tier",
-          "body": "Client memory is the foundational core of Logitaka, included from Starter ($7.99/mo). It is model-agnostic: switch between 50+ AI models at any time — your decisions, notes, and history stay put, each client context strictly isolated and accessible across devices."
+          "body": "Client memory is included from Starter ($7.99/mo). Your decisions, notes, and history stay in their project and are available across devices, whichever AI model you use."
         }
       ],
       "recall": {
@@ -197,6 +203,16 @@
         "source": "From Decision Memory · Acme Corp — Strategy Stream",
         "body": "Capture is only half the job. Logitaka keeps every decision with its reason and consequence, so the voice assistant — and on Pro, the project and global assistants — answer from your client's memory, not from a chat you scrolled past weeks ago."
       }
+    },
+    "mcp": {
+      "kicker": "MCP integration",
+      "title": "Bring your project memory into Claude and Codex.",
+      "body": "Connect Claude or Codex through MCP. Your assistant can read plans, decisions, and documents from the projects you approve. With write access, it can update tasks and save decisions or documents back to Logitaka when you ask.",
+      "cta": "Open Profile → AI",
+      "access": "Requires an active paid subscription. Successful reads and writes use your Logitaka AI balance.",
+      "exampleTitle": "Pick up where you left off",
+      "examplePrompt": "Why did we move Acme’s launch? Update the project plan with the delivery date we agreed on.",
+      "exampleResult": "Your assistant reads Acme’s saved decision, explains the reason for the change, and updates the task if you’ve granted write access."
     },
     "contextCard": {
       "project": "Acme Corp — Strategy Stream",
@@ -286,7 +302,7 @@
         {
           "name": "Telegram Daily Briefs",
           "badge": "No-Scroll Brief",
-          "desc": "An optional morning executive brief delivered straight to Telegram. Strictly formatted to fit on your phone screen without scrolling — so you start your day aligned even if you forgot to open the app."
+          "desc": "Connect Telegram to get your morning task list and a short briefing on the projects that need your attention."
         },
         {
           "name": "Client Health & Risk Radar",
@@ -310,7 +326,7 @@
         },
         {
           "title": "Zero Per-Seat Penalty",
-          "desc": "No seat licenses, no onboarding rituals, and zero risk of sensitive client context leaking to external contractors."
+          "desc": "Share assigned events through a personal calendar feed. Collaborators can see their events without a workspace seat."
         }
       ]
     },
@@ -362,8 +378,8 @@
           "body": "Production infrastructure and user data are hosted on dedicated servers in the European Union (Hetzner, Nuremberg, Germany)."
         },
         {
-          "title": "Ephemeral Intake",
-          "body": "Talk Live streams your voice to a real-time model and keeps only what you approve — no audio is recorded. Files you upload are deleted once their content is saved to the client's project. Raw client material doesn't sit in cloud storage."
+          "title": "Live Voice and Project Materials",
+          "body": "Talk Live processes your voice in real time and saves the actions you apply. Inbox creates project materials from uploaded recordings and files. Images you add directly to a project stay available there."
         },
         {
           "title": "Workspace Segregation & Secure Access",
@@ -409,7 +425,7 @@
             "Up to 10 active client streams",
             "Project & Global AI Assistants (50+ models)",
             "Client document library",
-            "Inbox: long notes, audio, files — routed to clients",
+            "Inbox: turn recordings, notes, and files into project materials",
             "Email in Global Assistant: read, sort, draft replies",
             "Structured Client Meetings & Focus sessions",
             "Cross-project global search",
@@ -455,20 +471,24 @@
           "answer": "Create a new Logitaka account before January 1, 2027 at midnight Baku time (UTC+4) — with Google or email, no payment card. Once your email is verified (Google does this instantly), you get Pro access and $2 in trial credit. The trial ends after 14 days or when the credit runs out, whichever comes first, and it never turns into a paid subscription by itself. Your projects, decisions, and notes stay where they are when you pick a plan."
         },
         {
-          "question": "How is my client data protected and stored?",
-          "answer": "All production infrastructure and data stores are in the European Union (Hetzner, Nuremberg, Germany), with HTTPS/TLS on every connection. Live voice is processed in real time and never recorded, and uploaded files are deleted once their content is saved to your project. Client streams are strictly segregated. Default AI models are configured so providers don't train on your data; cheaper models that may train are clearly labeled and used only if you choose them. Full data export and account deletion are available on request."
+          "question": "How do I connect Claude or Codex?",
+          "answer": "Sign in to Logitaka, open <a href=\"https://app.logitaka.com/app/profile?tab=ai\">Profile → AI</a>, and follow the MCP setup instructions for Claude or Codex. You choose the projects to share and can revoke the connection in Logitaka. An active paid subscription is required for project access. Successful reads and writes use your Logitaka AI balance. The free Pro trial does not include MCP project access."
         },
         {
-          "question": "Why doesn't Logitaka join client calls as an AI bot?",
-          "answer": "Clients increasingly ban bot notetakers due to GDPR risks, sensitive IP, and recent high-profile cloud recording leaks. Inviting a bot into executive meetings creates unnecessary tension. With Logitaka, you do a 60-second debrief in Talk Live right after the call — nothing is recorded — or, on Pro, drop your own recording into Inbox: the commitments land in the right client's project and the audio file is deleted."
+          "question": "How is my client data protected and stored?",
+          "answer": "Logitaka hosts its workspace data in the European Union (Hetzner, Nuremberg, Germany) and uses HTTPS/TLS. AI providers process the context needed for your requests, as described in the <a href=\"/privacy\">Privacy Policy</a>. Client materials are organized by project. Full data export and account deletion are available on request."
+        },
+        {
+          "question": "How can I use Logitaka after a client call?",
+          "answer": "Debrief in Talk Live to draft follow-up tasks, events, and decisions by voice. If you already have a recording, upload it to Inbox on Pro or Premium to add a searchable transcript to the project."
         },
         {
           "question": "Why don't all tasks sync to my Apple or Google Calendar?",
-          "answer": "This is a deliberate design principle. An active consultant handles 8–10 tasks a day across multiple clients. Syncing them to an external calendar turns your schedule into an unusable wall of all-day banners. Logitaka only syncs timed events (meetings and deadlines with specific hours) to your external calendar. Your complete task list lives in your Logitaka workspace and arrives every morning in your no-scroll Telegram brief."
+          "answer": "Your external calendar receives events with a date and time, such as meetings or scheduled deadlines. Dated tasks stay in Logitaka. Connect Telegram to receive your morning task list in the daily brief."
         },
         {
           "question": "What is the difference between Tasks and Decision Memory?",
-          "answer": "Tasks define what needs to be executed today. Decision Memory records directional choices — why a specific path was chosen and what changes moving forward. Standard project tools forget why an agreement was made the moment a ticket is marked complete. Logitaka maintains long-term decision continuity so you always know what was promised months ago."
+          "answer": "A task is an action planned for a specific day. Decision Memory records what you decided, why you chose it, and what it changes for the project."
         },
         {
           "question": "What are Open Questions and why don't they have dates?",
@@ -501,8 +521,16 @@
           "label": "How it works"
         },
         {
+          "href": "#inbox",
+          "label": "Inbox"
+        },
+        {
           "href": "#memory",
           "label": "Memory"
+        },
+        {
+          "href": "#mcp",
+          "label": "MCP"
         },
         {
           "href": "#assistants",
@@ -589,14 +617,13 @@
       }
     },
     "models": {
-      "title": "Every frontier model. One memory.",
-      "subtitle": "Logitaka works with 50+ models from 8 providers — Claude, GPT, Gemini, Grok, DeepSeek, Qwen, and more. Switch any time: your plans, decisions, and history live in your workspace, not in a model's chat.",
+      "title": "50+ AI models. One project memory.",
+      "subtitle": "Logitaka works with 50+ models from 8 providers, including Claude, GPT, Gemini, Grok, DeepSeek, and Qwen. Choose a model for the task at hand. Your plans, decisions, and history stay in Logitaka.",
       "points": [
-        "Auto picks a suitable model for each job — it's the default and the most economical choice.",
-        "Already working in Claude or Codex? Connect them to Logitaka and they read and update the same client memory — with your consent, project by project (paid plans).",
+        "Auto is the recommended default and selects a suitable model for your request. You can also choose a model yourself.",
         "Every model shows how fast it spends your balance, so you choose consciously.",
         "Discounted models are labeled when promotions run.",
-        "Your subscription is your AI balance — every charge is visible as it happens. No hidden caps."
+        "Your subscription includes AI credit. You can see what each request spent in your usage history."
       ],
       "selector": {
         "title": "Choose a model",
@@ -641,7 +668,7 @@
     "kickers": {
       "problem": "01 // THE BOTTLENECK",
       "audience": "02 // BUILT FOR HIGH PARALLELISM",
-      "talk": "03 // INGESTION & CONTROL",
+      "talk": "03 // TALK LIVE",
       "memory": "04 // PRACTICE ARCHITECTURE",
       "assistants": "05 // AI ASSISTANTS",
       "models": "06 // MODEL CHOICE",

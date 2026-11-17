@@ -32,7 +32,44 @@ const t = getT(lang);
   <Problem client:visible />
   <Audience client:visible />
   <TalkSection client:visible />
+  <section id="inbox" aria-labelledby="inbox-title">
+    <div class="section-inner split-grid feature-grid">
+      <div class="section-text">
+        <div class="section-eyebrow">
+          <span class="section-kicker">{t('landing.inbox.kicker')}</span>
+          <span class="section-kicker-line" aria-hidden="true"></span>
+        </div>
+        <h2 id="inbox-title" class="section-title medium">{t('landing.inbox.title')}</h2>
+        <p class="section-copy">{t('landing.inbox.body')}</p>
+      </div>
+      <article class="panel feature-panel">
+        <h3 class="panel-title">{t('landing.inbox.exampleTitle')}</h3>
+        <p class="panel-copy">{t('landing.inbox.example')}</p>
+      </article>
+    </div>
+  </section>
   <CoreMemory client:visible />
+  <section id="mcp" aria-labelledby="mcp-title">
+    <div class="section-inner split-grid feature-grid">
+      <div class="section-text">
+        <div class="section-eyebrow">
+          <span class="section-kicker">{t('landing.mcp.kicker')}</span>
+          <span class="section-kicker-line" aria-hidden="true"></span>
+        </div>
+        <h2 id="mcp-title" class="section-title medium">{t('landing.mcp.title')}</h2>
+        <p class="section-copy">{t('landing.mcp.body')}</p>
+        <div class="feature-action">
+          <a class="button button-solid" href="https://app.logitaka.com/app/profile?tab=ai">{t('landing.mcp.cta')}</a>
+          <p class="panel-copy">{t('landing.mcp.access')}</p>
+        </div>
+      </div>
+      <article class="panel feature-panel">
+        <h3 class="panel-title">{t('landing.mcp.exampleTitle')}</h3>
+        <blockquote>{t('landing.mcp.examplePrompt')}</blockquote>
+        <p class="panel-copy">{t('landing.mcp.exampleResult')}</p>
+      </article>
+    </div>
+  </section>
   <Assistants client:visible />
   <ModelChoice client:visible />
   <Supervision client:visible />
@@ -44,3 +81,32 @@ const t = getT(lang);
   <FAQ client:visible />
   <FinalCTA client:visible />
 </MainLayout>
+
+<style>
+  #inbox,
+  #mcp {
+    scroll-margin-top: var(--header-height);
+  }
+
+  .feature-grid {
+    align-items: center;
+  }
+
+  .feature-panel {
+    min-height: auto;
+  }
+
+  .feature-action {
+    display: grid;
+    justify-items: start;
+    gap: 12px;
+    margin-top: 24px;
+  }
+
+  blockquote {
+    margin: 0;
+    padding-inline-start: 16px;
+    border-inline-start: 2px solid var(--accent);
+    line-height: 1.55;
+  }
+</style>

@@ -2,7 +2,7 @@
   "landing": {
     "meta": {
       "title": "Logitaka — Məsləhətçilər və butik komandalar üçün iş əməliyyat sistemi",
-      "description": "Söhbəti tapşırıqlara, qərarlara və müştəri yaddaşına çevirin. 5–15 paralel müştəri axınını vahid iş məkanında, proaktiv nəzarətlə idarə edin."
+      "description": "Söhbətləri tapşırıqlara, qərarlara və layihə yaddaşına çevirin. Müştəri layihələrinizlə Logitaka-da işləyin və ya Claude və Codex-i MCP vasitəsilə qoşun."
     },
     "ui": {
       "brandTagline": "Müştəri yaddaşı OS",
@@ -16,12 +16,12 @@
           "label": "Yaddaş"
         },
         {
-          "href": "#assistants",
-          "label": "Assistentlər"
+          "href": "#mcp",
+          "label": "MCP"
         },
         {
-          "href": "#models",
-          "label": "Modellər"
+          "href": "#assistants",
+          "label": "Assistentlər"
         },
         {
           "href": "#supervision",
@@ -48,11 +48,11 @@
       }
     },
     "hero": {
-      "kicker": "Müstəqil məsləhətçilər və butik komandalar üçün iş əməliyyat sistemi",
+      "kicker": "Məsləhətçilər və butik komandalar üçün",
       "headline": "Söhbəti tapşırıqlara, qərarlara və müştəri yaddaşına çevirin.",
-      "subheadline": "5–15 paralel müştəri axınını kontekst itirmədən idarə edin. Səs və fayllar elə anındaca strukturlaşdırılmış nəticələrə çevrilir, proaktiv nəzarət isə verilmiş vədlərin unudulmasına imkan vermir.",
-      "ctaPrimary": "Pulsuz başla — kart tələb olunmur",
-      "ctaSecondary": "Necə işlədiyinə bax",
+      "subheadline": "Müştəri ilə zəngdən sonra əsas məqamları danışın. Talk Live dediklərinizdən tapşırıq, hadisə və qərar qaralamaları hazırlayır. Kartları yoxlayıb uyğun layihələrdə tətbiq edin.",
+      "ctaPrimary": "Pulsuz başlayın. Kart tələb olunmur",
+      "ctaSecondary": "Necə işlədiyinə baxın",
       "loop": [
         {
           "step": "Danış və ya yüklə",
@@ -67,7 +67,7 @@
         {
           "step": "Yaddaş",
           "title": "Konteksti qoru",
-          "desc": "Qərarlar arxivlənir, xam məlumat silinir"
+          "desc": "Qərarları səbəbləri ilə birlikdə layihədə saxlayın"
         }
       ],
       "stats": [
@@ -80,18 +80,18 @@
           "label": "AI model, bir yaddaş"
         },
         {
-          "value": "0",
-          "label": "saxlanılan səs yazısı"
+          "value": "MCP",
+          "label": "Claude və ya Codex-i qoşun"
         }
       ],
-      "videoBadge": "CANLI İŞ MƏKANI DEMOSU",
+      "videoBadge": "Tətbiqdən video",
       "videoCaption": "Real vaxtda səsin və bir neçə layihə üzrə bölüşdürmənin necə işlədiyinə baxın",
       "supporting": [
         "Hər müştəri zəngindən sonra Talk-u açın. Təbii danışın — tapşırıqlar və qərarlar real vaxtda müştəri layihələriniz üzrə yığılır.",
-        "Heç nə tətbiq olunmazdan əvvəl bütün paketi yoxlayın. Siz təsdiqləməyənə qədər müştəri lövhələrinizdə heç nə dəyişmir.",
-        "«Tətbiq et» düyməsini basın. Logitaka yalnız təsdiqlədiyinizi tətbiq edir — artıq heç nə, gizli heç nə."
+        "Tətbiq etməzdən əvvəl qaralama kartlarını yoxlayın və lazım gəlsə, redaktə edin.",
+        "Əməliyyatları uyğun layihələrdə saxlamaq üçün «Tətbiq et» düyməsinə basın."
       ],
-      "imageAlt": "Logitaka canlı iş məkanı — real vaxtda bir neçə layihə üzrə nitqin və sənədlərin bölüşdürülməsi"
+      "imageAlt": "Talk Live videosunda müxtəlif layihələr üzrə səsli əmrlər və qaralama kartları göstərilir"
     },
     "problem": {
       "eyebrow": "Praktikanın reallığı",
@@ -145,27 +145,33 @@
     },
     "talk": {
       "eyebrow": "Asan qəbul",
-      "title": "Yolda danışın. Uzun materialları Inbox-a atın.",
-      "subtitle": "Talk Live zənglər arasındakı qısa xülasələr üçündür: təbii danışın və tapşırıqların, hadisələrin və qərarların müştəriləriniz üzrə real vaxtda yığıldığını izləyin. Inbox (Pro) isə daha uzun hər şey üçündür — yapışdırılmış qeydlər, uzun yazılar, PDF-lər, cədvəllər — bir keçiddə lazımi müştəriyə yönləndirilir.",
+      "title": "Səslə sual verin, tapşırıq yaradın, layihə açın.",
+      "subtitle": "Talk Live müxtəlif layihələrdə gündəlik işləri tez görmək üçün səsli assistentinizdir. Müştəri ilə nə barədə razılaşdığınızı soruşun, layihəni açın və ya zəngdən sonrakı addımları qeyd edin.",
       "steps": [
         {
-          "title": "Danış və ya yüklə",
-          "body": "Zəngdən sonra Talk Live-da xülasə deyin — və ya Pro planında müştəri PDF-lərini, audio və uzun qeydləri Inbox-a atın. Bir keçid, bir neçə müştəri."
+          "title": "Sual verin",
+          "body": "Son tarixi öyrənin və ya bir qərarın niyə qəbul olunduğunu xatırlayın. Talk Live layihədəki məlumatlara əsaslanaraq cavab verir."
         },
         {
-          "title": "Qaralama və təsdiq",
-          "body": "Hər tapşırıq, tarix və qərar müştərilər üzrə qruplaşdırılmış redaktə oluna bilən kart kimi görünür. İstənilən şeyi səslə və ya əllə düzəldin — sonra bir «Tətbiq et» yalnız təsdiqlədiyinizi tətbiq edir."
+          "title": "Görüləcək işi qeyd edin",
+          "body": "Səslə tapşırıq qaralaması hazırlayın, hadisə planlaşdırın və ya qərarı qeyd edin. Layihələr üzrə qruplaşdırılan kartları yoxlayın və hazır olduqda tətbiq edin."
         },
         {
-          "title": "Heç nə artıq qalmır",
-          "body": "Canlı səs real vaxtda emal olunur və heç vaxt yazılmır. Yüklənmiş fayllar məzmunu müştəri layihəsinə saxlanılan kimi silinir — iş məkanınız xam məlumatı deyil, strukturu saxlayır."
+          "title": "Lazım olan yerə keçin",
+          "body": "Talk Live-dan layihəni, sənədi və ya iş məkanının sizə lazım olan bölməsini açmağı istəyin."
         }
       ],
       "chips": [
-        "Qaralama və təsdiq — siz təsdiqləməyənə qədər heç nə dəyişmir",
-        "Bir səsli xülasədə bir neçə layihəyə yönləndirmə",
-        "Səs saxlanılmır · yüklənmiş fayllar emaldan sonra silinir"
+        "Səsli əmrlər üçün qaralama və tətbiq",
+        "Bir söhbətdə bir neçə layihə ilə işləyin"
       ]
+    },
+    "inbox": {
+      "kicker": "Inbox · Pro və Premium",
+      "title": "Müştəri materiallarını layihə yaddaşına əlavə edin.",
+      "body": "PDF fayllarını, cədvəlləri, ekran görüntülərini və ya səs yazılarını yükləyin, yaxud qeydlərinizi yapışdırın. Inbox məzmunu çıxarıb uyğun layihədə tapa və istifadə edə biləcəyiniz materiala çevirir. Hansı layihəyə aid olduğu aydın deyilsə, seçimi siz edirsiniz.",
+      "exampleTitle": "Səs yazısından layihə sənədinə",
+      "example": "Zəngin səs yazısını Inbox-a yükləyin. Yazının mətni layihədə axtarış edilə bilən sənədə çevrilir. Müştərinin dediklərini nəzərdən keçirəndə və ya növbəti addımları planlaşdıranda həmin sənədə qayıda bilərsiniz."
     },
     "memory": {
       "eyebrow": "Praktikanın arxitekturası",
@@ -185,7 +191,7 @@
         {
           "tag": "STRUKTURLAŞDIRILMIŞ MÜŞTƏRİ YADDAŞI",
           "title": "Bütün planlarda daxildir",
-          "body": "Müştəri yaddaşı Logitaka-nın əsasını təşkil edir və Starter planından ($7.99/ay) başlayaraq daxildir. O, modeldən asılı deyil: istənilən vaxt 50-dən çox AI model arasında keçid edin — qərarlarınız, qeydləriniz və tarixçəniz yerində qalır, hər müştərinin konteksti ciddi şəkildə ayrılıb və bütün cihazlardan əlçatandır."
+          "body": "Müştəri yaddaşı Starter tarifindən ($7.99/ay) başlayaraq bütün tariflərə daxildir. Hansı AI modelindən istifadə etməyinizdən asılı olmayaraq qərarlarınız, qeydləriniz və tarixçəniz öz layihəsində qalır və müxtəlif cihazlarda əlçatan olur."
         }
       ],
       "recall": {
@@ -197,6 +203,16 @@
         "source": "Qərar Yaddaşından · Acme Corp — Strategiya axını",
         "body": "Qeyd etmək işin yalnız yarısıdır. Logitaka hər qərarı səbəbi və nəticəsi ilə birlikdə saxlayır ki, səsli assistent — Pro planında isə layihə və qlobal assistentlər də — həftələr əvvəl sürüşdürüb keçdiyiniz çatdan deyil, müştərinizin yaddaşından cavab versin."
       }
+    },
+    "mcp": {
+      "kicker": "MCP inteqrasiyası",
+      "title": "Claude və Codex-də layihə yaddaşınızla işləyin.",
+      "body": "Claude və ya Codex-i MCP vasitəsilə qoşun. Assistentiniz paylaşmağa icazə verdiyiniz layihələrin planlarını, qərarlarını və sənədlərini oxuya bilər. Yazma icazəsi varsa, siz istəyəndə tapşırıqları yeniləyə, qərarları və sənədləri Logitaka-da saxlaya bilər.",
+      "cta": "Profil → AI bölməsini açın",
+      "access": "Aktiv ödənişli abunəlik tələb olunur. Uğurlu oxuma və yazma əməliyyatlarının haqqı Logitaka-dakı AI balansınızdan çıxılır.",
+      "exampleTitle": "Qaldığınız yerdən davam edin",
+      "examplePrompt": "Acme-nin buraxılış tarixini niyə dəyişdik? Layihə planındakı təhvil tarixini razılaşdığımız tarixə dəyiş.",
+      "exampleResult": "Assistent Acme layihəsində saxlanmış qərarı oxuyur, dəyişikliyin səbəbini izah edir və yazma icazəsi varsa, tapşırığı yeniləyir."
     },
     "contextCard": {
       "project": "Acme Corp — Strategiya axını",
@@ -286,7 +302,7 @@
         {
           "name": "Telegram-da gündəlik xülasə",
           "badge": "Sürüşdürmədən",
-          "desc": "Səhərlər birbaşa Telegram-a gələn istəyə bağlı rəhbər xülasəsi. Telefon ekranına sürüşdürmədən sığacaq şəkildə hazırlanır — tətbiqi açmağı unutsanız belə, günə hazır başlayırsınız."
+          "desc": "Telegram-ı qoşun və hər səhər tapşırıq siyahınızı, eləcə də diqqət tələb edən layihələr haqqında qısa xülasəni alın."
         },
         {
           "name": "Müştəri sağlamlığı və risk radarı",
@@ -310,7 +326,7 @@
         },
         {
           "title": "İstifadəçiyə görə ödəniş yoxdur",
-          "desc": "Lisenziya yerləri yoxdur, onboarding prosedurları yoxdur və həssas müştəri kontekstinin xarici podratçılara sızma riski sıfırdır."
+          "desc": "Təyin etdiyiniz hadisələri şəxsi təqvim abunəliyi ilə paylaşın. Əməkdaşlar iş məkanına giriş almadan öz hadisələrinə baxa bilirlər."
         }
       ]
     },
@@ -362,8 +378,8 @@
           "body": "İstehsal infrastrukturu və istifadəçi məlumatları Avropa İttifaqında ayrılmış serverlərdə yerləşir (Hetzner, Nürnberq, Almaniya)."
         },
         {
-          "title": "Müvəqqəti qəbul və fiziki silinmə",
-          "body": "Səsli giriş müvəqqəti yaddaşda emal olunur, yüklənmiş fayllar isə nəticələr hazır olan kimi fiziki olaraq silinir. Müştəri audiosu və faylları buludda qeyri-müəyyən müddətə saxlanılmır."
+          "title": "Canlı səs və layihə materialları",
+          "body": "Talk Live səsinizi real vaxtda emal edir və tətbiq etdiyiniz əməliyyatları saxlayır. Inbox yüklədiyiniz səs yazılarından və fayllardan layihə materialları yaradır. Birbaşa layihəyə əlavə etdiyiniz şəkillər orada əlçatan qalır."
         },
         {
           "title": "İş məkanlarının ayrılması və təhlükəsiz giriş",
@@ -395,7 +411,7 @@
             "Öhdəliklər və abunələr reyestri",
             "İstəyə bağlı Telegram gündəlik xülasəsi"
           ],
-          "cta": "STARTER seç",
+          "cta": "Abunə olmaq üçün daxil olun",
           "href": "https://app.logitaka.com/app/login"
         },
         {
@@ -409,16 +425,16 @@
             "10-a qədər aktiv müştəri axını",
             "Layihə və qlobal AI assistentləri (50+ model)",
             "Müştəri sənədləri kitabxanası",
-            "Inbox: uzun qeydlər, audio, fayllar — müştərilərə yönləndirilir",
+            "Inbox ilə səs yazılarını, qeydləri və faylları layihə materiallarına çevirin",
             "Qlobal assistentdə e-poçt: oxumaq, çeşidləmək, cavab qaralamaları",
             "Strukturlaşdırılmış müştəri görüşləri və fokus sessiyaları",
             "Bütün layihələr üzrə qlobal axtarış",
             "Şəxslər reyestri və təqvim lentləri: 5-ə qədər",
             "Fərdi bacarıqlar (Skills)"
           ],
-          "cta": "Pulsuz başla",
+          "cta": "Pulsuz hesab yaradın",
           "href": "https://app.logitaka.com/app/login?plan=pro",
-          "trial": "Kart tələb olunmur"
+          "trial": "14 günədək pulsuz · $2 sınaq krediti · kart tələb olunmur"
         },
         {
           "label": "Premium",
@@ -434,7 +450,7 @@
             "Şəxsi əməliyyat profili",
             "Reyestrdə və abunələrdə limitsiz şəxs"
           ],
-          "cta": "PREMIUM seç",
+          "cta": "Abunə olmaq üçün daxil olun",
           "href": "https://app.logitaka.com/app/login"
         }
       ],
@@ -444,27 +460,35 @@
         "cta": "ENTERPRISE üçün əlaqə",
         "tag": "ENTERPRISE VƏ BULUD"
       },
-      "trialNote": "Yeni hesablar PRO tarifini 14 günə qədər pulsuz sınaya bilər: $2 sınaq krediti, kart tələb olunmur."
+      "trialNote": "Yeni hesablar Pro tarifini $2 sınaq krediti ilə 14 günədək pulsuz sınaya bilər. Ödəniş kartı tələb olunmur."
     },
     "faq": {
       "eyebrow": "Aydın cavablar",
       "title": "Tez-tez verilən suallar",
       "items": [
         {
-          "question": "Müştəri məlumatlarım necə qorunur və harada saxlanılır?",
-          "answer": "Bütün istehsal infrastrukturu və məlumat anbarları Avropa İttifaqındadır (Hetzner, Nürnberq, Almaniya), hər bağlantıda HTTPS/TLS istifadə olunur. Canlı səs real vaxtda emal olunur — audionuzu heç vaxt saxlamırıq — yüklənmiş fayllar isə məzmunu layihənizə saxlanılan kimi silinir. Müştəri axınları ciddi şəkildə ayrılıb. Standart AI modelləri provayderlərin məlumatlarınızla öyrətmə aparmaması üçün konfiqurasiya olunub; öyrətmə apara bilən daha ucuz modellər aydın şəkildə işarələnib və yalnız siz seçdikdə istifadə olunur. Tam məlumat ixracı və hesabın silinməsi sorğu ilə mümkündür."
+          "question": "Pulsuz Pro sınağı necə işləyir?",
+          "answer": "2027-ci il yanvarın 1-i saat 00:00-dək (Bakı vaxtı, UTC+4) Google hesabı və ya e-poçtla yeni Logitaka hesabı yaradın. Ödəniş kartı tələb olunmur. E-poçt ünvanınız təsdiqləndikdən sonra (Google ilə bu, dərhal baş verir) Pro tarifinə giriş və $2 sınaq krediti əldə edirsiniz. Sınaq 14 günün sonunda və ya kredit daha tez bitəndə başa çatır. Ödənişli abunəlik avtomatik başlamır. Tarif seçəndə layihələriniz, qərarlarınız və qeydləriniz yerində qalır."
         },
         {
-          "question": "Logitaka niyə müştəri zənglərinə AI bot kimi qoşulmur?",
-          "answer": "GDPR riskləri, həssas əqli mülkiyyət və son vaxtlar baş verən bulud yazılarının sızması səbəbindən müştərilər bot-qeydçiləri getdikcə daha çox qadağan edirlər. Rəhbər görüşlərinə bot dəvət etmək lazımsız gərginlik yaradır. Logitaka ilə siz ya görüşdən dərhal sonra Talk Live-da 60 saniyəlik xülasə deyirsiniz, ya da görüşün yazısını Inbox-a atırsınız. Kontekst çıxarılır, müştəri axınlarına bölünür, xam audio isə həmişəlik silinir."
+          "question": "Claude və ya Codex-i necə qoşa bilərəm?",
+          "answer": "Logitaka hesabınıza daxil olun, <a href=\"https://app.logitaka.com/app/profile?tab=ai\">Profil → AI</a> bölməsini açın və Claude və ya Codex üçün MCP qoşulma təlimatlarına əməl edin. Hansı layihələri paylaşacağınızı siz seçirsiniz və bağlantını Logitaka-da ləğv edə bilərsiniz. Layihələrə giriş üçün aktiv ödənişli abunəlik tələb olunur. Uğurlu oxuma və yazma əməliyyatlarının haqqı Logitaka-dakı AI balansınızdan çıxılır. Pulsuz Pro sınağı MCP vasitəsilə layihələrə giriş vermir."
+        },
+        {
+          "question": "Müştəri məlumatlarım necə qorunur və harada saxlanılır?",
+          "answer": "Logitaka iş məkanınızın məlumatlarını Avropa İttifaqında (Hetzner, Nürnberq, Almaniya) saxlayır və HTTPS/TLS-dən istifadə edir. AI provayderləri sorğularınıza cavab vermək üçün lazım olan konteksti <a href=\"/privacy\">Məxfilik Siyasətində</a> göstərildiyi qaydada emal edirlər. Müştəri materialları layihələr üzrə saxlanılır. Məlumatlarınızın tam ixracını və hesabınızın silinməsini tələb edə bilərsiniz."
+        },
+        {
+          "question": "Müştəri ilə zəngdən sonra Logitaka-dan necə istifadə edə bilərəm?",
+          "answer": "Talk Live-da zəngin əsas məqamlarını danışaraq növbəti tapşırıqların, hadisələrin və qərarların qaralamalarını hazırlayın. Zəngin səs yazısı varsa, Pro və ya Premium tarifində onu Inbox-a yükləyib mətnini axtarış edilə bilən sənəd kimi layihəyə əlavə edə bilərsiniz."
         },
         {
           "question": "Niyə bütün tapşırıqlar Apple və ya Google təqvimimə sinxronlaşmır?",
-          "answer": "Bu, şüurlu dizayn prinsipidir. Aktiv məsləhətçi bir neçə müştəri üzrə gündə 8–10 tapşırıqla işləyir. Onları xarici təqvimə sinxronlaşdırmaq cədvəlinizi istifadəyə yararsız tam günlük bannerlər divarına çevirir. Logitaka xarici təqviminizə yalnız vaxta bağlı hadisələri (konkret saatı olan görüşləri və müddətləri) göndərir. Tam tapşırıq siyahınız Logitaka iş məkanınızda yaşayır və hər səhər sürüşdürmə tələb etməyən Telegram xülasəsində gəlir."
+          "answer": "Xarici təqviminizə tarix və saatı olan hadisələr, məsələn, görüşlər və vaxtı müəyyən edilmiş təhvil tarixləri göndərilir. Tarixi olan tapşırıqlar Logitaka-da qalır. Hər səhər tapşırıq siyahınızı gündəlik xülasədə almaq üçün Telegram-ı qoşun."
         },
         {
           "question": "Tapşırıqlarla Qərar Yaddaşı arasında fərq nədir?",
-          "answer": "Tapşırıqlar bu gün nəyin icra olunmalı olduğunu müəyyən edir. Qərar Yaddaşı isə istiqamət seçimlərini qeyd edir — konkret yolun niyə seçildiyini və bundan sonra nəyin dəyişdiyini. Adi layihə alətləri tapşırıq bağlanan kimi razılaşmanın niyə edildiyini unudur. Logitaka qərarların uzunmüddətli davamlılığını qoruyur ki, aylar əvvəl nə vəd edildiyini həmişə biləsiniz."
+          "answer": "Tapşırıq müəyyən günə planlaşdırılan işdir. Qərar yaddaşında nə qərar verdiyiniz, onu niyə seçdiyiniz və həmin qərarın layihədə nəyi dəyişdirdiyi qeyd olunur."
         },
         {
           "question": "Açıq Suallar nədir və niyə tarixləri yoxdur?",
@@ -483,9 +507,9 @@
     "finalCta": {
       "label": "Praktika əməliyyat sistemi",
       "title": "Müştəri zəngini bitirin. Növbəti addımları deyin. Hazırdır.",
-      "body": "5–15 müştəri axınını inzibati yük və kontekst itkisi olmadan idarə edin. Kartsız pulsuz başlayın, bir dəqiqəyə qurun, istənilən vaxt imtina edin.",
-      "primary": "Pulsuz başla — kart tələb olunmur",
-      "secondary": "Necə işlədiyinə bax",
+      "body": "5–15 müştəri layihəsini konteksti itirmədən və əlavə inzibati işə vaxt sərf etmədən idarə edin. Pro-nu $2 sınaq krediti ilə 14 günədək pulsuz sınayın. Ödəniş kartı tələb olunmur. Google hesabı və ya e-poçtla qeydiyyatdan keçin.",
+      "primary": "Pro-nu pulsuz sınayın",
+      "secondary": "Necə işlədiyinə baxın",
       "notice": "Qeydiyyatdan keçməklə <a href=\"/terms\">İstifadə Şərtləri</a> ilə razılaşır və <a href=\"/privacy\">Məxfilik Siyasəti</a> ilə tanış olduğunuzu təsdiqləyirsiniz."
     },
     "footer": {
@@ -497,8 +521,16 @@
           "label": "Necə işləyir"
         },
         {
+          "href": "#inbox",
+          "label": "Inbox"
+        },
+        {
           "href": "#memory",
           "label": "Yaddaş"
+        },
+        {
+          "href": "#mcp",
+          "label": "MCP"
         },
         {
           "href": "#assistants",
@@ -585,13 +617,13 @@
       }
     },
     "models": {
-      "title": "Bütün qabaqcıl modellər. Bir yaddaş.",
-      "subtitle": "Logitaka 8 provayderin 50-dən çox modeli ilə işləyir — Claude, GPT, Gemini, Grok, DeepSeek, Qwen və digərləri. İstənilən vaxt keçid edin: planlarınız, qərarlarınız və tarixçəniz modelin çatında deyil, iş məkanınızda yaşayır.",
+      "title": "50-dən çox AI modeli. Vahid layihə yaddaşı.",
+      "subtitle": "Logitaka 8 provayderin 50-dən çox modeli ilə işləyir. Bunlara Claude, GPT, Gemini, Grok, DeepSeek və Qwen də daxildir. İşinizə uyğun modeli seçin. Planlarınız, qərarlarınız və tarixçəniz Logitaka-da qalır.",
       "points": [
-        "Auto hər iş üçün uyğun modeli seçir — bu, standart və ən qənaətcil seçimdir.",
-        "Hər model balansınızı nə qədər sürətlə xərclədiyini göstərir, beləliklə şüurlu seçim edirsiniz.",
+        "Auto tövsiyə olunan standart rejimdir və sorğunuza uyğun model seçir. Modeli özünüz də seçə bilərsiniz.",
+        "Seçim etməzdən əvvəl hər modelin balansınıza təsirini görə bilərsiniz.",
         "Kampaniyalar zamanı endirimli modellər işarələnir.",
-        "Abunəniz sizin AI balansınızdır — hər xərc baş verdiyi anda görünür. Gizli limitlər yoxdur."
+        "Abunəliyinizə AI krediti daxildir. Hər sorğunun xərcini istifadə tarixçəsində görə bilərsiniz."
       ],
       "selector": {
         "title": "Model seçin",
@@ -636,7 +668,7 @@
     "kickers": {
       "problem": "01 // ƏSAS MANEƏ",
       "audience": "02 // YÜKSƏK PARALELLİK ÜÇÜN",
-      "talk": "03 // QƏBUL VƏ NƏZARƏT",
+      "talk": "03 // TALK LIVE",
       "memory": "04 // PRAKTİKANIN ARXİTEKTURASI",
       "assistants": "05 // AI ASSİSTENTLƏR",
       "models": "06 // MODEL SEÇİMİ",
